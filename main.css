@@ -2,11 +2,23 @@
   padding: 0;
   margin: 0;
 }
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
 svg {
-  stroke-width: 1;
+  width: 190vw;
+  position: relative;
+  top: -15vw;
+  left: -5vw;
+  stroke-width: 2;
   stroke: black;
   fill: none;
 }
 .hide {
   display: none;
+}
+.rolling {
+  fill: teal;
 }
