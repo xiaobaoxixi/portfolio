@@ -4,6 +4,7 @@ console.log(50 * Math.sqrt(3));
 const rollingPart = document.querySelector("polygon");
 const square = document.querySelector(".square");
 const pentagon = document.querySelector(".pentagon");
+const hexagon = document.querySelector(".hexagon");
 // const timeline = new TimelineMax();
 // timeline.to(triangle, 1, {
 //   rotation: 150,
@@ -72,15 +73,37 @@ function squareTurn() {
   }
 }
 let angle3 = 0;
-
+//390 316, 470 260, 550 316, 520 410, 420 410
+let pentagonBottomLeftPositionX = 420;
+let pentagonBottomRightPositionX = 520;
+let pentagonBottomPositionY = 410;
+let pentagonBottomCenterPositionY = 410;
+let pentagonTopCenterPositionY = 260;
 function pentagonTurn() {
   rollingPart.setAttribute("transform", `rotate(${angle3} 410 400)`);
   if (angle3 < 180) {
     angle3++;
     setTimeout(pentagonTurn, 10);
   } else {
-    //    rollingPart.setAttribute("transform", "");
+    rollingPart.setAttribute("transform", "");
     turnToHexagon();
   }
-  function turnToHexagon() {}
+  function turnToHexagon() {
+    if (pentagonBottomLeftPositionX > 390) {
+      pentagonBottomLeftPositionX -= 30 / 50;
+      pentagonBottomRightPositionX += 30 / 50;
+      pentagonBottomPositionY -= 5 / 50;
+      pentagonBottomCenterPositionY += 40 / 50;
+      pentagonTopCenterPositionY += 10 / 50;
+      rollingPart.setAttribute(
+        "points",
+        `390 316, 470 ${pentagonTopCenterPositionY}, 550 316, ${pentagonBottomRightPositionX} ${pentagonBottomPositionY}, 470 ${pentagonBottomCenterPositionY}, ${pentagonBottomLeftPositionX} ${pentagonBottomPositionY}`
+      );
+      setTimeout(turnToHexagon, 10);
+    } else {
+      hexagon.classList.remove("hide");
+      hexagonTurn();
+    }
+  }
 }
+function hexagonTurn() {}
