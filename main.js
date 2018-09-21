@@ -67,6 +67,20 @@ function squareTurn() {
       setTimeout(turnToPentagon, 10);
     } else {
       pentagon.classList.remove("hide");
+      pentagonTurn();
     }
   }
+}
+let angle3 = 0;
+
+function pentagonTurn() {
+  rollingPart.setAttribute("transform", `rotate(${angle3} 410 400)`);
+  if (angle3 < 180) {
+    angle3++;
+    setTimeout(pentagonTurn, 10);
+  } else {
+    //    rollingPart.setAttribute("transform", "");
+    turnToHexagon();
+  }
+  function turnToHexagon() {}
 }
