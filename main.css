@@ -1,0 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+svg {
+  stroke-width: 1;
+  stroke: black;
+  fill: none;
+}
