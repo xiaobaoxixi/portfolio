@@ -7,3 +7,6 @@ svg {
   stroke: black;
   fill: none;
 }
+.hide {
+  display: none;
+}
