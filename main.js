@@ -45,7 +45,6 @@ let bottomLeftPositionX = 300;
 let bottomPositionY = 490;
 let bottomRightPositionX = 400;
 let centerBottomPositionY = 490;
-//300 390, 400 390, 430 480, 350 540, 270 480
 function squareTurn() {
   rollingPart.setAttribute("transform", `rotate(${angle2} 300 420)`);
   if (angle2 < 180) {
@@ -59,7 +58,7 @@ function squareTurn() {
     if (bottomRightPositionX < 430) {
       bottomRightPositionX += 30 / 50; // in 50 steps therefor divide by 50
       bottomLeftPositionX -= 30 / 50;
-      bottomPositionY -= 10 / 50;
+      bottomPositionY -= 6 / 50;
       centerBottomPositionY += 50 / 50;
       rollingPart.setAttribute(
         "points",
