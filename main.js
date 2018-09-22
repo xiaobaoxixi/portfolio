@@ -191,8 +191,8 @@ function hexagonTurn() {
       });
       // liston to all polygons and list project with hover/mouseenter
       allPolygonS.forEach(p => {
-        p.addEventListener("mouseenter", listProjects);
-        function listProjects(m) {
+        p.addEventListener("mouseenter", listProjectGroups);
+        function listProjectGroups(m) {
           let targetY2 = m.target.nextElementSibling.getAttribute("y3");
           let currentY2 = m.target.nextElementSibling.getAttribute("y2");
           showLine();
@@ -207,9 +207,36 @@ function hexagonTurn() {
               //              m.target.removeEventListener("mouseleave", removeFill); // so when svg scrolls up, won't trigger mouse leave;
               document.scrollingElement.scrollTop = `${document.scrollingElement
                 .scrollTop +
-                Number(targetY2 - currentY2) / 15}`; // use document.scrollingElement.scrollTop instead of document.body.scrollTop, which always gives 0
+                Number(targetY2 - currentY2) / 13}`; // use document.scrollingElement.scrollTop instead of document.body.scrollTop, which always gives 0
               m.target.nextElementSibling.nextElementSibling.nextElementSibling.children[0].style.height = `200px`;
               setTimeout(showLine, 30);
+            }
+          }
+          const groupArea =
+            p.nextElementSibling.nextElementSibling.nextElementSibling;
+          groupArea.addEventListener("mouseenter", showEachGroup);
+          function showEachGroup(m) {
+            collapseH1();
+            m.target.removeEventListener("mouseenter", showEachGroup);
+            let group = m.target.previousElementSibling.textContent;
+            let horiLinesInGroup = document.querySelectorAll(
+              `.${group}.hori-line`
+            );
+            horiLinesInGroup.forEach(extendEachHoriLine);
+            function extendEachHoriLine(hl) {
+              let targetX = Number(hl.getAttribute("x3"));
+              let currentX = Number(hl.getAttribute("x2"));
+              extend();
+              function extend() {
+                if (currentX < targetX - 1) {
+                  currentX = Number(hl.getAttribute("x2"));
+                  hl.setAttribute(
+                    "x2",
+                    `${currentX + (targetX - currentX) / 20}`
+                  );
+                  setTimeout(extend, 10);
+                }
+              }
             }
           }
           console.log(m.target.dataset.project);

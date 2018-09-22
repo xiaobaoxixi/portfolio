@@ -40,11 +40,13 @@ foreignObject nav {
   font-size: 12px;
   height: 0;
   overflow: hidden;
+  cursor: pointer;
 }
 foreignObject p {
   line-height: 24px;
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 500;
+  pointer-events: none;
 }
 h1 {
   position: fixed;
