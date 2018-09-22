@@ -1,15 +1,10 @@
 "use strict";
-console.log(50 * Math.sqrt(3));
 
 const rollingPart = document.querySelector("polygon");
 const square = document.querySelector(".square");
 const pentagon = document.querySelector(".pentagon");
 const hexagon = document.querySelector(".hexagon");
-// const timeline = new TimelineMax();
-// timeline.to(triangle, 1, {
-//   rotation: 150,
-//   transformOrigin: "100% 100%"
-// });
+// from triangle to square
 let angle = 0;
 triangleTurn();
 function triangleTurn() {
@@ -41,6 +36,7 @@ function turnToSquare() {
     squareTurn();
   }
 }
+// from square to pentagon
 let angle2 = 0;
 let bottomLeftPositionX = 300;
 let bottomPositionY = 490;
@@ -72,6 +68,7 @@ function squareTurn() {
     }
   }
 }
+// from pentagon to hexagon
 let angle3 = 0;
 //390 316, 470 260, 550 316, 520 410, 420 410
 let pentagonBottomLeftPositionX = 420;
@@ -106,11 +103,57 @@ function pentagonTurn() {
     }
   }
 }
+// from hexagon to octagon
 let angle4 = 0;
+let scale = 1;
+let translateX = 0;
+let translateY = 0;
+let hexagonPoint1X = 533;
+let hexagonPoint1Y = 213;
+let hexagonPoint2X = 620;
+let hexagonPoint2Y = 157;
+let hexagonPoint3X = 709;
+let hexagonPoint3Y = 211;
+let hexagonPoint4X = 709;
+let hexagonPoint4Y = 315;
+let hexagonPoint5X = 620;
+let hexagonPoint5Y = 367;
+let hexagonPoint6X = 533;
+let hexagonPoint6Y = 315;
+let addedPoint1X = 533;
+let addedPoint1Y = 315;
+let addedPoint2X = 533;
+let addedPoint2Y = 315;
 function hexagonTurn() {
-  rollingPart.setAttribute("transform", `rotate(${angle4} 570 350)`);
+  rollingPart.setAttribute(
+    "transform",
+    `rotate(${angle4} 633 361) scale(${scale}) `
+  );
   if (angle4 < 120) {
     angle4++;
+    scale += 0.0015;
     setTimeout(hexagonTurn, 5);
+  } else {
+    turnToOctagon();
+  }
+  //533 213, 620 157, 709 211, 709 315, 620 367, 533 315
+
+  //515 262, 545 191, 620 157, 695 191,725 262, 695 333, 620 367, 545 333
+  function turnToOctagon() {
+    if (hexagonPoint1X < 545) {
+      hexagonPoint1X += 12 / 50;
+      hexagonPoint1Y -= 22 / 50;
+      hexagonPoint2X += 12 / 50;
+      hexagonPoint2Y -= 22 / 50;
+      hexagonPoint3X += 12 / 50;
+      hexagonPoint3Y -= 22 / 50;
+      hexagonPoint4X += 12 / 50;
+      hexagonPoint4Y -= 22 / 50;
+      hexagonPoint5X += 12 / 50;
+      hexagonPoint5Y -= 22 / 50;
+      hexagonPoint6X += 12 / 50;
+      hexagonPoint6Y -= 22 / 50;
+    }
   }
 }
+// to future
