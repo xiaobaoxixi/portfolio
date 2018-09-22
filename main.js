@@ -120,39 +120,41 @@ let hexagonPoint5X = 620;
 let hexagonPoint5Y = 367;
 let hexagonPoint6X = 533;
 let hexagonPoint6Y = 315;
-let addedPoint1X = 533;
-let addedPoint1Y = 315;
-let addedPoint2X = 533;
-let addedPoint2Y = 315;
+let addedPoint1X = 530;
+let addedPoint2X = 713;
 function hexagonTurn() {
   rollingPart.setAttribute(
     "transform",
-    `rotate(${angle4} 633 361) scale(${scale}) `
+    `rotate(${angle4} 635 363) scale(${scale}) `
   );
   if (angle4 < 120) {
     angle4++;
     scale += 0.0015;
     setTimeout(hexagonTurn, 5);
   } else {
+    rollingPart.setAttribute("transform", "");
     turnToOctagon();
   }
-  //533 213, 620 157, 709 211, 709 315, 620 367, 533 315
-
-  //515 262, 545 191, 620 157, 695 191,725 262, 695 333, 620 367, 545 333
+  //         530 210, 623 155, 713 210,          713 315, 623 368, 530 315
+  //516 262, 548 187, 623 155, 698 187, 730 262, 698 337, 623 369, 548 337
   function turnToOctagon() {
-    if (hexagonPoint1X < 545) {
-      hexagonPoint1X += 12 / 50;
-      hexagonPoint1Y -= 22 / 50;
-      hexagonPoint2X += 12 / 50;
-      hexagonPoint2Y -= 22 / 50;
-      hexagonPoint3X += 12 / 50;
-      hexagonPoint3Y -= 22 / 50;
-      hexagonPoint4X += 12 / 50;
-      hexagonPoint4Y -= 22 / 50;
-      hexagonPoint5X += 12 / 50;
-      hexagonPoint5Y -= 22 / 50;
-      hexagonPoint6X += 12 / 50;
-      hexagonPoint6Y -= 22 / 50;
+    console.log(addedPoint1X);
+    if (addedPoint1X > 516) {
+      addedPoint1X -= 14 / 50;
+      hexagonPoint1X += 16 / 50;
+      hexagonPoint1Y -= 25 / 50;
+      hexagonPoint3X -= 13 / 50;
+      hexagonPoint3Y -= 25 / 50;
+      addedPoint2X += 17 / 50;
+      hexagonPoint4X -= 12 / 50;
+      hexagonPoint4Y += 23 / 50;
+      hexagonPoint6X += 15 / 50;
+      hexagonPoint6Y += 23 / 50;
+      rollingPart.setAttribute(
+        "points",
+        `${addedPoint1X} 262, ${hexagonPoint1X} ${hexagonPoint1Y}, 623 155, ${hexagonPoint3X} ${hexagonPoint3Y}, ${addedPoint2X} 262, ${hexagonPoint4X} ${hexagonPoint4Y}, 623 369, ${hexagonPoint6X} ${hexagonPoint6Y}`
+      );
+      setTimeout(turnToOctagon, 5);
     }
   }
 }
