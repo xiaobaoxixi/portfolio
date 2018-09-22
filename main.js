@@ -7,6 +7,7 @@ const pentagon = document.querySelector(".pentagon");
 const hexagon = document.querySelector(".hexagon");
 const octagon = document.querySelector(".octagon");
 const h1 = document.querySelector("h1");
+let collapseState = false;
 
 window.addEventListener("DOMContentLoaded", init);
 function init() {
@@ -170,21 +171,13 @@ function hexagonTurn() {
       setTimeout(turnToOctagon, 5);
     } else {
       // show h1
-      let currentH1Width = 9;
-      h1Width();
-      function h1Width() {
-        if (currentH1Width < 40) {
-          h1.style.width = `${currentH1Width}vw`;
-          currentH1Width++;
-          setTimeout(h1Width, 1000 / 60);
-        }
-      }
+      extendH1();
       //hide rollingpart, show octagon
       rollingPart.classList.add("hide");
       octagon.classList.remove("hide");
       octagon.setAttribute("fill", "var(--fill)");
-      // liston to all polygons and alter fill with mouse movement
       const allPolygonS = document.querySelectorAll("polygon");
+      // liston to all polygons and alter fill with mouse movement
       allPolygonS.forEach(p => {
         p.addEventListener("mouseenter", () => {
           octagon.setAttribute("fill", "transparent");
@@ -194,8 +187,46 @@ function hexagonTurn() {
           p.setAttribute("fill", "transparent");
         });
       });
+      // liston to all polygons and list project with click
+      allPolygonS.forEach(p => {
+        p.addEventListener("click", listProjects);
+        function listProjects(m) {
+          collapseH1();
+          console.log(m.target.dataset.project);
+        }
+      });
     }
   }
 }
 
+///////////////////////////////////
+function extendH1() {
+  let currentH1Width = 9;
+  h1Width();
+  function h1Width() {
+    if (currentH1Width < 39) {
+      h1.style.width = `${currentH1Width}vw`;
+      currentH1Width++;
+      setTimeout(h1Width, 1000 / 60);
+    }
+  }
+  collapseState = false;
+}
+function collapseH1() {
+  if (collapseState === false) {
+    let currentH1Width = 39;
+    h1Width();
+    function h1Width() {
+      if (currentH1Width >= 9) {
+        h1.style.width = `${currentH1Width}vw`;
+        currentH1Width--;
+        setTimeout(h1Width, 1000 / 60);
+      }
+    }
+    collapseState = true;
+  }
+}
+
+//////////////////////////////////
 // leave 1 polygon with fill
+// temp h1 animation needs to be changed
