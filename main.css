@@ -28,6 +28,7 @@ line {
   pointer-events: none;
 }
 .group {
+  pointer-events: none;
   font-size: 17px;
   display: none;
   font-family: "M PLUS Rounded 1c", sans-serif;
