@@ -10,10 +10,11 @@ body {
 svg {
   width: 190vw;
   position: relative;
-  top: -15vw;
+  top: -13vw;
   left: -5vw;
-  stroke-width: 2;
-  stroke: black;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke: rgba(51, 51, 51, 0.9);
   fill: none;
 }
 .hide {

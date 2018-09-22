@@ -16,7 +16,7 @@ function triangleTurn() {
   rollingPart.setAttribute("transform", `rotate(${angle} 200 400)`);
   if (angle < 150) {
     angle++;
-    setTimeout(triangleTurn, 10);
+    setTimeout(triangleTurn, 5);
   } else {
     turnToSquare();
   }
@@ -35,7 +35,7 @@ function turnToSquare() {
       "points",
       `200 ${topPointPositionY}, ${rightBorderPosition} 350, ${rightBorderPosition} 450, 200 ${bottomPointPositionY}`
     );
-    setTimeout(turnToSquare, 10);
+    setTimeout(turnToSquare, 5);
   } else {
     square.classList.remove("hide");
     squareTurn();
@@ -50,7 +50,7 @@ function squareTurn() {
   rollingPart.setAttribute("transform", `rotate(${angle2} 300 420)`);
   if (angle2 < 180) {
     angle2++;
-    setTimeout(squareTurn, 10);
+    setTimeout(squareTurn, 5);
   } else {
     rollingPart.setAttribute("transform", "");
     turnToPentagon();
@@ -65,7 +65,7 @@ function squareTurn() {
         "points",
         `300 390, 400 390, ${bottomRightPositionX} ${bottomPositionY},350 ${centerBottomPositionY},${bottomLeftPositionX} ${bottomPositionY}`
       );
-      setTimeout(turnToPentagon, 10);
+      setTimeout(turnToPentagon, 5);
     } else {
       pentagon.classList.remove("hide");
       pentagonTurn();
@@ -83,7 +83,7 @@ function pentagonTurn() {
   rollingPart.setAttribute("transform", `rotate(${angle3} 410 400)`);
   if (angle3 < 180) {
     angle3++;
-    setTimeout(pentagonTurn, 10);
+    setTimeout(pentagonTurn, 5);
   } else {
     rollingPart.setAttribute("transform", "");
     turnToHexagon();
@@ -99,11 +99,18 @@ function pentagonTurn() {
         "points",
         `390 316, 470 ${pentagonTopCenterPositionY}, 550 316, ${pentagonBottomRightPositionX} ${pentagonBottomPositionY}, 470 ${pentagonBottomCenterPositionY}, ${pentagonBottomLeftPositionX} ${pentagonBottomPositionY}`
       );
-      setTimeout(turnToHexagon, 10);
+      setTimeout(turnToHexagon, 5);
     } else {
       hexagon.classList.remove("hide");
       hexagonTurn();
     }
   }
 }
-function hexagonTurn() {}
+let angle4 = 0;
+function hexagonTurn() {
+  rollingPart.setAttribute("transform", `rotate(${angle4} 570 350)`);
+  if (angle4 < 120) {
+    angle4++;
+    setTimeout(hexagonTurn, 5);
+  }
+}
