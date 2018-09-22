@@ -184,11 +184,30 @@ function hexagonTurn() {
         p.addEventListener("mouseenter", fill);
         p.addEventListener("mouseleave", removeFill);
       });
-      // liston to all polygons and list project with hover
+      // liston to all polygons and list project with hover/mouseenter
       allPolygonS.forEach(p => {
         p.addEventListener("mouseenter", listProjects);
         function listProjects(m) {
+          let targetY2 = m.target.nextElementSibling.getAttribute("y3");
+          let currentY2 = m.target.nextElementSibling.getAttribute("y2");
+          showLine();
+          function showLine() {
+            if (currentY2 < targetY2 - 1) {
+              // because of the ease method below, currentY2 will always be smaller than targetY2, need -1 to stop
+              currentY2 = m.target.nextElementSibling.getAttribute("y2");
+              m.target.nextElementSibling.setAttribute(
+                "y2",
+                `${Number(currentY2) + Number(targetY2 - currentY2) / 10}`
+              ); // ease-in effect
+              //              m.target.removeEventListener("mouseleave", removeFill); // so when svg scrolls up, won't trigger mouse leave;
+              document.scrollingElement.scrollTop = `${document.scrollingElement
+                .scrollTop +
+                Number(targetY2 - currentY2) / 20}`; // use document.scrollingElement.scrollTop instead of document.body.scrollTop, which always gives 0
+              setTimeout(showLine, 30);
+            }
+          }
           console.log(m.target.dataset.project);
+          //          m.target.addEventListener("mouseleave", removeFill);
         }
       });
       //  display project with click
@@ -266,3 +285,4 @@ function shrinkSVG() {
 //////////////////////////////////
 // leave 1 polygon with fill
 // temp h1 animation needs to be changed
+// when show line and scroll up, shouldn't trigger mouse leave

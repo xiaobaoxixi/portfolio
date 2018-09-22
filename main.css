@@ -9,11 +9,6 @@
   color: var(--dark-grey);
   position: relative;
 }
-body {
-  height: 100vh;
-  width: 100vw;
-  overflow: scroll;
-}
 svg {
   width: 190vw;
   position: relative;
