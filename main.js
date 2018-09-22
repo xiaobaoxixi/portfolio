@@ -149,18 +149,19 @@ function hexagonTurn() {
   }
   //         530 210, 623 155, 713 210,          713 315, 623 368, 530 315
   //516 262, 548 187, 623 155, 698 187, 730 262, 698 337, 623 369, 548 337
+  //518 262, 550 187, 625 155, 700 187, 732 262, 700 337, 625 369, 550 337
   function turnToOctagon() {
-    if (addedPoint1X >= 516) {
-      addedPoint1X -= 14 / 50;
-      hexagonPoint1X += 16 / 50;
-      hexagonPoint1Y -= 25 / 50;
-      hexagonPoint3X -= 13 / 50;
-      hexagonPoint3Y -= 25 / 50;
-      addedPoint2X += 17 / 50;
-      hexagonPoint4X -= 12 / 50;
-      hexagonPoint4Y += 23 / 50;
-      hexagonPoint6X += 15 / 50;
-      hexagonPoint6Y += 23 / 50;
+    if (addedPoint1X > 518) {
+      addedPoint1X -= 10 / 50;
+      hexagonPoint1X += 14 / 50;
+      hexagonPoint1Y -= 22 / 50;
+      hexagonPoint3X -= 7 / 50;
+      hexagonPoint3Y -= 20 / 50;
+      addedPoint2X += 16 / 50;
+      hexagonPoint4X -= 7 / 50;
+      hexagonPoint4Y += 18 / 50;
+      hexagonPoint6X += 14 / 50;
+      hexagonPoint6Y += 18 / 50;
       rollingPart.setAttribute(
         "points",
         `${addedPoint1X} 262, ${hexagonPoint1X} ${hexagonPoint1Y}, 623 155, ${hexagonPoint3X} ${hexagonPoint3Y}, ${addedPoint2X} 262, ${hexagonPoint4X} ${hexagonPoint4Y}, 623 369, ${hexagonPoint6X} ${hexagonPoint6Y}`
@@ -175,6 +176,7 @@ function hexagonTurn() {
       const allPolygonS = document.querySelectorAll("polygon");
       allPolygonS.forEach(p => {
         p.addEventListener("mouseenter", () => {
+          octagon.setAttribute("fill", "transparent");
           p.setAttribute("fill", "var(--fill)");
         });
         p.addEventListener("mouseleave", () => {

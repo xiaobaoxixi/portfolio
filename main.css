@@ -29,6 +29,12 @@ h1 {
   top: 80vh;
   right: 7vw;
 }
+span {
+  display: inline-block;
+  padding: 0 7px;
+  height: 1.5em;
+  border-bottom: 7px solid var(--fill);
+}
 .hide {
   display: none;
 }
