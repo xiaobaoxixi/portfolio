@@ -6,6 +6,7 @@ const square = document.querySelector(".square");
 const pentagon = document.querySelector(".pentagon");
 const hexagon = document.querySelector(".hexagon");
 const octagon = document.querySelector(".octagon");
+const h1 = document.querySelector("h1");
 
 window.addEventListener("DOMContentLoaded", init);
 function init() {
@@ -168,6 +169,16 @@ function hexagonTurn() {
       );
       setTimeout(turnToOctagon, 5);
     } else {
+      // show h1
+      let currentH1Width = 9;
+      h1Width();
+      function h1Width() {
+        if (currentH1Width < 40) {
+          h1.style.width = `${currentH1Width}vw`;
+          currentH1Width++;
+          setTimeout(h1Width, 1000 / 60);
+        }
+      }
       //hide rollingpart, show octagon
       rollingPart.classList.add("hide");
       octagon.classList.remove("hide");
@@ -186,3 +197,5 @@ function hexagonTurn() {
     }
   }
 }
+
+// leave 1 polygon with fill

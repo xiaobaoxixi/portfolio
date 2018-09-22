@@ -28,12 +28,18 @@ h1 {
   position: absolute;
   top: 80vh;
   right: 7vw;
+  width: 9vw;
+  white-space: nowrap;
 }
 span {
+  font-size: 1.5vw;
+}
+span:first-of-type {
+  font-size: 2vw;
   display: inline-block;
   padding: 0 7px;
   height: 1.5em;
-  border-bottom: 7px solid var(--fill);
+  border-bottom: 11px solid var(--fill);
 }
 .hide {
   display: none;
