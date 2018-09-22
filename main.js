@@ -20,6 +20,7 @@ function init() {
     triangle.setAttribute("fill", "transparent"); // need fill because otherwise mouse enter/leave only triggers when crossing stroke
     rollingPart.setAttribute("fill", "var(--fill)");
     rollingPart.setAttribute("transform", `rotate(${angle} 200 400)`);
+    triangle.nextElementSibling.nextElementSibling.style.display = "inherit";
     if (angle < 150) {
       angle++;
       setTimeout(triangleTurn, 1 / 150);
@@ -46,6 +47,7 @@ function turnToSquare() {
     setTimeout(turnToSquare, 5);
   } else {
     square.classList.remove("hide");
+    square.nextElementSibling.nextElementSibling.style.display = "inherit";
     square.setAttribute("fill", "transparent");
     squareTurn();
   }
@@ -78,6 +80,7 @@ function squareTurn() {
       setTimeout(turnToPentagon, 5);
     } else {
       pentagon.classList.remove("hide");
+      pentagon.nextElementSibling.nextElementSibling.style.display = "inherit";
       pentagon.setAttribute("fill", "transparent");
       pentagonTurn();
     }
@@ -114,6 +117,7 @@ function pentagonTurn() {
       setTimeout(turnToHexagon, 5);
     } else {
       hexagon.classList.remove("hide");
+      hexagon.nextElementSibling.nextElementSibling.style.display = "inherit";
       hexagon.setAttribute("fill", "transparent");
       hexagonTurn();
     }
@@ -173,6 +177,7 @@ function hexagonTurn() {
       setTimeout(turnToOctagon, 5);
     } else {
       // show h1
+      octagon.nextElementSibling.nextElementSibling.style.display = "inherit";
       extendH1();
       //hide rollingpart, show octagon
       rollingPart.classList.add("hide");
@@ -202,7 +207,8 @@ function hexagonTurn() {
               //              m.target.removeEventListener("mouseleave", removeFill); // so when svg scrolls up, won't trigger mouse leave;
               document.scrollingElement.scrollTop = `${document.scrollingElement
                 .scrollTop +
-                Number(targetY2 - currentY2) / 20}`; // use document.scrollingElement.scrollTop instead of document.body.scrollTop, which always gives 0
+                Number(targetY2 - currentY2) / 15}`; // use document.scrollingElement.scrollTop instead of document.body.scrollTop, which always gives 0
+              m.target.nextElementSibling.nextElementSibling.nextElementSibling.children[0].style.height = `200px`;
               setTimeout(showLine, 30);
             }
           }

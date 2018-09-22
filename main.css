@@ -26,8 +26,23 @@ line {
   stroke-dasharray: 3 3;
   pointer-events: none;
 }
+.group {
+  font-size: 23px;
+  display: none;
+}
+foreignObject nav {
+  width: 10vw;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 700;
+  height: 0;
+  overflow: hidden;
+}
+foreignObject p {
+  line-height: 24px;
+}
 h1 {
-  position: absolute;
+  position: fixed;
   top: 85vh;
   right: 7vw;
   width: 9vw;
