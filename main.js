@@ -18,7 +18,7 @@ function init() {
     rollingPart.setAttribute("transform", `rotate(${angle} 200 400)`);
     if (angle < 150) {
       angle++;
-      setTimeout(triangleTurn, 5);
+      setTimeout(triangleTurn, 1 / 150);
     } else {
       turnToSquare();
     }
@@ -56,7 +56,7 @@ function squareTurn() {
   rollingPart.setAttribute("transform", `rotate(${angle2} 300 420)`);
   if (angle2 < 180) {
     angle2++;
-    setTimeout(squareTurn, 5);
+    setTimeout(squareTurn, 1 / 180);
   } else {
     rollingPart.setAttribute("transform", "");
     turnToPentagon();
@@ -91,7 +91,7 @@ function pentagonTurn() {
   rollingPart.setAttribute("transform", `rotate(${angle3} 410 400)`);
   if (angle3 < 180) {
     angle3++;
-    setTimeout(pentagonTurn, 5);
+    setTimeout(pentagonTurn, 1 / 180);
   } else {
     rollingPart.setAttribute("transform", "");
     turnToHexagon();
@@ -142,7 +142,7 @@ function hexagonTurn() {
   if (angle4 < 120) {
     angle4++;
     scale += 0.0015;
-    setTimeout(hexagonTurn, 5);
+    setTimeout(hexagonTurn, 1 / 120);
   } else {
     rollingPart.setAttribute("transform", "");
     turnToOctagon();
