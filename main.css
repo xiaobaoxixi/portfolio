@@ -12,13 +12,13 @@
 body {
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  overflow: scroll;
 }
 svg {
   width: 190vw;
   position: relative;
   top: -13vw;
-  left: -5vw;
+  left: -8vw;
   stroke-width: 3;
   stroke-linejoin: round;
   stroke: var(--dark-grey);
@@ -27,15 +27,18 @@ svg {
 polygon {
   cursor: pointer;
 }
+line {
+  stroke-dasharray: 3 3;
+}
 h1 {
   position: absolute;
-  top: 80vh;
+  top: 85vh;
   right: 7vw;
   width: 9vw;
   white-space: nowrap;
 }
 span {
-  font-size: 1.5vw;
+  font-size: 1.2vw;
 }
 span:first-of-type {
   font-size: 2vw;

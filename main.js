@@ -1,5 +1,6 @@
 "use strict";
 
+const svg = document.querySelector("svg");
 const rollingPart = document.querySelector(".rolling");
 const triangle = document.querySelector(".triangle");
 const square = document.querySelector(".square");
@@ -7,7 +8,8 @@ const pentagon = document.querySelector(".pentagon");
 const hexagon = document.querySelector(".hexagon");
 const octagon = document.querySelector(".octagon");
 const h1 = document.querySelector("h1");
-let collapseState = false;
+let h1CollapseState = false;
+let svgShrunkState = false;
 
 window.addEventListener("DOMContentLoaded", init);
 function init() {
@@ -179,20 +181,24 @@ function hexagonTurn() {
       const allPolygonS = document.querySelectorAll("polygon");
       // liston to all polygons and alter fill with mouse movement
       allPolygonS.forEach(p => {
-        p.addEventListener("mouseenter", () => {
-          octagon.setAttribute("fill", "transparent");
-          p.setAttribute("fill", "var(--fill)");
-        });
-        p.addEventListener("mouseleave", () => {
-          p.setAttribute("fill", "transparent");
-        });
+        p.addEventListener("mouseenter", fill);
+        p.addEventListener("mouseleave", removeFill);
       });
-      // liston to all polygons and list project with click
+      // liston to all polygons and list project with hover
       allPolygonS.forEach(p => {
-        p.addEventListener("click", listProjects);
+        p.addEventListener("mouseenter", listProjects);
         function listProjects(m) {
-          collapseH1();
           console.log(m.target.dataset.project);
+        }
+      });
+      //  display project with click
+      allPolygonS.forEach(p => {
+        p.addEventListener("click", showProject);
+        function showProject(m) {
+          shrinkSVG();
+          collapseH1();
+          clearOtherFill();
+          fill(m);
         }
       });
     }
@@ -200,21 +206,35 @@ function hexagonTurn() {
 }
 
 ///////////////////////////////////
+function clearOtherFill() {
+  document.querySelectorAll("polygon").forEach(p => {
+    p.setAttribute("fill", "transparent");
+    p.removeEventListener("mouseleave", removeFill); // so that when svg is shrinking and mouse leaves the polygon area, the fill won't be removed
+    p.removeEventListener("mouseenter", fill); // so that hover doesn't trigger fill anymore when svg is used at corner as nav
+  });
+}
+function fill(m) {
+  octagon.setAttribute("fill", "transparent"); // because after animation, octagon has fill
+  m.target.setAttribute("fill", "var(--fill)");
+}
+function removeFill(m) {
+  m.target.setAttribute("fill", "transparent");
+}
 function extendH1() {
   let currentH1Width = 9;
   h1Width();
   function h1Width() {
-    if (currentH1Width < 39) {
+    if (currentH1Width < 35) {
       h1.style.width = `${currentH1Width}vw`;
       currentH1Width++;
       setTimeout(h1Width, 1000 / 60);
     }
   }
-  collapseState = false;
+  h1CollapseState = false;
 }
 function collapseH1() {
-  if (collapseState === false) {
-    let currentH1Width = 39;
+  if (h1CollapseState === false) {
+    let currentH1Width = 35;
     h1Width();
     function h1Width() {
       if (currentH1Width >= 9) {
@@ -223,10 +243,26 @@ function collapseH1() {
         setTimeout(h1Width, 1000 / 60);
       }
     }
-    collapseState = true;
+    h1CollapseState = true;
   }
 }
-
+function shrinkSVG() {
+  if (svgShrunkState === false) {
+    let currentSVGPosition = -13;
+    let currentSVGWidth = 190;
+    shrinkAndMove();
+    function shrinkAndMove() {
+      if (currentSVGPosition > -23) {
+        //      svg.style.top = `${currentSVGPosition}vw`;
+        svg.style.width = `${currentSVGWidth}vw`;
+        currentSVGPosition--;
+        currentSVGWidth -= 11;
+        setTimeout(shrinkAndMove, 500 / 60);
+      }
+    }
+    svgShrunkState = true;
+  }
+}
 //////////////////////////////////
 // leave 1 polygon with fill
 // temp h1 animation needs to be changed
