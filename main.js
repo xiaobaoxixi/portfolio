@@ -224,7 +224,7 @@ function extendH1() {
   let currentH1Width = 9;
   h1Width();
   function h1Width() {
-    if (currentH1Width < 35) {
+    if (currentH1Width < 36) {
       h1.style.width = `${currentH1Width}vw`;
       currentH1Width++;
       setTimeout(h1Width, 1000 / 60);
@@ -234,7 +234,7 @@ function extendH1() {
 }
 function collapseH1() {
   if (h1CollapseState === false) {
-    let currentH1Width = 35;
+    let currentH1Width = 36;
     h1Width();
     function h1Width() {
       if (currentH1Width >= 9) {
@@ -248,7 +248,7 @@ function collapseH1() {
 }
 function shrinkSVG() {
   if (svgShrunkState === false) {
-    let currentSVGPosition = -13;
+    let currentSVGPosition = -14;
     let currentSVGWidth = 190;
     shrinkAndMove();
     function shrinkAndMove() {

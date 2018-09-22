@@ -17,8 +17,8 @@ body {
 svg {
   width: 190vw;
   position: relative;
-  top: -13vw;
-  left: -8vw;
+  top: -14vw;
+  left: -8.3vw;
   stroke-width: 3;
   stroke-linejoin: round;
   stroke: var(--dark-grey);
