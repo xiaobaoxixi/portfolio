@@ -23,24 +23,27 @@ polygon {
   cursor: pointer;
 }
 line {
-  stroke-dasharray: 3 3;
+  stroke-width: 2;
+  stroke-dasharray: 2 2;
   pointer-events: none;
 }
 .group {
   font-size: 17px;
   display: none;
   font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 100;
 }
 foreignObject nav {
-  width: 10vw;
+  width: 150px;
   text-align: right;
   font-size: 12px;
-  font-weight: 700;
   height: 0;
   overflow: hidden;
 }
 foreignObject p {
   line-height: 24px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 500;
 }
 h1 {
   position: fixed;
