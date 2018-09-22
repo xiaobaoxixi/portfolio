@@ -1,21 +1,30 @@
 "use strict";
 
-const rollingPart = document.querySelector("polygon");
+const rollingPart = document.querySelector(".rolling");
+const triangle = document.querySelector(".triangle");
 const square = document.querySelector(".square");
 const pentagon = document.querySelector(".pentagon");
 const hexagon = document.querySelector(".hexagon");
-// from triangle to square
-let angle = 0;
-triangleTurn();
-function triangleTurn() {
-  rollingPart.setAttribute("transform", `rotate(${angle} 200 400)`);
-  if (angle < 150) {
-    angle++;
-    setTimeout(triangleTurn, 5);
-  } else {
-    turnToSquare();
+const octagon = document.querySelector(".octagon");
+
+window.addEventListener("DOMContentLoaded", init);
+function init() {
+  let angle = 0;
+  triangleTurn();
+  // from triangle to square
+  function triangleTurn() {
+    triangle.setAttribute("fill", "transparent"); // need fill because otherwise mouse enter/leave only triggers when crossing stroke
+    rollingPart.setAttribute("fill", "var(--fill)");
+    rollingPart.setAttribute("transform", `rotate(${angle} 200 400)`);
+    if (angle < 150) {
+      angle++;
+      setTimeout(triangleTurn, 5);
+    } else {
+      turnToSquare();
+    }
   }
 }
+
 let topPointPositionY = 400;
 let bottomPointPositionY = 400;
 let rightBorderPosition = 286.6;
@@ -33,6 +42,7 @@ function turnToSquare() {
     setTimeout(turnToSquare, 5);
   } else {
     square.classList.remove("hide");
+    square.setAttribute("fill", "transparent");
     squareTurn();
   }
 }
@@ -64,6 +74,7 @@ function squareTurn() {
       setTimeout(turnToPentagon, 5);
     } else {
       pentagon.classList.remove("hide");
+      pentagon.setAttribute("fill", "transparent");
       pentagonTurn();
     }
   }
@@ -99,6 +110,7 @@ function pentagonTurn() {
       setTimeout(turnToHexagon, 5);
     } else {
       hexagon.classList.remove("hide");
+      hexagon.setAttribute("fill", "transparent");
       hexagonTurn();
     }
   }
@@ -138,8 +150,7 @@ function hexagonTurn() {
   //         530 210, 623 155, 713 210,          713 315, 623 368, 530 315
   //516 262, 548 187, 623 155, 698 187, 730 262, 698 337, 623 369, 548 337
   function turnToOctagon() {
-    console.log(addedPoint1X);
-    if (addedPoint1X > 516) {
+    if (addedPoint1X >= 516) {
       addedPoint1X -= 14 / 50;
       hexagonPoint1X += 16 / 50;
       hexagonPoint1Y -= 25 / 50;
@@ -155,7 +166,21 @@ function hexagonTurn() {
         `${addedPoint1X} 262, ${hexagonPoint1X} ${hexagonPoint1Y}, 623 155, ${hexagonPoint3X} ${hexagonPoint3Y}, ${addedPoint2X} 262, ${hexagonPoint4X} ${hexagonPoint4Y}, 623 369, ${hexagonPoint6X} ${hexagonPoint6Y}`
       );
       setTimeout(turnToOctagon, 5);
+    } else {
+      //hide rollingpart, show octagon
+      rollingPart.classList.add("hide");
+      octagon.classList.remove("hide");
+      octagon.setAttribute("fill", "var(--fill)");
+      // liston to all polygons and alter fill with mouse movement
+      const allPolygonS = document.querySelectorAll("polygon");
+      allPolygonS.forEach(p => {
+        p.addEventListener("mouseenter", () => {
+          p.setAttribute("fill", "var(--fill)");
+        });
+        p.addEventListener("mouseleave", () => {
+          p.setAttribute("fill", "transparent");
+        });
+      });
     }
   }
 }
-// to future

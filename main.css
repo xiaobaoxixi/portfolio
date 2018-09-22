@@ -1,6 +1,13 @@
+:root {
+  --dark-grey: rgba(51, 51, 51, 0.9);
+  --fill: hsl(180, 100%, 25%);
+}
 * {
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
+  color: var(--dark-grey);
+  position: relative;
 }
 body {
   height: 100vh;
@@ -14,12 +21,14 @@ svg {
   left: -5vw;
   stroke-width: 3;
   stroke-linejoin: round;
-  stroke: rgba(51, 51, 51, 0.9);
+  stroke: var(--dark-grey);
   fill: none;
+}
+h1 {
+  position: absolute;
+  top: 80vh;
+  right: 7vw;
 }
 .hide {
   display: none;
-}
-.rolling {
-  fill: teal;
 }
