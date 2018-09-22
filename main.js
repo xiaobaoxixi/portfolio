@@ -10,6 +10,7 @@ const octagon = document.querySelector(".octagon");
 const h1 = document.querySelector("h1");
 let h1CollapseState = false;
 let svgShrunkState = false;
+let timeout;
 
 window.addEventListener("DOMContentLoaded", init);
 function init() {
@@ -23,8 +24,9 @@ function init() {
     triangle.nextElementSibling.nextElementSibling.style.display = "inherit";
     if (angle < 150) {
       angle++;
-      setTimeout(triangleTurn, 1 / 150);
+      timeout = setTimeout(triangleTurn, 1 / 150);
     } else {
+      clearTimeout(timeout);
       turnToSquare();
     }
   }
@@ -44,8 +46,9 @@ function turnToSquare() {
       "points",
       `200 ${topPointPositionY}, ${rightBorderPosition} 350, ${rightBorderPosition} 450, 200 ${bottomPointPositionY}`
     );
-    setTimeout(turnToSquare, 5);
+    timeout = setTimeout(turnToSquare, 5);
   } else {
+    clearTimeout(timeout);
     square.classList.remove("hide");
     square.nextElementSibling.nextElementSibling.style.display = "inherit";
     square.setAttribute("fill", "transparent");
@@ -62,8 +65,9 @@ function squareTurn() {
   rollingPart.setAttribute("transform", `rotate(${angle2} 300 420)`);
   if (angle2 < 180) {
     angle2++;
-    setTimeout(squareTurn, 1 / 180);
+    timeout = setTimeout(squareTurn, 1 / 180);
   } else {
+    clearTimeout(timeout);
     rollingPart.setAttribute("transform", "");
     turnToPentagon();
   }
@@ -77,8 +81,9 @@ function squareTurn() {
         "points",
         `300 390, 400 390, ${bottomRightPositionX} ${bottomPositionY},350 ${centerBottomPositionY},${bottomLeftPositionX} ${bottomPositionY}`
       );
-      setTimeout(turnToPentagon, 5);
+      timeout = setTimeout(turnToPentagon, 5);
     } else {
+      clearTimeout(timeout);
       pentagon.classList.remove("hide");
       pentagon.nextElementSibling.nextElementSibling.style.display = "inherit";
       pentagon.setAttribute("fill", "transparent");
@@ -98,8 +103,9 @@ function pentagonTurn() {
   rollingPart.setAttribute("transform", `rotate(${angle3} 410 400)`);
   if (angle3 < 180) {
     angle3++;
-    setTimeout(pentagonTurn, 1 / 180);
+    timeout = setTimeout(pentagonTurn, 1 / 180);
   } else {
+    clearTimeout(timeout);
     rollingPart.setAttribute("transform", "");
     turnToHexagon();
   }
@@ -114,8 +120,9 @@ function pentagonTurn() {
         "points",
         `390 316, 470 ${pentagonTopCenterPositionY}, 550 316, ${pentagonBottomRightPositionX} ${pentagonBottomPositionY}, 470 ${pentagonBottomCenterPositionY}, ${pentagonBottomLeftPositionX} ${pentagonBottomPositionY}`
       );
-      setTimeout(turnToHexagon, 5);
+      timeout = setTimeout(turnToHexagon, 5);
     } else {
+      clearTimeout(timeout);
       hexagon.classList.remove("hide");
       hexagon.nextElementSibling.nextElementSibling.style.display = "inherit";
       hexagon.setAttribute("fill", "transparent");
@@ -150,8 +157,9 @@ function hexagonTurn() {
   if (angle4 < 120) {
     angle4++;
     scale += 0.0015;
-    setTimeout(hexagonTurn, 1 / 120);
+    timeout = setTimeout(hexagonTurn, 1 / 120);
   } else {
+    clearTimeout(timeout);
     rollingPart.setAttribute("transform", "");
     turnToOctagon();
   }
@@ -174,8 +182,9 @@ function hexagonTurn() {
         "points",
         `${addedPoint1X} 262, ${hexagonPoint1X} ${hexagonPoint1Y}, 623 155, ${hexagonPoint3X} ${hexagonPoint3Y}, ${addedPoint2X} 262, ${hexagonPoint4X} ${hexagonPoint4Y}, 623 369, ${hexagonPoint6X} ${hexagonPoint6Y}`
       );
-      setTimeout(turnToOctagon, 5);
+      timeout = setTimeout(turnToOctagon, 5);
     } else {
+      clearTimeout(timeout);
       // show h1
       octagon.nextElementSibling.nextElementSibling.style.display = "inherit";
       extendH1();
@@ -209,7 +218,9 @@ function hexagonTurn() {
                 .scrollTop +
                 Number(targetY2 - currentY2) / 13}`; // use document.scrollingElement.scrollTop instead of document.body.scrollTop, which always gives 0
               m.target.nextElementSibling.nextElementSibling.nextElementSibling.children[0].style.height = `200px`;
-              setTimeout(showLine, 30);
+              timeout = setTimeout(showLine, 30);
+            } else {
+              clearTimeout(timeout);
             }
           }
           const groupArea =
@@ -234,7 +245,9 @@ function hexagonTurn() {
                     "x2",
                     `${currentX + (targetX - currentX) / 20}`
                   );
-                  setTimeout(extend, 10);
+                  timeout = setTimeout(extend, 10);
+                } else {
+                  clearTimeout(timeout);
                 }
               }
             }
@@ -279,7 +292,9 @@ function extendH1() {
     if (currentH1Width < 36) {
       h1.style.width = `${currentH1Width}vw`;
       currentH1Width++;
-      setTimeout(h1Width, 1000 / 60);
+      timeout = setTimeout(h1Width, 1000 / 60);
+    } else {
+      clearTimeout(timeout);
     }
   }
   h1CollapseState = false;
@@ -292,7 +307,9 @@ function collapseH1() {
       if (currentH1Width >= 9) {
         h1.style.width = `${currentH1Width}vw`;
         currentH1Width--;
-        setTimeout(h1Width, 1000 / 60);
+        timeout = setTimeout(h1Width, 1000 / 60);
+      } else {
+        clearTimeout(timeout);
       }
     }
     h1CollapseState = true;
@@ -309,7 +326,9 @@ function shrinkSVG() {
         svg.style.width = `${currentSVGWidth}vw`;
         currentSVGPosition--;
         currentSVGWidth -= 11;
-        setTimeout(shrinkAndMove, 500 / 60);
+        timeout = setTimeout(shrinkAndMove, 500 / 60);
+      } else {
+        clearTimeout(timeout);
       }
     }
     svgShrunkState = true;
@@ -319,3 +338,5 @@ function shrinkSVG() {
 // leave 1 polygon with fill
 // temp h1 animation needs to be changed
 // when show line and scroll up, shouldn't trigger mouse leave
+// highlight group area
+// foreignObject mouseenter trigger not always working
