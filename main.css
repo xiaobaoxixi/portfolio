@@ -27,8 +27,9 @@ line {
   pointer-events: none;
 }
 .group {
-  font-size: 23px;
+  font-size: 17px;
   display: none;
+  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 foreignObject nav {
   width: 10vw;
