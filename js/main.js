@@ -158,9 +158,9 @@ function hexagonTurn() {
     `rotate(${angle4} 635 363) scale(${scale}) `
   );
   if (angle4 < 120) {
-    angle4 += 120 / 60;
+    angle4++;
     scale += 0.0015;
-    timeout = setTimeout(hexagonTurn, 1000 / 60);
+    timeout = setTimeout(hexagonTurn, 3); // because of scaling, not using 1000/60 as previous steps
   } else {
     clearTimeout(timeout);
     rollingPart.setAttribute("transform", "");
