@@ -1,6 +1,6 @@
 "use strict";
 
-const svg = document.querySelector("svg");
+const svg = document.querySelector("svg:not(#asideSVG)");
 const rollingPart = document.querySelector(".rolling");
 const triangle = document.querySelector(".triangle");
 const square = document.querySelector(".square");

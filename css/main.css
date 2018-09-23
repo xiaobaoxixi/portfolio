@@ -31,16 +31,29 @@ body {
 .burger p.show {
   background-color: var(--yellow);
 }
-aside {
-  z-index: -1;
+#asideSVG {
   width: 37vw;
   height: 37vw;
-  padding: 10vw 0 0 16vw;
+  position: relative;
+  left: -10vw;
+  top: -10vw;
+}
+#asideSVG polyline {
+  fill: transparent;
+  stroke: var(--dark-grey);
+  stroke-width: 6;
+  stroke-dasharray: 6 8;
+}
+aside {
+  z-index: -1;
+  width: 41vw;
+  height: 41vw;
+  padding: 10vw 0 0 18vw;
   min-width: 170px;
   background-color: white;
   /* background-color: rgba(255, 255, 255, 0.95); */
   position: fixed;
-  left: -13vw;
+  left: -15vw;
   top: -7vw;
   transition: all 0.2s;
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
@@ -57,11 +70,12 @@ aside.show {
 }
 ul {
   font-size: 0;
+  position: absolute;
+  top: 15vw;
 }
 aside.show ul {
   list-style: none;
   line-height: 46px;
-  margin-top: 50px;
   font-size: 19px;
 }
 footer {
@@ -85,7 +99,7 @@ footer {
   opacity: 1;
   filter: blur(17vw);
 }
-svg {
+svg:not(#asideSVG) {
   width: 190vw;
   position: relative;
   top: -14vw;
