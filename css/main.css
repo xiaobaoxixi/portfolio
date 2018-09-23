@@ -1,6 +1,6 @@
 :root {
   --dark-grey: rgba(51, 51, 51, 0.9);
-  --yellow: rgba(197, 187, 51, 0.95);
+  --yellow: hsl(47, 90%, 42%);
   --fill: hsl(170, 81%, 23%);
 }
 ::-webkit-scrollbar {
@@ -82,7 +82,7 @@ footer {
   font-size: 0.9vw;
   font-weight: 500;
   padding: 1em;
-  padding-left: 26vw;
+  padding-left: 28vw;
   color: var(--dark-grey);
 }
 .bg-color {
