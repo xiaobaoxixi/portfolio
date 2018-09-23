@@ -14,6 +14,7 @@ let timeout;
 
 window.addEventListener("DOMContentLoaded", init);
 function init() {
+  window.scrollTo(0, 0);
   let angle = 0;
   triangleTurn();
   // from triangle to square
@@ -218,7 +219,7 @@ function hexagonTurn() {
                 .scrollTop +
                 Number(targetY2 - currentY2) / 13}`; // use document.scrollingElement.scrollTop instead of document.body.scrollTop, which always gives 0
               m.target.nextElementSibling.nextElementSibling.nextElementSibling.children[0].style.height = `200px`;
-              timeout = setTimeout(showLine, 30);
+              timeout = setTimeout(showLine, 20);
             } else {
               clearTimeout(timeout);
             }
@@ -340,3 +341,5 @@ function shrinkSVG() {
 // when show line and scroll up, shouldn't trigger mouse leave
 // highlight group area
 // foreignObject mouseenter trigger not always working
+// give timeout individual name in order to control cancal
+// when show verticle line, check if already in view then no scroll down

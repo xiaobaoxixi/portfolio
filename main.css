@@ -14,16 +14,19 @@ svg {
   position: relative;
   top: -14vw;
   left: -8.3vw;
-  stroke-width: 3;
+  stroke-width: 2;
   stroke-linejoin: round;
   stroke: var(--dark-grey);
   fill: none;
+}
+.rolling {
+  stroke-width: 3;
 }
 polygon {
   cursor: pointer;
 }
 line {
-  stroke-width: 2;
+  stroke-width: 1;
   stroke-dasharray: 2 2;
   pointer-events: none;
 }
