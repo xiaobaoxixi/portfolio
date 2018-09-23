@@ -25,25 +25,16 @@ body {
 }
 aside {
   z-index: 10;
-  width: 31vw;
-  height: 31vw;
-  padding: 7vw 0 0 16vw;
+  width: 37vw;
+  height: 37vw;
+  padding: 10vw 0 0 16vw;
   min-width: 170px;
   background-color: rgba(255, 255, 255, 0.95);
   position: fixed;
   left: -13vw;
-  top: -2vw;
+  top: -7vw;
   transition: all 0.2s;
-  clip-path: polygon(
-    30% 0%,
-    70% 0%,
-    100% 30%,
-    100% 70%,
-    70% 100%,
-    30% 100%,
-    0% 70%,
-    0% 30%
-  );
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   opacity: 0;
 }
 aside.show {
@@ -89,17 +80,25 @@ svg {
   position: relative;
   top: -14vw;
   left: -8.3vw;
-  stroke-width: 2;
+  stroke-width: 2.5;
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke: var(--dark-grey);
   fill: none;
 }
+text {
+  stroke-width: 2;
+}
 .rolling {
   stroke-width: 3;
 }
-polygon {
+polygon:not(.shadow) {
   cursor: pointer;
+}
+.shadow {
+  stroke: none;
+  fill: transparent;
+  /* fill: rgba(255, 255, 255, 0.5); */
 }
 line {
   stroke-width: 1;
