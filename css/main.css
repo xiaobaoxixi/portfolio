@@ -49,7 +49,7 @@ polygon {
 }
 line {
   stroke-width: 1;
-  stroke-dasharray: 2 2;
+  stroke-dasharray: 2 3;
   stroke-dashoffset: 2;
   pointer-events: none;
 }

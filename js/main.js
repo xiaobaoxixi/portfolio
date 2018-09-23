@@ -11,6 +11,7 @@ const h1 = document.querySelector("h1");
 let h1CollapseState = false;
 let svgShrunkState = false;
 let timeout;
+const windowHeight = window.innerHeight;
 
 window.addEventListener("DOMContentLoaded", init);
 function init() {
@@ -25,8 +26,8 @@ function init() {
     rollingPart.setAttribute("transform", `rotate(${angle} 200 400)`);
     triangle.nextElementSibling.nextElementSibling.style.display = "inherit";
     if (angle < 150) {
-      angle++;
-      timeout = setTimeout(triangleTurn, 1 / 150);
+      angle += 150 / 60;
+      timeout = setTimeout(triangleTurn, 1000 / 60);
     } else {
       clearTimeout(timeout);
       turnToSquare();
@@ -48,7 +49,7 @@ function turnToSquare() {
       "points",
       `200 ${topPointPositionY}, ${rightBorderPosition} 350, ${rightBorderPosition} 450, 200 ${bottomPointPositionY}`
     );
-    timeout = setTimeout(turnToSquare, 2);
+    timeout = setTimeout(turnToSquare, 3);
   } else {
     clearTimeout(timeout);
     square.classList.remove("hide");
@@ -66,8 +67,8 @@ let centerBottomPositionY = 490;
 function squareTurn() {
   rollingPart.setAttribute("transform", `rotate(${angle2} 300 420)`);
   if (angle2 < 180) {
-    angle2++;
-    timeout = setTimeout(squareTurn, 1 / 180);
+    angle2 += 180 / 60;
+    timeout = setTimeout(squareTurn, 1000 / 60);
   } else {
     clearTimeout(timeout);
     rollingPart.setAttribute("transform", "");
@@ -83,7 +84,7 @@ function squareTurn() {
         "points",
         `300 390, 400 390, ${bottomRightPositionX} ${bottomPositionY},350 ${centerBottomPositionY},${bottomLeftPositionX} ${bottomPositionY}`
       );
-      timeout = setTimeout(turnToPentagon, 2);
+      timeout = setTimeout(turnToPentagon, 3);
     } else {
       clearTimeout(timeout);
       pentagon.classList.remove("hide");
@@ -104,8 +105,8 @@ let pentagonTopCenterPositionY = 260;
 function pentagonTurn() {
   rollingPart.setAttribute("transform", `rotate(${angle3} 410 400)`);
   if (angle3 < 180) {
-    angle3++;
-    timeout = setTimeout(pentagonTurn, 1 / 180);
+    angle3 += 180 / 60;
+    timeout = setTimeout(pentagonTurn, 1000 / 60);
   } else {
     clearTimeout(timeout);
     rollingPart.setAttribute("transform", "");
@@ -122,7 +123,7 @@ function pentagonTurn() {
         "points",
         `390 316, 470 ${pentagonTopCenterPositionY}, 550 316, ${pentagonBottomRightPositionX} ${pentagonBottomPositionY}, 470 ${pentagonBottomCenterPositionY}, ${pentagonBottomLeftPositionX} ${pentagonBottomPositionY}`
       );
-      timeout = setTimeout(turnToHexagon, 2);
+      timeout = setTimeout(turnToHexagon, 3);
     } else {
       clearTimeout(timeout);
       hexagon.classList.remove("hide");
@@ -157,9 +158,9 @@ function hexagonTurn() {
     `rotate(${angle4} 635 363) scale(${scale}) `
   );
   if (angle4 < 120) {
-    angle4++;
+    angle4 += 120 / 60;
     scale += 0.0015;
-    timeout = setTimeout(hexagonTurn, 1 / 120);
+    timeout = setTimeout(hexagonTurn, 1000 / 60);
   } else {
     clearTimeout(timeout);
     rollingPart.setAttribute("transform", "");
@@ -184,7 +185,7 @@ function hexagonTurn() {
         "points",
         `${addedPoint1X} 262, ${hexagonPoint1X} ${hexagonPoint1Y}, 623 155, ${hexagonPoint3X} ${hexagonPoint3Y}, ${addedPoint2X} 262, ${hexagonPoint4X} ${hexagonPoint4Y}, 623 369, ${hexagonPoint6X} ${hexagonPoint6Y}`
       );
-      timeout = setTimeout(turnToOctagon, 2);
+      timeout = setTimeout(turnToOctagon, 3);
     } else {
       clearTimeout(timeout);
       // show h1
@@ -216,7 +217,7 @@ function hexagonTurn() {
               //              m.target.removeEventListener("mouseleave", removeFill); // so when svg scrolls up, won't trigger mouse leave;
               if (
                 document.scrollingElement.scrollTop <
-                window.innerHeight * 0.35 // restrict scroll, no need to move all the way up and lose polygons out of sight
+                windowHeight * 0.35 // restrict scroll, no need to move all the way up and lose polygons out of sight
               ) {
                 document.scrollingElement.scrollTop = `${document
                   .scrollingElement.scrollTop +
@@ -227,7 +228,7 @@ function hexagonTurn() {
                   .nextElementSibling.children[0].children.length;
               m.target.nextElementSibling.nextElementSibling.nextElementSibling.children[0].style.height = `${groupCount *
                 24}px`;
-              timeout = setTimeout(showVertiLine, 20);
+              timeout = setTimeout(showVertiLine, 1000 / 60);
             } else {
               clearTimeout(timeout);
             }
