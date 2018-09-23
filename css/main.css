@@ -24,7 +24,7 @@ body {
   cursor: pointer;
 }
 aside {
-  z-index: 10;
+  z-index: -1;
   width: 37vw;
   height: 37vw;
   padding: 10vw 0 0 16vw;
@@ -38,6 +38,7 @@ aside {
   opacity: 0;
 }
 aside.show {
+  z-index: 10;
   animation: aside 0.1s ease-out forwards;
 }
 @keyframes aside {
@@ -52,7 +53,7 @@ aside.show ul {
   list-style: none;
   line-height: 46px;
   margin-top: 50px;
-  font-size: 23px;
+  font-size: 19px;
 }
 footer {
   font-size: 0.9vw;
