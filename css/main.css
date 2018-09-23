@@ -103,7 +103,7 @@ svg:not(#asideSVG) {
   width: 190vw;
   position: relative;
   top: -14vw;
-  left: -8.3vw;
+  left: -6vw;
   stroke-width: 2.5;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -164,8 +164,7 @@ span {
 span:first-of-type {
   font-size: 2vw;
   display: inline-block;
-  padding: 0 7px;
-  height: 1.5em;
+  height: 3.5vw;
   border-bottom: 7px solid var(--fill);
 }
 .hide {
