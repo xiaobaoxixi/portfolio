@@ -299,6 +299,7 @@ function clearOtherFill() {
 function fill(m) {
   octagon.setAttribute("fill", "transparent"); // because after animation, octagon has fill
   m.target.setAttribute("fill", "var(--fill)");
+  m.target.previousElementSibling.classList.remove("hide");
 }
 function removeFill(m) {
   m.target.setAttribute("fill", "transparent");
