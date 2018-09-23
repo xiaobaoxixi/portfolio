@@ -1,0 +1,96 @@
+:root {
+  --dark-grey: rgba(51, 51, 51, 0.9);
+  --fill: hsl(180, 100%, 25%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: var(--dark-grey);
+  position: relative;
+}
+.burger {
+  position: fixed;
+  padding: 2vh 3vw;
+  font-size: 3vw;
+  z-index: 11;
+  cursor: pointer;
+}
+.bg-color {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--fill);
+  opacity: 0.29;
+}
+.frost {
+  background-color: white;
+  opacity: 0.9;
+  filter: blur(30vw);
+}
+svg {
+  width: 190vw;
+  position: relative;
+  top: -14vw;
+  left: -8.3vw;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--dark-grey);
+  fill: none;
+}
+.rolling {
+  stroke-width: 3;
+}
+polygon {
+  cursor: pointer;
+}
+line {
+  stroke-width: 1;
+  stroke-dasharray: 2 2;
+  stroke-dashoffset: 2;
+  pointer-events: none;
+}
+.group {
+  pointer-events: none;
+  font-size: 17px;
+  display: none;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 100;
+}
+foreignObject nav {
+  width: 119px; /* not dynamic here, need to change */
+  text-align: right;
+  font-size: 12px;
+  height: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+foreignObject p {
+  line-height: 24px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 500;
+  pointer-events: none;
+}
+h1 {
+  position: fixed;
+  top: 85vh;
+  right: 7vw;
+  width: 9vw;
+  white-space: nowrap;
+}
+span {
+  font-size: 1.2vw;
+}
+span:first-of-type {
+  font-size: 2vw;
+  display: inline-block;
+  padding: 0 7px;
+  height: 1.5em;
+  border-bottom: 7px solid var(--fill);
+}
+.hide {
+  display: none;
+}
