@@ -19,6 +19,13 @@
   z-index: 11;
   cursor: pointer;
 }
+footer {
+  font-size: 0.9vw;
+  font-weight: 300;
+  padding: 1em;
+  padding-left: 26vw;
+  color: var(--dark-grey);
+}
 .bg-color {
   height: 100vh;
   width: 100vw;
