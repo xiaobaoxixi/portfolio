@@ -2,6 +2,9 @@
   --dark-grey: rgba(51, 51, 51, 0.9);
   --fill: hsl(180, 100%, 25%);
 }
+::-webkit-scrollbar {
+  display: none;
+}
 * {
   padding: 0;
   margin: 0;
