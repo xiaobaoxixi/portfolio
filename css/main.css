@@ -9,7 +9,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   color: var(--dark-grey);
   position: relative;
   box-sizing: border-box;
@@ -80,7 +80,7 @@ aside.show ul {
 }
 footer {
   font-size: 0.9vw;
-  font-weight: 300;
+  font-weight: 500;
   padding: 1em;
   padding-left: 26vw;
   color: var(--dark-grey);
@@ -92,12 +92,12 @@ footer {
   top: 0;
   left: 0;
   background-color: var(--fill);
-  opacity: 0.3;
+  opacity: 0.1;
 }
 .frost {
   background-color: white;
   opacity: 1;
-  filter: blur(17vw);
+  filter: blur(17vh);
 }
 svg:not(#asideSVG) {
   width: 190vw;
@@ -121,7 +121,9 @@ polygon:not(.shadow) {
 }
 .shadow {
   stroke: none;
-  fill: rgba(255, 255, 255, 0.7);
+  fill: var(--fill);
+  opacity: 0.1;
+  /* fill: rgba(255, 255, 255, 0.7); */
   pointer-events: none;
 }
 line {
@@ -132,9 +134,8 @@ line {
 }
 .group {
   pointer-events: none;
-  font-size: 17px;
+  font-size: 43px;
   display: none;
-  font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 100;
 }
 foreignObject nav {
@@ -147,13 +148,12 @@ foreignObject nav {
 }
 foreignObject p {
   line-height: 24px;
-  font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 500;
   pointer-events: none;
 }
 h1 {
   position: fixed;
-  top: 85vh;
+  top: 89vh;
   right: 7vw;
   width: 9vw;
   white-space: nowrap;
