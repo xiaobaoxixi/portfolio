@@ -1,7 +1,7 @@
 :root {
-  --dark-grey: rgba(51, 51, 51, 0.9);
+  --dark-grey: #333333e6;
   --yellow: hsl(47, 90%, 42%);
-  --fill: hsl(170, 81%, 23%);
+  --fill: #0b6a5a;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -99,16 +99,27 @@ footer {
   opacity: 1;
   filter: blur(17vh);
 }
-svg:not(#asideSVG) {
-  width: 190vw;
+svg {
   position: relative;
-  top: -14vw;
-  left: -6vw;
   stroke-width: 2.5;
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke: var(--dark-grey);
   fill: none;
+}
+svg#intro {
+  stroke-width: 4;
+}
+svg#intro text {
+  font-size: 37px;
+  font-weight: 300;
+  fill: var(--dark-grey);
+}
+svg#changingShape {
+  display: none;
+  width: 190vw;
+  top: -14vw;
+  left: -6.3vw;
 }
 text {
   stroke-width: 2;

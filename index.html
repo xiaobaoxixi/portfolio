@@ -14,7 +14,7 @@
 <body>
     <div class="bg-color"></div>
     <div class="bg-color frost"></div>
-    <div class="burger">
+    <div class="burger hide">
         <p>&#9776;</p>
     </div>
     <aside>
@@ -23,12 +23,39 @@
         </svg>
         <ul>
             <li>about me</li>
-            <li>about this site</li>
+            <li>about this site?</li>
             <li>.. </li>
-            <li>something</li>
+            <a href="cv.html">
+                <li>full CV (animated?)</li>
+            </a>
         </ul>
     </aside>
-    <svg viewBox="0 0 1600 730">
+    <svg id="intro" viewBox="0 0 1600 900">
+        <defs>
+            <style>
+                @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:100');
+            </style>
+        </defs>
+        <text x="230" y="489">I </text>
+        <text x="260" y="489">am learning to be a front-end developer</text>
+        <style type="text/css">
+            .st1 {
+                fill: #FFFFFF;
+            }
+        </style>
+
+        <g class="st0">
+            <polygon class="st1" points="1228.9,301.8 1162.9,301.8 1105.8,334.7 1072.8,391.9 1072.8,457.8 1105.8,515 1162.9,548 1228.9,548 
+                    1286,515 1319,457.8 1319,391.9 1286,334.7 	" />
+            <polygon class="st1" points="1228.9,548 1319,457.8 1286,334.7 1162.9,301.8 1072.8,391.9 1105.8,515 	" />
+
+            <rect x="1105.8" y="334.7" transform="matrix(0.866 -0.5 0.5 0.866 -52.2076 654.8733)" class="st1" width="180.2"
+                height="180.2" />
+            <polygon class="st1" points="1319,457.8 1162.9,301.8 1105.8,515 	" />
+        </g>
+
+    </svg>
+    <svg id="changingShape" viewBox="0 0 1600 730">
         <defs>
             <style>
                 @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:100');
@@ -77,39 +104,43 @@
         <!-- <polygon class="hexagon " points="390 316, 470 260, 550 316, 520 410, 420 410"></polygon> -->
         <polygon class="shadow hide" points="400 311, 480 265, 560 311, 560 405, 480 446, 400 401"></polygon>
         <polygon class="hexagon hide" points="390 316, 470 270, 550 316, 550 406, 470 451, 390 406" data-project="svg"></polygon>
-        <line x1="470" y1="441" x2="470" y2="441" y3="570"></line>
+        <line x1="470" y1="441" x2="470" y2="441" y3="594"></line>
         <text x="431" y="425" class="group">SVG</text>
         <foreignObject x="346" y="500" class="nav">
             <nav>
                 <p>a day</p>
                 <p>overlapping</p>
                 <p>mask</p>
+                <p>watercolor</p>
             </nav>
         </foreignObject>
         <line x1="425" y1="525" x2="425" x3="750" y2="525" class="SVG hori-line"></line>
         <line x1="380" y1="549" x2="380" x3="650" y2="549" class="SVG hori-line"></line>
+        <line x1="380" y1="573" x2="380" x3="670" y2="573" class="SVG hori-line"></line>
 
         <!-- <polygon class="hexagon" points="533 213, 612 167, 689 211, 689 304, 610 350, 533 305"></polygon> -->
         <!-- <polygon class="hexagon" points="530 210, 623 155, 713 210, 713 315, 623 368, 530 315"></polygon> -->
         <polygon class="shadow hide" points="528 257, 560 182, 635 150, 710 182, 742 257, 710 332, 635 364, 560 332"></polygon>
         <polygon class="octagon hide" points="518 262, 550 187, 625 155, 700 187, 732 262, 700 337, 625 369, 550 337"
             data-project="gsap"></polygon>
-        <line x1="625" y1="359" x2="625" y2="359" y3="480"></line>
-        <text x="578" y="345" class="group">GSAP</text>
+        <line x1="625" y1="359" x2="625" y2="359" y3="504"></line>
+        <text x="578" y="345" class="group">Libraries</text>
         <foreignObject x="501" y="410" class="nav">
             <nav>
-                <p>effects</p>
-                <p>watercolor</p>
-                <p>InfoGraphic</p>
+                <p>Greensock</p>
+                <p>chartJS</p>
+                <p>hammerJS</p>
+                <p>D3.js</p>
             </nav>
         </foreignObject>
-        <line x1="557" y1="433" x2="557" x3="780" y2="433" class="GSAP hori-line"></line>
-        <line x1="533" y1="459" x2="533" x3="750" y2="459" class="GSAP hori-line"></line>
+        <line x1="557" y1="433" x2="557" x3="780" y2="433" class="Libraries hori-line"></line>
+        <line x1="573" y1="459" x2="573" x3="750" y2="459" class="Libraries hori-line"></line>
+        <line x1="557" y1="485" x2="557" x3="780" y2="485" class="Libraries hori-line"></line>
     </svg>
-    <h1><span>OneStepFurther</span><span> -- my effort to become a web developer</span></h1>
-    <footer>School assignment at KEA. © Copyright of <a href="mailto: liyan.xiaobaoxixi@gmail.com" target="_blank">Yan
-            Li</a> - 2018.
-        All rights reserved. </footer>
+    <h1 class="hide"><span>OneStepFurther</span><span> -- I want to be a front end developer</span></h1>
+    <footer>Portfolio site working in progress. © Copyright of <a href="mailto: liyan.xiaobaoxixi@gmail.com" target="_blank">Yan
+            Li</a> - 2018 Denmark.
+        All Rights Reserved. </footer>
     <script src="js/main.js"></script>
     <script src="js/script.js"></script>
 </body>

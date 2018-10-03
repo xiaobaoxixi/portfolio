@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+svg#cv {
+  top: 5vh;
+  width: 150vw;
+}
+h1 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 500;
+  font-size: 23px;
+  position: fixed;
+  right: 130px;
+  top: 7px;
+}

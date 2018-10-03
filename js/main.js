@@ -1,6 +1,7 @@
 "use strict";
 
-const svg = document.querySelector("svg:not(#asideSVG)");
+const svgIntro = document.querySelector("svg#intro");
+const svgMain = document.querySelector("svg#changingShape");
 const rollingPart = document.querySelector(".rolling");
 const triangle = document.querySelector(".triangle");
 const square = document.querySelector(".square");
@@ -15,7 +16,7 @@ const windowHeight = window.innerHeight;
 
 window.addEventListener("DOMContentLoaded", init);
 function init() {
-  console.log(document.scrollingElement.scrollTop);
+  //  console.log(document.scrollingElement.scrollTop);
   // document.scrollingElement.scrollTop = `0`;
   let angle = 0;
   triangleTurn();
@@ -196,7 +197,7 @@ function hexagonTurn() {
       octagon.classList.remove("hide");
       octagon.setAttribute("fill", "var(--fill)");
       ////////////////////////////////////////////////////////
-      const allPolygonS = document.querySelectorAll("polygon");
+      const allPolygonS = document.querySelectorAll("#changingShape polygon");
       // liston to all polygons and list project with hover/mouseenter
       allPolygonS.forEach(p => {
         p.addEventListener("mouseenter", listProjectGroups);
@@ -342,7 +343,7 @@ function shrinkSVG() {
     function shrinkAndMove() {
       if (currentSVGPosition > -23) {
         //      svg.style.top = `${currentSVGPosition}vw`;
-        svg.style.width = `${currentSVGWidth}vw`;
+        svgMain.style.width = `${currentSVGWidth}vw`;
         currentSVGPosition--;
         currentSVGWidth -= 11;
         timeout = setTimeout(shrinkAndMove, 500 / 60);
