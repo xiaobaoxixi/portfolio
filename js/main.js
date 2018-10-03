@@ -136,6 +136,7 @@ function turnToSquare() {
     square.nextElementSibling.nextElementSibling.style.display = "inherit";
     square.setAttribute("fill", "transparent");
     squareTurn();
+    listProjectGroup(square);
   }
 }
 // from square to pentagon
@@ -171,6 +172,7 @@ function squareTurn() {
       pentagon.nextElementSibling.nextElementSibling.style.display = "inherit";
       pentagon.setAttribute("fill", "transparent");
       pentagonTurn();
+      listProjectGroup(pentagon);
     }
   }
 }
@@ -210,6 +212,7 @@ function pentagonTurn() {
       hexagon.nextElementSibling.nextElementSibling.style.display = "inherit";
       hexagon.setAttribute("fill", "transparent");
       hexagonTurn();
+      listProjectGroup(hexagon);
     }
   }
 }
@@ -275,99 +278,76 @@ function hexagonTurn() {
       chart.classList.remove("hide");
       octagon.classList.remove("hide");
       octagon.setAttribute("fill", "var(--fill)");
-      ////////////////////////////////////////////////////////
-      const allPolygonS = document.querySelectorAll("#changingShape polygon");
-      // liston to all polygons and list project with hover/mouseenter
-      allPolygonS.forEach(p => {
-        p.addEventListener("mouseenter", listProjectGroups);
-        function listProjectGroups(m) {
-          clearOtherFill();
-          fill(m);
-          let targetY2 = m.target.nextElementSibling.getAttribute("y3");
-          let currentY2 = m.target.nextElementSibling.getAttribute("y2");
-          showVertiLine();
-          function showVertiLine() {
-            if (currentY2 < targetY2 - 1) {
-              // because of the ease method below, currentY2 will always be smaller than targetY2, need -1 to stop
-              currentY2 = m.target.nextElementSibling.getAttribute("y2");
-              m.target.nextElementSibling.setAttribute(
-                "y2",
-                `${Number(currentY2) + Number(targetY2 - currentY2) / 10}`
-              ); // ease-in effect
-              //              m.target.removeEventListener("mouseleave", removeFill); // so when svg scrolls up, won't trigger mouse leave;
-              if (
-                document.scrollingElement.scrollTop <
-                windowHeight * 0.35 // restrict scroll, no need to move all the way up and lose polygons out of sight
-              ) {
-                document.scrollingElement.scrollTop = `${document
-                  .scrollingElement.scrollTop +
-                  Number(targetY2 - currentY2) / 7}`; // use document.scrollingElement.scrollTop instead of document.body.scrollTop, which always gives 0
-              }
-              let groupCount =
-                m.target.nextElementSibling.nextElementSibling
-                  .nextElementSibling.children[0].children.length;
-              m.target.nextElementSibling.nextElementSibling.nextElementSibling.children[0].style.height = `${groupCount *
-                24}px`;
-              timeout = setTimeout(showVertiLine, 1000 / 60);
-            } else {
-              clearTimeout(timeout);
-            }
-          }
-          const groupArea =
-            p.nextElementSibling.nextElementSibling.nextElementSibling;
-          groupArea.addEventListener("mouseenter", showEachGroup);
-          function showEachGroup(m) {
-            document.querySelectorAll("polygon").forEach(p => {
-              p.setAttribute("fill", "transparent");
-            });
-            // fill the corresponding polygon
-            m.target.previousElementSibling.previousElementSibling.previousElementSibling.setAttribute(
-              "fill",
-              "var(--fill)"
-            );
-            //collapseH1();
-            m.target.removeEventListener("mouseenter", showEachGroup);
-            let group = m.target.previousElementSibling.textContent;
-            let horiLinesInGroup = document.querySelectorAll(
-              `.${group}.hori-line`
-            );
-            horiLinesInGroup.forEach(extendEachHoriLine);
-            function extendEachHoriLine(hl) {
-              let targetX = Number(hl.getAttribute("x3"));
-              let currentX = Number(hl.getAttribute("x2"));
-              extend();
-              function extend() {
-                if (currentX < targetX - 1) {
-                  currentX = Number(hl.getAttribute("x2"));
-                  hl.setAttribute(
-                    "x2",
-                    `${currentX + (targetX - currentX) / 20}`
-                  );
-                  timeout = setTimeout(extend, 10);
-                } else {
-                  clearTimeout(timeout);
-                }
-              }
-            }
-          }
-          console.log(m.target.dataset.project);
-          //          m.target.addEventListener("mouseleave", removeFill);
-        }
-      });
-      //  display project with click
-      // allPolygonS.forEach(p => {
-      //   p.addEventListener("click", showProject);
-      //   function showProject(m) {
-      //     shrinkSVG();
-      //     collapseH1();
-      //     clearOtherFill();
-      //     fill(m);
-      //   }
-      // });
+      listProjectGroup(octagon);
     }
   }
 }
 
+///////////////////////////////////
+function listProjectGroup(elem) {
+  clearOtherFill();
+  fill(elem);
+  let targetY2 = elem.nextElementSibling.getAttribute("y3");
+  let currentY2 = elem.nextElementSibling.getAttribute("y2");
+  showVertiLine();
+  function showVertiLine() {
+    if (currentY2 < targetY2 - 1) {
+      // because of the ease method below, currentY2 will always be smaller than targetY2, need -1 to stop
+      currentY2 = elem.nextElementSibling.getAttribute("y2");
+      elem.nextElementSibling.setAttribute(
+        "y2",
+        `${Number(currentY2) + Number(targetY2 - currentY2) / 10}`
+      ); // ease-in effect
+      //              m.target.removeEventListener("mouseleave", removeFill); // so when svg scrolls up, won't trigger mouse leave;
+      if (
+        document.scrollingElement.scrollTop <
+        windowHeight * 0.35 // restrict scroll, no need to move all the way up and lose polygons out of sight
+      ) {
+        document.scrollingElement.scrollTop = `${document.scrollingElement
+          .scrollTop +
+          Number(targetY2 - currentY2) / 7}`; // use document.scrollingElement.scrollTop instead of document.body.scrollTop, which always gives 0
+      }
+      let groupCount =
+        elem.nextElementSibling.nextElementSibling.nextElementSibling
+          .children[0].children.length;
+      elem.nextElementSibling.nextElementSibling.nextElementSibling.children[0].style.height = `${groupCount *
+        24}px`;
+      timeout = setTimeout(showVertiLine, 1000 / 60);
+    } else {
+      //clearTimeout(timeout);
+    }
+  }
+  const groupArea =
+    elem.nextElementSibling.nextElementSibling.nextElementSibling;
+  groupArea.addEventListener("mouseenter", showEachGroup);
+  function showEachGroup(m) {
+    document.querySelectorAll("polygon").forEach(p => {
+      p.setAttribute("fill", "transparent");
+    });
+    // fill the corresponding polygon
+    m.target.previousElementSibling.previousElementSibling.previousElementSibling.setAttribute(
+      "fill",
+      "var(--fill)"
+    );
+    let group = m.target.previousElementSibling.textContent;
+    let horiLinesInGroup = document.querySelectorAll(`.${group}.hori-line`);
+    horiLinesInGroup.forEach(extendEachHoriLine);
+    function extendEachHoriLine(hl) {
+      let targetX = Number(hl.getAttribute("x3"));
+      let currentX = Number(hl.getAttribute("x2"));
+      extend();
+      function extend() {
+        if (currentX < targetX - 1) {
+          currentX = Number(hl.getAttribute("x2"));
+          hl.setAttribute("x2", `${currentX + (targetX - currentX) / 20}`);
+          timeout = setTimeout(extend, 10);
+        } else {
+          clearTimeout(timeout);
+        }
+      }
+    }
+  }
+}
 ///////////////////////////////////
 function clearOtherFill() {
   document.querySelectorAll("polygon").forEach(p => {
@@ -376,10 +356,10 @@ function clearOtherFill() {
     p.removeEventListener("mouseenter", fill); // so that hover doesn't trigger fill anymore when svg is used at corner as nav
   });
 }
-function fill(m) {
+function fill(elem) {
   octagon.setAttribute("fill", "transparent"); // because after animation, octagon has fill
-  m.target.setAttribute("fill", "var(--fill)");
-  m.target.previousElementSibling.classList.remove("hide");
+  elem.setAttribute("fill", "var(--fill)");
+  elem.previousElementSibling.classList.remove("hide");
 }
 function removeFill(m) {
   m.target.setAttribute("fill", "transparent");
