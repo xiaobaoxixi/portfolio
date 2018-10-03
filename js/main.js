@@ -66,15 +66,15 @@ function init() {
       "+=1.5"
     )
     .call(changeText, this, "+=1")
-    .to(web, 0.7, { x: 400, y: -100, scale: 2, opacity: 0.05 }, "-=.3")
+    .to(web, 0.7, { x: 370, y: -100, scale: 2.3, opacity: 0.05 }, "-=.3")
     .call(showBurger, this, "-=.7")
-    .to(letterI, 0.3, { x: -230, scaleY: 1.7 }, "-=.7")
+    .to(letterI, 0.3, { x: -230, y: -50, scaleY: 3.3 }, "-=.7")
     .call(showtriangleParts, this, "-=.2")
     .to(letterI, 0.1, { opacity: 0 })
     .to(t1, 0.3, { rotation: -60 })
     .to(triangleStrokes, 0.3, { rotation: 30, transformOrigin: "left bottom" })
     .to(t3, 0.3, { rotation: 60, transformOrigin: "left bottom" })
-    .to(triangleStrokes, 0.3, { scale: 2.1 })
+    //    .to(triangleStrokes, 0.3, { scale: 2.1 })
     .call(turnAndChange, this, "+=.3");
 
   function changeText() {
