@@ -2,6 +2,8 @@
 
 const svgIntro = document.querySelector("svg#intro");
 const allLinesInWeb = document.querySelectorAll("#lines line");
+const letterI = document.querySelector("line.i");
+const amSentence = document.querySelector(".amSentence");
 const svgMain = document.querySelector("svg#changingShape");
 const rollingPart = document.querySelector(".rolling");
 const triangle = document.querySelector(".triangle");
@@ -18,7 +20,6 @@ const windowHeight = window.innerHeight;
 window.addEventListener("DOMContentLoaded", init);
 
 function init() {
-  console.log(allLinesInWeb);
   const tl = new TimelineMax();
   tl.staggerFrom(
     allLinesInWeb,
@@ -28,7 +29,16 @@ function init() {
       y: () => Math.random() * 3000 - 1500
     },
     0.02
-  );
+  )
+    .to(
+      letterI,
+      0.3,
+      {
+        opacity: 1
+      },
+      "+=.5"
+    )
+    .to(amSentence, 0.5, { opacity: 1 }, "+=.3");
 }
 function turnAndChange() {
   //  console.log(document.scrollingElement.scrollTop);
