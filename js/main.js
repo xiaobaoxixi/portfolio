@@ -1,5 +1,5 @@
 "use strict";
-
+const burger = document.querySelector(".burger");
 const svgIntro = document.querySelector("svg#intro");
 const allLinesInWeb = document.querySelectorAll("#lines line");
 const letterIParts = document.querySelectorAll("g#i *");
@@ -56,19 +56,23 @@ function init() {
       amSentence,
       0.3,
       {
-        x: -270,
-        y: -400,
+        x: -200,
+        y: -429,
         scale: 0.7
       },
       "+=1.5"
     )
     .call(changeText, this, "+=1")
     .to(web, 0.7, { x: 400, y: -100, scale: 2, opacity: 0.1 }, "-=.3")
+    .call(showBurger, this, "-=.7")
     .to(letterI, 0.3, { x: -250 }, "-=.7");
 
   function changeText() {
     amSentence.textContent =
       "be curious, learn fast, always try one step further";
+  }
+  function showBurger() {
+    burger.classList.remove("hide");
   }
 }
 function turnAndChange() {
