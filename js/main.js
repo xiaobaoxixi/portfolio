@@ -21,6 +21,7 @@ const windowHeight = window.innerHeight;
 window.addEventListener("DOMContentLoaded", init);
 
 function init() {
+  console.log(amSentence.textContent);
   const tl = new TimelineMax();
   tl.staggerFrom(
     allLinesInWeb,
@@ -49,7 +50,22 @@ function init() {
       },
       "-=.3"
     )
-    .to(amSentence, 0.5, { opacity: 1 }, "+=.3");
+    .to(amSentence, 0.5, { opacity: 1 }, "+=.3")
+    .to(
+      amSentence,
+      0.3,
+      {
+        y: -400,
+        scale: 0.7
+      },
+      "+=1.5"
+    )
+    .call(changeText, this, "+=1");
+
+  function changeText() {
+    amSentence.textContent =
+      "be curious, learn fast, always try one step further";
+  }
 }
 function turnAndChange() {
   //  console.log(document.scrollingElement.scrollTop);
