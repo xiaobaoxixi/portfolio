@@ -5,6 +5,7 @@ const allLinesInWeb = document.querySelectorAll("#lines line");
 const letterIParts = document.querySelectorAll("g#i *");
 const letterI = document.querySelector("#i g");
 const amSentence = document.querySelector(".amSentence");
+const web = document.querySelector("#lines");
 const svgMain = document.querySelector("svg#changingShape");
 const rollingPart = document.querySelector(".rolling");
 const triangle = document.querySelector(".triangle");
@@ -55,12 +56,15 @@ function init() {
       amSentence,
       0.3,
       {
+        x: -270,
         y: -400,
         scale: 0.7
       },
       "+=1.5"
     )
-    .call(changeText, this, "+=1");
+    .call(changeText, this, "+=1")
+    .to(web, 0.7, { x: 400, y: -100, scale: 2, opacity: 0.1 }, "-=.3")
+    .to(letterI, 0.3, { x: -250 }, "-=.7");
 
   function changeText() {
     amSentence.textContent =
