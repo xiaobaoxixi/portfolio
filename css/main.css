@@ -108,10 +108,10 @@ svg {
   fill: none;
 }
 svg#intro {
-  stroke-width: 4;
+  stroke-width: 3.5;
 }
 svg#intro text {
-  font-size: 37px;
+  font-size: 31px;
   font-weight: 300;
   fill: var(--dark-grey);
 }
@@ -137,7 +137,7 @@ polygon:not(.shadow) {
   /* fill: rgba(255, 255, 255, 0.7); */
   pointer-events: none;
 }
-line {
+#changingShape line {
   stroke-width: 1;
   stroke-dasharray: 2 3;
   stroke-dashoffset: 2;
