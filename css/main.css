@@ -121,11 +121,13 @@ svg#intro text {
 #i {
   transform-origin: 50%;
 }
+.triangleParts {
+  stroke-width: 3;
+}
 svg#changingShape {
-  display: none;
   width: 190vw;
-  top: -14vw;
-  left: -6.3vw;
+  top: calc(-14vw - 100vh);
+  left: -8vw;
 }
 text {
   stroke-width: 2;

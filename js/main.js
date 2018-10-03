@@ -6,6 +6,10 @@ const letterIParts = document.querySelectorAll("g#i *");
 const letterI = document.querySelector("#i g");
 const amSentence = document.querySelector(".amSentence");
 const web = document.querySelector("#lines");
+const triangleStrokes = document.querySelector(".triangleParts");
+const t1 = document.querySelector(".t1");
+const t2 = document.querySelector(".t2");
+const t3 = document.querySelector(".t3");
 const svgMain = document.querySelector("svg#changingShape");
 const rollingPart = document.querySelector(".rolling");
 const triangle = document.querySelector(".triangle");
@@ -22,7 +26,6 @@ const windowHeight = window.innerHeight;
 window.addEventListener("DOMContentLoaded", init);
 
 function init() {
-  console.log(amSentence.textContent);
   const tl = new TimelineMax();
   tl.staggerFrom(
     allLinesInWeb,
@@ -65,7 +68,14 @@ function init() {
     .call(changeText, this, "+=1")
     .to(web, 0.7, { x: 400, y: -100, scale: 2, opacity: 0.1 }, "-=.3")
     .call(showBurger, this, "-=.7")
-    .to(letterI, 0.3, { x: -250 }, "-=.7");
+    .to(letterI, 0.3, { x: -230, scaleY: 1.7 }, "-=.7")
+    .call(showtriangleParts, this, "-=.2")
+    .to(letterI, 0.1, { opacity: 0 })
+    .to(t1, 0.2, { rotation: -60 })
+    .to(triangleStrokes, 0.2, { rotation: 30, transformOrigin: "left bottom" })
+    .to(t3, 0.2, { rotation: 60, transformOrigin: "left bottom" })
+    .to(triangleStrokes, 0.2, { scale: 2.1 })
+    .call(turnAndChange, this, "+=.3");
 
   function changeText() {
     amSentence.textContent =
@@ -74,8 +84,13 @@ function init() {
   function showBurger() {
     burger.classList.remove("hide");
   }
+  function showtriangleParts() {
+    triangleStrokes.classList.remove("hide");
+  }
 }
 function turnAndChange() {
+  svgMain.classList.remove("hide");
+  triangleStrokes.classList.add("hide");
   //  console.log(document.scrollingElement.scrollTop);
   // document.scrollingElement.scrollTop = `0`;
   let angle = 0;
