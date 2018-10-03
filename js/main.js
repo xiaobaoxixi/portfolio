@@ -17,8 +17,8 @@ const square = document.querySelector(".square");
 const pentagon = document.querySelector(".pentagon");
 const hexagon = document.querySelector(".hexagon");
 const octagon = document.querySelector(".octagon");
-const h1 = document.querySelector("h1");
-let h1CollapseState = false;
+// const h1 = document.querySelector("h1");
+// let h1CollapseState = false;
 let svgShrunkState = false;
 let timeout;
 const windowHeight = window.innerHeight;
@@ -265,8 +265,8 @@ function hexagonTurn() {
     } else {
       clearTimeout(timeout);
       // show h1
-      octagon.nextElementSibling.nextElementSibling.style.display = "inherit";
-      extendH1();
+       octagon.nextElementSibling.nextElementSibling.style.display = "inherit";
+      // extendH1();
       //hide rollingpart, show octagon
       rollingPart.classList.add("hide");
       octagon.classList.remove("hide");
@@ -321,7 +321,7 @@ function hexagonTurn() {
               "fill",
               "var(--fill)"
             );
-            collapseH1();
+            //collapseH1();
             m.target.removeEventListener("mouseenter", showEachGroup);
             let group = m.target.previousElementSibling.textContent;
             let horiLinesInGroup = document.querySelectorAll(
@@ -380,36 +380,36 @@ function fill(m) {
 function removeFill(m) {
   m.target.setAttribute("fill", "transparent");
 }
-function extendH1() {
-  let currentH1Width = 9;
-  h1Width();
-  function h1Width() {
-    if (currentH1Width < 33) {
-      h1.style.width = `${currentH1Width}vw`;
-      currentH1Width++;
-      timeout = setTimeout(h1Width, 1000 / 60);
-    } else {
-      clearTimeout(timeout);
-    }
-  }
-  h1CollapseState = false;
-}
-function collapseH1() {
-  if (h1CollapseState === false) {
-    let currentH1Width = 33;
-    h1Width();
-    function h1Width() {
-      if (currentH1Width >= 9) {
-        h1.style.width = `${currentH1Width}vw`;
-        currentH1Width--;
-        timeout = setTimeout(h1Width, 1000 / 60);
-      } else {
-        clearTimeout(timeout);
-      }
-    }
-    h1CollapseState = true;
-  }
-}
+// function extendH1() {
+//   let currentH1Width = 9;
+//   h1Width();
+//   function h1Width() {
+//     if (currentH1Width < 33) {
+//       h1.style.width = `${currentH1Width}vw`;
+//       currentH1Width++;
+//       timeout = setTimeout(h1Width, 1000 / 60);
+//     } else {
+//       clearTimeout(timeout);
+//     }
+//   }
+//   h1CollapseState = false;
+// }
+// function collapseH1() {
+//   if (h1CollapseState === false) {
+//     let currentH1Width = 33;
+//     h1Width();
+//     function h1Width() {
+//       if (currentH1Width >= 9) {
+//         h1.style.width = `${currentH1Width}vw`;
+//         currentH1Width--;
+//         timeout = setTimeout(h1Width, 1000 / 60);
+//       } else {
+//         clearTimeout(timeout);
+//       }
+//     }
+//     h1CollapseState = true;
+//   }
+// }
 function shrinkSVG() {
   if (svgShrunkState === false) {
     let currentSVGPosition = -14;
