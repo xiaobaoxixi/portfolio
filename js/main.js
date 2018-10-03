@@ -59,22 +59,22 @@ function init() {
       amSentence,
       0.3,
       {
-        x: -200,
+        x: -210,
         y: -429,
         scale: 0.7
       },
       "+=1.5"
     )
     .call(changeText, this, "+=1")
-    .to(web, 0.7, { x: 400, y: -100, scale: 2, opacity: 0.1 }, "-=.3")
+    .to(web, 0.7, { x: 400, y: -100, scale: 2, opacity: 0.05 }, "-=.3")
     .call(showBurger, this, "-=.7")
     .to(letterI, 0.3, { x: -230, scaleY: 1.7 }, "-=.7")
     .call(showtriangleParts, this, "-=.2")
     .to(letterI, 0.1, { opacity: 0 })
-    .to(t1, 0.2, { rotation: -60 })
-    .to(triangleStrokes, 0.2, { rotation: 30, transformOrigin: "left bottom" })
-    .to(t3, 0.2, { rotation: 60, transformOrigin: "left bottom" })
-    .to(triangleStrokes, 0.2, { scale: 2.1 })
+    .to(t1, 0.3, { rotation: -60 })
+    .to(triangleStrokes, 0.3, { rotation: 30, transformOrigin: "left bottom" })
+    .to(t3, 0.3, { rotation: 60, transformOrigin: "left bottom" })
+    .to(triangleStrokes, 0.3, { scale: 2.1 })
     .call(turnAndChange, this, "+=.3");
 
   function changeText() {
@@ -351,15 +351,15 @@ function hexagonTurn() {
         }
       });
       //  display project with click
-      allPolygonS.forEach(p => {
-        p.addEventListener("click", showProject);
-        function showProject(m) {
-          shrinkSVG();
-          collapseH1();
-          clearOtherFill();
-          fill(m);
-        }
-      });
+      // allPolygonS.forEach(p => {
+      //   p.addEventListener("click", showProject);
+      //   function showProject(m) {
+      //     shrinkSVG();
+      //     collapseH1();
+      //     clearOtherFill();
+      //     fill(m);
+      //   }
+      // });
     }
   }
 }
@@ -420,7 +420,7 @@ function shrinkSVG() {
         //      svg.style.top = `${currentSVGPosition}vw`;
         svgMain.style.width = `${currentSVGWidth}vw`;
         currentSVGPosition--;
-        currentSVGWidth -= 11;
+        currentSVGWidth -= 13;
         timeout = setTimeout(shrinkAndMove, 500 / 60);
       } else {
         clearTimeout(timeout);
