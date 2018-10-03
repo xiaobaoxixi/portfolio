@@ -56,9 +56,12 @@ function init() {
       "-=.1"
     )
     .to(amSentence, 0.5, { opacity: 1 }, "+=.3")
+    .to(letterI, 0.7, { x: -233, y: 17, scaleY: 1.4 }, "+=1.5")
+    .to(web, 0.7, { x: 370, y: -100, scale: 2.3, opacity: 0.05 }, "-=.7")
+    .call(changeText)
     .to(
       amSentence,
-      0.3,
+      0.5,
       {
         x: -180,
         y: -429,
@@ -66,10 +69,7 @@ function init() {
       },
       "+=1.5"
     )
-    .call(changeText, this, "+=1")
-    .to(web, 0.7, { x: 370, y: -100, scale: 2.3, opacity: 0.05 }, "-=.3")
     .call(showBurger, this, "-=.7")
-    .to(letterI, 0.3, { x: -233, y: 17, scaleY: 1.4 }, "-=.7")
     .call(showtriangleParts, this, "-=.2")
     .to(letterI, 0.1, { opacity: 0 }, "-=.1")
     .to(t1, 0.3, { rotation: -60 })
@@ -356,6 +356,7 @@ function clearOtherFill() {
     p.removeEventListener("mouseenter", fill); // so that hover doesn't trigger fill anymore when svg is used at corner as nav
   });
 }
+
 function fill(elem) {
   octagon.setAttribute("fill", "transparent"); // because after animation, octagon has fill
   elem.setAttribute("fill", "var(--fill)");
@@ -364,36 +365,7 @@ function fill(elem) {
 function removeFill(m) {
   m.target.setAttribute("fill", "transparent");
 }
-// function extendH1() {
-//   let currentH1Width = 9;
-//   h1Width();
-//   function h1Width() {
-//     if (currentH1Width < 33) {
-//       h1.style.width = `${currentH1Width}vw`;
-//       currentH1Width++;
-//       timeout = setTimeout(h1Width, 1000 / 60);
-//     } else {
-//       clearTimeout(timeout);
-//     }
-//   }
-//   h1CollapseState = false;
-// }
-// function collapseH1() {
-//   if (h1CollapseState === false) {
-//     let currentH1Width = 33;
-//     h1Width();
-//     function h1Width() {
-//       if (currentH1Width >= 9) {
-//         h1.style.width = `${currentH1Width}vw`;
-//         currentH1Width--;
-//         timeout = setTimeout(h1Width, 1000 / 60);
-//       } else {
-//         clearTimeout(timeout);
-//       }
-//     }
-//     h1CollapseState = true;
-//   }
-// }
+
 function shrinkSVG() {
   if (svgShrunkState === false) {
     let currentSVGPosition = -14;
