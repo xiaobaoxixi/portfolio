@@ -74,7 +74,7 @@ function init() {
     .to(t1, 0.3, { rotation: -60 })
     .to(triangleStrokes, 0.3, { rotation: 30, transformOrigin: "left bottom" })
     .to(t3, 0.3, { rotation: 60, transformOrigin: "left bottom" })
-    //    .to(triangleStrokes, 0.3, { scale: 2.1 })
+    .call(collapseSvgIntro)
     .call(turnAndChange, this, "+=.3");
 
   function changeText() {
@@ -86,6 +86,9 @@ function init() {
   }
   function showtriangleParts() {
     triangleStrokes.classList.remove("hide");
+  }
+  function collapseSvgIntro() {
+    svgIntro.style.height = "0";
   }
 }
 function turnAndChange() {
@@ -265,7 +268,7 @@ function hexagonTurn() {
     } else {
       clearTimeout(timeout);
       // show h1
-       octagon.nextElementSibling.nextElementSibling.style.display = "inherit";
+      octagon.nextElementSibling.nextElementSibling.style.display = "inherit";
       // extendH1();
       //hide rollingpart, show octagon
       rollingPart.classList.add("hide");

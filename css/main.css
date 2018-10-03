@@ -113,10 +113,13 @@ svg#intro {
 g#i g {
   stroke-width: 0;
 }
-svg#intro text {
+svg#title text {
   font-size: 31px;
   font-weight: 300;
   fill: var(--dark-grey);
+}
+svg#title {
+  position: fixed;
 }
 #i {
   transform-origin: 50%;
@@ -126,7 +129,7 @@ svg#intro text {
 }
 svg#changingShape {
   width: 190vw;
-  top: calc(-14vw - 100vh);
+  top: -14vw;
   left: -8vw;
 }
 text {
@@ -170,7 +173,7 @@ foreignObject p {
   font-weight: 500;
   pointer-events: none;
 }
-h1 {
+/* h1 {
   position: fixed;
   top: 89vh;
   right: 7vw;
@@ -185,6 +188,17 @@ span:first-of-type {
   display: inline-block;
   height: 3.5vw;
   border-bottom: 7px solid var(--fill);
+} */
+.chart {
+  padding: 0 8vw 7vw;
+  display: grid;
+  grid-template-columns: 40vw 40vw;
+  grid-gap: 4vw;
+}
+.status {
+  width: 40vw;
+  height: 40vw;
+  border: 4px dotted var(--dark-grey);
 }
 .hide {
   display: none;
