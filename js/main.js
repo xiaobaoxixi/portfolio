@@ -42,17 +42,17 @@ function init() {
       {
         fill: "#444"
       },
-      "+=.5"
+      0
     )
     .to(
       letterI,
       0.3,
       {
-        scaleX: 1,
-        scaleY: 0.52,
-        y: 25
+        scaleX: 0.4,
+        scaleY: 0.2,
+        y: 102
       },
-      "-=.3"
+      "-=.1"
     )
     .to(amSentence, 0.5, { opacity: 1 }, "+=.3")
     .to(
@@ -68,14 +68,14 @@ function init() {
     .call(changeText, this, "+=1")
     .to(web, 0.7, { x: 370, y: -100, scale: 2.3, opacity: 0.05 }, "-=.3")
     .call(showBurger, this, "-=.7")
-    .to(letterI, 0.3, { x: -230, y: -50, scaleY: 3.3 }, "-=.7")
+    .to(letterI, 0.3, { x: -233, y: 17, scaleY: 1.4 }, "-=.7")
     .call(showtriangleParts, this, "-=.2")
     .to(letterI, 0.1, { opacity: 0 }, "-=.1")
     .to(t1, 0.3, { rotation: -60 })
     .to(triangleStrokes, 0.3, { rotation: 30, transformOrigin: "left bottom" })
     .to(t3, 0.3, { rotation: 60, transformOrigin: "left bottom" })
     .call(collapseSvgIntro)
-    .call(turnAndChange, this, "+=.3");
+    .call(turnAndChange);
 
   function changeText() {
     amSentence.textContent =
