@@ -56,9 +56,10 @@ function init() {
       "-=.1"
     )
     .to(amSentence, 0.5, { opacity: 1 }, "+=.3")
-    .to(letterI, 0.7, { x: -233, y: 17, scaleY: 1.4 }, "+=1.5")
-    .to(web, 0.7, { x: 370, y: -100, scale: 2.3, opacity: 0.05 }, "-=.7")
+    .to(amSentence, 1.5, { x: 0 })
     .call(changeText)
+    .to(letterI, 0.7, { x: -233, y: 17, scaleY: 1.4 }, "+=2.5")
+    .to(web, 0.7, { x: 370, y: -100, scale: 2.3, opacity: 0.05 }, "-=.7")
     .to(
       amSentence,
       0.5,
@@ -67,7 +68,7 @@ function init() {
         y: -429,
         scale: 0.7
       },
-      "+=1.5"
+      "-=.5"
     )
     .call(showBurger, this, "-=.7")
     .call(showtriangleParts, this, "-=.2")
@@ -80,7 +81,7 @@ function init() {
 
   function changeText() {
     amSentence.textContent =
-      "be curious, learn fast, always try one step further";
+      "am curious, learn fast & always go one step further";
   }
   function showBurger() {
     burger.classList.remove("hide");
