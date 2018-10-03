@@ -57,7 +57,7 @@ function init() {
     )
     .to(amSentence, 0.5, { opacity: 1 }, "+=.3")
     .to(amSentence, 1.5, { x: 0 })
-    .to(amSentence, 0.1, { opacity: 0 })
+    .to(amSentence, 0.2, { opacity: 0 })
     .call(changeText)
     .to(amSentence, 0.5, { opacity: 1 })
     .to(letterI, 0.7, { x: -233, y: 17, scaleY: 1.4 }, "+=2")
@@ -304,7 +304,7 @@ function listProjectGroup(elem) {
       //              m.target.removeEventListener("mouseleave", removeFill); // so when svg scrolls up, won't trigger mouse leave;
       if (
         document.scrollingElement.scrollTop <
-        windowHeight * 0.35 // restrict scroll, no need to move all the way up and lose polygons out of sight
+        windowHeight * 0.33 // restrict scroll, no need to move all the way up and lose polygons out of sight
       ) {
         document.scrollingElement.scrollTop = `${document.scrollingElement
           .scrollTop +
