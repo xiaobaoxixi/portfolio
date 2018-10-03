@@ -2,7 +2,8 @@
 
 const svgIntro = document.querySelector("svg#intro");
 const allLinesInWeb = document.querySelectorAll("#lines line");
-const letterI = document.querySelector("line.i");
+const letterIParts = document.querySelectorAll("g#i *");
+const letterI = document.querySelector("#i g");
 const amSentence = document.querySelector(".amSentence");
 const svgMain = document.querySelector("svg#changingShape");
 const rollingPart = document.querySelector(".rolling");
@@ -30,13 +31,23 @@ function init() {
     },
     0.02
   )
+    .staggerTo(
+      letterIParts,
+      0.3,
+      {
+        fill: "#444"
+      },
+      "+=.5"
+    )
     .to(
       letterI,
       0.3,
       {
-        opacity: 1
+        scaleX: 1,
+        scaleY: 0.52,
+        y: 25
       },
-      "+=.5"
+      "-=.3"
     )
     .to(amSentence, 0.5, { opacity: 1 }, "+=.3");
 }

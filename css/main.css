@@ -110,10 +110,16 @@ svg {
 svg#intro {
   stroke-width: 3.5;
 }
+g#i g {
+  stroke-width: 0;
+}
 svg#intro text {
   font-size: 31px;
   font-weight: 300;
   fill: var(--dark-grey);
+}
+#i {
+  transform-origin: 50%;
 }
 svg#changingShape {
   display: none;
