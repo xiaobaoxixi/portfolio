@@ -61,7 +61,7 @@ function init() {
     .call(changeText)
     .to(amSentence, 0.5, { opacity: 1 })
     .to(letterI, 0.7, { x: -233, y: 17, scaleY: 1.4 }, "+=2")
-    .to(web, 0.7, { x: 370, y: -100, scale: 2.3, opacity: 0.05 }, "-=.7")
+    .to(web, 0.7, { x: 230, y: 60, scale: 2, opacity: 0.04 }, "-=.7")
     .to(
       amSentence,
       0.5,
