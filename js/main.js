@@ -17,6 +17,7 @@ const square = document.querySelector(".square");
 const pentagon = document.querySelector(".pentagon");
 const hexagon = document.querySelector(".hexagon");
 const octagon = document.querySelector(".octagon");
+const chart = document.querySelector(".chart");
 // const h1 = document.querySelector("h1");
 // let h1CollapseState = false;
 let svgShrunkState = false;
@@ -267,11 +268,11 @@ function hexagonTurn() {
       timeout = setTimeout(turnToOctagon, 3);
     } else {
       clearTimeout(timeout);
-      // show h1
       octagon.nextElementSibling.nextElementSibling.style.display = "inherit";
       // extendH1();
       //hide rollingpart, show octagon
       rollingPart.classList.add("hide");
+      chart.classList.remove("hide");
       octagon.classList.remove("hide");
       octagon.setAttribute("fill", "var(--fill)");
       ////////////////////////////////////////////////////////
