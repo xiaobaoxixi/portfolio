@@ -190,7 +190,7 @@ span:first-of-type {
   border-bottom: 7px solid var(--fill);
 } */
 .chart {
-  padding: 0 8vw 7vw;
+  padding: 0 8vw 4vw;
   display: grid;
   grid-template-columns: 40vw 40vw;
   grid-gap: 4vw;
@@ -199,6 +199,7 @@ span:first-of-type {
   width: 40vw;
   height: 40vw;
   border: 4px dotted var(--dark-grey);
+  background-color: white;
 }
 .hide {
   display: none;
