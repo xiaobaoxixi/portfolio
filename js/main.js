@@ -59,7 +59,7 @@ function init() {
       amSentence,
       0.3,
       {
-        x: -210,
+        x: -180,
         y: -429,
         scale: 0.7
       },
