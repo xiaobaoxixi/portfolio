@@ -70,7 +70,7 @@ function init() {
     .call(showBurger, this, "-=.7")
     .to(letterI, 0.3, { x: -230, y: -50, scaleY: 3.3 }, "-=.7")
     .call(showtriangleParts, this, "-=.2")
-    .to(letterI, 0.1, { opacity: 0 })
+    .to(letterI, 0.1, { opacity: 0 }, "-=.1")
     .to(t1, 0.3, { rotation: -60 })
     .to(triangleStrokes, 0.3, { rotation: 30, transformOrigin: "left bottom" })
     .to(t3, 0.3, { rotation: 60, transformOrigin: "left bottom" })

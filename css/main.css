@@ -107,8 +107,8 @@ svg {
   stroke: var(--dark-grey);
   fill: none;
 }
-svg#intro {
-  stroke-width: 3.5;
+svg#title {
+  stroke-width: 4;
 }
 g#i g {
   stroke-width: 0;
@@ -125,7 +125,7 @@ svg#title {
   transform-origin: 50%;
 }
 .triangleParts {
-  stroke-width: 3;
+  stroke-width: 4;
 }
 svg#changingShape {
   width: 190vw;
