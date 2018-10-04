@@ -1,5 +1,6 @@
 :root {
   --dark-grey: #333333e6;
+  --light-grey: #dadada;
   --yellow: hsl(47, 90%, 42%);
   --fill: rgb(11, 106, 90);
   --bg: rgb(245, 245, 245);
@@ -17,6 +18,23 @@
 }
 body {
   overflow-x: hidden;
+}
+nav.main {
+  position: fixed;
+  height: 50px;
+  width: 100vw;
+  padding: 13px 6vw;
+  background-color: white;
+  z-index: 11;
+  border-left: 7px dotted var(--dark-grey);
+}
+nav span {
+  margin: 30px;
+  font-size: 19px;
+  cursor: pointer;
+}
+.uncheck {
+  color: var(--light-grey);
 }
 .burger {
   position: fixed;
@@ -197,6 +215,10 @@ span:first-of-type {
   height: 40vw;
   border: 4px dotted var(--dark-grey);
   background-color: white;
+}
+#about {
+  text-align: center;
+  margin: 4vw;
 }
 .hide {
   display: none;

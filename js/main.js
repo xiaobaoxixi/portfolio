@@ -1,5 +1,5 @@
 "use strict";
-const burger = document.querySelector(".burger");
+const nav = document.querySelector("nav.main");
 const svgIntro = document.querySelector("svg#intro");
 const allLinesInWeb = document.querySelectorAll("#lines line");
 const letterIParts = document.querySelectorAll("g#i *");
@@ -18,6 +18,7 @@ const pentagon = document.querySelector(".pentagon");
 const hexagon = document.querySelector(".hexagon");
 const octagon = document.querySelector(".octagon");
 const chart = document.querySelector(".chart");
+const about = document.querySelector("#about");
 // const h1 = document.querySelector("h1");
 // let h1CollapseState = false;
 let svgShrunkState = false;
@@ -63,18 +64,17 @@ function init() {
     .staggerTo(allLinesInWeb, 0.3, { stroke: "white" }, 0.01, "+=2")
     .to(web, 0.7, { x: 230, y: 80, scale: 2 }, "-=.7")
     .to(letterI, 0.7, { x: -233, y: -20, scaleY: 1.4 }, "-=.7")
-    .call(changeTextToMenu)
     .to(
       amSentence,
       0.5,
       {
         x: -220,
         y: -429,
-        scale: 0.7
+        scale: 0
       },
       "-=.5"
     )
-    .call(showBurger, this, "-=.7")
+    .call(showNav, this, "-=.7")
     .call(showtriangleParts, this, "-=.2")
     .to(letterI, 0.1, { opacity: 0 }, "-=.1")
     .to(t1, 0.3, { rotation: -60 })
@@ -87,13 +87,8 @@ function init() {
     amSentence.textContent =
       "am curious, learn fast & always go one step further";
   }
-  function changeTextToMenu() {
-    amSentence.textContent =
-      //      "' with limited knowledge, be more creative in solutions '";
-      " turn to navigation buttons? ";
-  }
-  function showBurger() {
-    burger.classList.remove("hide");
+  function showNav() {
+    nav.classList.remove("hide");
   }
   function showtriangleParts() {
     triangleStrokes.classList.remove("hide");
@@ -105,6 +100,8 @@ function init() {
 function turnAndChange() {
   svgMain.classList.remove("hide");
   triangleStrokes.classList.add("hide");
+  chart.classList.remove("hide");
+  about.classList.remove("hide");
   //  console.log(document.scrollingElement.scrollTop);
   // document.scrollingElement.scrollTop = `0`;
   let angle = 0;
@@ -285,7 +282,6 @@ function hexagonTurn() {
       // extendH1();
       //hide rollingpart, show octagon
       rollingPart.classList.add("hide");
-      chart.classList.remove("hide");
       octagon.classList.remove("hide");
       octagon.setAttribute("fill", "var(--fill)");
       listProjectGroup(octagon);
@@ -311,7 +307,7 @@ function listProjectGroup(elem) {
       //              m.target.removeEventListener("mouseleave", removeFill); // so when svg scrolls up, won't trigger mouse leave;
       if (
         document.scrollingElement.scrollTop <
-        windowHeight * 0.28 // restrict scroll, no need to move all the way up and lose polygons out of sight
+        windowHeight * 0.22 // restrict scroll, no need to move all the way up and lose polygons out of sight
       ) {
         document.scrollingElement.scrollTop = `${document.scrollingElement
           .scrollTop +
