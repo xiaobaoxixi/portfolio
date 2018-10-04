@@ -64,7 +64,7 @@ function init() {
     .call(changeText)
     .to(amSentence, 0.6, { opacity: 1 })
     .staggerTo(allLinesInWeb, 0.3, { stroke: "white" }, 0.01, "+=2")
-    .to(web, 0.7, { x: 230, y: 80, scale: 2 }, "-=.7")
+    .to(web, 0.7, { x: 230, y: 60, scale: 2 }, "-=.7")
     .to(letterI, 0.7, { x: -233, y: -20, scaleY: 1.4 }, "-=.7")
     .to(
       [amSentence, head],
