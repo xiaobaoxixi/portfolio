@@ -1,7 +1,8 @@
 :root {
   --dark-grey: #333333e6;
   --yellow: hsl(47, 90%, 42%);
-  --fill: #0b6a5a;
+  --fill: rgb(11, 106, 90);
+  --bg: rgb(245, 245, 245);
 }
 ::-webkit-scrollbar {
   display: none;
@@ -91,13 +92,7 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--fill);
-  opacity: 0.1;
-}
-.frost {
-  background-color: white;
-  opacity: 1;
-  filter: blur(17vh);
+  background-color: var(--bg);
 }
 svg {
   position: relative;
@@ -138,7 +133,7 @@ text {
 .rolling {
   stroke-width: 3;
 }
-polygon:not(.shadow) {
+polygon:not(.shadow):not(.triangle) {
   cursor: pointer;
 }
 .shadow {

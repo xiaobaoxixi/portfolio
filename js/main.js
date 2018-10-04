@@ -55,18 +55,20 @@ function init() {
       },
       "-=.1"
     )
-    .to(amSentence, 0.5, { opacity: 1 }, "+=.3")
+    .to(amSentence, 0.6, { opacity: 1 }, "+=.3")
     .to(amSentence, 1.5, { x: 0 })
-    .to(amSentence, 0.2, { opacity: 0 })
+    .to(amSentence, 0.3, { opacity: 0 })
     .call(changeText)
-    .to(amSentence, 0.5, { opacity: 1 })
-    .to(letterI, 0.7, { x: -233, y: 17, scaleY: 1.4 }, "+=2")
-    .to(web, 0.7, { x: 230, y: 60, scale: 2, opacity: 0.04 }, "-=.7")
+    .to(amSentence, 0.6, { opacity: 1 })
+    .staggerTo(allLinesInWeb, 0.3, { stroke: "white" }, 0.01, "+=2")
+    .to(web, 0.7, { x: 230, y: 80, scale: 2 }, "-=.7")
+    .to(letterI, 0.7, { x: -233, y: 17, scaleY: 1.4 }, "-=.7")
+    .call(changeTextToMenu)
     .to(
       amSentence,
       0.5,
       {
-        x: -180,
+        x: -220,
         y: -429,
         scale: 0.7
       },
@@ -84,6 +86,10 @@ function init() {
   function changeText() {
     amSentence.textContent =
       "am curious, learn fast & always go one step further";
+  }
+  function changeTextToMenu() {
+    amSentence.textContent =
+      "' with limited knowledge, be more creative in solutions '";
   }
   function showBurger() {
     burger.classList.remove("hide");
