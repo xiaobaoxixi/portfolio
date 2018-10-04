@@ -310,7 +310,7 @@ function listProjectGroup(elem) {
       //              m.target.removeEventListener("mouseleave", removeFill); // so when svg scrolls up, won't trigger mouse leave;
       if (
         document.scrollingElement.scrollTop <
-        windowHeight * 0.33 // restrict scroll, no need to move all the way up and lose polygons out of sight
+        windowHeight * 0.28 // restrict scroll, no need to move all the way up and lose polygons out of sight
       ) {
         document.scrollingElement.scrollTop = `${document.scrollingElement
           .scrollTop +
