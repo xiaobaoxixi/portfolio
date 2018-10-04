@@ -20,7 +20,7 @@ function listen(n) {
     let target = m.target.dataset.section;
     console.log(target);
     document.querySelector(`#${target}`).scrollIntoView({
-      block: "start",
+      block: "center",
       inline: "nearest",
       behavior: "smooth"
     });
