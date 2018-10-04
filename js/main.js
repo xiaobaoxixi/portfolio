@@ -339,6 +339,7 @@ function listProjectGroup(elem) {
       "var(--fill)"
     );
     let group = m.target.previousElementSibling.textContent;
+    let projects = document.querySelector(`.${group}.project-group`);
     let horiLinesInGroup = document.querySelectorAll(`.${group}.hori-line`);
     horiLinesInGroup.forEach(extendEachHoriLine);
     function extendEachHoriLine(hl) {
@@ -355,6 +356,7 @@ function listProjectGroup(elem) {
         }
       }
     }
+    projects.classList.remove("hide");
   }
 }
 ///////////////////////////////////
