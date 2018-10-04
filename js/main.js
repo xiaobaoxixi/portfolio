@@ -89,7 +89,8 @@ function init() {
   }
   function changeTextToMenu() {
     amSentence.textContent =
-      "' with limited knowledge, be more creative in solutions '";
+      //      "' with limited knowledge, be more creative in solutions '";
+      " turn to navigation buttons? ";
   }
   function showBurger() {
     burger.classList.remove("hide");
