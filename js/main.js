@@ -4,6 +4,7 @@ const svgIntro = document.querySelector("svg#intro");
 const allLinesInWeb = document.querySelectorAll("#lines line");
 const letterIParts = document.querySelectorAll("g#i *");
 const letterI = document.querySelector("#i g");
+const head = document.querySelector("#head");
 const amSentence = document.querySelector(".amSentence");
 const web = document.querySelector("#lines");
 const triangleStrokes = document.querySelector(".triangleParts");
@@ -56,6 +57,7 @@ function init() {
       },
       "-=.1"
     )
+    .to(head, 0.3, { scale: 0.4, y: 90, x: -30 }, "-=.3")
     .to(amSentence, 0.6, { opacity: 1 }, "+=.3")
     .to(amSentence, 1.5, { x: 0 })
     .to(amSentence, 0.3, { opacity: 0 })
@@ -65,7 +67,7 @@ function init() {
     .to(web, 0.7, { x: 230, y: 80, scale: 2 }, "-=.7")
     .to(letterI, 0.7, { x: -233, y: -20, scaleY: 1.4 }, "-=.7")
     .to(
-      amSentence,
+      [amSentence, head],
       0.5,
       {
         x: -220,

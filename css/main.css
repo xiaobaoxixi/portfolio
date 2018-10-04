@@ -3,7 +3,7 @@
   --light-grey: #dadada;
   --yellow: hsl(47, 90%, 42%);
   --fill: rgb(11, 106, 90);
-  --bg: rgb(245, 245, 245);
+  --bg: rgb(247, 247, 247);
 }
 ::-webkit-scrollbar {
   display: none;
@@ -29,7 +29,7 @@ nav.main {
   border-left: 7px dotted var(--dark-grey);
 }
 nav span {
-  margin: 30px;
+  margin-right: 30px;
   font-size: 19px;
   cursor: pointer;
 }
@@ -119,6 +119,10 @@ svg {
   stroke-linejoin: round;
   stroke: var(--dark-grey);
   fill: none;
+}
+#head {
+  stroke-width: 4;
+  fill: var(--bg);
 }
 svg#title {
   stroke-width: 4;
