@@ -182,7 +182,7 @@ polygon:not(.shadow):not(.triangle) {
 foreignObject nav {
   width: 119px; /* not dynamic here, need to change */
   text-align: right;
-  font-size: 9px;
+  font-size: 10px;
   height: 0;
   overflow: hidden;
   cursor: pointer;
@@ -235,7 +235,7 @@ img {
   list-style: none;
 }
 .project-group li {
-  font-size: 9px;
+  font-size: 10px;
   line-height: 24px;
 }
 .project-group li span {
