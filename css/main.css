@@ -114,7 +114,7 @@ footer {
 }
 svg {
   position: relative;
-  stroke-width: 2.5;
+  stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke: var(--dark-grey);
@@ -141,6 +141,7 @@ svg#title {
 }
 #i {
   transform-origin: 50%;
+  stroke-width: 4;
 }
 .triangleParts {
   stroke-width: 4;
@@ -175,7 +176,7 @@ polygon:not(.shadow):not(.triangle) {
 }
 .group {
   pointer-events: none;
-  font-size: 43px;
+  font-size: 28px;
   display: none;
   font-weight: 100;
 }
@@ -235,7 +236,7 @@ img {
   list-style: none;
 }
 .project-group li {
-  font-size: 10px;
+  font-size: 9px;
   line-height: 24px;
 }
 .project-group li span {

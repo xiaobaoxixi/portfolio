@@ -2,8 +2,8 @@
 const nav = document.querySelector("nav.main");
 const svgIntro = document.querySelector("svg#intro");
 const allLinesInWeb = document.querySelectorAll("#lines line");
-const letterIParts = document.querySelectorAll("g#i *");
-const letterI = document.querySelector("#i g");
+//const letterIParts = document.querySelectorAll("g#i *");
+const letterI = document.querySelector("#i line");
 const head = document.querySelector("#head");
 const amSentence = document.querySelector(".amSentence");
 const web = document.querySelector("#lines");
@@ -30,7 +30,8 @@ window.addEventListener("DOMContentLoaded", init);
 
 function init() {
   const tl = new TimelineMax();
-  tl.to(head, 0.3, { opacity: 1 })
+  tl
+    //.to(head, 0.3, { opacity: 1 })
     .staggerFrom(
       allLinesInWeb,
       0.7,
@@ -41,25 +42,25 @@ function init() {
       0.02,
       "-=.3"
     )
-    .staggerTo(
-      letterIParts,
-      0.3,
-      {
-        fill: "#444"
-      },
-      0
-    )
+    // .staggerTo(
+    //   letterIParts,
+    //   0.3,
+    //   {
+    //     fill: "#444"
+    //   },
+    //   0
+    // )
     .to(
       letterI,
       0.3,
       {
-        scaleX: 0.4,
-        scaleY: 0.2,
-        y: 102
+        scaleX: 0.7,
+        scaleY: 0.17,
+        y: 111
       },
       "-=.1"
     )
-    .to(head, 0.3, { scale: 0.45, x: -10, y: 60 }, "-=.3")
+    //  .to(head, 0.3, { scale: 0.45, x: -10, y: 60 }, "-=.3")
     .to(amSentence, 0.6, { opacity: 1 }, "+=.3")
     .to(amSentence, 1.5, { x: 0 })
     .to(amSentence, 0.3, { opacity: 0 })

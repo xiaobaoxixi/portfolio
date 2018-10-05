@@ -79,6 +79,15 @@
             </style>
         </defs>
         <style type="text/css">
+            .st3 {
+                fill: none;
+                stroke: #333333;
+                stroke-width: 5;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-miterlimit: 10;
+            }
+
             .st4 {
                 fill: #73718C;
             }
@@ -109,11 +118,13 @@
             }
         </style>
         <g id="i">
-            <g>
+            <line class="st3" x1="299" y1="358" x2="299" y2="491.7" />
+
+            <!-- <g>
                 <path class="st4" d="M296.1,485.1c0,3.5,2,6.4,4.4,6.4s4.4-2.9,4.4-6.4v-21l-8.9-12.7V485.1z" />
                 <polygon class="st5" points="296.1,411.5 296.1,456.3 305,464.1 305,406.8 		" />
                 <path class="st6" d="M305,367.8c0-2.4-2-4.4-4.4-4.4s-4.4,2-4.4,4.4v44.5l8.9-5.4V367.8z" />
-            </g>
+            </g> -->
         </g>
         <g id="head">
             <g>
@@ -160,14 +171,14 @@
         <polygon class="shadow hide" points="110 395, 210 395, 160 308.4"></polygon>
         <polygon class="triangle" points="100 400, 200 400, 150 313.4" data-project="html"></polygon>
         <line x1="150" y1="395" x2="150" y2="395" y3="395"></line>
-        <text x="80" y="389" class="group">HTML</text>
+        <text x="118" y="389" class="group">HTML</text>
         <foreignObject>
             <nav></nav>
         </foreignObject>
         <polygon class="shadow hide" points="210 345, 310 345, 310 445, 210 445" data-project="css"></polygon>
         <polygon class="square hide" points="200 350, 300 350, 300 450, 200 450" data-project="css"></polygon>
         <line x1="250" y1="441" x2="250" y2="441" y3="595"></line>
-        <text x="209" y="438" class="group">CSS</text>
+        <text x="224" y="438" class="group">CSS</text>
         <foreignObject x="126" y="520" class="nav">
             <nav>
                 <p>RWD with Grid</p>
@@ -183,11 +194,11 @@
             </ul>
         </foreignObject>
         <line x1="170" y1="543" x2="170" x3="290" y2="543" class="CSS hori-line"></line>
-        <line x1="150" y1="568" x2="150" x3="340" y2="568" class="CSS hori-line"></line>
+        <line x1="140" y1="568" x2="140" x3="330" y2="568" class="CSS hori-line"></line>
         <polygon class="shadow hide" points="310 385, 410 385, 440 478, 360 535, 280 478"></polygon>
         <polygon class="pentagon hide" points="300 390, 400 390, 430 483, 350 540, 270 483" data-project="js"></polygon>
         <line x1="350" y1="530" x2="350" y2="530" y3="730"></line>
-        <text x="330" y="520" class="group">JS</text>
+        <text x="335" y="520" class="group">JS</text>
         <foreignObject x="226" y="612" class="nav">
             <nav>
                 <p>interactive games</p>
@@ -214,7 +225,7 @@
         <polygon class="shadow hide" points="400 311, 480 265, 560 311, 560 405, 480 446, 400 401"></polygon>
         <polygon class="hexagon hide" points="390 316, 470 270, 550 316, 550 406, 470 451, 390 406" data-project="svg"></polygon>
         <line x1="470" y1="441" x2="470" y2="441" y3="594"></line>
-        <text x="431" y="425" class="group">SVG</text>
+        <text x="445" y="430" class="group">SVG</text>
         <foreignObject x="346" y="520" class="nav">
             <nav>
                 <p>hand-code</p>
@@ -231,7 +242,7 @@
         </foreignObject>
 
         <line x1="415" y1="543" x2="415" x3="560" y2="543" class="SVG hori-line"></line>
-        <line x1="380" y1="568" x2="380" x3="610" y2="568" class="SVG hori-line"></line>
+        <line x1="390" y1="568" x2="390" x3="600" y2="568" class="SVG hori-line"></line>
         <!-- <line x1="380" y1="573" x2="380" x3="630" y2="573" class="SVG hori-line"></line> -->
 
         <!-- <polygon class="hexagon" points="533 213, 612 167, 689 211, 689 304, 610 350, 533 305"></polygon> -->
@@ -239,28 +250,31 @@
         <polygon class="shadow hide" points="528 257, 560 182, 635 150, 710 182, 742 257, 710 332, 635 364, 560 332"></polygon>
         <polygon class="octagon hide" points="518 262, 550 187, 625 155, 700 187, 732 262, 700 337, 625 369, 550 337"
             data-project="gsap"></polygon>
-        <line x1="625" y1="359" x2="625" y2="359" y3="504"></line>
-        <text x="578" y="345" class="group">Libraries</text>
-        <foreignObject x="501" y="410" class="nav">
+        <line x1="625" y1="359" x2="625" y2="359" y3="509"></line>
+        <text x="572" y="335" class="group">Libraries</text>
+        <foreignObject x="501" y="390" class="nav">
             <nav>
                 <p>Greensock</p>
+                <p class="grey-out">REACT</p>
                 <p class="grey-out">chartJS</p>
                 <p class="grey-out">hammerJS</p>
                 <p class="grey-out">D3.js</p>
             </nav>
         </foreignObject>
-        <foreignObject x="630" y="410" width="210" height="140" class="Libraries project-group hide">
+        <foreignObject x="630" y="390" width="210" height="140" class="Libraries project-group hide">
             <ul>
                 <li><span>wavy</span><span>businessElem</span></li>
+                <li> </li>
                 <li>dashboard</li>
                 <li></li>
                 <li></li>
             </ul>
         </foreignObject>
 
-        <line x1="567" y1="433" x2="567" x3="730" y2="433" class="Libraries hori-line"></line>
-        <line x1="573" y1="458" x2="573" x3="690" y2="458" class="Libraries hori-line"></line>
-        <line x1="567" y1="483" x2="567" x3="700" y2="483" class="Libraries hori-line"></line>
+        <line x1="567" y1="413" x2="567" x3="730" y2="413" class="Libraries hori-line"></line>
+        <line x1="583" y1="438" x2="583" x3="690" y2="438" class="Libraries hori-line"></line>
+        <line x1="567" y1="463" x2="567" x3="700" y2="463" class="Libraries hori-line"></line>
+        <line x1="567" y1="488" x2="567" x3="700" y2="488" class="Libraries hori-line"></line>
     </svg>
     <!-- <h1 class="hide"><span>OneStepFurther</span><span> -- I want to be a front end developer</span></h1> -->
     <div class="chart hide">
@@ -281,9 +295,14 @@
     </div>
     <div id="about" class="hide">
         <h1>about me</h1>
-        <p>like:</p>
-        <p>creative solutions</p>
-        <p>explore existing tools and be productive + try original solutions for fun</p>
+        <p>USP:</p>
+        <p>learn fast</p>
+        <p>explore existing tools and be productive + try original creative solutions for fun</p>
+        <br>
+        <p>others say:</p>
+        <p>reference 1</p>
+        <p>reference 2</p>
+        <br>
         <p><a href="cv.html">full CV</a></p>
     </div>
     <footer>Portfolio site working in progress. Copyright © 2018 <a href="mailto: liyan.xiaobaoxixi@gmail.com" target="_blank">Yan
