@@ -123,6 +123,7 @@ svg {
 #head {
   stroke-width: 4;
   fill: var(--bg);
+  opacity: 0;
 }
 svg#title {
   stroke-width: 4;

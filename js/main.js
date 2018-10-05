@@ -30,15 +30,17 @@ window.addEventListener("DOMContentLoaded", init);
 
 function init() {
   const tl = new TimelineMax();
-  tl.staggerFrom(
-    allLinesInWeb,
-    0.7,
-    {
-      x: () => Math.random() * 3000 - 1500,
-      y: () => Math.random() * 3000 - 1500
-    },
-    0.02
-  )
+  tl.to(head, 0.3, { opacity: 1 })
+    .staggerFrom(
+      allLinesInWeb,
+      0.7,
+      {
+        x: () => Math.random() * 3000 - 1500,
+        y: () => Math.random() * 3000 - 1500
+      },
+      0.02,
+      "-=.3"
+    )
     .staggerTo(
       letterIParts,
       0.3,
@@ -57,7 +59,7 @@ function init() {
       },
       "-=.1"
     )
-    .to(head, 0.3, { scale: 0.4, y: 90, x: -30 }, "-=.3")
+    .to(head, 0.3, { scale: 0.45, x: -10, y: 60 }, "-=.3")
     .to(amSentence, 0.6, { opacity: 1 }, "+=.3")
     .to(amSentence, 1.5, { x: 0 })
     .to(amSentence, 0.3, { opacity: 0 })
