@@ -35,8 +35,9 @@ function listenProject(p) {
     modal.style.left = `${positionX}px`;
     modal.style.top = `${positionY}px`;
     enlargeModal();
+    getData(m.target);
     function enlargeModal() {
-      modal.style.padding = "3.5% 9%";
+      modal.style.padding = "4% 9%";
       let width = modal.getBoundingClientRect().width;
       if (
         width <

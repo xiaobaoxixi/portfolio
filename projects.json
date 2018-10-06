@@ -1,0 +1,42 @@
+[
+  {
+    "nr": "1",
+    "name": "Optical Art",
+    "type": "single",
+    "myRoll": "",
+    "url": "https://onestepfurther.nu/semester1/basic-web/op-art/responsive/",
+    "report": "https://onestepfurther.nu/semester1/portfolio/doc/web/project-document_ui_ux_test_mobile_yan-li.pdf",
+    "img": "img/op-art.png",
+    "notes": ["Design process, especially UX testing", "CSS Grid", "carousel"],
+    "tools": ["XD", "Ai", ""]
+  },
+  {
+    "nr": "2",
+    "name": "Mr. Ball",
+    "type": "single",
+    "myRoll": "",
+    "url": "https://onestepfurther.nu/semester1/animations/version2/ballGame.html",
+    "img": "img/bounce.gif",
+    "notes": [
+      "use still image and simple <div> to create animated characters",
+      "realistic movement",
+      "sound and background setup to inhance story telling"
+    ],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "3",
+    "name": "Conceptual artist portfolio site",
+    "type": "team",
+    "myRoll": "My tasks: design, coding, market research, user tests",
+    "url": "https://onestepfurther.nu/semester2/gn",
+    "img": "img/bounce.gif",
+    "notes": [
+      "heart beat animation using a still image",
+      "dynamicly apply different layout themes based on image format in the backend ",
+      "switching between two languages without localStorage"
+    ],
+    "tools": ["", "", ""]
+  },
+  {}
+]
