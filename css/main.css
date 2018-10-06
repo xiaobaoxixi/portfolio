@@ -1,7 +1,7 @@
 :root {
   --dark-grey: #333333e6;
   --light-grey: #dadada;
-  --yellow: hsl(47, 90%, 42%);
+  --yellow: hsl(59, 73%, 50%);
   --fill: rgb(11, 106, 90);
   --bg: rgb(247, 247, 247);
 }
@@ -30,10 +30,13 @@ nav.main {
 nav span {
   margin-right: 30px;
   font-size: 19px;
+  line-height: 47px;
   cursor: pointer;
+  border-bottom: 3px solid var(--yellow);
 }
 .uncheck {
   color: var(--light-grey);
+  border-bottom: none;
 }
 .burger {
   position: fixed;
@@ -222,7 +225,7 @@ span:first-of-type {
 .status {
   width: 40vw;
   height: 60vw;
-  border: 4px dotted var(--dark-grey);
+  padding: 100px 3vw;
   background-color: white;
 }
 #about {
