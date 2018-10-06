@@ -200,22 +200,6 @@ foreignObject p {
   pointer-events: none;
   opacity: 0.8;
 }
-/* h1 {
-  position: fixed;
-  top: 89vh;
-  right: 7vw;
-  width: 9vw;
-  white-space: nowrap;
-}
-span {
-  font-size: 1.2vw;
-}
-span:first-of-type {
-  font-size: 2vw;
-  display: inline-block;
-  height: 3.5vw;
-  border-bottom: 7px solid var(--fill);
-} */
 .chart {
   padding: 0 8vw 4vw;
   display: grid;
@@ -247,7 +231,29 @@ img {
 }
 .project-group li span {
   margin-right: 10px;
+  cursor: pointer;
 }
 .grey-out {
   opacity: 0.3;
 }
+#single-project {
+  position: fixed;
+  width: 0;
+  height: 0;
+  left: 50vw;
+  top: 50vh;  
+  background-color:white; 
+  clip-path: polygon(50% 0%, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0% 50%, 15% 15%);  
+}
+#single-project.show {
+  animation: showSingleProject .5s ease-out forwards;
+}
+@keyframes showSingleProject {
+  to{
+    width: 120vw;
+    height: 120vw;
+    top: calc(50vh - 60vw);
+    left: -10vw;
+  }
+}
+
