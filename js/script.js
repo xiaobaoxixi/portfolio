@@ -2,6 +2,7 @@
 const navSpans = document.querySelectorAll("nav span");
 const projects = document.querySelectorAll(".project-group li span");
 const modal = document.querySelector("#single-project");
+const modalShadow = document.querySelector("#single-project-shadow");
 const closeX = document.querySelector("p.close");
 // navigation
 navSpans.forEach(listenNav);
@@ -49,7 +50,11 @@ function listenProject(p) {
         modal.style.height = `${width}px`; // for the modal div, height and width are the same
         modal.style.left = `${positionX - width / 2}px`;
         modal.style.top = `${positionY - width / 2}px`;
-        setTimeout(enlargeModal, 1000 / 60);
+        modalShadow.style.width = `${width + 82}px`;
+        modalShadow.style.height = `${width + 82}px`; // for the modal div, height and width are the same
+        modalShadow.style.left = `${positionX - width / 2 - 41}px`;
+        modalShadow.style.top = `${positionY - width / 2 - 41}px`;
+        setTimeout(enlargeModal, 1300 / 60);
       } else {
         let positionYInit = m.target.getBoundingClientRect().top;
         let scrollTopInit =
@@ -72,6 +77,11 @@ function listenProject(p) {
             width / 2 -
             scrollTop +
             scrollTopInit}px`;
+          modalShadow.style.top = `${positionYInit -
+            width / 2 -
+            scrollTop +
+            scrollTopInit -
+            41}px`;
         }
       }
     }
@@ -87,4 +97,8 @@ function closeModal() {
   modal.style.left = "0";
   modal.style.left = "0";
   modal.style.padding = "0";
+  modalShadow.style.width = "0";
+  modalShadow.style.height = "0";
+  modalShadow.style.left = "0";
+  modalShadow.style.left = "0";
 }
