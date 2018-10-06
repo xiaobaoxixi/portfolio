@@ -4,7 +4,6 @@ const svgIntro = document.querySelector("svg#intro");
 const allLinesInWeb = document.querySelectorAll("#lines line");
 //const letterIParts = document.querySelectorAll("g#i *");
 const letterI = document.querySelector("#i line");
-const head = document.querySelector("#head");
 const amSentence = document.querySelector(".amSentence");
 const web = document.querySelector("#lines");
 const triangleStrokes = document.querySelector(".triangleParts");
@@ -70,7 +69,8 @@ function init() {
     .to(web, 0.7, { x: 230, y: 60, scale: 2 }, "-=.7")
     .to(letterI, 0.7, { x: -233, y: -20, scaleY: 1.4 }, "-=.7")
     .to(
-      [amSentence, head],
+      //      [amSentence, head],
+      amSentence,
       0.5,
       {
         x: -220,
@@ -363,7 +363,7 @@ function listProjectGroup(elem) {
 }
 ///////////////////////////////////
 function clearOtherFill() {
-  document.querySelectorAll("polygon").forEach(p => {
+  document.querySelectorAll("#changingShape polygon").forEach(p => {
     p.setAttribute("fill", "transparent");
     p.removeEventListener("mouseleave", removeFill); // so that when svg is shrinking and mouse leaves the polygon area, the fill won't be removed
     p.removeEventListener("mouseenter", fill); // so that hover doesn't trigger fill anymore when svg is used at corner as nav
