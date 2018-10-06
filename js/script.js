@@ -2,7 +2,7 @@
 const navSpans = document.querySelectorAll("nav span");
 const projects = document.querySelectorAll(".project-group li span");
 const modal = document.querySelector("#single-project");
-
+const closeX = document.querySelector("p.close");
 // navigation
 navSpans.forEach(listenNav);
 function listenNav(n) {
@@ -35,11 +35,14 @@ function listenProject(p) {
     modal.style.top = `${positionY}px`;
     enlargeModal();
     function enlargeModal() {
+      modal.style.padding = "3.5% 9%";
       let width = modal.getBoundingClientRect().width;
       if (
-        (positionX >= viewportWidth / 2 && width < positionX * 0.5) ||
-        (positionX < viewportWidth / 2 &&
-          width < (viewportWidth - positionX) * 0.5)
+        width <
+        viewportWidth / 2.5 // better make different sizes, small/medium/big
+        // (positionX >= viewportWidth / 2 && width < positionX * 0.5) ||
+        // (positionX < viewportWidth / 2 &&
+        //   width < (viewportWidth - positionX) * 0.5)
       ) {
         width += (viewportWidth / 1000) * 60;
         modal.style.width = `${width}px`;
@@ -74,9 +77,14 @@ function listenProject(p) {
     }
   }
 }
+// close single project modal
+closeX.addEventListener("click", closeModal);
+
+///////////////////////
 function closeModal() {
   modal.style.width = "0";
   modal.style.height = "0";
   modal.style.left = "0";
   modal.style.left = "0";
+  modal.style.padding = "0";
 }
