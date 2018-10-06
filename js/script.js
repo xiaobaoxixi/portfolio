@@ -23,22 +23,28 @@ projects.forEach(listenProject);
 function listenProject(p) {
   p.addEventListener("click", showSingleProject);
   function showSingleProject(m) {
+    // reset
+    modal.style.width = "0";
+    modal.style.height = "0";
+    modal.style.left = "0";
+    modal.style.left = "0";
+    // update
     let positionX = m.target.getBoundingClientRect().left;
     let positionY = m.target.getBoundingClientRect().top;
     let viewportWidth = window.innerWidth;
     let viewportHeight = window.innerHeight;
-    console.log(viewportWidth, viewportHeight);
     modal.style.left = `${positionX}px`;
     modal.style.top = `${positionY}px`;
     enlargeModal();
     function enlargeModal() {
       let width = modal.getBoundingClientRect().width;
       if (
-        (positionX >= viewportWidth / 2 && width < positionX * 2) ||
+        (positionX >= viewportWidth / 2 && width < positionX * 1) ||
         (positionX < viewportWidth / 2 &&
-          width < (viewportWidth - positionX) * 2)
+          width < (viewportWidth - positionX) * 1)
       ) {
         // modal should cover whole screen, when the clicked element is in the right half of the screen, make sure modal extend to the left edge of the screen
+        // modal should cover whole screen, when the clicked element is in the left half of the screen, the needed width extension is the window width - positionX
         width += (viewportWidth / 1000) * 60;
         modal.style.width = `${width}px`;
         modal.style.height = `${width}px`; // for the modal div, height and width are the same
