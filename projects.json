@@ -7,7 +7,11 @@
     "url": "https://onestepfurther.nu/semester1/basic-web/op-art/responsive/",
     "report": "https://onestepfurther.nu/semester1/portfolio/doc/web/project-document_ui_ux_test_mobile_yan-li.pdf",
     "img": "img/op-art.png",
-    "notes": ["Design process, especially UX testing", "CSS Grid", "carousel"],
+    "notes": [
+      "++ Design process, especially UX testings",
+      "+ CSS Grid",
+      "+ carousel without JS"
+    ],
     "tools": ["XD", "Ai", ""]
   },
   {
@@ -18,9 +22,9 @@
     "url": "https://onestepfurther.nu/semester1/animations/version2/ballGame.html",
     "img": "img/bounce.gif",
     "notes": [
-      "use still image and simple <div> to create animated characters",
-      "realistic movement",
-      "sound and background setup to inhance story telling"
+      "+++ use still image and simple <div> to create animated characters",
+      "+++ realistic movement",
+      "+++ sound and background setup to enhance story telling"
     ],
     "tools": ["", "", ""]
   },
@@ -28,15 +32,72 @@
     "nr": "3",
     "name": "Conceptual artist portfolio site",
     "type": "team",
-    "myRoll": "My tasks: design, coding, market research, user tests",
+    "myRoll": "My tasks: design, coding, market research, user testing",
     "url": "https://onestepfurther.nu/semester2/gn",
-    "img": "img/bounce.gif",
+    "img": "img/heart.gif",
     "notes": [
-      "heart beat animation using a still image",
-      "dynamicly apply different layout themes based on image format in the backend ",
-      "switching between two languages without localStorage"
+      "+ heart beating animation using a still image",
+      "+ dynamicly apply different layout themes based on image format in the backend ",
+      "+ switching between two languages without localStorage"
     ],
     "tools": ["", "", ""]
   },
-  {}
+  {
+    "nr": "4",
+    "name": "shooting planes",
+    "type": "team",
+    "myRoll": "My tasks: game idea, coding",
+    "url": "https://onestepfurther.nu/semester1/animations/strangelove/planes.html",
+    "img": "img/plane.png",
+    "notes": [
+      "+ combine simple visual treatment to enhence realism ",
+      "++ one of the most popular games among the gamers at NNY ",
+      "+ difficulty change based on user's gaming ability "
+    ],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "5",
+    "name": "bomb rodeo",
+    "type": "team",
+    "myRoll": "My tasks: game idea, coding",
+    "url": "https://onestepfurther.nu/semester1/animations/strangelove/pilot1.html",
+    "img": "img/rodeo.png",
+    "notes": [
+      "+ 3D effect with CSS perspective ",
+      "- visual and timing less polished",
+      ""
+    ],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "6",
+    "name": "help or die",
+    "type": "team",
+    "myRoll": "My tasks: game idea, coding",
+    "url": "https://onestepfurther.nu/semester1/animations/strangelove/pilot1.html",
+    "img": "img/rodeo.png",
+    "notes": ["3D effect with CSS perspective ", "", ""],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "7",
+    "name": "meey & bully",
+    "type": "single",
+    "myRoll": "",
+    "url": "https://onestepfurther.nu/semester1/animations/strangelove/pilot1.html",
+    "img": "img/rodeo.png",
+    "notes": ["3D effect with CSS perspective ", "", ""],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "8",
+    "name": "pie menu",
+    "type": "single",
+    "myRoll": "",
+    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
+    "img": "img/pie.gif",
+    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
+    "tools": ["", "", ""]
+  }
 ]

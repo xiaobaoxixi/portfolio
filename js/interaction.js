@@ -4,6 +4,7 @@ const projects = document.querySelectorAll(".project-group li span");
 const modal = document.querySelector("#single-project");
 const modalShadow = document.querySelector("#single-project-shadow");
 const closeX = document.querySelector("p.close");
+
 // navigation
 navSpans.forEach(listenNav);
 function listenNav(n) {
@@ -37,7 +38,7 @@ function listenProject(p) {
     enlargeModal();
     getData(m.target);
     function enlargeModal() {
-      modal.style.padding = "4% 9%";
+      modal.style.padding = "4% 7%";
       let width = modal.getBoundingClientRect().width;
       if (
         width <
@@ -55,7 +56,7 @@ function listenProject(p) {
         modalShadow.style.height = `${width + 82}px`; // for the modal div, height and width are the same
         modalShadow.style.left = `${positionX - width / 2 - 41}px`;
         modalShadow.style.top = `${positionY - width / 2 - 41}px`;
-        setTimeout(enlargeModal, 1300 / 60);
+        setTimeout(enlargeModal, 1000 / 60);
       } else {
         let positionYInit = m.target.getBoundingClientRect().top;
         let scrollTopInit =

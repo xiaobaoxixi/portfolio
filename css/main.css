@@ -52,7 +52,7 @@ nav span {
 .burger p.show {
   background-color: var(--yellow);
 }
-#asideSVG {
+/* #asideSVG {
   width: 37vw;
   height: 37vw;
   position: relative;
@@ -73,7 +73,7 @@ aside {
   min-width: 170px;
   background-color: white;
   /* background-color: rgba(255, 255, 255, 0.95); */
-  position: fixed;
+  /* position: fixed;
   left: -15vw;
   top: -7vw;
   transition: all 0.2s;
@@ -98,7 +98,7 @@ aside.show ul {
   list-style: none;
   line-height: 46px;
   font-size: 19px;
-}
+} */ 
 footer {
   font-size: 0.9vw;
   font-weight: 500;
@@ -244,30 +244,53 @@ img {
   clip-path: polygon(50% 0%, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0% 50%, 15% 15%);  
   font-size: 1vw;
 }
-#single-project section, #single-project h3, p.close {
-  margin-bottom: 20px;
+#single-project section, #single-project h3 {
+  margin-bottom: 13px;
 }
 p.close {
   text-align: center;
   cursor: pointer;
+  font-size: 1.5em;
+}
+.desc {
+  width: 43%;
+  top: 4%;
+  text-align: right;
+}
+.notes ul {
+  list-style: none;
+}
+.notes li, h4 {
+  margin-bottom: .5em;
 }
 #single-project .img{
   position: absolute;
-  bottom: 0;
-  right: 10%;
-  width: 60%;
-  height: 60%;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
 }
 .img img {
-  width: 70%;
-  margin-left: 20%;
+  height: 70%;
+  width: auto;
+  top: 17%;
+}
+.type p {
+  font-size: .8em;
+  margin-bottom: 1em;
 }
 .tech ul {
   list-style: none;
 }
+.tech ul li{
+  display: inline;
+}
+.url, .report {
+  margin-top: 2em;
+}
 #single-project-shadow {
   position: fixed;
   clip-path: polygon(50% 0%, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0% 50%, 15% 15%);  
-  background-color: var(--light-grey);
-  opacity: .4;
+  background-color: var(--dark-grey);
+  opacity: .1;
 }
