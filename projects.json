@@ -82,12 +82,160 @@
   },
   {
     "nr": "7",
-    "name": "meey & bully",
+    "name": "meet & bully",
     "type": "single",
     "myRoll": "",
-    "url": "https://onestepfurther.nu/semester1/animations/strangelove/pilot1.html",
-    "img": "img/rodeo.png",
-    "notes": ["3D effect with CSS perspective ", "", ""],
+    "url": "https://onestepfurther.nu/semester3/effects-library/index.html#bully",
+    "img": "img/bully.png",
+    "notes": ["+ detect mouse movement direction and speed", "", ""],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "8",
+    "name": "pie menu",
+    "type": "single",
+    "myRoll": "",
+    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
+    "img": "img/pie.gif",
+    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "9",
+    "name": "event calendar",
+    "type": "single",
+    "myRoll": "",
+    "url": "https://onestepfurther.nu/semester2/huset-kbh/index.html",
+    "img": "img/calendar.png",
+    "notes": [
+      "+ build calendar self without API",
+      "mark events on calendar",
+      "- only mobile version"
+    ],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "10",
+    "name": "mouse interaction",
+    "type": "single",
+    "myRoll": "",
+    "url": "https://onestepfurther.nu/semester3/effects-library/",
+    "img": "img/effects.png",
+    "notes": [
+      "++ including: parallax, drawing trace, drag, zoom and many more",
+      "+ timing with requestAnimationFrame",
+      "+ easing effect through vanilla JS, no CSS"
+    ],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "11",
+    "name": "touch interaction",
+    "type": "single",
+    "myRoll": "",
+    "url": "https://onestepfurther.nu/semester3/effects-library/index.html#touch",
+    "img": "img/touch.png",
+    "notes": ["+ works on touch devices", "", ""],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "8",
+    "name": "pie menu",
+    "type": "single",
+    "myRoll": "",
+    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
+    "img": "img/pie.gif",
+    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "8",
+    "name": "pie menu",
+    "type": "single",
+    "myRoll": "",
+    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
+    "img": "img/pie.gif",
+    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "8",
+    "name": "pie menu",
+    "type": "single",
+    "myRoll": "",
+    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
+    "img": "img/pie.gif",
+    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "8",
+    "name": "pie menu",
+    "type": "single",
+    "myRoll": "",
+    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
+    "img": "img/pie.gif",
+    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "8",
+    "name": "pie menu",
+    "type": "single",
+    "myRoll": "",
+    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
+    "img": "img/pie.gif",
+    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "8",
+    "name": "pie menu",
+    "type": "single",
+    "myRoll": "",
+    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
+    "img": "img/pie.gif",
+    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "8",
+    "name": "pie menu",
+    "type": "single",
+    "myRoll": "",
+    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
+    "img": "img/pie.gif",
+    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "8",
+    "name": "pie menu",
+    "type": "single",
+    "myRoll": "",
+    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
+    "img": "img/pie.gif",
+    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "8",
+    "name": "pie menu",
+    "type": "single",
+    "myRoll": "",
+    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
+    "img": "img/pie.gif",
+    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "8",
+    "name": "pie menu",
+    "type": "single",
+    "myRoll": "",
+    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
+    "img": "img/pie.gif",
+    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
     "tools": ["", "", ""]
   },
   {
