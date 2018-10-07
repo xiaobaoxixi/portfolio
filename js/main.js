@@ -330,8 +330,30 @@ function listProjectGroup(elem) {
   }
   const groupArea =
     elem.nextElementSibling.nextElementSibling.nextElementSibling;
-  groupArea.addEventListener("mouseenter", showEachGroup);
-  function showEachGroup(m) {
+  groupArea.addEventListener("mouseenter", hoverEachGroup);
+  const projectsArea =
+    elem.nextElementSibling.nextElementSibling.nextElementSibling
+      .nextElementSibling;
+  projectsArea.addEventListener("mouseenter", hoverEachGroup2);
+  let group = elem.nextElementSibling.nextElementSibling.textContent;
+  let projects = document.querySelector(`.${group}.project-group`);
+  let horiLinesInGroup = document.querySelectorAll(`.${group}.hori-line`);
+  horiLinesInGroup.forEach(extendEachHoriLine);
+  function extendEachHoriLine(hl) {
+    let targetX = Number(hl.getAttribute("x3"));
+    let currentX = Number(hl.getAttribute("x2"));
+    extend();
+    function extend() {
+      if (currentX < targetX - 1) {
+        currentX = Number(hl.getAttribute("x2"));
+        hl.setAttribute("x2", `${currentX + (targetX - currentX) / 20}`);
+        timeout = setTimeout(extend, 10);
+      }
+    }
+  }
+  projects.classList.remove("hide");
+
+  function hoverEachGroup(m) {
     document.querySelectorAll("polygon").forEach(p => {
       p.setAttribute("fill", "transparent");
     });
@@ -340,25 +362,16 @@ function listProjectGroup(elem) {
       "fill",
       "var(--fill)"
     );
-    let group = m.target.previousElementSibling.textContent;
-    let projects = document.querySelector(`.${group}.project-group`);
-    let horiLinesInGroup = document.querySelectorAll(`.${group}.hori-line`);
-    horiLinesInGroup.forEach(extendEachHoriLine);
-    function extendEachHoriLine(hl) {
-      let targetX = Number(hl.getAttribute("x3"));
-      let currentX = Number(hl.getAttribute("x2"));
-      extend();
-      function extend() {
-        if (currentX < targetX - 1) {
-          currentX = Number(hl.getAttribute("x2"));
-          hl.setAttribute("x2", `${currentX + (targetX - currentX) / 20}`);
-          timeout = setTimeout(extend, 10);
-        } else {
-          clearTimeout(timeout);
-        }
-      }
-    }
-    projects.classList.remove("hide");
+  }
+  function hoverEachGroup2(m) {
+    document.querySelectorAll("polygon").forEach(p => {
+      p.setAttribute("fill", "transparent");
+    });
+    // fill the corresponding polygon
+    m.target.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.setAttribute(
+      "fill",
+      "var(--fill)"
+    );
   }
 }
 ///////////////////////////////////
