@@ -162,7 +162,7 @@ foreignObject p {
   grid-gap: 4vw;
 }
 #about {
-  padding: 0 8vw 4vw;
+  padding: 4vw 8vw;
   display: grid;
   grid-template-columns: 15vw 31vw 30vw;
   grid-gap: 4vw;
