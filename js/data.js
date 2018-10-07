@@ -10,7 +10,7 @@ let icon1 = document.querySelector(".tech li:nth-of-type(1)");
 let icon2 = document.querySelector(".tech li:nth-of-type(2)");
 let icon3 = document.querySelector(".tech li:nth-of-type(3)");
 let url = document.querySelector(".url a");
-let report = document.querySelector(".report a");
+let reportS = document.querySelectorAll(".report");
 let img = document.querySelector(".img img");
 
 function getData(project) {
@@ -37,10 +37,19 @@ function getData(project) {
           img.setAttribute("src", projects[index].img);
           url.setAttribute("href", projects[index].url);
           if (projects[index].report) {
-            report.setAttribute("href", projects[index].report);
-            report.parentElement.classList.remove("hide");
+            reportS.forEach(eachReport);
+            function eachReport(r, i) {
+              let reportSInJSON = projects[index].report;
+              reportSInJSON.forEach(showEachReport);
+              function showEachReport(rJSON) {
+                if (reportSInJSON[i]) {
+                  r.querySelector("a").setAttribute("href", reportSInJSON[i]);
+                  r.classList.remove("hide");
+                }
+              }
+            }
           } else {
-            report.parentElement.classList.add("hide");
+            reportS.forEach(r => r.classList.add("hide"));
           }
         }
       }

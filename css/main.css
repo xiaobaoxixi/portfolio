@@ -32,7 +32,7 @@ nav span {
   font-size: 19px;
   line-height: 47px;
   cursor: pointer;
-  border-bottom: 3px solid var(--yellow);
+  border-bottom: 5px solid var(--yellow);
 }
 .uncheck {
   color: var(--light-grey);
@@ -192,7 +192,6 @@ foreignObject nav {
   font-size: 10px;
   height: 0;
   overflow: hidden;
-  cursor: pointer;
 }
 foreignObject p {
   line-height: 24px;
@@ -203,14 +202,14 @@ foreignObject p {
 .chart {
   padding: 0 8vw 4vw;
   display: grid;
-  grid-template-columns: 40vw 40vw;
+  grid-template-columns: 50vw 30vw;
   grid-gap: 4vw;
 }
 .status {
-  width: 40vw;
-  height: 60vw;
-  padding: 100px 3vw;
+  padding: 7vw 4vw;
   background-color: white;
+  height: 60vw;
+  width: 100%;
 }
 #about {
   text-align: center;
@@ -219,8 +218,9 @@ foreignObject p {
 .hide {
   display: none;
 }
-img {
-  width: 100%;
+.status img {
+  width: 80%;
+  left: 10%;
 }
 .project-group ul {
   list-style: none;
@@ -229,7 +229,7 @@ img {
   font-size: 10px;
   line-height: 24px;
 }
-.project-group li span {
+.project-group li span:not(.grey-out) {
   margin-right: 10px;
   cursor: pointer;
 }
@@ -253,9 +253,13 @@ p.close {
   font-size: 1.5em;
 }
 .desc {
-  width: 43%;
+  width: 45%;
   top: 4%;
   text-align: right;
+}
+.desc h3 {
+  width: 70%;
+  left: 30%;
 }
 .notes ul {
   list-style: none;
@@ -275,6 +279,13 @@ p.close {
   width: auto;
   top: 17%;
 }
+.cover { /* exported gif always have a colored border line, need to cover it up*/
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15%;
+  background-color: white;
+}
 .type p {
   font-size: .8em;
   margin-bottom: 1em;
@@ -285,8 +296,11 @@ p.close {
 .tech ul li{
   display: inline;
 }
-.url, .report {
-  margin-top: 2em;
+.url {
+  margin: 2em 0;
+}
+.report {
+  line-height: 7px;
 }
 #single-project svg {
   position: absolute;

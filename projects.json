@@ -5,7 +5,9 @@
     "type": "single",
     "myRoll": "",
     "url": "https://onestepfurther.nu/semester1/basic-web/op-art/responsive/",
-    "report": "https://onestepfurther.nu/semester1/portfolio/doc/web/project-document_ui_ux_test_mobile_yan-li.pdf",
+    "report": [
+      "https://onestepfurther.nu/semester1/portfolio/doc/web/project-document_ui_ux_test_mobile_yan-li.pdf"
+    ],
     "img": "img/op-art.png",
     "notes": [
       "++ Design process, especially UX testings",
@@ -23,7 +25,7 @@
     "img": "img/bounce.gif",
     "notes": [
       "+++ use still image and simple <div> to create animated characters",
-      "+++ realistic movement",
+      "+++ 12 realistic movements / stories",
       "+++ sound and background setup to enhance story telling"
     ],
     "tools": ["", "", ""]
@@ -37,14 +39,14 @@
     "img": "img/heart.gif",
     "notes": [
       "+ heart beating animation using a still image",
-      "+ dynamicly apply different layout themes based on image format in the backend ",
-      "+ switching between two languages without localStorage"
+      "+ present moving sculpture without using video",
+      ""
     ],
     "tools": ["", "", ""]
   },
   {
     "nr": "4",
-    "name": "shooting planes",
+    "name": "Game: shooting planes",
     "type": "team",
     "myRoll": "My tasks: game idea, coding",
     "url": "https://onestepfurther.nu/semester1/animations/strangelove/planes.html",
@@ -58,7 +60,7 @@
   },
   {
     "nr": "5",
-    "name": "bomb rodeo",
+    "name": "Game: bomb rodeo",
     "type": "team",
     "myRoll": "My tasks: game idea, coding",
     "url": "https://onestepfurther.nu/semester1/animations/strangelove/pilot1.html",
@@ -72,37 +74,49 @@
   },
   {
     "nr": "6",
-    "name": "help or die",
+    "name": "Game: help out & stay alive",
     "type": "team",
     "myRoll": "My tasks: game idea, coding",
-    "url": "https://onestepfurther.nu/semester1/animations/strangelove/pilot1.html",
-    "img": "img/rodeo.png",
-    "notes": ["3D effect with CSS perspective ", "", ""],
+    "url": "https://onestepfurther.nu/semester1/animations/interactiveAnimation/wednesday.html",
+    "img": "img/moving.png",
+    "notes": [
+      "position detection",
+      "prepare all posibilities",
+      "- not all finished"
+    ],
     "tools": ["", "", ""]
   },
   {
     "nr": "7",
-    "name": "meet & bully",
+    "name": "Game: meet & bully",
     "type": "single",
     "myRoll": "",
     "url": "https://onestepfurther.nu/semester3/effects-library/index.html#bully",
     "img": "img/bully.png",
-    "notes": ["+ detect mouse movement direction and speed", "", ""],
+    "notes": [
+      "+ detect mouse movement direction and speed",
+      "- not finished",
+      ""
+    ],
     "tools": ["", "", ""]
   },
   {
     "nr": "8",
-    "name": "pie menu",
+    "name": "Pie Menu",
     "type": "single",
     "myRoll": "",
     "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
     "img": "img/pie.gif",
-    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
+    "notes": [
+      "+ no svg is used, only basic HTML elements",
+      "- not all functions are finished",
+      ""
+    ],
     "tools": ["", "", ""]
   },
   {
     "nr": "9",
-    "name": "event calendar",
+    "name": "Event Calendar",
     "type": "single",
     "myRoll": "",
     "url": "https://onestepfurther.nu/semester2/huset-kbh/index.html",
@@ -116,7 +130,7 @@
   },
   {
     "nr": "10",
-    "name": "mouse interaction",
+    "name": "Mouse interaction",
     "type": "single",
     "myRoll": "",
     "url": "https://onestepfurther.nu/semester3/effects-library/",
@@ -130,7 +144,7 @@
   },
   {
     "nr": "11",
-    "name": "touch interaction",
+    "name": "Touch interaction",
     "type": "single",
     "myRoll": "",
     "url": "https://onestepfurther.nu/semester3/effects-library/index.html#touch",
@@ -139,8 +153,74 @@
     "tools": ["", "", ""]
   },
   {
-    "nr": "8",
-    "name": "pie menu",
+    "nr": "12",
+    "name": "Dynamic restaurant",
+    "type": "single",
+    "myRoll": "",
+    "url": "https://onestepfurther.nu/semester2/restaurant/",
+    "img": "img/restaurant.png",
+    "notes": [
+      "+ dynamic content from JSON",
+      "+ dynamic section background based on related images",
+      "single level filter"
+    ],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "13",
+    "name": "Artist portfolio",
+    "type": "team",
+    "myRoll": "My tasks: design, backend setup, front-end coding, report",
+    "url": "https://onestepfurther.nu/semester2/gn/portfolio.html?lang=en",
+    "img": "img/art.png",
+    "notes": [
+      "using Wordpress custom fields to get JSON",
+      "+ design and apply different layout themes dynamicly based on image format, help user maintain the site",
+      "+ switching between two languages without localStorage"
+    ],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "14",
+    "name": "Interactive student list",
+    "type": "single",
+    "myRoll": "",
+    "url": "https://onestepfurther.nu/semester3/interactive-student-list/",
+    "img": "img/shuffle.png",
+    "notes": [
+      "+ use JS Object to achieve DRY",
+      "+ multi level sort, shuffle",
+      "+ aim for display efficiency"
+    ],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "15",
+    "name": "'Traverser'",
+    "type": "single",
+    "myRoll": "",
+    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
+    "img": "img/traverser.png",
+    "notes": [
+      "+ read HTML file and output element structure with indentation as in code editor",
+      "",
+      ""
+    ],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "16",
+    "name": "Page loader",
+    "type": "team",
+    "myRoll": "",
+    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
+    "img": "img/pie.gif",
+    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "17",
+    "name": "Text effect",
     "type": "single",
     "myRoll": "",
     "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
@@ -149,8 +229,8 @@
     "tools": ["", "", ""]
   },
   {
-    "nr": "8",
-    "name": "pie menu",
+    "nr": "18",
+    "name": "This site",
     "type": "single",
     "myRoll": "",
     "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
@@ -159,8 +239,8 @@
     "tools": ["", "", ""]
   },
   {
-    "nr": "8",
-    "name": "pie menu",
+    "nr": "19",
+    "name": "Wavy",
     "type": "single",
     "myRoll": "",
     "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
@@ -169,8 +249,8 @@
     "tools": ["", "", ""]
   },
   {
-    "nr": "8",
-    "name": "pie menu",
+    "nr": "20",
+    "name": "BusinessElem",
     "type": "single",
     "myRoll": "",
     "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
@@ -179,73 +259,106 @@
     "tools": ["", "", ""]
   },
   {
-    "nr": "8",
-    "name": "pie menu",
-    "type": "single",
-    "myRoll": "",
-    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
-    "img": "img/pie.gif",
-    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
+    "nr": "21",
+    "name": "Curriculum",
+    "type": "team",
+    "myRoll": "setup JSON, coding relating to JSON, design & user testing",
+    "url": "https://onestepfurther.nu/semester2/curriculum/",
+    "img": "img/curriculum.png",
+    "notes": [
+      "+ JSON structure suitable for non-coder to fill out",
+      "+ dynamic layout based on quantative data in JSON",
+      "- not all finished"
+    ],
     "tools": ["", "", ""]
   },
   {
-    "nr": "8",
-    "name": "pie menu",
-    "type": "single",
-    "myRoll": "",
-    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
-    "img": "img/pie.gif",
-    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
+    "nr": "22",
+    "name": "Dashboard",
+    "type": "team",
+    "myRoll": "setup JSON, coding relating to JSON, design & user testing",
+    "url": "https://onestepfurther.nu/semester2/curriculum/",
+    "img": "img/curriculum.png",
+    "notes": [
+      "+ JSON structure suitable for non-coder to fill out",
+      "+ dynamic layout based on quantative data in JSON",
+      "- not all finished"
+    ],
     "tools": ["", "", ""]
   },
   {
-    "nr": "8",
-    "name": "pie menu",
-    "type": "single",
-    "myRoll": "",
-    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
-    "img": "img/pie.gif",
-    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
+    "nr": "23",
+    "name": "YFU",
+    "type": "team",
+    "myRoll": "Market research, Campaign Strategy, Design",
+    "url": "https://onestepfurther.nu/semester2/curriculum/",
+    "img": "img/curriculum.png",
+    "notes": [
+      "+ JSON structure suitable for non-coder to fill out",
+      "+ dynamic layout based on quantative data in JSON",
+      "- not all finished"
+    ],
+    "tools": ["Ai", "SoMe", "Campaign"]
+  },
+  {
+    "nr": "24",
+    "name": "Artist video",
+    "type": "team",
+    "myRoll": "storytelling and transition ideas",
+    "url": "https://onestepfurther.nu/semester2/curriculum/",
+    "img": "img/curriculum.png",
+    "notes": [
+      "+ JSON structure suitable for non-coder to fill out",
+      "+ dynamic layout based on quantative data in JSON",
+      "- not all finished"
+    ],
     "tools": ["", "", ""]
   },
   {
-    "nr": "8",
-    "name": "pie menu",
-    "type": "single",
-    "myRoll": "",
-    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
-    "img": "img/pie.gif",
-    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
+    "nr": "25",
+    "name": "Student Hub",
+    "type": "team",
+    "myRoll": "Idea, design, report",
+    "url": "https://onestepfurther.nu/semester2/curriculum/",
+    "img": "img/curriculum.png",
+    "notes": [
+      "+ JSON structure suitable for non-coder to fill out",
+      "+ dynamic layout based on quantative data in JSON",
+      "- not all finished"
+    ],
     "tools": ["", "", ""]
   },
   {
-    "nr": "8",
-    "name": "pie menu",
+    "nr": "26",
+    "name": "Circle of Mice",
     "type": "single",
     "myRoll": "",
-    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
-    "img": "img/pie.gif",
-    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
-    "tools": ["", "", ""]
+    "url": "https://onestepfurther.nu/semester2/curriculum/",
+    "img": "img/curriculum.png",
+    "notes": [
+      "+ a web interface for researchers to use and maintain a gene database",
+      "+ focus on UX of different users, prevent input error & improve work efficiency",
+      "- not all finished"
+    ],
+    "tools": ["MySQL", "PHP", ""]
   },
   {
-    "nr": "8",
-    "name": "pie menu",
+    "nr": "27",
+    "name": "Huset",
     "type": "single",
     "myRoll": "",
-    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
-    "img": "img/pie.gif",
-    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
-    "tools": ["", "", ""]
-  },
-  {
-    "nr": "8",
-    "name": "pie menu",
-    "type": "single",
-    "myRoll": "",
-    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
-    "img": "img/pie.gif",
-    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
-    "tools": ["", "", ""]
+    "url": "https://onestepfurther.nu/semester2/huset-kbh/index.html",
+    "report": [
+      "https://onestepfurther.nu/semester2/huset-kbh/07.02.01_wp-backend-structure_1-iteration.pdf",
+      "https://onestepfurther.nu/semester2/huset-kbh/07.02.02_wp-web-app-structure_1-iteration.pdf",
+      "https://onestepfurther.nu/semester2/huset-kbh/07.03.01_final-presentation_yan-li.pdf"
+    ],
+    "img": "img/huset.png",
+    "notes": [
+      "a web app for Huset's events",
+      "++ focus Information Architecture in relation to UX",
+      "+ visual design practice"
+    ],
+    "tools": ["MySQL", "PHP", ""]
   }
 ]
