@@ -161,16 +161,25 @@ foreignObject p {
   grid-template-columns: 50vw 30vw;
   grid-gap: 4vw;
 }
+#about {
+  padding: 0 8vw 4vw;
+  display: grid;
+  grid-template-columns: 15vw 31vw 30vw;
+  grid-gap: 4vw;
+}
+#about.hide{
+  display: none;
+}
+img.portrait {
+  width: 100%;
+}
 .status {
   padding: 7vw 4vw;
   background-color: white;
   height: 60vw;
   width: 100%;
 }
-#about {
-  text-align: center;
-  margin: 4vw;
-}
+
 .hide {
   display: none;
 }
