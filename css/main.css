@@ -139,11 +139,8 @@ polygon:not(.shadow):not(.triangle) {
   display: none;
   font-weight: 100;
 }
-foreignObject.other ul li {
-  display: inline-block;
-}
-foreignObject.other p {
-  font-size: 10px;
+foreignObject.other span.project{
+  cursor: pointer;
 }
 foreignObject nav {
   width: 119px; /* not dynamic here, need to change */
