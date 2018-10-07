@@ -77,7 +77,7 @@ svg {
 }
 svg#head #head {
   stroke-width: 2;
-  fill：white；
+  fill：white;
 }
 svg#head {
   position: absolute;
@@ -186,7 +186,7 @@ foreignObject p {
   line-height: 24px;
 }
 span.project:not(.grey-out) {
-  margin-right: 10px;
+  margin: 0 5px;
   cursor: pointer;
 }
 .grey-out {
@@ -272,4 +272,7 @@ p.close {
   /* clip-path: polygon(50% 0%, 50% 100%, 15% 85%, 0% 50%, 15% 15%);   */
   background-color: var(--dark-grey);
   opacity: .1;
+}
+.opacity {
+  opacity: .8;
 }
