@@ -35,7 +35,13 @@ function getData(project) {
           note2.textContent = projects[index].notes[1];
           note3.textContent = projects[index].notes[2];
           img.setAttribute("src", projects[index].img);
-          url.setAttribute("href", projects[index].url);
+          if (projects[index].url) {
+            url.textContent = "see project";
+            url.setAttribute("href", projects[index].url);
+          } else {
+            url.textContent = "local use only";
+            url.setAttribute("href", "");
+          }
           if (projects[index].report) {
             reportS.forEach(eachReport);
             function eachReport(r, i) {

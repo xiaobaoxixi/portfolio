@@ -186,8 +186,12 @@ foreignObject p {
   line-height: 24px;
 }
 span.project:not(.grey-out) {
-  margin: 0 5px;
+  margin-right: 10px;
   cursor: pointer;
+}
+.other span.project {
+  margin-left: 10px;
+  margin-right: 0;
 }
 .grey-out {
   opacity: 0.3;

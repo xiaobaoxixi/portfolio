@@ -34,7 +34,7 @@
     "nr": "3",
     "name": "Conceptual artist portfolio site",
     "type": "team",
-    "myRoll": "My tasks: design, coding, market research, user testing",
+    "myRoll": "My contributions: design, coding, market research, user testing",
     "url": "https://onestepfurther.nu/semester2/gn",
     "img": "img/heart.gif",
     "notes": [
@@ -48,7 +48,7 @@
     "nr": "4",
     "name": "Game: shooting planes",
     "type": "team",
-    "myRoll": "My tasks: game idea, coding",
+    "myRoll": "My contributions: game idea, coding",
     "url": "https://onestepfurther.nu/semester1/animations/strangelove/planes.html",
     "img": "img/plane.png",
     "notes": [
@@ -62,7 +62,7 @@
     "nr": "5",
     "name": "Game: bomb rodeo",
     "type": "team",
-    "myRoll": "My tasks: game idea, coding",
+    "myRoll": "My contributions: game idea, coding",
     "url": "https://onestepfurther.nu/semester1/animations/strangelove/pilot1.html",
     "img": "img/rodeo.png",
     "notes": [
@@ -76,7 +76,7 @@
     "nr": "6",
     "name": "Game: help out & stay alive",
     "type": "team",
-    "myRoll": "My tasks: game idea, coding",
+    "myRoll": "My contributions: game idea, coding",
     "url": "https://onestepfurther.nu/semester1/animations/interactiveAnimation/wednesday.html",
     "img": "img/moving.png",
     "notes": [
@@ -136,7 +136,7 @@
     "url": "https://onestepfurther.nu/semester3/effects-library/",
     "img": "img/effects.png",
     "notes": [
-      "++ including: parallax, drawing trace, drag, zoom and many more",
+      "++ more than 19 effects: parallax, drawing, drag, zoom, reading light and so on.",
       "+ timing with requestAnimationFrame",
       "+ easing effect through vanilla JS, no CSS"
     ],
@@ -170,7 +170,7 @@
     "nr": "13",
     "name": "Artist portfolio",
     "type": "team",
-    "myRoll": "My tasks: design, backend setup, front-end coding, report",
+    "myRoll": "My contributions: design, backend setup, front-end coding, report",
     "url": "https://onestepfurther.nu/semester2/gn/portfolio.html?lang=en",
     "img": "img/art.png",
     "notes": [
@@ -212,20 +212,24 @@
     "nr": "16",
     "name": "Page loader",
     "type": "team",
-    "myRoll": "",
-    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
-    "img": "img/pie.gif",
-    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
+    "myRoll": "My task:",
+    "url": " ",
+    "img": "",
+    "notes": ["part of the artist portpolio project", "", ""],
     "tools": ["", "", ""]
   },
   {
     "nr": "17",
-    "name": "Text effect",
+    "name": "overlay effect",
     "type": "single",
     "myRoll": "",
-    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
-    "img": "img/pie.gif",
-    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
+    "url": "https://onestepfurther.nu/semester3/effects-library/index.html#overlap-clip-path",
+    "img": "img/overlap.gif",
+    "notes": [
+      "original solution with only JS and no CSS, less ideal",
+      "better solution with CSS clip-path",
+      "scroll up/down to compare 2 solutions"
+    ],
     "tools": ["", "", ""]
   },
   {
@@ -233,9 +237,9 @@
     "name": "This site",
     "type": "single",
     "myRoll": "",
-    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
-    "img": "img/pie.gif",
-    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
+    "url": "https://onestepfurther.nu/",
+    "img": "img/this.gif",
+    "notes": ["+ learn SVG", "- not all finished", ""],
     "tools": ["", "", ""]
   },
   {
@@ -243,9 +247,9 @@
     "name": "Wavy",
     "type": "single",
     "myRoll": "",
-    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
-    "img": "img/pie.gif",
-    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
+    "url": "https://onestepfurther.nu/semester3/greensock/wavy-circle.html",
+    "img": "img/wavy.gif",
+    "notes": ["+ basic greensock practice", "- not finished", ""],
     "tools": ["", "", ""]
   },
   {
@@ -253,16 +257,20 @@
     "name": "BusinessElem",
     "type": "single",
     "myRoll": "",
-    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
-    "img": "img/pie.gif",
-    "notes": ["+ no svg for the pies, only <div>s", "- not all finished", ""],
+    "url": "https://onestepfurther.nu/semester3/greensock/business-icons.html",
+    "img": "img/busi-icons.gif",
+    "notes": [
+      "basic greensock practice",
+      "+ starting position from all direction with same probability",
+      ""
+    ],
     "tools": ["", "", ""]
   },
   {
     "nr": "21",
     "name": "Curriculum",
     "type": "team",
-    "myRoll": "setup JSON, coding relating to JSON, design & user testing",
+    "myRoll": "My contributions: setup JSON, coding relating to JSON, design & user testing",
     "url": "https://onestepfurther.nu/semester2/curriculum/",
     "img": "img/curriculum.png",
     "notes": [
@@ -276,13 +284,13 @@
     "nr": "22",
     "name": "Dashboard",
     "type": "team",
-    "myRoll": "setup JSON, coding relating to JSON, design & user testing",
+    "myRoll": "My contributions: design, coding",
     "url": "https://onestepfurther.nu/semester2/curriculum/",
-    "img": "img/curriculum.png",
+    "img": "img/dashboard.png",
     "notes": [
-      "+ JSON structure suitable for non-coder to fill out",
-      "+ dynamic layout based on quantative data in JSON",
-      "- not all finished"
+      "backstage dashboard with inforgraphic approach",
+      "dynamic data from JSON trigger animation",
+      ""
     ],
     "tools": ["", "", ""]
   },
@@ -290,27 +298,30 @@
     "nr": "23",
     "name": "YFU",
     "type": "team",
-    "myRoll": "Market research, Campaign Strategy, Design",
-    "url": "https://onestepfurther.nu/semester2/curriculum/",
-    "img": "img/curriculum.png",
-    "notes": [
-      "+ JSON structure suitable for non-coder to fill out",
-      "+ dynamic layout based on quantative data in JSON",
-      "- not all finished"
+    "myRoll": "My contributions: market research, develop campaign strategies, design",
+    "url": "https://onestepfurther.nu/semester2/yfu/",
+    "report": [
+      "http://onestepfurther.nu/semester2/yfu/06_01_02-the-report-documentation.pdf"
     ],
-    "tools": ["Ai", "SoMe", "Campaign"]
+    "img": "img/yfu.png",
+    "notes": [
+      "+ Social Media campaign and long term Strategy",
+      "+ visual elements design",
+      ""
+    ],
+    "tools": ["", "", ""]
   },
   {
     "nr": "24",
     "name": "Artist video",
     "type": "team",
-    "myRoll": "storytelling and transition ideas",
-    "url": "https://onestepfurther.nu/semester2/curriculum/",
-    "img": "img/curriculum.png",
+    "myRoll": "My contributions: storytelling and transition ideas",
+    "url": "https://onestepfurther.nu/semester2/gn/about.html?lang=en",
+    "img": "img/artist.png",
     "notes": [
-      "+ JSON structure suitable for non-coder to fill out",
-      "+ dynamic layout based on quantative data in JSON",
-      "- not all finished"
+      "+ work with very limited material",
+      "+ present Conceptual art in a visual way",
+      ""
     ],
     "tools": ["", "", ""]
   },
@@ -318,14 +329,10 @@
     "nr": "25",
     "name": "Student Hub",
     "type": "team",
-    "myRoll": "Idea, design, report",
+    "myRoll": "My contributions: business concept, report, design",
     "url": "https://onestepfurther.nu/semester2/curriculum/",
-    "img": "img/curriculum.png",
-    "notes": [
-      "+ JSON structure suitable for non-coder to fill out",
-      "+ dynamic layout based on quantative data in JSON",
-      "- not all finished"
-    ],
+    "img": "img/hub.gif",
+    "notes": ["group work", "", ""],
     "tools": ["", "", ""]
   },
   {
@@ -333,12 +340,12 @@
     "name": "Circle of Mice",
     "type": "single",
     "myRoll": "",
-    "url": "https://onestepfurther.nu/semester2/curriculum/",
-    "img": "img/curriculum.png",
+    "url": "",
+    "img": "img/circle-of-mice.png",
     "notes": [
       "+ a web interface for researchers to use and maintain a gene database",
-      "+ focus on UX of different users, prevent input error & improve work efficiency",
-      "- not all finished"
+      "+ focus on UX of different users, prevent input error & improve work efficiency and collaboration",
+      "with MySQL and PHP, not all finished"
     ],
     "tools": ["MySQL", "PHP", ""]
   },
@@ -359,6 +366,20 @@
       "++ focus Information Architecture in relation to UX",
       "+ visual design practice"
     ],
-    "tools": ["MySQL", "PHP", ""]
+    "tools": ["", "", ""]
+  },
+  {
+    "nr": "28",
+    "name": "Taint color effect",
+    "type": "single",
+    "myRoll": "",
+    "url": "https://onestepfurther.nu/semester3/effects-library/index.html#taint",
+    "img": "img/taint.gif",
+    "notes": [
+      "a subtle effect of two colors meet and taint each other",
+      "+ with CSS gradient",
+      ""
+    ],
+    "tools": ["", "", ""]
   }
 ]
