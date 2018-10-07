@@ -1,8 +1,6 @@
 "use strict";
 const navSpans = document.querySelectorAll("nav span");
-const projects = document.querySelectorAll(
-  ".project-group li span:not(.grey-out)"
-);
+const projects = document.querySelectorAll("span.project:not(.grey-out)");
 const modal = document.querySelector("#single-project");
 const modalShadow = document.querySelector("#single-project-shadow");
 const closeX = document.querySelector("p.close");

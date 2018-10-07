@@ -268,7 +268,7 @@
     "notes": [
       "+ JSON structure suitable for non-coder to fill out",
       "+ dynamic layout based on quantative data in JSON",
-      "- not all finished"
+      "Design process, incl. BERT test etc."
     ],
     "tools": ["", "", ""]
   },

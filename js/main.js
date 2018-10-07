@@ -53,9 +53,9 @@ function init() {
       letterI,
       0.3,
       {
-        scaleX: 0.7,
-        scaleY: 0.17,
-        y: 111
+        scaleX: 0.67,
+        scaleY: 0.18,
+        y: 110
       },
       "-=.1"
     )
@@ -67,7 +67,7 @@ function init() {
     .to(amSentence, 0.6, { opacity: 1 })
     .staggerTo(allLinesInWeb, 0.3, { stroke: "white" }, 0.01, "+=2")
     .to(web, 0.7, { x: 230, y: 60, scale: 2 }, "-=.7")
-    .to(letterI, 0.7, { x: -233, y: -20, scaleY: 1.4 }, "-=.7")
+    .to(letterI, 0.7, { x: -235, y: -6, scaleY: 1.3 }, "-=.7")
     .to(
       //      [amSentence, head],
       amSentence,

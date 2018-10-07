@@ -38,7 +38,7 @@ nav span {
   color: var(--light-grey);
   border-bottom: none;
 }
-.burger {
+/* .burger {
   position: fixed;
   padding: 1.2vw 1.55vw;
   font-size: 2vw;
@@ -51,54 +51,7 @@ nav span {
 }
 .burger p.show {
   background-color: var(--yellow);
-}
-/* #asideSVG {
-  width: 37vw;
-  height: 37vw;
-  position: relative;
-  left: -10vw;
-  top: -10vw;
-}
-#asideSVG polyline {
-  fill: transparent;
-  stroke: var(--dark-grey);
-  stroke-width: 6;
-  stroke-dasharray: 6 8;
-}
-aside {
-  z-index: -1;
-  width: 41vw;
-  height: 41vw;
-  padding: 10vw 0 0 17vw;
-  min-width: 170px;
-  background-color: white;
-  /* background-color: rgba(255, 255, 255, 0.95); */
-  /* position: fixed;
-  left: -15vw;
-  top: -7vw;
-  transition: all 0.2s;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  opacity: 0;
-}
-aside.show {
-  z-index: 10;
-  animation: aside 0.2s ease-out forwards;
-}
-@keyframes aside {
-  to {
-    opacity: 1;
-  }
-}
-aside ul {
-  font-size: 0;
-  position: absolute;
-  top: 15vw;
-}
-aside.show ul {
-  list-style: none;
-  line-height: 46px;
-  font-size: 19px;
-} */ 
+} */
 footer {
   font-size: 0.9vw;
   font-weight: 500;
@@ -186,6 +139,12 @@ polygon:not(.shadow):not(.triangle) {
   display: none;
   font-weight: 100;
 }
+foreignObject.other ul li {
+  display: inline-block;
+}
+foreignObject.other p {
+  font-size: 10px;
+}
 foreignObject nav {
   width: 119px; /* not dynamic here, need to change */
   text-align: right;
@@ -229,7 +188,7 @@ foreignObject p {
   font-size: 10px;
   line-height: 24px;
 }
-.project-group li span:not(.grey-out) {
+span.project:not(.grey-out) {
   margin-right: 10px;
   cursor: pointer;
 }
