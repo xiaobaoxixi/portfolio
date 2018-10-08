@@ -24,7 +24,7 @@ function listenNav(n) {
 // display single project
 projects.forEach(listenProject);
 function listenProject(p) {
-  p.addEventListener("click", showSingleProject);
+  p.addEventListener("mouseenter", showSingleProject);
   function showSingleProject(m) {
     // reset
     closeModal();
