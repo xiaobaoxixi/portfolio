@@ -61,38 +61,36 @@ function init() {
       },
       "-=.1"
     )
-    //  .to(head, 0.3, { scale: 0.45, x: -10, y: 60 }, "-=.3")
     .to(amSentence, 0.5, { opacity: 1 }, "+=.3")
     .to(amSentence, 1.5, { x: 0 })
-    //    .to(amSentence, 0.3, { opacity: 0 })
     .call(changeText)
     .to(amSentence, 0.5, { y: -45 })
-    .to(amSentence2, 0.5, { opacity: 1 }, "-=.6")
-    .to(amSentence, 0.5, { y: -90 }, "+=.6")
-    .to(amSentence2, 0.5, { y: -45 }, "-=.6")
-    .to(amSentence3, 0.5, { opacity: 1 }, "-=.3")
+    .to(amSentence2, 0.5, { opacity: 1 }, "-=.5")
+    .to(amSentence, 0.4, { y: -90 }, "+=.5")
+    .to(amSentence2, 0.4, { y: -45 }, "-=.5")
+    .to(amSentence3, 0.4, { opacity: 1 }, "-=.2")
+    .to(letterI, 0.1, { opacity: 0 }, "-=.1")
     .to(
-      //      [amSentence, head],
       [amSentence, amSentence2, amSentence3],
-      0.1,
+      0.25,
       {
         x: -235,
-        //        y: -429,
+        opacity: 0,
         scaleX: 0
       },
-      "+=2"
+      "+=2.5"
     )
+    .call(showtriangleParts)
     //    .to(letterI, 0.7, { x: -235, y: -6, scaleY: 1.3 }, "-=.7")
     .staggerTo(
       allLinesInWeb,
-      0.3,
+      0.1,
       { stroke: "white", opacity: 0.7 },
       0.01,
-      "+=.1"
+      "-=.3"
     )
-    .to(web, 0.4, { x: 230, y: -50, scale: 2 }, "-=.8")
-    .call(showNav, this, "-=.7")
-    .call(showtriangleParts, this, "-=.2")
+    .to(web, 0.3, { x: 230, y: -50, scale: 2 }, "-=.3")
+    .call(showNav)
     .to(letterI, 0.1, { opacity: 0 }, "-=.1")
     .to(t1, 0.3, { rotation: -60 })
     .to(triangleStrokes, 0.3, { rotation: 30, transformOrigin: "left bottom" })
