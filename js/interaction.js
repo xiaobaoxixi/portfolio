@@ -55,7 +55,7 @@ function listenProject(p) {
       let width = modal.getBoundingClientRect().width;
       if (
         width <
-        viewportWidth / 2.1 // better make different sizes, small/medium/big
+        viewportWidth / 1.9 // better make different sizes, small/medium/big
         // (positionX >= viewportWidth / 2 && width < positionX * 0.5) ||
         // (positionX < viewportWidth / 2 &&
         //   width < (viewportWidth - positionX) * 0.5)
