@@ -1,7 +1,7 @@
 "use strict";
 const nav = document.querySelector("nav.main");
 const svgIntro = document.querySelector("svg#intro");
-const allLinesInWeb = document.querySelectorAll("#lines line");
+const allLinesInWeb = document.querySelectorAll("#lines *");
 //const letterIParts = document.querySelectorAll("g#i *");
 const letterI = document.querySelector("#i line");
 const amSentence = document.querySelector(".amSentence");

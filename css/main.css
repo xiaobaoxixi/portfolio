@@ -126,6 +126,11 @@ text {
   /* fill: rgba(255, 255, 255, 0.7); */
   pointer-events: none;
 }
+path {
+stroke-width: 2;
+stroke: var(--dark-grey);
+fill: var(--dark-grey);
+}
 #changingShape line {
   stroke-width: 1;
   stroke-dasharray: 2 3;
