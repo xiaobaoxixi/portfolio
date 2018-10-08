@@ -72,7 +72,7 @@ function init() {
       0.01,
       "+=2"
     )
-    .to(web, 0.7, { x: 230, y: 60, scale: 2 }, "-=.7")
+    .to(web, 0.7, { x: 230, y: -50, scale: 2 }, "-=.7")
     .to(letterI, 0.7, { x: -235, y: -6, scaleY: 1.3 }, "-=.7")
     .to(
       //      [amSentence, head],
