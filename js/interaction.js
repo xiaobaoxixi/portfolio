@@ -26,12 +26,15 @@ projects.forEach(listenProject);
 function listenProject(p) {
   p.addEventListener("mouseenter", timingCount);
   function timingCount(m) {
+    p.removeEventListener("mouseenter", timingCount);
     let ms = 0;
-    let timerIntervel = setInterval(timer, 10); // 10*20 = 200ms delay
+    let timerIntervel = setInterval(timer, 10);
     function timer() {
       ms++;
-      if (ms === 20) {
+      if (ms === 13) {
         showSingleProject(m);
+      } else {
+        p.addEventListener("mouseenter", timingCount);
       }
     }
   }
@@ -57,7 +60,7 @@ function listenProject(p) {
         // (positionX < viewportWidth / 2 &&
         //   width < (viewportWidth - positionX) * 0.5)
       ) {
-        width += (viewportWidth / 2000) * 60;
+        width += (viewportWidth / 1500) * 60;
         modal.style.width = `${width}px`;
         modal.style.height = `${width}px`; // for the modal div, height and width are the same
         modal.style.left = `${positionX - width / 2}px`;

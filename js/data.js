@@ -36,7 +36,7 @@ function getData(project) {
           note3.textContent = projects[index].notes[2];
           img.setAttribute("src", projects[index].img);
           if (projects[index].url) {
-            url.textContent = "see project";
+            url.textContent = "see original project";
             url.setAttribute("href", projects[index].url);
           } else {
             url.textContent = "local use only";
