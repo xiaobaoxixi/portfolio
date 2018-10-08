@@ -31,7 +31,7 @@ function listenProject(p) {
     let timerIntervel = setInterval(timer, 10);
     function timer() {
       ms++;
-      if (ms === 13) {
+      if (ms === 30) {
         showSingleProject(m);
       } else {
         p.addEventListener("mouseenter", timingCount);
