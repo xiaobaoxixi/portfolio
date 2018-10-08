@@ -162,7 +162,7 @@ foreignObject p {
   grid-gap: 4vw;
 }
 #about {
-  padding: 4vw 8vw;
+  padding: 4vw 8vw 8vw;
   display: grid;
   grid-template-columns: 15vw 31vw 30vw;
   grid-gap: 4vw;
@@ -288,4 +288,7 @@ p.close {
 }
 .opacity {
   opacity: .8;
+}
+.contact {
+  padding: 2vw;
 }

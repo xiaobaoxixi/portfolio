@@ -47,7 +47,7 @@ function listenProject(p) {
         // (positionX < viewportWidth / 2 &&
         //   width < (viewportWidth - positionX) * 0.5)
       ) {
-        width += (viewportWidth / 1000) * 60;
+        width += (viewportWidth / 2000) * 60;
         modal.style.width = `${width}px`;
         modal.style.height = `${width}px`; // for the modal div, height and width are the same
         modal.style.left = `${positionX - width / 2}px`;

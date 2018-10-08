@@ -199,11 +199,11 @@
     "name": "'Traverser'",
     "type": "single",
     "myRoll": "",
-    "url": "https://onestepfurther.nu/semester1/animations/projectPool1/projectPool1.html",
+    "url": "https://onestepfurther.nu/semester3/parser/tree-traverser.html",
     "img": "img/traverser.png",
     "notes": [
       "+ read HTML file and output element structure with indentation as in code editor",
-      "",
+      "! open console to see output",
       ""
     ],
     "tools": ["", "", ""]
@@ -261,7 +261,7 @@
     "img": "img/busi-icons.gif",
     "notes": [
       "basic greensock practice",
-      "+ starting position from all direction with same probability",
+      "+ random starting position from all directions with 'same' probability",
       ""
     ],
     "tools": ["", "", ""]
@@ -275,7 +275,7 @@
     "img": "img/curriculum.png",
     "notes": [
       "+ JSON structure suitable for non-coder to fill out",
-      "+ dynamic layout based on quantative data in JSON",
+      "+ dynamic Grid layout based on quantative data in JSON",
       "Design process, incl. BERT test etc."
     ],
     "tools": ["", "", ""]
@@ -330,7 +330,7 @@
     "name": "Student Hub",
     "type": "team",
     "myRoll": "My contributions: business concept, report, design",
-    "url": "https://onestepfurther.nu/semester2/curriculum/",
+    "url": "https://onestepfurther.nu/semester1/portfolio/ux.html",
     "img": "img/hub.gif",
     "notes": ["group work", "", ""],
     "tools": ["", "", ""]
