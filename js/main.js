@@ -5,6 +5,8 @@ const allLinesInWeb = document.querySelectorAll("#lines *");
 //const letterIParts = document.querySelectorAll("g#i *");
 const letterI = document.querySelector("#i line");
 const amSentence = document.querySelector(".amSentence");
+const amSentence2 = document.querySelector(".amSentence2");
+const amSentence3 = document.querySelector(".amSentence3");
 const web = document.querySelector("#lines");
 const triangleStrokes = document.querySelector(".triangleParts");
 const t1 = document.querySelector(".t1");
@@ -54,37 +56,41 @@ function init() {
       0.3,
       {
         scaleX: 0.67,
-        scaleY: 0.18,
+        scaleY: 0.17,
         y: 110
       },
       "-=.1"
     )
     //  .to(head, 0.3, { scale: 0.45, x: -10, y: 60 }, "-=.3")
-    .to(amSentence, 0.6, { opacity: 1 }, "+=.3")
+    .to(amSentence, 0.5, { opacity: 1 }, "+=.3")
     .to(amSentence, 1.5, { x: 0 })
-    .to(amSentence, 0.3, { opacity: 0 })
+    //    .to(amSentence, 0.3, { opacity: 0 })
     .call(changeText)
-    .to(amSentence, 0.6, { opacity: 1 })
+    .to(amSentence, 0.5, { y: -45 })
+    .to(amSentence2, 0.5, { opacity: 1 }, "-=.6")
+    .to(amSentence, 0.5, { y: -90 }, "+=.6")
+    .to(amSentence2, 0.5, { y: -45 }, "-=.6")
+    .to(amSentence3, 0.5, { opacity: 1 }, "-=.3")
+    .to(
+      //      [amSentence, head],
+      [amSentence, amSentence2, amSentence3],
+      0.1,
+      {
+        x: -235,
+        //        y: -429,
+        scaleX: 0
+      },
+      "+=2"
+    )
+    //    .to(letterI, 0.7, { x: -235, y: -6, scaleY: 1.3 }, "-=.7")
     .staggerTo(
       allLinesInWeb,
       0.3,
       { stroke: "white", opacity: 0.7 },
       0.01,
-      "+=2"
+      "+=.1"
     )
-    .to(web, 0.7, { x: 230, y: -50, scale: 2 }, "-=.7")
-    .to(letterI, 0.7, { x: -235, y: -6, scaleY: 1.3 }, "-=.7")
-    .to(
-      //      [amSentence, head],
-      amSentence,
-      0.5,
-      {
-        x: -220,
-        y: -429,
-        scale: 0
-      },
-      "-=.5"
-    )
+    .to(web, 0.4, { x: 230, y: -50, scale: 2 }, "-=.8")
     .call(showNav, this, "-=.7")
     .call(showtriangleParts, this, "-=.2")
     .to(letterI, 0.1, { opacity: 0 }, "-=.1")
@@ -95,8 +101,7 @@ function init() {
     .call(turnAndChange);
 
   function changeText() {
-    amSentence.textContent =
-      "am curious, learn fast & always go one step further";
+    amSentence.textContent = "I am learning to be a front-end developer";
   }
   function showNav() {
     nav.classList.remove("hide");
