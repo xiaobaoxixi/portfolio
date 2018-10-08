@@ -24,7 +24,7 @@
     "url": "https://onestepfurther.nu/semester1/animations/version2/ballGame.html",
     "img": "img/bounce.gif",
     "notes": [
-      "+++ use still image and simple <div> to create animated characters",
+      "+++ use static image and simple <div> to create animated characters",
       "+++ 12 realistic movements / stories",
       "+++ sound and background setup to enhance story telling"
     ],
@@ -38,7 +38,7 @@
     "url": "https://onestepfurther.nu/semester2/gn",
     "img": "img/heart.gif",
     "notes": [
-      "+ heart beating animation using a still image",
+      "+ heart beating animation using a static image",
       "+ present moving sculpture without using video",
       ""
     ],

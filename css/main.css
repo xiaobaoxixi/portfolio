@@ -128,8 +128,8 @@ text {
 }
 path {
 stroke-width: 2;
-stroke: var(--dark-grey);
-fill: var(--dark-grey);
+stroke: #333333;
+fill: #333333;
 }
 #changingShape line {
   stroke-width: 1;
@@ -145,7 +145,7 @@ fill: var(--dark-grey);
   font-weight: 100;
 }
 foreignObject.other span.project{
-  cursor: pointer;
+  cursor: all-scroll;
 }
 foreignObject nav {
   width: 119px; /* not dynamic here, need to change */
@@ -201,7 +201,7 @@ img.portrait {
 }
 span.project:not(.grey-out) {
   margin-right: 10px;
-  cursor: pointer;
+  cursor: all-scroll;
 }
 .other span.project {
   margin-left: 10px;
@@ -216,7 +216,7 @@ span.project:not(.grey-out) {
   height: 0;
   background-color: white; 
   clip-path: polygon(50% 0%, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0% 50%, 15% 15%);  
-  font-size: 1vw;
+  font-size: 16px;
 }
 #single-project section, #single-project h3 {
   margin-bottom: 13px;
@@ -227,8 +227,8 @@ p.close {
   font-size: 1.5em;
 }
 .desc {
-  width: 45%;
-  top: 4%;
+  width: 43%;
+  top: 7%;
   text-align: right;
 }
 .desc h3 {
@@ -261,7 +261,7 @@ p.close {
   background-color: white;
 }
 .type p {
-  font-size: .8em;
+  font-size: .9em;
   margin-bottom: 1em;
 }
 .tech ul {

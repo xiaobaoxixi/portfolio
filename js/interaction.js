@@ -24,7 +24,17 @@ function listenNav(n) {
 // display single project
 projects.forEach(listenProject);
 function listenProject(p) {
-  p.addEventListener("mouseenter", showSingleProject);
+  p.addEventListener("mouseenter", timingCount);
+  function timingCount(m) {
+    let ms = 0;
+    let timerIntervel = setInterval(timer, 10); // 10*20 = 200ms delay
+    function timer() {
+      ms++;
+      if (ms === 20) {
+        showSingleProject(m);
+      }
+    }
+  }
   function showSingleProject(m) {
     // reset
     closeModal();
@@ -42,7 +52,7 @@ function listenProject(p) {
       let width = modal.getBoundingClientRect().width;
       if (
         width <
-        viewportWidth / 2.5 // better make different sizes, small/medium/big
+        viewportWidth / 2.1 // better make different sizes, small/medium/big
         // (positionX >= viewportWidth / 2 && width < positionX * 0.5) ||
         // (positionX < viewportWidth / 2 &&
         //   width < (viewportWidth - positionX) * 0.5)
