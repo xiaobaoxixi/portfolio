@@ -284,13 +284,13 @@
     "nr": "22",
     "name": "Dashboard",
     "type": "team",
-    "myRoll": "My contributions: coding, design",
+    "myRoll": "My contributions: coding, idea development, visual design",
     "url": "https://onestepfurther.nu/semester3/dashboard/",
     "img": "img/dashboard.png",
     "notes": [
       "dashboard interface for a beer bar",
-      "build dynamic Grid based on data from backend, no fixed layout",
-      "build web element with live data "
+      "++ build dynamic Grid based on data from backend, no fixed layout",
+      "++ calculate statistic and build web element with live data "
     ],
     "tools": ["", "", ""]
   },
