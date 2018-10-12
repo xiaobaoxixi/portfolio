@@ -60,10 +60,9 @@ function init() {
         scaleY: 0.16,
         y: 113
       },
-      "-=.1"
+      "-=.3"
     )
     .to(amSentence, 0.5, { opacity: 1 }, "+=.3")
-    .to(letterI, 0.1, { opacity: 0 }, "-=.2")
     .to(amSentence, 1.5, { x: 0 })
     .call(changeText)
     .to(amSentence, 0.5, { y: -45 })
@@ -90,6 +89,7 @@ function init() {
       0.01,
       "-=.3"
     )
+    .to(letterI, 0.01, { opacity: 0, scaleX: 0, scaleY: 0 }, "-=.3")
     .to(web, 0.3, { x: 230, y: -50, scale: 2 }, "-=.3")
     .call(showNav)
     .to(letterI, 0.1, { opacity: 0 }, "-=.1")
