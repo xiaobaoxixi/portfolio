@@ -308,6 +308,9 @@ p.close {
     height: 65px;
     overflow: scroll;
   }
+  nav span {
+    margin-right: 0;
+  }
   .chart, #about {
     padding: 0 6vw;
     grid-template-columns: 1fr;
