@@ -21,6 +21,7 @@ const hexagon = document.querySelector(".hexagon");
 const octagon = document.querySelector(".octagon");
 const chart = document.querySelector(".chart");
 const about = document.querySelector("#about");
+const otherProject = document.querySelector(".other.project-group");
 // const h1 = document.querySelector("h1");
 // let h1CollapseState = false;
 let svgShrunkState = false;
@@ -297,6 +298,7 @@ function hexagonTurn() {
       //hide rollingpart, show octagon
       rollingPart.classList.add("hide");
       octagon.classList.remove("hide");
+      otherProject.classList.remove("hide");
       octagon.setAttribute("fill", "var(--fill)");
       listProjectGroup(octagon);
     }
