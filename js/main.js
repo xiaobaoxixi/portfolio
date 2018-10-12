@@ -61,14 +61,14 @@ function init() {
       },
       "-=.1"
     )
-    .to(amSentence, 0.5, { opacity: 1 }, "+=.3")
+    .to(amSentence, 0.3, { opacity: 1 }, "+=.3")
     .to(amSentence, 1.5, { x: 0 })
     .call(changeText)
-    .to(amSentence, 0.5, { y: -45 })
-    .to(amSentence2, 0.5, { opacity: 1 }, "-=.5")
+    .to(amSentence, 0.4, { y: -45 })
+    .to(amSentence2, 0.3, { opacity: 1 }, "-=.3")
     .to(amSentence, 0.4, { y: -90 }, "+=.5")
     .to(amSentence2, 0.4, { y: -45 }, "-=.5")
-    .to(amSentence3, 0.4, { opacity: 1 }, "-=.2")
+    .to(amSentence3, 0.3, { opacity: 1 }, "-=.3")
     .to(letterI, 0.1, { opacity: 0 }, "-=.1")
     .to(
       [amSentence, amSentence2, amSentence3],
