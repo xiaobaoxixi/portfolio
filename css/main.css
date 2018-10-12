@@ -53,10 +53,10 @@ nav span {
   background-color: var(--yellow);
 } */
 footer {
-  font-size: 0.9vw;
+  font-size: 13px;
   font-weight: 500;
   padding: 1em;
-  padding-left: 28vw;
+  text-align: center;
   color: var(--dark-grey);
 }
 .bg-color {
@@ -181,7 +181,6 @@ img.portrait {
 .status {
   padding: 7vw 4vw;
   background-color: white;
-  height: 60vw;
   width: 100%;
 }
 
@@ -308,5 +307,21 @@ p.close {
     grid-template-columns: 1fr;
     height: 65px;
     overflow: scroll;
+  }
+  .chart, #about {
+    padding: 0 6vw;
+    grid-template-columns: 1fr;
+    grid-gap: 4vw;
+    margin: 50px 0;
+  }
+  #about>div:nth-of-type(1){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-gap: 4vw;
+  }
+  .portrait {
+    height: 100%;
+    width: auto;
   }
 }
