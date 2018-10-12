@@ -56,13 +56,14 @@ function init() {
       letterI,
       0.3,
       {
-        scaleX: 0.67,
-        scaleY: 0.17,
-        y: 110
+        scaleX: 0.65,
+        scaleY: 0.16,
+        y: 113
       },
       "-=.1"
     )
     .to(amSentence, 0.5, { opacity: 1 }, "+=.3")
+    .to(letterI, 0.1, { opacity: 0 }, "-=.2")
     .to(amSentence, 1.5, { x: 0 })
     .call(changeText)
     .to(amSentence, 0.5, { y: -45 })
@@ -70,7 +71,6 @@ function init() {
     .to(amSentence, 0.4, { y: -90 }, "+=.5")
     .to(amSentence2, 0.4, { y: -45 }, "-=.5")
     .to(amSentence3, 0.4, { opacity: 1 }, "-=.2")
-    .to(letterI, 0.1, { opacity: 0 }, "-=.1")
     .to(
       [amSentence, amSentence2, amSentence3],
       0.25,
