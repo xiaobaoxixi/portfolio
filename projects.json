@@ -189,8 +189,8 @@
     "img": "img/shuffle.png",
     "notes": [
       "+ use JS Object to achieve DRY",
-      "+ multi level sort, shuffle",
-      "+ aim for display efficiency"
+      "+ shuffle & multi level sort",
+      "+ aim for efficiency"
     ],
     "tools": ["", "", ""]
   },
@@ -284,13 +284,13 @@
     "nr": "22",
     "name": "Dashboard",
     "type": "team",
-    "myRoll": "My contributions: design, coding",
+    "myRoll": "My contributions: coding, design",
     "url": "https://onestepfurther.nu/semester3/dashboard/",
     "img": "img/dashboard.png",
     "notes": [
-      "backstage dashboard with inforgraphic approach",
-      "dynamic data from JSON trigger animation",
-      ""
+      "dashboard interface for a beer bar",
+      "build dynamic Grid based on data from backend, no fixed layout",
+      "build web element with live data "
     ],
     "tools": ["", "", ""]
   },
