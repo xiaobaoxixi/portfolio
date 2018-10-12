@@ -145,7 +145,7 @@ fill: #333333;
   font-weight: 100;
 }
 foreignObject.other span.project{
-  cursor: all-scroll;
+  cursor: pointer;
 }
 foreignObject nav {
   width: 119px; /* not dynamic here, need to change */
@@ -201,7 +201,7 @@ img.portrait {
 }
 span.project:not(.grey-out) {
   margin-right: 10px;
-  cursor: all-scroll;
+  cursor: pointer;
 }
 .other span.project {
   margin-left: 10px;

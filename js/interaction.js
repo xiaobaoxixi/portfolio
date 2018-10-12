@@ -24,17 +24,18 @@ function listenNav(n) {
 // display single project
 projects.forEach(listenProject);
 function listenProject(p) {
-  p.addEventListener("mouseenter", timingCount);
-  function timingCount(m) {
-    let ms = 0;
-    let timerIntervel = setInterval(timer, 10);
-    function timer() {
-      ms++;
-      if (ms === 31) {
-        showSingleProject(m);
-      }
-    }
-  }
+  //  p.addEventListener("mouseenter", timingCount);
+  // function timingCount(m) {
+  //   let ms = 0;
+  //   let timerIntervel = setInterval(timer, 10);
+  //   function timer() {
+  //     ms++;
+  //     if (ms === 31) {
+  //       showSingleProject(m);
+  //     }
+  //   }
+  // }
+  p.addEventListener("click", showSingleProject);
   function showSingleProject(m) {
     // reset
     closeModal();
