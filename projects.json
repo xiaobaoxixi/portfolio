@@ -52,9 +52,9 @@
     "url": "https://onestepfurther.nu/semester1/animations/strangelove/planes.html",
     "img": "img/plane.png",
     "notes": [
-      "+ combine simple visual treatment to enhence realism ",
-      "++ one of the most popular games among the gamers at NNY ",
-      "+ difficulty change based on user's gaming ability "
+      "part of a interactive movie trailor project",
+      "++ combine simple visual treatment to enhence realism ",
+      "+ difficulty change based on user's gaming ability, one of the most popular games among the gamers at NNY "
     ],
     "tools": ["", "", ""]
   },
@@ -66,9 +66,9 @@
     "url": "https://onestepfurther.nu/semester1/animations/strangelove/pilot1.html",
     "img": "img/rodeo.png",
     "notes": [
-      "+ 3D effect with CSS perspective ",
-      "- visual and timing less polished",
-      ""
+      "part of a interactive movie trailor project",
+      "+ '3D' effect with CSS perspective ",
+      "- visual and timing less polished"
     ],
     "tools": ["", "", ""]
   },
