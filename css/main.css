@@ -23,7 +23,7 @@ nav.main {
   position: fixed;
   height: 50px;
   width: 100vw;
-  padding: 13px 6vw;
+  padding: 14px 6vw; /* the yellow underline sit right below the white bg of nav */
   background-color: white;
   z-index: 11;
 }
@@ -300,4 +300,13 @@ p.close {
 }
 .bold {
   font-weight: 700;
+}
+
+@media screen and (max-width:768px) {
+  nav.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 65px;
+    overflow: scroll;
+  }
 }
