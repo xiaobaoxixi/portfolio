@@ -22,6 +22,7 @@ const octagon = document.querySelector(".octagon");
 const chart = document.querySelector(".chart");
 const about = document.querySelector("#about");
 const otherProject = document.querySelector(".other.project-group");
+const sideTech = document.querySelector(".side-tech");
 // const h1 = document.querySelector("h1");
 // let h1CollapseState = false;
 let svgShrunkState = false;
@@ -64,8 +65,8 @@ function init() {
     )
     .to(amSentence, 0.5, { opacity: 1 }, "+=.3")
     .to(amSentence, 1.5, { x: 0 })
-    .call(changeText)
-    .to(amSentence, 0.5, { y: -45 })
+    //    .call(changeText)
+    .to(amSentence, 0.5, { y: -45 }, "+=.5")
     .to(amSentence2, 0.5, { opacity: 1 }, "-=.5")
     .to(amSentence, 0.4, { y: -90 }, "+=.5")
     .to(amSentence2, 0.4, { y: -45 }, "-=.5")
@@ -78,7 +79,7 @@ function init() {
         opacity: 0,
         scaleX: 0
       },
-      "+=2.5"
+      "+=4.5"
     )
     .call(showtriangleParts)
     //    .to(letterI, 0.7, { x: -235, y: -6, scaleY: 1.3 }, "-=.7")
@@ -90,7 +91,7 @@ function init() {
       "-=.3"
     )
     .to(letterI, 0.01, { opacity: 0, scaleX: 0, scaleY: 0 }, "-=.3")
-    .to(web, 0.3, { x: 230, y: -50, scale: 2 }, "-=.3")
+    .to(web, 0.3, { x: 220, y: -40, scale: 2.2 }, "-=.3")
     .call(showNav)
     .to(letterI, 0.1, { opacity: 0 }, "-=.1")
     .to(t1, 0.3, { rotation: -60 })
@@ -99,9 +100,9 @@ function init() {
     .call(collapseSvgIntro)
     .call(turnAndChange);
 
-  function changeText() {
-    amSentence.textContent = "I am learning to be a front-end developer";
-  }
+  // function changeText() {
+  //   amSentence.textContent = "I am learning to be a front-end developer";
+  // }
   function showNav() {
     nav.classList.remove("hide");
   }
@@ -299,6 +300,7 @@ function hexagonTurn() {
       rollingPart.classList.add("hide");
       octagon.classList.remove("hide");
       otherProject.classList.remove("hide");
+      sideTech.classList.remove("hide");
       octagon.setAttribute("fill", "var(--fill)");
       listProjectGroup(octagon);
     }
