@@ -334,3 +334,8 @@ p.close {
 .status h3, h5 {
   margin-top: 1em;
 }
+nav p a {
+  float:right; /* temp solution */
+  line-height: 47px;
+  margin: 0 10px;
+}
