@@ -182,7 +182,7 @@ img.portrait {
   width: 100%;
 }
 .status {
-  padding: 7vw 4vw;
+  padding: 50px 4vw;
   border-left: 7px solid white;
   width: 100%;
 }
@@ -191,8 +191,8 @@ img.portrait {
   display: none;
 }
 .status img {
-  width: 80%;
-  left: 10%;
+  width: 70%;
+  left: 15%;
 }
 .project-group ul {
   list-style: none;
@@ -330,4 +330,7 @@ p.close {
     height: 100%;
     width: auto;
   }
+}
+.status h3, h5 {
+  margin-top: 1em;
 }
