@@ -35,11 +35,11 @@ function getData(project) {
           note2.textContent = projects[index].notes[1];
           note3.textContent = projects[index].notes[2];
           img.setAttribute("src", projects[index].img);
-          if (projects[index].url && projects.nr !== 26) {
+          if (projects[index].url && projects.nr !== "26") {
             // nr26 is "circle of mice", the only project that needs special treatment
             url.textContent = "see original project";
             url.setAttribute("href", projects[index].url);
-          } else if (projects[index].url && projects.nr === 26) {
+          } else if (projects[index].url && projects.nr === "26") {
             document.querySelector(".url").textContent =
               "local use only, function ";
             let url1 = document.createElement("a");
@@ -58,6 +58,9 @@ function getData(project) {
             url2.textContent = "demo2 ";
             document.querySelector(".url").appendChild(url1);
             document.querySelector(".url").appendChild(url2);
+          } else {
+            url.textContent = "";
+            url.setAttribute("href", "");
           }
           if (projects[index].report) {
             reportS.forEach(eachReport);

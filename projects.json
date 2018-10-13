@@ -343,7 +343,7 @@
     "name": "Circle of Mice",
     "type": "single",
     "myRoll": "",
-    "url": "",
+    "url": "multi",
     "img": "img/circle-of-mice.png",
     "notes": [
       "+ a web interface for researchers to use and maintain a gene database",
