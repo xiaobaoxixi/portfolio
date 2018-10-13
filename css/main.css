@@ -160,6 +160,9 @@ foreignObject p {
   pointer-events: none;
   opacity: 0.8;
 }
+.side-tech {
+  font-size: 13px;
+}
 .chart {
   padding: 0 8vw 4vw;
   display: grid;
