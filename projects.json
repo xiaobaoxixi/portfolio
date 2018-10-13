@@ -188,7 +188,7 @@
     "url": ["https://onestepfurther.nu/semester2/gn/portfolio.html?lang=en"],
     "img": "img/art.png",
     "notes": [
-      "using Wordpress custom fields to get JSON",
+      "using Wordpress as client's CMS",
       "+ design and apply different layout themes dynamicly based on image format, help user maintain the site",
       "+ switching between two languages without localStorage"
     ],
@@ -226,7 +226,7 @@
     "nr": "16",
     "name": "Page loader",
     "type": "team",
-    "myRoll": "My task: coding, design",
+    "myRoll": "My contributions: coding, design",
     "img": "img/loader.gif",
     "url": [],
     "notes": [
