@@ -79,7 +79,7 @@ function init() {
         opacity: 0,
         scaleX: 0
       },
-      "+=4.5"
+      "+=3.5"
     )
     .call(showtriangleParts)
     //    .to(letterI, 0.7, { x: -235, y: -6, scaleY: 1.3 }, "-=.7")
