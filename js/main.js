@@ -57,18 +57,18 @@ function init() {
       letterI,
       0.3,
       {
-        scaleX: 0.65,
-        scaleY: 0.16,
-        y: 113
+        scaleX: 0.62,
+        scaleY: 0.17,
+        y: 111
       },
       "-=.3"
     )
     .to(amSentence, 0.5, { opacity: 1 }, "+=.3")
     .to(amSentence, 1.5, { x: 0 })
     //    .call(changeText)
-    .to(amSentence, 0.5, { y: -45 }, "+=.5")
+    .to(amSentence, 0.5, { y: -45 }, "+=.4")
     .to(amSentence2, 0.5, { opacity: 1 }, "-=.5")
-    .to(amSentence, 0.4, { y: -90 }, "+=.5")
+    .to(amSentence, 0.4, { y: -90 }, "+=.8")
     .to(amSentence2, 0.4, { y: -45 }, "-=.5")
     .to(amSentence3, 0.4, { opacity: 1 }, "-=.2")
     .to(
@@ -91,7 +91,7 @@ function init() {
       "-=.3"
     )
     .to(letterI, 0.01, { opacity: 0, scaleX: 0, scaleY: 0 }, "-=.3")
-    .to(web, 0.3, { x: 220, y: -40, scale: 2.2 }, "-=.3")
+    .to(web, 0.3, { x: 200, y: -30, scale: 2.2 }, "-=.3")
     .call(showNav)
     .to(letterI, 0.1, { opacity: 0 }, "-=.1")
     .to(t1, 0.3, { rotation: -60 })
