@@ -45,14 +45,6 @@ function init() {
       0.02,
       "-=.3"
     )
-    // .staggerTo(
-    //   letterIParts,
-    //   0.3,
-    //   {
-    //     fill: "#444"
-    //   },
-    //   0
-    // )
     .to(
       letterI,
       0.3,
@@ -68,7 +60,7 @@ function init() {
     //    .call(changeText)
     .to(amSentence, 0.5, { y: -45 }, "+=.4")
     .to(amSentence2, 0.5, { opacity: 1 }, "-=.5")
-    .to(amSentence, 0.4, { y: -90 }, "+=.8")
+    .to(amSentence, 0.35, { y: -90 }, "+=.8")
     .to(amSentence2, 0.4, { y: -45 }, "-=.5")
     .to(amSentence3, 0.4, { opacity: 1 }, "-=.2")
     .to(
