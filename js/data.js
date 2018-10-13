@@ -39,7 +39,7 @@ function getData(project) {
             // nr26 is "circle of mice", the only project that needs special treatment
             url.textContent = "see original project";
             url.setAttribute("href", projects[index].url);
-          } else {
+          } else if (projects[index].url && projects.nr === 26) {
             document.querySelector(".url").textContent =
               "local use only, function ";
             let url1 = document.createElement("a");

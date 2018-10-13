@@ -213,9 +213,12 @@
     "name": "Page loader",
     "type": "team",
     "myRoll": "My task:",
-    "url": " ",
-    "img": "",
-    "notes": ["part of the artist portpolio project", "", ""],
+    "img": "img/loader.gif",
+    "notes": [
+      "part of the artist portpolio project",
+      "show page loader in case fetching data takes long time",
+      "use artist logo as loader"
+    ],
     "tools": ["", "", ""]
   },
   {
