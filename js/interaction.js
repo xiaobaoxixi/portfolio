@@ -15,7 +15,7 @@ function listenNav(n) {
     closeModal();
     let target = m.target.dataset.section;
     document.querySelector(`#${target}`).scrollIntoView({
-      block: "center",
+      block: "start",
       inline: "nearest",
       behavior: "smooth"
     });
