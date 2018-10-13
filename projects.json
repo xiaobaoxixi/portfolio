@@ -237,12 +237,15 @@
   },
   {
     "nr": "18",
-    "name": "This site",
+    "name": "turning and changing shape",
     "type": "single",
     "myRoll": "",
-    "url": "https://onestepfurther.nu/",
     "img": "img/this.gif",
-    "notes": ["+ learn SVG", "- not all finished", ""],
+    "notes": [
+      "learning SVG, add polyline point and calculate coordinates in JS",
+      "projects data from JSON",
+      "- not all finished"
+    ],
     "tools": ["", "", ""]
   },
   {
@@ -343,7 +346,7 @@
     "name": "Circle of Mice",
     "type": "single",
     "myRoll": "",
-    "url": "multi",
+    "url": "mice",
     "img": "img/circle-of-mice.png",
     "notes": [
       "+ a web interface for researchers to use and maintain a gene database",
