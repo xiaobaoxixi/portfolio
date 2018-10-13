@@ -9,7 +9,7 @@ let note3 = document.querySelector(".notes li:nth-of-type(3)");
 let icon1 = document.querySelector(".tech li:nth-of-type(1)");
 let icon2 = document.querySelector(".tech li:nth-of-type(2)");
 let icon3 = document.querySelector(".tech li:nth-of-type(3)");
-let url = document.querySelector(".url a");
+let url = document.querySelector(".url");
 let reportS = document.querySelectorAll(".report");
 let img = document.querySelector(".img img");
 
@@ -36,32 +36,26 @@ function getData(project) {
           note2.textContent = projects[index].notes[1];
           note3.textContent = projects[index].notes[2];
           img.setAttribute("src", projects[index].img);
-          if (projects[index].url && projectNr !== "26") {
-            // nr26 is "circle of mice", the only project that needs special treatment
-            url.textContent = "see original project";
-            url.setAttribute("href", projects[index].url);
-          } else if (projects[index].url && projectNr === "26") {
-            document.querySelector(".url").textContent =
-              "local use only, function ";
-            let url1 = document.createElement("a");
-            url1.setAttribute(
-              "href",
-              "http://onestepfurther.science/loglitter/loglitter.html"
-            );
-            url1.setAttribute("target", "_blank");
-            url1.textContent = "demo1 ";
-            let url2 = document.createElement("a");
-            url2.setAttribute(
-              "href",
-              "http://onestepfurther.science/loggene/loggene.html"
-            );
-            url2.setAttribute("target", "_blank");
-            url2.textContent = "demo2 ";
-            document.querySelector(".url").appendChild(url1);
-            document.querySelector(".url").appendChild(url2);
-          } else if (projects[index].url === undefined) {
-            url.textContent = "";
-            url.setAttribute("href", "");
+          if (projects[index].url.length === 1) {
+            url.innerHTML = "";
+            let a = document.createElement("a");
+            a.setAttribute("href", projects[index].url[0]);
+            a.setAttribute("target", "_blank");
+            a.textContent = "see original project";
+            url.appendChild(a);
+          } else if (projectNr === "26") {
+            // nr26 is "circle of mice", has more than one url
+            url.innerHTML = "local use only, concept ";
+            projects[index].url.forEach(addAnchor);
+            function addAnchor(u, i) {
+              let a = document.createElement("a");
+              a.setAttribute("href", u);
+              a.setAttribute("target", "_blank");
+              a.textContent = "demo" + (i + 1) + " ";
+              url.appendChild(a);
+            }
+          } else if (projects[index].url.length === 0) {
+            document.querySelector(".url").innerHTML = "";
           }
           if (projects[index].report) {
             reportS.forEach(eachReport);
