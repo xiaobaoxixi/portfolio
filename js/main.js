@@ -59,7 +59,7 @@ function init() {
     .to(amSentence, 1.5, { x: 0 })
     //    .call(changeText)
     .to(amSentence, 0.5, { y: -45 }, "+=.4")
-    .to(amSentence2, 0.5, { opacity: 1 }, "-=.5")
+    .to(amSentence2, 0.5, { opacity: 1 }, "-=.4")
     .to(amSentence, 0.35, { y: -90 }, "+=.8")
     .to(amSentence2, 0.4, { y: -45 }, "-=.5")
     .to(amSentence3, 0.4, { opacity: 1 }, "-=.2")
