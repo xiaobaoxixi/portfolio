@@ -35,12 +35,29 @@ function getData(project) {
           note2.textContent = projects[index].notes[1];
           note3.textContent = projects[index].notes[2];
           img.setAttribute("src", projects[index].img);
-          if (projects[index].url) {
+          if (projects[index].url && projects.nr !== 26) {
+            // nr26 is "circle of mice", the only project that needs special treatment
             url.textContent = "see original project";
             url.setAttribute("href", projects[index].url);
           } else {
-            url.textContent = "local use only";
-            url.setAttribute("href", "");
+            document.querySelector(".url").textContent =
+              "local use only, function ";
+            let url1 = document.createElement("a");
+            url1.setAttribute(
+              "href",
+              "http://onestepfurther.science/loglitter/loglitter.html"
+            );
+            url1.setAttribute("target", "_blank");
+            url1.textContent = "demo1 ";
+            let url2 = document.createElement("a");
+            url2.setAttribute(
+              "href",
+              "http://onestepfurther.science/loggene/loggene.html"
+            );
+            url2.setAttribute("target", "_blank");
+            url2.textContent = "demo2 ";
+            document.querySelector(".url").appendChild(url1);
+            document.querySelector(".url").appendChild(url2);
           }
           if (projects[index].report) {
             reportS.forEach(eachReport);
