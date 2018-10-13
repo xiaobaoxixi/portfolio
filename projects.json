@@ -40,8 +40,8 @@
     "url": ["https://onestepfurther.nu/semester2/gn"],
     "img": "img/heart.gif",
     "notes": [
-      "+ heart beating animation using a static image",
-      "+ present moving sculpture without using video",
+      "presenting a conceptual sculpture with mechanical heart beating movement",
+      "+ animation using a static image",
       ""
     ],
     "tools": ["", "", ""]
@@ -102,7 +102,7 @@
     "url": [
       "https://onestepfurther.nu/semester3/effects-library/index.html#bully"
     ],
-    "img": "img/bully.png",
+    "img": "img/bully.gif",
     "notes": [
       "+ detect mouse movement direction and speed",
       "- not finished",
