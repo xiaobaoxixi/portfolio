@@ -344,7 +344,7 @@
     "img": "img/circle-of-mice.png",
     "notes": [
       "+ a web interface for researchers to use and maintain a gene database",
-      "+ focus on UX of different users, prevent input error & improve work efficiency and collaboration",
+      "+ focus different users' need, permissions, prevent input error & improve work efficiency and collaboration",
       "with MySQL and PHP, not all finished"
     ],
     "tools": ["MySQL", "PHP", ""]
