@@ -374,7 +374,7 @@
     "notes": [
       "+ a web interface for researchers to use and maintain a gene database",
       "+ focus on different users' need, permissions, prevent input error & improve work efficiency and collaboration",
-      "built with AJAX, MySQL and PHP, not all finished"
+      "built with jQuery, AJAX, MySQL and PHP. My first project."
     ],
     "tools": ["MySQL", "PHP", ""]
   },
