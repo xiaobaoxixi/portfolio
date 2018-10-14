@@ -97,6 +97,7 @@ function init() {
   // }
   function showNav() {
     nav.classList.remove("hide");
+    nav.style.display = "grid";
   }
   function showtriangleParts() {
     triangleStrokes.classList.remove("hide");

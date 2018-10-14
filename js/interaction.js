@@ -4,6 +4,7 @@ const projects = document.querySelectorAll("span.project:not(.grey-out)");
 const modal = document.querySelector("#single-project");
 const modalShadow = document.querySelector("#single-project-shadow");
 const closeX = document.querySelector("p.close");
+const burger = document.querySelector(".burger");
 
 // navigation
 navSpans.forEach(listenNav);
@@ -19,9 +20,19 @@ function listenNav(n) {
       inline: "nearest",
       behavior: "smooth"
     });
+    nav.style.height = "57px";
   }
 }
-
+// in mobile version, click burger show nav
+burger.addEventListener("click", toggleNav);
+function toggleNav() {
+  if (nav.className.indexOf("show") > -1) {
+    nav.style.height = "auto";
+  } else {
+    nav.classList.remove("show");
+    nav.style.height = "auto";
+  }
+}
 // display single project
 projects.forEach(listenProject);
 function listenProject(p) {
@@ -126,16 +137,14 @@ let angle = 0;
 window.addEventListener("scroll", whileScroll);
 function whileScroll(m) {
   scrollHistory.push(window.pageYOffset);
-  console.log(scrollHistory);
   if (scrollHistory.length > 1) {
     let newPosition = scrollHistory[scrollHistory.length - 1];
     let previousPosition = scrollHistory[scrollHistory.length - 2];
-    console.log(newPosition, previousPosition);
     if (newPosition !== previousPosition) {
       angle += newPosition - previousPosition;
       web.setAttribute(
         "transform",
-        `scale(2.2) translate(-488, -178) rotate(${angle / 10} 1185 424.7)` // angel divide by a number so that the turning is not too much
+        `scale(2.2) translate(-488, -178) rotate(${angle / 8.8} 1185 424.7)` // angel divide by a number so that the turning is not too much
       );
     }
   }

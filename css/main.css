@@ -21,37 +21,54 @@ body {
 }
 nav.main {
   position: fixed;
-  height: 50px;
+  display: none;
+  height: 56px;
   width: 100vw;
-  padding: 14px 6vw; /* the yellow underline sit right below the white bg of nav */
+  padding: 0 6vw; 
   background-color: white;
   z-index: 11;
+  grid-template-columns: auto auto auto auto auto auto auto auto 50px 50px 50px;
+  justify-items: left;
+  align-items: baseline;
 }
-nav span {
-  margin-right: 30px;
-  font-size: 19px;
-  line-height: 47px;
+nav.main * {
+  font-size: 20px;
+  line-height: 47px; /* 3px difference to the line height of grid row, so that the yellow underline cut through the border*/
   cursor: pointer;
-  border-bottom: 5px solid var(--yellow);
 }
-.uncheck {
+nav.main span {
+  border-bottom: 7px solid var(--yellow);
+  top: 5px;
+}
+nav.main span.uncheck {
   color: var(--light-grey);
   border-bottom: none;
 }
-/* .burger {
+nav.main a.git {
+  grid-column-start: 9;
+}
+nav.main a {
+  text-decoration: none;
+  top: 7px;
+}
+nav.main a img {
+  height: 30px;
+  top: 9px;
+  opacity: .9;
+}
+.burger {
+  display: none;
   position: fixed;
-  padding: 1.2vw 1.55vw;
-  font-size: 2vw;
-  z-index: 11;
+  padding-top: 12px;
+  padding-left: 3vw;
+  font-size: 25px;
+  z-index: 110;
   cursor: pointer;
 }
 .burger p {
-  padding: 0 0.7vw 0.2vw;
-  transition: all 0.2s;
+  padding: 0;
 }
-.burger p.show {
-  background-color: var(--yellow);
-} */
+
 footer {
   font-size: 13px;
   font-weight: 500;
@@ -303,16 +320,35 @@ p.close {
 .bold {
   font-weight: 700;
 }
+.status h3, h5 {
+  margin-top: 1em;
+}
 
 @media screen and (max-width:768px) {
-  nav.main {
-    display: grid;
-    grid-template-columns: 1fr;
-    height: 65px;
-    overflow: scroll;
+  .burger {
+    display: inherit;
   }
-  nav span {
-    margin-right: 0;
+  nav.main {
+    grid-template-rows: repeat(6, 70px);
+    grid-template-columns: auto 50px;
+    overflow: scroll;
+    padding-left: 12vw;
+  }
+  nav.main.show {
+    height: auto;
+  }
+  nav.main>* {
+    grid-column-start: 1;
+  }
+  nav.main a.git {
+    grid-column-start: 1;
+    grid-row-start: 5;
+  }
+  nav.main a.email {
+    position: fixed;
+    right: 6vw;
+    top: 10px;  
+    font-size: .8em;
   }
   .chart, #about {
     padding: 0 6vw;
@@ -330,12 +366,10 @@ p.close {
     height: 100%;
     width: auto;
   }
-}
-.status h3, h5 {
-  margin-top: 1em;
-}
-nav p a {
-  float:right; /* temp solution */
-  line-height: 47px;
-  margin: 0 10px;
+  nav.main span.uncheck{
+    color: var(--dark-grey);
+  }
+  nav.main span:not(.uncheck){
+    grid-row-start: 1;
+  }
 }
