@@ -21,9 +21,11 @@ function listenNav(n) {
     });
   }
 }
+
 // display single project
 projects.forEach(listenProject);
 function listenProject(p) {
+  // a delay timer if decide to use mouseenter to to trigger mocal box
   //  p.addEventListener("mouseenter", timingCount);
   // function timingCount(m) {
   //   let ms = 0;
@@ -102,8 +104,6 @@ function listenProject(p) {
 }
 // close single project modal
 closeX.addEventListener("click", closeModal);
-
-///////////////////////
 function closeModal() {
   modal.style.width = "0";
   modal.style.height = "0";
@@ -116,4 +116,27 @@ function closeModal() {
   modalShadow.style.left = "0";
   // clear image inside modal, otherwise the next time a modal is opened, the previous image will show for a sec
   document.querySelector(".img img").setAttribute("src", "");
+}
+
+// hint scroll
+
+// scroll page and turn web symbol
+let scrollHistory = [];
+let angle = 0;
+window.addEventListener("scroll", whileScroll);
+function whileScroll(m) {
+  scrollHistory.push(window.pageYOffset);
+  console.log(scrollHistory);
+  if (scrollHistory.length > 1) {
+    let newPosition = scrollHistory[scrollHistory.length - 1];
+    let previousPosition = scrollHistory[scrollHistory.length - 2];
+    console.log(newPosition, previousPosition);
+    if (newPosition !== previousPosition) {
+      angle += newPosition - previousPosition;
+      web.setAttribute(
+        "transform",
+        `scale(2.2) translate(-488, -178) rotate(${angle / 10} 1185 424.7)` // angel divide by a number so that the turning is not too much
+      );
+    }
+  }
 }
