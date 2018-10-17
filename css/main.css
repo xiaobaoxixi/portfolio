@@ -199,7 +199,7 @@ img.portrait {
   width: 100%;
 }
 .status {
-  padding: 50px 4vw;
+  padding: 50px 2vw 50px 4vw;
   border-left: 7px solid white;
   width: 100%;
 }
