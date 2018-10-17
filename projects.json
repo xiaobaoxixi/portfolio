@@ -373,8 +373,8 @@
     "img": "img/circle-of-mice.png",
     "notes": [
       "+ a web interface for researchers to use and maintain a gene database",
-      "+ focus on different users' need, permissions, prevent input error & improve work efficiency and collaboration",
-      "built with jQuery, AJAX, MySQL and PHP. My first project."
+      "+ Perform both client- and server-side input validation. Focus on different users' need & permissions. Improve work efficiency and collaboration",
+      "built with jQuery, AJAX, MySQL and PHP."
     ],
     "tools": ["MySQL", "PHP", ""]
   },
