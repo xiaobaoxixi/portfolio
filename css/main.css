@@ -203,13 +203,20 @@ img.portrait {
   border-left: 7px solid white;
   width: 100%;
 }
-
+.status p {
+  font-family: 'Barlow', sans-serif;
+  line-height: 25px;
+}
 .hide {
   display: none;
 }
-.status img {
-  width: 70%;
-  left: 15%;
+.status>img {
+  width: 100%;
+}
+.status p>img {
+  display: inline-block;
+  height: 40px;
+  margin-right: 10px;
 }
 .project-group ul {
   list-style: none;
@@ -325,6 +332,9 @@ p.close {
 }
 
 @media screen and (max-width:768px) {
+  svg#changingShape {
+    display: none;
+  }
   .burger {
     display: inherit;
   }
