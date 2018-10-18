@@ -203,7 +203,8 @@ img.portrait {
 }
 .status p,
 #about p,
-footer {
+footer,
+.self-others li {
   font-family: "Barlow", sans-serif;
   line-height: 25px;
 }
@@ -217,8 +218,8 @@ footer {
 }
 .status p > img {
   display: inline-block;
-  height: 40px;
-  margin-right: 10px;
+  height: 35px;
+  margin-right: 5px;
 }
 .status img.use-less {
   filter: grayscale(90);
@@ -365,6 +366,9 @@ h4 {
 .mobile {
   padding-top: 70px;
   padding-left: 12vw;
+}
+.self-others ul {
+  list-style: square;
 }
 @media screen and (max-width: 768px) {
   svg#changingShape {
