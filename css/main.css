@@ -20,6 +20,7 @@ body {
   overflow-x: hidden;
 }
 nav.main {
+  border-bottom: 1px dotted var(--light-grey);
   position: fixed;
   display: none;
   height: 56px;
@@ -75,6 +76,7 @@ footer {
   padding: 1em;
   text-align: center;
   color: var(--dark-grey);
+  background: white;
 }
 .bg-color {
   height: 100vh;
@@ -94,6 +96,7 @@ svg {
 }
 svg#title {
   stroke-width: 4;
+  z-index: 11;
 }
 g#i g {
   stroke-width: 0;
@@ -179,15 +182,17 @@ foreignObject p {
   opacity: 0.8;
 }
 .chart {
-  padding: 0 8vw 4vw;
+  margin-bottom: 70px;
+  padding-left: 8vw;
   display: grid;
-  grid-template-columns: 42vw 34vw;
+  grid-template-columns: 44vw 32vw;
   grid-gap: 4vw;
 }
 #about {
-  padding: 4vw 8vw 8vw;
+  background: white;
+  padding: 70px 8vw 70px 8vw;
   display: grid;
-  grid-template-columns: 7vw 32vw 32vw;
+  grid-template-columns: 7vw 37vw 32vw;
   grid-gap: 4vw;
 }
 #about.hide {
