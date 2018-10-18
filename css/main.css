@@ -27,7 +27,7 @@ nav.main {
   width: 100vw;
   padding: 0 6vw;
   background-color: white;
-  z-index: 11;
+  z-index: 19;
   grid-template-columns: auto auto auto auto auto auto auto auto 50px 50px 50px;
   justify-items: left;
   align-items: baseline;
