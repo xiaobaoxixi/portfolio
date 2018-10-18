@@ -15,11 +15,20 @@ function listenNav(n) {
     m.target.classList.remove("uncheck");
     closeModal();
     let target = m.target.dataset.section;
-    document.querySelector(`#${target}`).scrollIntoView({
-      block: "start",
-      inline: "nearest",
-      behavior: "smooth"
-    });
+    console.log(target);
+    if (window.innerWidth < 768 && target === "changingShape") {
+      document.querySelector(`#projects-mobile`).scrollIntoView({
+        block: "start",
+        inline: "nearest",
+        behavior: "smooth"
+      });
+    } else {
+      document.querySelector(`#${target}`).scrollIntoView({
+        block: "start",
+        inline: "nearest",
+        behavior: "smooth"
+      });
+    }
     nav.style.height = "57px";
   }
 }

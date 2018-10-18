@@ -415,7 +415,7 @@ h4 {
   }
   .chart,
   #about {
-    padding: 50px 8vw;
+    padding: 70px 8vw;
     grid-template-columns: 80vw;
     grid-gap: 4vw;
   }
