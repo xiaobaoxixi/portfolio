@@ -210,8 +210,13 @@ img.portrait {
 .hide {
   display: none;
 }
+#current, #future {
+  min-height: 73vw;
+}
 .status>img {
-  width: 100%;
+  width: 95%;
+  position: absolute;
+  bottom: 0; /* temp solution, need to change */ 
 }
 .status p>img {
   display: inline-block;
@@ -333,7 +338,10 @@ p.close {
 .status h3, h5 {
   margin-top: 1em;
 }
-
+.mobile {
+  padding-top: 70px;
+  padding-left: 12vw;
+}
 @media screen and (max-width:768px) {
   svg#changingShape {
     display: none;
@@ -384,5 +392,13 @@ p.close {
   }
   nav.main span:not(.uncheck){
     grid-row-start: 1;
+  }
+  #current {
+    height: auto;
+  }
+  .status>img {
+    width: 100%;
+    position: inherit;
+    bottom: 0; /* temp solution, need to change */ 
   }
 }

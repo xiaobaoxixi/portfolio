@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260.7 1312.9">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1154.6 1154.6">
   <defs>
     <style>
-      .cls-1, .cls-2, .cls-3 {
+      .cls-1, .cls-2 {
         fill: #fff;
       }
 
@@ -9,384 +9,355 @@
         stroke: #000;
       }
 
-      .cls-1, .cls-12, .cls-15, .cls-18, .cls-21, .cls-22, .cls-23, .cls-24, .cls-25, .cls-26, .cls-27, .cls-28, .cls-3, .cls-33 {
+      .cls-1, .cls-11, .cls-14, .cls-17, .cls-20, .cls-21, .cls-22, .cls-23, .cls-24, .cls-25, .cls-26, .cls-27, .cls-32 {
         stroke-miterlimit: 10;
       }
 
-      .cls-3 {
-        font-size: 70px;
-        font-family: RoundedMplus1c-ExtraBold, "Rounded Mplus 1c ExtraBold";
-        font-weight: 800;
-      }
-
-      .cls-12, .cls-3 {
-        stroke: #fff;
-      }
-
-      .cls-20, .cls-4 {
+      .cls-19, .cls-3 {
         fill: #d6ce41;
       }
 
-      .cls-14, .cls-20, .cls-30, .cls-32, .cls-33, .cls-4, .cls-5 {
+      .cls-13, .cls-19, .cls-29, .cls-3, .cls-31, .cls-32, .cls-4 {
         opacity: 0.9;
       }
 
-      .cls-13, .cls-19, .cls-5 {
+      .cls-12, .cls-18, .cls-4 {
         fill: #366;
       }
 
-      .cls-12, .cls-22, .cls-6 {
+      .cls-11, .cls-21, .cls-5 {
         fill: #daf2f0;
       }
 
-      .cls-16, .cls-18, .cls-21, .cls-23, .cls-25, .cls-27, .cls-29, .cls-33, .cls-7 {
+      .cls-15, .cls-17, .cls-20, .cls-22, .cls-24, .cls-26, .cls-28, .cls-32, .cls-6 {
         fill: none;
       }
 
-      .cls-11, .cls-24, .cls-8 {
+      .cls-10, .cls-23, .cls-7 {
         fill: #9b6950;
       }
 
-      .cls-8 {
+      .cls-7 {
         opacity: 0.8;
       }
 
-      .cls-26, .cls-9 {
+      .cls-25, .cls-8 {
         fill: #f4edba;
       }
 
-      .cls-10, .cls-15, .cls-28 {
+      .cls-14, .cls-27, .cls-9 {
         fill: #669;
       }
 
-      .cls-12 {
+      .cls-11 {
+        stroke: #fff;
         stroke-width: 11px;
       }
 
-      .cls-15, .cls-27, .cls-28 {
+      .cls-14, .cls-26, .cls-27 {
         stroke: #669;
       }
 
-      .cls-15, .cls-18, .cls-21, .cls-23, .cls-25, .cls-27, .cls-29, .cls-33 {
+      .cls-14, .cls-17, .cls-20, .cls-22, .cls-24, .cls-26, .cls-28, .cls-32 {
         stroke-width: 3px;
       }
 
-      .cls-16 {
+      .cls-15 {
         stroke: #333;
       }
 
-      .cls-16, .cls-18, .cls-21, .cls-23, .cls-25, .cls-29, .cls-33 {
+      .cls-15, .cls-17, .cls-20, .cls-22, .cls-24, .cls-28, .cls-32 {
         stroke-linecap: round;
       }
 
-      .cls-16, .cls-29 {
+      .cls-15, .cls-28 {
         stroke-linejoin: round;
       }
 
-      .cls-16, .cls-28 {
+      .cls-15, .cls-27 {
         stroke-width: 2px;
       }
 
-      .cls-17, .cls-31 {
+      .cls-16, .cls-30 {
         fill: #333;
       }
 
-      .cls-18 {
+      .cls-17 {
         stroke: #366;
       }
 
-      .cls-19, .cls-24, .cls-28, .cls-30 {
+      .cls-18, .cls-23, .cls-27, .cls-29 {
         font-size: 35px;
       }
 
-      .cls-19, .cls-20, .cls-22, .cls-24, .cls-26, .cls-30, .cls-31 {
+      .cls-18, .cls-19, .cls-21, .cls-23, .cls-25, .cls-29, .cls-30 {
         font-family: RoundedMplus1c-Bold, "Rounded Mplus 1c Bold";
         font-weight: 700;
       }
 
-      .cls-20 {
+      .cls-19 {
         font-size: 35.03px;
       }
 
-      .cls-21, .cls-22 {
+      .cls-20, .cls-21 {
         stroke: #daf2f0;
       }
 
-      .cls-22 {
+      .cls-21 {
         font-size: 32px;
         stroke-width: 0.75px;
       }
 
-      .cls-23, .cls-24 {
+      .cls-22, .cls-23 {
         stroke: #9b6950;
       }
 
-      .cls-25, .cls-26 {
+      .cls-24, .cls-25 {
         stroke: #f4edba;
       }
 
-      .cls-26 {
+      .cls-25 {
         font-size: 37px;
       }
 
-      .cls-28 {
+      .cls-27 {
         font-family: RoundedMplus1c-Regular, "Rounded Mplus 1c";
       }
 
-      .cls-29 {
+      .cls-28 {
         stroke: #9fb230;
       }
 
-      .cls-30, .cls-32 {
+      .cls-29, .cls-31 {
         fill: #9fb230;
       }
 
-      .cls-31 {
+      .cls-30 {
         font-size: 25px;
       }
 
-      .cls-33 {
+      .cls-32 {
         stroke: #d6ce41;
       }
     </style>
   </defs>
-  <title>skillset_6</title>
+  <title>skillset_7</title>
   <g id="Layer_2" data-name="Layer 2">
     <g id="Layer_3" data-name="Layer 3">
-      <polygon class="cls-1" points="697.7 643.8 645.9 643.8 601.1 669.7 575.2 714.5 575.2 766.3 601.1 811.1 645.9 837 697.7 837 742.5 811.1 768.4 766.3 768.4 714.5 742.5 669.7 697.7 643.8"/>
+      <polygon class="cls-1" points="591.6 485.5 539.9 485.5 495 511.3 469.1 556.2 469.1 607.9 495 652.8 539.9 678.6 591.6 678.6 636.4 652.8 662.3 607.9 662.3 556.2 636.4 511.3 591.6 485.5"/>
     </g>
     <g id="shapes">
-      <polygon class="cls-2" points="106.1 890.3 260.8 1158.3 528.7 1312.9 838.1 1312.9 1106 1158.3 1260.7 890.3 1260.7 581 1106 313 838.1 158.4 674.8 744.3 106.1 890.3"/>
-      <text class="cls-3" transform="translate(160.7 823.8) rotate(-91.7)"> </text>
-      <text class="cls-3" transform="translate(160.1 803.5) rotate(-91.7)"> </text>
-      <text class="cls-3" transform="translate(159.5 783.1) rotate(-91.7)"> </text>
-      <text class="cls-3" transform="translate(158.9 762.8) rotate(-91.7)"> </text>
-      <text class="cls-3" transform="matrix(-0.03, -1, 1, -0.03, 158.26, 742.4)">h</text>
-      <text class="cls-3" transform="matrix(-0.03, -1, 1, -0.03, 156.99, 699.08)">o</text>
-      <text class="cls-3" transform="translate(155.8 658.8) rotate(-91.7)">w</text>
-      <text class="cls-3" transform="translate(157.5 607.6) rotate(-61.7)"> <tspan x="20.4" y="0">I</tspan><tspan x="46.1" y="0"> </tspan><tspan x="66.5" y="0">s</tspan><tspan x="103.8" y="0">p</tspan><tspan x="147.8" y="0">e</tspan><tspan x="187.3" y="0">n</tspan><tspan x="230.2" y="0">d</tspan></text>
-      <text class="cls-3" transform="translate(282.1 367.6) rotate(-31.7)"> </text>
-      <text class="cls-3" transform="matrix(0.85, -0.53, 0.53, 0.85, 299.43, 356.94)">m</text>
-      <text class="cls-3" transform="translate(349 326.4) rotate(-31.7)">y</text>
-      <text class="cls-3" transform="translate(382.4 305.7) rotate(-31.7)"> </text>
-      <text class="cls-3" transform="translate(399.7 295) rotate(-31.7)">t</text>
-      <text class="cls-3" transform="translate(431.7 275.3) rotate(-31.7)">i</text>
-      <text class="cls-3" transform="translate(452.6 262.4) rotate(-31.7)">m</text>
-      <text class="cls-3" transform="matrix(0.85, -0.53, 0.53, 0.85, 503.32, 231.07)">e</text>
-      <text class="cls-3" transform="matrix(1, -0.03, 0.03, 1, 533.5, 214.02)"> </text>
-      <text class="cls-3" transform="translate(553.8 213.4) rotate(-1.7)">n</text>
-      <text class="cls-3" transform="translate(596.7 212.2) rotate(-1.7)">o</text>
-      <text class="cls-3" transform="translate(637.1 211) rotate(-1.7)">w</text>
+      <polygon class="cls-2" points="0 732 154.7 999.9 422.6 1154.6 732 1154.6 999.9 999.9 1154.6 732 1154.6 422.6 999.9 154.7 732 0 568.7 585.9 0 732"/>
       <g>
-        <polyline class="cls-2" points="879.9 539.1 954.9 669.1 954.9 819.1 879.9 948.1 749.9 1023.1 599.9 1023.1 879.9 539.1"/>
-        <polygon class="cls-4" points="877.9 537.1 951.9 667.1 952.9 818.1 877.9 947.1 747.9 1022.1 597.9 1022.1 747.9 463.1 877.9 537.1"/>
-        <polygon class="cls-2" points="750 464.2 600.1 464.2 470.4 539.1 395.4 668.9 395.4 818.8 470.4 948.5 600.1 1023.5 750 1023.5 879.8 948.5 954.7 818.8 954.7 668.9 879.8 539.1 750 464.2"/>
-        <polygon class="cls-2" points="750 464.2 600.1 464.2 470.4 539.1 395.4 668.9 395.4 818.8 470.4 948.5 600.1 1023.5 750 1023.5 879.8 948.5 954.7 818.8 954.7 668.9 879.8 539.1 750 464.2"/>
-        <polygon class="cls-5" points="954.4 818.6 395.4 668.6 470.4 538.6 600.4 464.6 750.4 464.6 879.4 538.6 954.4 668.6 954.4 818.6"/>
-        <polygon class="cls-6" points="395.9 668.1 673.9 744.1 395.4 818.8 395.9 668.1"/>
+        <polyline class="cls-2" points="773.8 380.8 848.8 510.8 848.8 660.8 773.8 789.8 643.8 864.8 493.8 864.8 773.8 380.8"/>
+        <polygon class="cls-3" points="771.8 378.8 845.8 508.8 846.8 659.8 771.8 788.8 641.8 863.8 491.8 863.8 641.8 304.8 771.8 378.8"/>
+        <polygon class="cls-2" points="643.9 305.8 494.1 305.8 364.3 380.8 289.3 510.5 289.3 660.4 364.3 790.2 494.1 865.1 643.9 865.1 773.7 790.2 848.6 660.4 848.6 510.5 773.7 380.8 643.9 305.8"/>
+        <polygon class="cls-2" points="643.9 305.8 494.1 305.8 364.3 380.8 289.3 510.5 289.3 660.4 364.3 790.2 494.1 865.1 643.9 865.1 773.7 790.2 848.6 660.4 848.6 510.5 773.7 380.8 643.9 305.8"/>
+        <polygon class="cls-4" points="848.3 660.3 289.3 510.3 364.3 380.3 494.3 306.3 644.3 306.3 773.3 380.3 848.3 510.3 848.3 660.3"/>
+        <polygon class="cls-5" points="289.8 509.8 567.8 585.8 289.3 660.4 289.8 509.8"/>
         <g>
-          <polygon class="cls-7" points="876.2 540.9 747.6 466.6 599.2 466.6 470.6 540.9 396.4 669.4 396.4 817.8 673.7 744.2 671.5 746.4 673.9 744.1 600.2 1020.6 747.6 1020.6 876.2 946.4 950.4 817.9 950.4 669.4 876.2 540.9"/>
-          <polygon class="cls-8" points="671.5 746.4 673.7 744.2 396.4 817.8 396.4 817.9 470.6 946.4 599.2 1020.6 600.2 1020.6 673.9 744.1 671.5 746.4"/>
+          <polygon class="cls-6" points="770.1 382.5 641.5 308.3 493.1 308.3 364.5 382.5 290.3 511.1 290.3 659.5 567.6 585.9 565.5 588.1 567.8 585.8 494.1 862.3 641.5 862.3 770.1 788.1 844.3 659.5 844.3 511.1 770.1 382.5"/>
+          <polygon class="cls-7" points="565.5 588.1 567.6 585.9 290.3 659.5 290.3 659.5 364.5 788.1 493.1 862.3 494.1 862.3 567.8 585.8 565.5 588.1"/>
         </g>
         <g>
-          <polygon class="cls-7" points="674.1 743.8 672.9 744.1 674.1 743.8 673.4 743.6 779.3 352.6 778.6 352.1 569.1 352.1 387.6 456.9 282.9 638.4 282.9 847.9 387.6 1029.4 569.1 1134.1 778.6 1134.1 960.1 1029.4 1064.6 848.4 674.1 743.8"/>
-          <polygon class="cls-9" points="674.1 743.8 672.9 744.1 674.1 743.8 1064.6 848.4 1064.9 847.9 1064.9 638.4 960.1 456.9 779.3 352.6 673.4 743.6 674.1 743.8"/>
+          <polygon class="cls-6" points="568 585.5 566.8 585.8 568 585.5 567.3 585.3 673.3 194.2 672.6 193.8 463 193.8 281.6 298.6 176.8 480 176.8 689.6 281.6 871 463 975.8 672.6 975.8 854 871 958.5 690 568 585.5"/>
+          <polygon class="cls-8" points="568 585.5 566.8 585.8 568 585.5 958.5 690 958.8 689.6 958.8 480 854 298.6 673.3 194.2 567.3 585.3 568 585.5"/>
         </g>
         <g>
-          <polygon class="cls-7" points="917.8 500.2 917.3 500 674.4 743.5 674.4 743.6 674.4 743.6 673.7 744.2 674.1 742.7 588.2 411.1 585.3 411.1 431 500.2 341.9 654.6 341.9 832.7 431 987.1 585.3 1076.1 763.5 1076.1 917.8 987.1 1006.9 832.7 1006.9 654.6 917.8 500.2"/>
-          <polygon class="cls-10" points="674.4 743.6 674.4 743.5 674.4 743.6 674.4 743.6"/>
-          <polygon class="cls-10" points="673.7 744.2 674.4 743.6 674.1 742.7 673.7 744.2"/>
-          <polygon class="cls-10" points="764.2 411.6 674.1 742.7 674.4 743.6 674.4 743.5 764.3 411.7 764.2 411.6"/>
+          <polygon class="cls-6" points="811.7 341.9 811.2 341.6 568.3 585.2 568.3 585.3 568.3 585.2 567.6 585.9 568 584.3 482.1 252.8 479.2 252.8 324.9 341.9 235.8 496.2 235.8 674.4 324.9 828.7 479.2 917.8 657.4 917.8 811.7 828.7 900.8 674.4 900.8 496.2 811.7 341.9"/>
+          <polygon class="cls-9" points="568.3 585.3 568.3 585.2 568.3 585.2 568.3 585.3"/>
+          <polygon class="cls-9" points="567.6 585.9 568.3 585.2 568 584.3 567.6 585.9"/>
+          <polygon class="cls-9" points="658.1 253.2 568 584.3 568.3 585.2 568.3 585.2 658.3 253.3 658.1 253.2"/>
         </g>
-        <polyline class="cls-2" points="879.9 539.1 954.9 669.1 954.9 819.1 879.9 948.1 749.9 1023.1 599.9 1023.1 879.9 539.1"/>
-        <polygon class="cls-11" points="954.4 818.6 395.4 668.6 470.4 538.6 600.4 464.6 750.4 464.6 879.4 538.6 954.4 668.6 954.4 818.6"/>
-        <polygon class="cls-12" points="387.9 664.1 665.9 740.1 387.4 814.8 387.9 664.1"/>
+        <polyline class="cls-2" points="773.8 380.8 848.8 510.8 848.8 660.8 773.8 789.8 643.8 864.8 493.8 864.8 773.8 380.8"/>
+        <polygon class="cls-10" points="848.3 660.3 289.3 510.3 364.3 380.3 494.3 306.3 644.3 306.3 773.3 380.3 848.3 510.3 848.3 660.3"/>
+        <polygon class="cls-11" points="281.8 505.8 559.8 581.8 281.3 656.4 281.8 505.8"/>
         <g>
-          <polygon class="cls-7" points="875.2 539.9 746.6 465.6 598.2 465.6 469.6 539.9 395.4 668.4 395.4 816.8 672.7 743.2 670.5 745.4 672.9 743.1 599.2 1019.6 746.6 1019.6 875.2 945.4 949.4 816.9 949.4 668.4 875.2 539.9"/>
-          <polygon class="cls-13" points="670.5 746.4 672.7 744.2 395.4 817.8 395.4 817.9 469.6 946.4 598.2 1020.6 599.2 1020.6 672.9 744.1 670.5 746.4"/>
+          <polygon class="cls-6" points="769.1 381.5 640.5 307.3 492.1 307.3 363.5 381.5 289.3 510.1 289.3 658.5 566.6 584.9 564.5 587.1 566.8 584.8 493.1 861.3 640.5 861.3 769.1 787.1 843.3 658.5 843.3 510.1 769.1 381.5"/>
+          <polygon class="cls-12" points="564.5 588.1 566.6 585.9 289.3 659.5 289.3 659.5 363.5 788.1 492.1 862.3 493.1 862.3 566.8 585.8 564.5 588.1"/>
         </g>
         <g>
-          <polygon class="cls-7" points="674.1 743.9 672.7 744.3 674.1 743.9 673.3 743.7 795.3 293.6 794.5 293.1 553.3 293.1 344.5 413.7 223.9 622.6 223.9 863.7 344.5 1072.6 553.3 1193.1 794.5 1193.1 1003.3 1072.6 1123.6 864.2 674.1 743.9"/>
-          <polygon class="cls-9" points="674.1 743.9 672.7 744.3 674.1 743.9 1123.6 864.2 1123.9 863.7 1123.9 622.6 1003.3 413.7 795.3 293.6 673.3 743.7 674.1 743.9"/>
+          <polygon class="cls-6" points="568 585.6 566.6 585.9 568 585.6 567.2 585.4 689.2 135.3 688.4 134.8 447.2 134.8 238.4 255.4 117.8 464.2 117.8 705.4 238.4 914.2 447.2 1034.8 688.4 1034.8 897.2 914.2 1017.5 705.9 568 585.6"/>
+          <polygon class="cls-8" points="568 585.6 566.6 585.9 568 585.6 1017.5 705.9 1017.8 705.4 1017.8 464.2 897.2 255.4 689.2 135.3 567.2 585.4 568 585.6"/>
         </g>
-        <g class="cls-14">
-          <polygon class="cls-7" points="942.7 475.4 942.1 475 674.4 743.5 674.4 743.6 674.4 743.6 673.6 744.3 674.1 742.6 579.4 377.1 576.2 377.1 406.1 475.4 307.9 645.4 307.9 841.9 406.1 1011.9 576.2 1110.1 772.6 1110.1 942.7 1011.9 1040.9 841.9 1040.9 645.4 942.7 475.4"/>
-          <polygon class="cls-10" points="674.4 743.6 674.4 743.5 674.4 743.6 674.4 743.6"/>
-          <polygon class="cls-10" points="673.6 744.3 674.4 743.6 674.1 742.6 673.6 744.3"/>
+        <g class="cls-13">
+          <polygon class="cls-6" points="836.6 317 836 316.7 568.3 585.2 568.3 585.3 568.3 585.2 567.6 585.9 568 584.2 473.3 218.8 470.1 218.8 300 317 201.8 487.1 201.8 683.5 300 853.6 470.1 951.8 666.5 951.8 836.6 853.6 934.8 683.5 934.8 487.1 836.6 317"/>
+          <polygon class="cls-9" points="568.3 585.3 568.3 585.2 568.3 585.2 568.3 585.3"/>
+          <polygon class="cls-9" points="567.6 585.9 568.3 585.2 568 584.2 567.6 585.9"/>
           <g>
-            <polygon class="cls-15" points="772.6 377.1 579.4 377.1 674.1 742.6 773.4 377.6 772.6 377.1"/>
-            <polygon class="cls-15" points="773.5 377.7 674.4 743.5 942.1 475 773.5 377.7"/>
+            <polygon class="cls-14" points="666.5 218.8 473.3 218.8 568 584.2 667.3 219.3 666.5 218.8"/>
+            <polygon class="cls-14" points="667.5 219.3 568.3 585.2 836 316.7 667.5 219.3"/>
           </g>
-          <polygon class="cls-10" points="773.4 377.6 674.1 742.6 674.4 743.6 674.4 743.5 773.5 377.7 773.4 377.6"/>
+          <polygon class="cls-9" points="667.3 219.3 568 584.2 568.3 585.2 568.3 585.2 667.5 219.3 667.3 219.3"/>
         </g>
-        <polyline class="cls-13" points="671.9 744.1 747.1 1021.1 598.7 1021.1 669.9 747.1"/>
-        <polygon class="cls-13" points="747 1021 875.4 948.1 673.2 744.4 672.9 747.9 671.9 744.1 669.9 747.1 598.7 1021.1 746.3 1021.1 746.4 1021.4 746.8 1021.1 747.1 1021.1 747 1021"/>
-        <polygon class="cls-4" points="879.9 538.1 953.9 668.1 954.9 819.1 879.9 948.1 749.9 1023.1 599.9 1023.1 749.9 464.1 879.9 538.1"/>
+        <polyline class="cls-12" points="565.8 585.8 641 862.8 492.6 862.8 563.8 588.8"/>
+        <polygon class="cls-12" points="641 862.7 769.3 789.7 567.1 586 566.8 589.5 565.8 585.8 563.8 588.8 492.6 862.8 640.2 862.8 640.3 863 640.7 862.8 641 862.8 641 862.7"/>
+        <polygon class="cls-3" points="773.8 379.8 847.8 509.8 848.8 660.8 773.8 789.8 643.8 864.8 493.8 864.8 643.8 305.8 773.8 379.8"/>
       </g>
-      <polygon class="cls-2" points="697 659.1 651.7 659.1 612.5 681.8 589.9 721 589.9 766.3 612.5 805.5 651.7 828.1 697 828.1 736.2 805.5 758.9 766.3 758.9 721 736.2 681.8 697 659.1"/>
-      <polyline class="cls-16" points="631.9 755 643.3 774.8 663 786.1 685.8 786.1 705.5 774.8 716.9 755 716.9 732.3 705.5 712.5 685.8 701.1"/>
-      <polygon class="cls-17" points="640.9 752.6 649.9 768.2 665.4 777.1 683.4 777.1 698.9 768.2 707.9 752.6 707.9 734.7 698.9 719.1 683.4 710.1 673.9 744.1 640.9 752.6"/>
-      <polyline class="cls-18" points="376.8 823.9 452.3 962 593.3 1046.5 756.9 1045.7 891.2 968.6"/>
-      <text class="cls-19" transform="translate(352.8 848.9) rotate(61.3)"> </text>
-      <text class="cls-19" transform="matrix(0.48, 0.88, -0.88, 0.48, 357.54, 857.61)"> </text>
-      <text class="cls-19" transform="matrix(0.48, 0.88, -0.88, 0.48, 362.31, 866.33)">H</text>
-      <text class="cls-19" transform="translate(374.1 888) rotate(61.3)">T</text>
-      <text class="cls-19" transform="matrix(0.48, 0.88, -0.88, 0.48, 385.02, 907.86)">M</text>
-      <text class="cls-19" transform="translate(399.1 933.6) rotate(61.3)">L</text>
-      <text class="cls-19" transform="translate(409.2 952) rotate(61.3)"> </text>
-      <text class="cls-19" transform="translate(413.9 960.7) rotate(61.3)"> </text>
-      <text class="cls-19" transform="translate(418.7 969.5) rotate(61.3)"> </text>
-      <text class="cls-19" transform="translate(426.9 986.1) rotate(30.9)">C</text>
-      <text class="cls-19" transform="matrix(0.86, 0.51, -0.51, 0.86, 445.66, 997.38)">S</text>
-      <text class="cls-19" transform="matrix(0.86, 0.51, -0.51, 0.86, 462.53, 1007.49)">S</text>
-      <text class="cls-19" transform="matrix(0.86, 0.51, -0.51, 0.86, 479.71, 1017.79)">(</text>
-      <text class="cls-19" transform="matrix(0.86, 0.51, -0.51, 0.86, 490.64, 1024.34)">S</text>
-      <text class="cls-19" transform="matrix(0.86, 0.51, -0.51, 0.86, 507.51, 1034.46)">A</text>
-      <text class="cls-19" transform="matrix(0.86, 0.51, -0.51, 0.86, 526.5, 1045.84)">S</text>
-      <text class="cls-19" transform="translate(543.4 1056) rotate(30.9)">S</text>
-      <text class="cls-19" transform="translate(560.5 1066.2) rotate(30.9)">)</text>
-      <text class="cls-20" transform="matrix(0.5, -0.86, 0.86, 0.5, 949.6, 1000.65)">v</text>
-      <text class="cls-20" transform="matrix(0.5, -0.86, 0.86, 0.5, 958.93, 984.59)">a</text>
-      <text class="cls-20" transform="translate(968.8 967.6) rotate(-59.8)">n</text>
-      <text class="cls-20" transform="matrix(0.5, -0.86, 0.86, 0.5, 979.34, 949.5)">i</text>
-      <text class="cls-20" transform="matrix(0.5, -0.86, 0.86, 0.5, 984.93, 939.88)">l</text>
-      <text class="cls-20" transform="translate(990.5 930.2) rotate(-59.8)">l</text>
-      <text class="cls-20" transform="translate(996.5 920) rotate(-59.8)">a</text>
-      <text class="cls-20" transform="translate(1006.4 903) rotate(-59.8)"> </text>
-      <text class="cls-20" transform="translate(1011.4 894.4) rotate(-59.8)">J</text>
-      <text class="cls-20" transform="translate(1021 877.9) rotate(-59.8)">S</text>
-      <text class="cls-20" transform="matrix(0.5, -0.86, 0.86, 0.5, 1031.3, 860.12)"> </text>
-      <text class="cls-20" transform="translate(1037.4 843.5) rotate(-90.4)">&amp;</text>
-      <text class="cls-20" transform="translate(1037.2 818.1) rotate(-90.4)"> </text>
-      <text class="cls-20" transform="translate(1037.1 808.1) rotate(-90.4)">l</text>
-      <text class="cls-20" transform="translate(1037.1 797) rotate(-90.4)">i</text>
-      <text class="cls-20" transform="translate(1037 785.1) rotate(-90.4)">b</text>
-      <text class="cls-20" transform="translate(1036.8 763.9) rotate(-90.4)">r</text>
-      <text class="cls-20" transform="translate(1036.7 747.9) rotate(-90.4)">a</text>
-      <text class="cls-20" transform="matrix(-0.01, -1, 1, -0.01, 1036.61, 728.3)">r</text>
-      <text class="cls-20" transform="translate(1036.5 711.3) rotate(-90.4)">i</text>
-      <text class="cls-20" transform="matrix(-0.01, -1, 1, -0.01, 1036.42, 699.47)">e</text>
-      <text class="cls-20" transform="matrix(-0.49, -0.87, 0.87, -0.49, 1038.24, 672.63)">s</text>
-      <line class="cls-21" x1="373.9" y1="811.6" x2="374.9" y2="668.6"/>
-      <text class="cls-22" transform="matrix(0.01, -1, 1, 0.01, 361.88, 806.59)">b</text>
-      <text class="cls-22" transform="matrix(0.01, -1, 1, 0.01, 362.02, 787.16)">u</text>
-      <text class="cls-22" transform="matrix(0.01, -1, 1, 0.01, 362.15, 768.26)">s</text>
-      <text class="cls-22" transform="translate(362.3 751.7) rotate(-89.6)">i</text>
-      <text class="cls-22" transform="matrix(0.01, -1, 1, 0.01, 362.34, 740.85)">n</text>
-      <text class="cls-22" transform="translate(362.5 721.7) rotate(-89.6)">e</text>
-      <text class="cls-22" transform="translate(362.6 704.3) rotate(-89.6)">s</text>
-      <text class="cls-22" transform="translate(362.7 688) rotate(-89.6)">s</text>
-      <polyline class="cls-23" points="755.1 443.3 594.4 442.6 454.4 520.6 377.4 654.6"/>
-      <text class="cls-24" transform="matrix(0.5, -0.87, 0.87, 0.5, 365.38, 645.64)">U</text>
-      <text class="cls-24" transform="matrix(0.5, -0.87, 0.87, 0.5, 377.2, 625.07)">I</text>
-      <text class="cls-24" transform="matrix(0.5, -0.87, 0.87, 0.5, 383.34, 614.38)"> </text>
-      <text class="cls-24" transform="matrix(0.5, -0.87, 0.87, 0.5, 388.29, 605.77)">d</text>
-      <text class="cls-24" transform="translate(398.9 587.3) rotate(-60.1)">e</text>
-      <text class="cls-24" transform="translate(408.4 570.8) rotate(-60.1)">s</text>
-      <text class="cls-24" transform="matrix(0.5, -0.87, 0.87, 0.5, 417.44, 555.04)">i</text>
-      <text class="cls-24" transform="translate(423.3 544.8) rotate(-60.1)">g</text>
-      <text class="cls-24" transform="translate(433.6 526.9) rotate(-60.1)">n</text>
-      <text class="cls-24" transform="translate(443.4 511.1) rotate(-29.1)"> </text>
-      <text class="cls-24" transform="translate(452 506.3) rotate(-29.1)"> </text>
-      <text class="cls-24" transform="matrix(0.87, -0.49, 0.49, 0.87, 460.7, 501.44)">A</text>
-      <text class="cls-24" transform="matrix(0.87, -0.49, 0.49, 0.87, 480.67, 490.31)">i</text>
-      <text class="cls-24" transform="matrix(0.87, -0.49, 0.49, 0.87, 491.01, 484.55)"> </text>
-      <text class="cls-24" transform="translate(499.7 479.7) rotate(-29.1)">X</text>
-      <text class="cls-24" transform="matrix(0.87, -0.49, 0.49, 0.87, 517.79, 469.63)">d</text>
-      <polyline class="cls-25" points="805.3 251.3 1031.4 382.6 1164.9 607.1 1164.9 872.1"/>
-      <text class="cls-26" transform="matrix(0.87, 0.48, -0.48, 0.87, 870.29, 277.3)">A</text>
-      <text class="cls-26" transform="translate(891.4 289) rotate(29)">n</text>
-      <text class="cls-26" transform="matrix(0.87, 0.48, -0.48, 0.87, 910.75, 299.72)">i</text>
-      <text class="cls-26" transform="translate(921.7 305.8) rotate(29)">m</text>
-      <text class="cls-26" transform="translate(948.2 320.5) rotate(29)">a</text>
-      <text class="cls-26" transform="translate(965.4 330) rotate(29)">t</text>
-      <text class="cls-26" transform="matrix(0.87, 0.48, -0.48, 0.87, 982.31, 339.38)">i</text>
-      <text class="cls-26" transform="matrix(0.87, 0.48, -0.48, 0.87, 993.24, 345.44)">o</text>
-      <text class="cls-26" transform="translate(1011.8 355.7) rotate(29)">n</text>
-      <text class="cls-26" transform="translate(1031.1 366.4) rotate(29)">,</text>
-      <text class="cls-26" transform="matrix(0.51, 0.86, -0.86, 0.51, 1039.32, 371.14)"> </text>
-      <text class="cls-26" transform="translate(1044.7 380.2) rotate(59.4)"> </text>
-      <text class="cls-26" transform="matrix(0.51, 0.86, -0.86, 0.51, 1050.02, 389.23)">v</text>
-      <text class="cls-26" transform="translate(1060.2 406.4) rotate(59.4)">i</text>
-      <text class="cls-26" transform="matrix(0.51, 0.86, -0.86, 0.51, 1066.56, 417.18)">s</text>
-      <text class="cls-26" transform="translate(1076.3 433.7) rotate(59.4)">u</text>
-      <text class="cls-26" transform="matrix(0.51, 0.86, -0.86, 0.51, 1087.46, 452.52)">a</text>
-      <text class="cls-26" transform="matrix(0.51, 0.86, -0.86, 0.51, 1098.03, 470.38)">l</text>
-      <text class="cls-26" transform="translate(1104.4 481.1) rotate(59.4)"> </text>
-      <text class="cls-26" transform="translate(1109.7 490.2) rotate(59.4)">e</text>
-      <text class="cls-26" transform="translate(1120 507.6) rotate(59.4)">ff</text>
-      <text class="cls-26" transform="matrix(0.51, 0.86, -0.86, 0.51, 1135.83, 534.27)">e</text>
-      <text class="cls-26" transform="translate(1146.3 552) rotate(59.4)">c</text>
-      <text class="cls-26" transform="matrix(0.51, 0.86, -0.86, 0.51, 1155.87, 568.15)">t</text>
-      <text class="cls-26" transform="translate(1165.5 584.5) rotate(59.4)">s</text>
-      <text class="cls-26" transform="translate(1174.1 599) rotate(59.4)">,</text>
-      <text class="cls-26" transform="translate(1177.6 609.1) rotate(90.1)"> <tspan x="10.5" y="0"> </tspan><tspan x="21" y="0">g</tspan><tspan x="42.9" y="0">a</tspan><tspan x="63.7" y="0">m</tspan><tspan x="94" y="0">e</tspan></text>
-      <polyline class="cls-27" points="569.4 352.6 779.3 352.6 960.4 456.6"/>
-      <text class="cls-28" transform="translate(584.3 340) rotate(0)"> </text>
-      <text class="cls-28" transform="translate(593.8 340) rotate(0)"> </text>
-      <text class="cls-28" transform="translate(603.2 340) rotate(0)"> </text>
-      <text class="cls-28" transform="matrix(1, 0, 0, 1, 612.68, 339.98)"> </text>
-      <text class="cls-28" transform="matrix(1, 0, 0, 1, 622.14, 339.98)"> </text>
-      <text class="cls-28" transform="translate(631.6 340) rotate(0)"> </text>
-      <text class="cls-28" transform="matrix(1, 0, 0, 1, 641.04, 339.97)"> </text>
-      <text class="cls-28" transform="matrix(1, 0, 0, 1, 650.47, 339.96)"> </text>
-      <text class="cls-28" transform="translate(659.9 340) rotate(0)"> </text>
-      <text class="cls-28" transform="matrix(1, 0, 0, 1, 669.38, 339.95)"> </text>
-      <text class="cls-28" transform="translate(678.8 340) rotate(0)"> </text>
-      <text class="cls-28" transform="translate(688.3 339.9) rotate(0)"> </text>
-      <text class="cls-28" transform="translate(697.7 339.9) rotate(0)"> </text>
-      <text class="cls-28" transform="matrix(1, 0, 0, 1, 707.2, 339.94)"> </text>
-      <text class="cls-28" transform="translate(716.6 339.9) rotate(0)"> </text>
-      <text class="cls-28" transform="translate(726.1 339.9) rotate(0)"> </text>
-      <text class="cls-28" transform="translate(735.5 339.9) rotate(0)">U</text>
-      <text class="cls-28" transform="matrix(1, 0, 0, 1, 757.98, 339.91)">X</text>
-      <text class="cls-28" transform="translate(777.9 338.5) rotate(29.9)"> </text>
-      <text class="cls-28" transform="matrix(0.87, 0.5, -0.5, 0.87, 785.7, 342.98)">d</text>
-      <text class="cls-28" transform="translate(803.2 353.1) rotate(29.9)">e</text>
-      <text class="cls-28" transform="translate(819.1 362.2) rotate(29.9)">s</text>
-      <text class="cls-28" transform="matrix(0.87, 0.5, -0.5, 0.87, 834.22, 370.88)">i</text>
-      <text class="cls-28" transform="matrix(0.87, 0.5, -0.5, 0.87, 843.64, 376.3)">g</text>
-      <text class="cls-28" transform="translate(860.7 386.1) rotate(29.9)">n</text>
-      <polyline class="cls-29" points="559.8 1161.1 787.9 1161.1 979.5 1050.3"/>
-      <text class="cls-30" transform="translate(603.6 1204.5)">C<tspan x="21.8" y="0">S</tspan><tspan x="41.5" y="0">S</tspan><tspan x="61.9" y="0"> </tspan><tspan x="71.8" y="0">a</tspan><tspan x="91.5" y="0">n</tspan><tspan x="112.4" y="0">d</tspan><tspan x="133.6" y="0"> </tspan><tspan x="143.6" y="0">J</tspan><tspan x="162.7" y="0">S</tspan><tspan x="183.1" y="0"> </tspan></text>
-      <text class="cls-30" transform="translate(804.7 1203.7) rotate(-29.9)">a</text>
-      <text class="cls-30" transform="translate(821.7 1193.9) rotate(-29.9)">n</text>
-      <text class="cls-30" transform="translate(839.9 1183.5) rotate(-29.9)">i</text>
-      <text class="cls-30" transform="matrix(0.87, -0.5, 0.5, 0.87, 850.12, 1177.59)">m</text>
-      <text class="cls-30" transform="matrix(0.87, -0.5, 0.5, 0.87, 874.97, 1163.3)">a</text>
-      <text class="cls-30" transform="matrix(0.87, -0.5, 0.5, 0.87, 891.08, 1154.03)">t</text>
-      <text class="cls-30" transform="matrix(0.87, -0.5, 0.5, 0.87, 906.95, 1144.9)">i</text>
-      <text class="cls-30" transform="translate(917.2 1139) rotate(-29.9)">o</text>
-      <text class="cls-30" transform="translate(934.6 1129) rotate(-29.9)">n</text>
-      <text class="cls-31" transform="translate(677.3 685.1) rotate(6.7)"> </text>
-      <text class="cls-31" transform="translate(683.9 685.9) rotate(13.2)"> </text>
-      <text class="cls-31" transform="matrix(0.92, 0.39, -0.39, 0.92, 690.23, 686.95)">n</text>
-      <text class="cls-31" transform="translate(703.1 692.3) rotate(36.7)">p</text>
-      <text class="cls-31" transform="matrix(0.61, 0.8, -0.8, 0.61, 714.63, 700.28)">m</text>
-      <text class="cls-31" transform="translate(725.9 716.2) rotate(65.1)"> </text>
-      <text class="cls-31" transform="matrix(0.32, 0.95, -0.95, 0.32, 728.76, 722.15)"> </text>
-      <text class="cls-31" transform="translate(730.9 728.4) rotate(78.1)"> </text>
-      <text class="cls-31" transform="matrix(0.1, 1, -1, 0.1, 732.26, 734.88)"> </text>
-      <text class="cls-31" transform="translate(733.3 741.2) rotate(94.8)">R</text>
-      <text class="cls-31" transform="matrix(-0.3, 0.95, -0.95, -0.3, 732.17, 755.58)">e</text>
-      <text class="cls-31" transform="translate(728.4 767.8) rotate(120.2)">a</text>
-      <text class="cls-31" transform="translate(721.8 779.1) rotate(132.3)">c</text>
-      <text class="cls-31" transform="matrix(-0.81, 0.59, -0.59, -0.81, 713.92, 787.96)">t</text>
-      <text class="cls-31" transform="translate(703.8 795.1) rotate(153)"> </text>
-      <text class="cls-31" transform="translate(697.9 798.2) rotate(159.4)"> </text>
-      <text class="cls-31" transform="translate(691.8 800.5) rotate(165.9)"> </text>
-      <text class="cls-31" transform="matrix(-0.99, 0.13, -0.13, -0.99, 685.35, 802.14)"> </text>
-      <text class="cls-31" transform="matrix(-1, -0.05, 0.05, -1, 679.09, 803.48)">A</text>
-      <text class="cls-31" transform="translate(663.8 802.8) rotate(-163.1)">n</text>
-      <text class="cls-31" transform="translate(650.4 798.8) rotate(-149.6)">g</text>
-      <text class="cls-31" transform="translate(638.4 791.9) rotate(-136.3)">u</text>
-      <text class="cls-31" transform="matrix(-0.59, -0.81, 0.81, -0.59, 628.46, 782.05)">l</text>
-      <text class="cls-31" transform="matrix(-0.43, -0.9, 0.9, -0.43, 623.7, 775.99)">a</text>
-      <text class="cls-31" transform="translate(618 764.1) rotate(-103.8)">r</text>
-      <g class="cls-14">
-        <polygon class="cls-32" points="749 1022.1 599.8 1022.1 598.1 1021.2 594.8 1033.1 566.9 1135.2 567.6 1135.6 777.8 1135.6 959 1031 877.2 948.1 749 1022.1"/>
+      <polygon class="cls-2" points="590.9 500.8 545.6 500.8 506.4 523.4 483.8 562.6 483.8 607.9 506.4 647.1 545.6 669.8 590.9 669.8 630.1 647.1 652.8 607.9 652.8 562.6 630.1 523.4 590.9 500.8"/>
+      <polyline class="cls-15" points="525.8 596.7 537.2 616.4 556.9 627.8 579.7 627.8 599.4 616.4 610.8 596.7 610.8 573.9 599.4 554.2 579.7 542.8"/>
+      <polygon class="cls-16" points="534.8 594.3 543.8 609.8 559.3 618.8 577.3 618.8 592.8 609.8 601.8 594.3 601.8 576.3 592.8 560.8 577.3 551.8 567.8 585.8 534.8 594.3"/>
+      <polyline class="cls-17" points="270.7 665.5 346.2 803.6 487.3 888.2 650.9 887.4 785.2 810.2"/>
+      <text class="cls-18" transform="translate(246.7 690.5) rotate(61.3)"> </text>
+      <text class="cls-18" transform="matrix(0.48, 0.88, -0.88, 0.48, 251.46, 699.25)"> </text>
+      <text class="cls-18" transform="matrix(0.48, 0.88, -0.88, 0.48, 256.22, 707.97)">H</text>
+      <text class="cls-18" transform="translate(268.1 729.6) rotate(61.3)">T</text>
+      <text class="cls-18" transform="matrix(0.48, 0.88, -0.88, 0.48, 278.93, 749.5)">M</text>
+      <text class="cls-18" transform="translate(293 775.2) rotate(61.3)">L</text>
+      <text class="cls-18" transform="translate(303.1 793.6) rotate(61.3)"> </text>
+      <text class="cls-18" transform="translate(307.8 802.4) rotate(61.3)"> </text>
+      <text class="cls-18" transform="translate(312.6 811.1) rotate(61.3)"> </text>
+      <text class="cls-18" transform="translate(320.8 827.7) rotate(30.9)">C</text>
+      <text class="cls-18" transform="matrix(0.86, 0.51, -0.51, 0.86, 339.57, 839.02)">S</text>
+      <text class="cls-18" transform="matrix(0.86, 0.51, -0.51, 0.86, 356.45, 849.14)">S</text>
+      <text class="cls-18" transform="matrix(0.86, 0.51, -0.51, 0.86, 373.62, 859.43)">(</text>
+      <text class="cls-18" transform="matrix(0.86, 0.51, -0.51, 0.86, 384.55, 865.98)">S</text>
+      <text class="cls-18" transform="matrix(0.86, 0.51, -0.51, 0.86, 401.42, 876.1)">A</text>
+      <text class="cls-18" transform="matrix(0.86, 0.51, -0.51, 0.86, 420.41, 887.48)">S</text>
+      <text class="cls-18" transform="translate(437.3 897.6) rotate(30.9)">S</text>
+      <text class="cls-18" transform="translate(454.4 907.9) rotate(30.9)">)</text>
+      <text class="cls-19" transform="matrix(0.5, -0.86, 0.86, 0.5, 843.51, 842.29)">v</text>
+      <text class="cls-19" transform="matrix(0.5, -0.86, 0.86, 0.5, 852.85, 826.23)">a</text>
+      <text class="cls-19" transform="translate(862.7 809.2) rotate(-59.8)">n</text>
+      <text class="cls-19" transform="matrix(0.5, -0.86, 0.86, 0.5, 873.25, 791.14)">i</text>
+      <text class="cls-19" transform="matrix(0.5, -0.86, 0.86, 0.5, 878.84, 781.52)">l</text>
+      <text class="cls-19" transform="translate(884.4 771.9) rotate(-59.8)">l</text>
+      <text class="cls-19" transform="translate(890.4 761.6) rotate(-59.8)">a</text>
+      <text class="cls-19" transform="translate(900.3 744.6) rotate(-59.8)"> </text>
+      <text class="cls-19" transform="translate(905.3 736) rotate(-59.8)">J</text>
+      <text class="cls-19" transform="translate(914.9 719.5) rotate(-59.8)">S</text>
+      <text class="cls-19" transform="matrix(0.5, -0.86, 0.86, 0.5, 925.21, 701.76)"> </text>
+      <text class="cls-19" transform="translate(931.3 685.1) rotate(-90.4)">&amp;</text>
+      <text class="cls-19" transform="translate(931.1 659.7) rotate(-90.4)"> </text>
+      <text class="cls-19" transform="translate(931 649.8) rotate(-90.4)">l</text>
+      <text class="cls-19" transform="translate(931 638.6) rotate(-90.4)">i</text>
+      <text class="cls-19" transform="translate(930.9 626.8) rotate(-90.4)">b</text>
+      <text class="cls-19" transform="translate(930.8 605.5) rotate(-90.4)">r</text>
+      <text class="cls-19" transform="translate(930.6 589.6) rotate(-90.4)">a</text>
+      <text class="cls-19" transform="matrix(-0.01, -1, 1, -0.01, 930.52, 569.94)">r</text>
+      <text class="cls-19" transform="translate(930.4 552.9) rotate(-90.4)">i</text>
+      <text class="cls-19" transform="matrix(-0.01, -1, 1, -0.01, 930.33, 541.11)">e</text>
+      <text class="cls-19" transform="matrix(-0.49, -0.87, 0.87, -0.49, 932.16, 514.27)">s</text>
+      <line class="cls-20" x1="267.8" y1="653.3" x2="268.8" y2="510.3"/>
+      <text class="cls-21" transform="matrix(0.01, -1, 1, 0.01, 255.79, 648.23)">b</text>
+      <text class="cls-21" transform="matrix(0.01, -1, 1, 0.01, 255.93, 628.81)">u</text>
+      <text class="cls-21" transform="matrix(0.01, -1, 1, 0.01, 256.06, 609.9)">s</text>
+      <text class="cls-21" transform="translate(256.2 593.3) rotate(-89.6)">i</text>
+      <text class="cls-21" transform="matrix(0.01, -1, 1, 0.01, 256.25, 582.49)">n</text>
+      <text class="cls-21" transform="translate(256.4 563.4) rotate(-89.6)">e</text>
+      <text class="cls-21" transform="translate(256.5 545.9) rotate(-89.6)">s</text>
+      <text class="cls-21" transform="translate(256.6 529.7) rotate(-89.6)">s</text>
+      <polyline class="cls-22" points="649 285 488.3 284.3 348.3 362.3 271.3 496.3"/>
+      <text class="cls-23" transform="matrix(0.5, -0.87, 0.87, 0.5, 259.29, 487.28)">U</text>
+      <text class="cls-23" transform="matrix(0.5, -0.87, 0.87, 0.5, 271.11, 466.71)">I</text>
+      <text class="cls-23" transform="matrix(0.5, -0.87, 0.87, 0.5, 277.26, 456.02)"> </text>
+      <text class="cls-23" transform="matrix(0.5, -0.87, 0.87, 0.5, 282.2, 447.41)">d</text>
+      <text class="cls-23" transform="translate(292.8 429) rotate(-60.1)">e</text>
+      <text class="cls-23" transform="translate(302.3 412.4) rotate(-60.1)">s</text>
+      <text class="cls-23" transform="matrix(0.5, -0.87, 0.87, 0.5, 311.35, 396.68)">i</text>
+      <text class="cls-23" transform="translate(317.2 386.4) rotate(-60.1)">g</text>
+      <text class="cls-23" transform="translate(327.5 368.5) rotate(-60.1)">n</text>
+      <text class="cls-23" transform="translate(337.3 352.7) rotate(-29.1)"> </text>
+      <text class="cls-23" transform="translate(345.9 347.9) rotate(-29.1)"> </text>
+      <text class="cls-23" transform="matrix(0.87, -0.49, 0.49, 0.87, 354.61, 343.08)">A</text>
+      <text class="cls-23" transform="matrix(0.87, -0.49, 0.49, 0.87, 374.58, 331.95)">i</text>
+      <text class="cls-23" transform="matrix(0.87, -0.49, 0.49, 0.87, 384.92, 326.19)"> </text>
+      <text class="cls-23" transform="translate(393.6 321.4) rotate(-29.1)">X</text>
+      <text class="cls-23" transform="matrix(0.87, -0.49, 0.49, 0.87, 411.7, 311.27)">d</text>
+      <polyline class="cls-24" points="699.2 92.9 925.3 224.3 1058.8 448.8 1058.8 713.8"/>
+      <text class="cls-25" transform="matrix(0.87, 0.48, -0.48, 0.87, 764.2, 118.95)">A</text>
+      <text class="cls-25" transform="translate(785.3 130.6) rotate(29)">n</text>
+      <text class="cls-25" transform="matrix(0.87, 0.48, -0.48, 0.87, 804.66, 141.36)">i</text>
+      <text class="cls-25" transform="translate(815.6 147.4) rotate(29)">m</text>
+      <text class="cls-25" transform="translate(842.1 162.1) rotate(29)">a</text>
+      <text class="cls-25" transform="translate(859.3 171.6) rotate(29)">t</text>
+      <text class="cls-25" transform="matrix(0.87, 0.48, -0.48, 0.87, 876.22, 181.02)">i</text>
+      <text class="cls-25" transform="matrix(0.87, 0.48, -0.48, 0.87, 887.16, 187.08)">o</text>
+      <text class="cls-25" transform="translate(905.7 197.4) rotate(29)">n</text>
+      <text class="cls-25" transform="translate(925.1 208.1) rotate(29)">,</text>
+      <text class="cls-25" transform="matrix(0.51, 0.86, -0.86, 0.51, 933.23, 212.78)"> </text>
+      <text class="cls-25" transform="translate(938.6 221.8) rotate(59.4)"> </text>
+      <text class="cls-25" transform="matrix(0.51, 0.86, -0.86, 0.51, 943.93, 230.87)">v</text>
+      <text class="cls-25" transform="translate(954.1 248.1) rotate(59.4)">i</text>
+      <text class="cls-25" transform="matrix(0.51, 0.86, -0.86, 0.51, 960.47, 258.83)">s</text>
+      <text class="cls-25" transform="translate(970.2 275.3) rotate(59.4)">u</text>
+      <text class="cls-25" transform="matrix(0.51, 0.86, -0.86, 0.51, 981.37, 294.16)">a</text>
+      <text class="cls-25" transform="matrix(0.51, 0.86, -0.86, 0.51, 991.94, 312.02)">l</text>
+      <text class="cls-25" transform="translate(998.3 322.8) rotate(59.4)"> </text>
+      <text class="cls-25" transform="translate(1003.7 331.8) rotate(59.4)">e</text>
+      <text class="cls-25" transform="translate(1013.9 349.2) rotate(59.4)">ff</text>
+      <text class="cls-25" transform="matrix(0.51, 0.86, -0.86, 0.51, 1029.74, 375.91)">e</text>
+      <text class="cls-25" transform="translate(1040.2 393.6) rotate(59.4)">c</text>
+      <text class="cls-25" transform="matrix(0.51, 0.86, -0.86, 0.51, 1049.78, 409.79)">t</text>
+      <text class="cls-25" transform="translate(1059.4 426.1) rotate(59.4)">s</text>
+      <text class="cls-25" transform="translate(1068 440.6) rotate(59.4)">,</text>
+      <text class="cls-25" transform="translate(1071.5 450.7) rotate(90.1)"> <tspan x="10.5" y="0"> </tspan><tspan x="21" y="0">g</tspan><tspan x="42.9" y="0">a</tspan><tspan x="63.7" y="0">m</tspan><tspan x="94" y="0">e</tspan></text>
+      <polyline class="cls-26" points="463.3 194.3 673.3 194.2 854.3 298.3"/>
+      <text class="cls-27" transform="translate(478.2 181.6) rotate(0)"> </text>
+      <text class="cls-27" transform="translate(487.7 181.6) rotate(0)"> </text>
+      <text class="cls-27" transform="translate(497.1 181.6) rotate(0)"> </text>
+      <text class="cls-27" transform="matrix(1, 0, 0, 1, 506.59, 181.62)"> </text>
+      <text class="cls-27" transform="matrix(1, 0, 0, 1, 516.05, 181.62)"> </text>
+      <text class="cls-27" transform="translate(525.5 181.6) rotate(0)"> </text>
+      <text class="cls-27" transform="matrix(1, 0, 0, 1, 534.95, 181.61)"> </text>
+      <text class="cls-27" transform="matrix(1, 0, 0, 1, 544.39, 181.6)"> </text>
+      <text class="cls-27" transform="translate(553.8 181.6) rotate(0)"> </text>
+      <text class="cls-27" transform="matrix(1, 0, 0, 1, 563.3, 181.6)"> </text>
+      <text class="cls-27" transform="translate(572.7 181.6) rotate(0)"> </text>
+      <text class="cls-27" transform="translate(582.2 181.6) rotate(0)"> </text>
+      <text class="cls-27" transform="translate(591.7 181.6) rotate(0)"> </text>
+      <text class="cls-27" transform="matrix(1, 0, 0, 1, 601.11, 181.58)"> </text>
+      <text class="cls-27" transform="translate(610.5 181.6) rotate(0)"> </text>
+      <text class="cls-27" transform="translate(620 181.6) rotate(0)"> </text>
+      <text class="cls-27" transform="translate(629.4 181.6) rotate(0)">U</text>
+      <text class="cls-27" transform="matrix(1, 0, 0, 1, 651.89, 181.56)">X</text>
+      <text class="cls-27" transform="translate(671.8 180.1) rotate(29.9)"> </text>
+      <text class="cls-27" transform="matrix(0.87, 0.5, -0.5, 0.87, 679.61, 184.62)">d</text>
+      <text class="cls-27" transform="translate(697.1 194.7) rotate(29.9)">e</text>
+      <text class="cls-27" transform="translate(713 203.8) rotate(29.9)">s</text>
+      <text class="cls-27" transform="matrix(0.87, 0.5, -0.5, 0.87, 728.13, 212.52)">i</text>
+      <text class="cls-27" transform="matrix(0.87, 0.5, -0.5, 0.87, 737.55, 217.94)">g</text>
+      <text class="cls-27" transform="translate(754.6 227.8) rotate(29.9)">n</text>
+      <polyline class="cls-28" points="453.7 1002.8 681.9 1002.8 873.4 892"/>
+      <text class="cls-29" transform="translate(497.6 1046.1)">C<tspan x="21.8" y="0">S</tspan><tspan x="41.5" y="0">S</tspan><tspan x="61.9" y="0"> </tspan><tspan x="71.8" y="0">a</tspan><tspan x="91.5" y="0">n</tspan><tspan x="112.4" y="0">d</tspan><tspan x="133.6" y="0"> </tspan><tspan x="143.6" y="0">J</tspan><tspan x="162.7" y="0">S</tspan><tspan x="183.1" y="0"> </tspan></text>
+      <text class="cls-29" transform="translate(698.6 1045.4) rotate(-29.9)">a</text>
+      <text class="cls-29" transform="translate(715.7 1035.6) rotate(-29.9)">n</text>
+      <text class="cls-29" transform="translate(733.8 1025.1) rotate(-29.9)">i</text>
+      <text class="cls-29" transform="matrix(0.87, -0.5, 0.5, 0.87, 744.04, 1019.23)">m</text>
+      <text class="cls-29" transform="matrix(0.87, -0.5, 0.5, 0.87, 768.89, 1004.94)">a</text>
+      <text class="cls-29" transform="matrix(0.87, -0.5, 0.5, 0.87, 784.99, 995.68)">t</text>
+      <text class="cls-29" transform="matrix(0.87, -0.5, 0.5, 0.87, 800.87, 986.55)">i</text>
+      <text class="cls-29" transform="translate(811.1 980.7) rotate(-29.9)">o</text>
+      <text class="cls-29" transform="translate(828.5 970.6) rotate(-29.9)">n</text>
+      <text class="cls-30" transform="translate(571.2 526.8) rotate(6.7)"> </text>
+      <text class="cls-30" transform="translate(577.8 527.5) rotate(13.2)"> </text>
+      <text class="cls-30" transform="matrix(0.92, 0.39, -0.39, 0.92, 584.14, 528.59)">n</text>
+      <text class="cls-30" transform="translate(597 534) rotate(36.7)">p</text>
+      <text class="cls-30" transform="matrix(0.61, 0.8, -0.8, 0.61, 608.54, 541.92)">m</text>
+      <text class="cls-30" transform="translate(619.9 557.8) rotate(65.1)"> </text>
+      <text class="cls-30" transform="matrix(0.32, 0.95, -0.95, 0.32, 622.67, 563.8)"> </text>
+      <text class="cls-30" transform="translate(624.8 570.1) rotate(78.1)"> </text>
+      <text class="cls-30" transform="matrix(0.1, 1, -1, 0.1, 626.17, 576.52)"> </text>
+      <text class="cls-30" transform="translate(627.2 582.9) rotate(94.8)">R</text>
+      <text class="cls-30" transform="matrix(-0.3, 0.95, -0.95, -0.3, 626.08, 597.22)">e</text>
+      <text class="cls-30" transform="translate(622.3 609.4) rotate(120.2)">a</text>
+      <text class="cls-30" transform="translate(615.7 620.8) rotate(132.3)">c</text>
+      <text class="cls-30" transform="matrix(-0.81, 0.59, -0.59, -0.81, 607.83, 629.6)">t</text>
+      <text class="cls-30" transform="translate(597.7 636.8) rotate(153)"> </text>
+      <text class="cls-30" transform="translate(591.8 639.8) rotate(159.4)"> </text>
+      <text class="cls-30" transform="translate(585.7 642.1) rotate(165.9)"> </text>
+      <text class="cls-30" transform="matrix(-0.99, 0.13, -0.13, -0.99, 579.26, 643.78)"> </text>
+      <text class="cls-30" transform="matrix(-1, -0.05, 0.05, -1, 573, 645.12)">A</text>
+      <text class="cls-30" transform="translate(557.7 644.4) rotate(-163.1)">n</text>
+      <text class="cls-30" transform="translate(544.3 640.4) rotate(-149.6)">g</text>
+      <text class="cls-30" transform="translate(532.3 633.5) rotate(-136.3)">u</text>
+      <text class="cls-30" transform="matrix(-0.59, -0.81, 0.81, -0.59, 522.38, 623.69)">l</text>
+      <text class="cls-30" transform="matrix(-0.43, -0.9, 0.9, -0.43, 517.61, 617.63)">a</text>
+      <text class="cls-30" transform="translate(511.9 605.8) rotate(-103.8)">r</text>
+      <g class="cls-13">
+        <polygon class="cls-31" points="642.9 863.8 493.7 863.8 492 862.8 488.7 874.8 460.8 976.8 461.5 977.2 671.8 977.2 852.9 872.6 771.1 789.8 642.9 863.8"/>
       </g>
-      <polyline class="cls-33" points="589.4 1070.6 766 1070.5 916.8 983.5 1003.9 833.8 1002.7 658.5 916.8 507.7 766 421.8"/>
+      <polyline class="cls-32" points="483.3 912.3 659.9 912.2 810.7 825.1 897.8 675.4 896.6 500.2 810.7 349.3 659.9 263.4"/>
     </g>
   </g>
 </svg>

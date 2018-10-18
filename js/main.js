@@ -23,6 +23,8 @@ const chart = document.querySelector(".chart");
 const about = document.querySelector("#about");
 const otherProject = document.querySelector(".other.project-group");
 const sideTech = document.querySelector(".side-tech");
+
+const mobile = document.querySelector(".mobile");
 // const h1 = document.querySelector("h1");
 // let h1CollapseState = false;
 let svgShrunkState = false;
@@ -111,6 +113,10 @@ function turnAndChange() {
   triangleStrokes.classList.add("hide");
   chart.classList.remove("hide");
   about.classList.remove("hide");
+  if (window.innerWidth < 768) {
+    mobile.classList.remove("hide");
+  }
+
   //  console.log(document.scrollingElement.scrollTop);
   // document.scrollingElement.scrollTop = `0`;
   let angle = 0;
@@ -317,8 +323,8 @@ function listProjectGroup(elem) {
       ); // ease-in effect
       //              m.target.removeEventListener("mouseleave", removeFill); // so when svg scrolls up, won't trigger mouse leave;
       if (
-        document.scrollingElement.scrollTop <
-        windowHeight * 0.22 // restrict scroll, no need to move all the way up and lose polygons out of sight
+        document.scrollingElement.scrollTop < windowHeight * 0.22 && // restrict scroll, no need to move all the way up and lose polygons out of sight
+        window.innerWidth > 768
       ) {
         document.scrollingElement.scrollTop = `${document.scrollingElement
           .scrollTop +
