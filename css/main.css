@@ -76,7 +76,7 @@ footer {
   padding: 1em;
   text-align: center;
   color: var(--dark-grey);
-  border-top: 1px dotted var(--light-grey);
+  background: white;
 }
 .bg-color {
   height: 100vh;
@@ -374,6 +374,9 @@ h4 {
 }
 .self-others ul {
   list-style: square;
+}
+.bold {
+  font-weight: bold;
 }
 @media screen and (max-width: 768px) {
   svg#changingShape {
