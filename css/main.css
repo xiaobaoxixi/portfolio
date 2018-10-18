@@ -218,6 +218,9 @@ img.portrait {
   height: 40px;
   margin-right: 10px;
 }
+.status img.use-less {
+  filter: grayscale(90);
+}
 .project-group ul {
   list-style: none;
 }
