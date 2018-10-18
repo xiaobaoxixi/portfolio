@@ -80,7 +80,7 @@ function init() {
     .staggerTo(allLinesInWeb, 0.1, { opacity: 0.7 }, 0.01, "-=.3")
     .to(letterI, 0.01, { opacity: 0, scaleX: 0, scaleY: 0 }, "-=.3")
     //    .to(web, 0.3, { x: 200, y: -30, scale: 2.2 }, "-=.3")
-    .to(web, 0.3, { x: 400, y: 400, scale: 0.4 }, "-=.3")
+    .to(web, 0.3, { x: 400, y: 450, scale: 0.4 }, "-=.3")
     .call(showNav)
     .to(letterI, 0.1, { opacity: 0 }, "-=.1")
     .to(t1, 0.3, { rotation: -60 })

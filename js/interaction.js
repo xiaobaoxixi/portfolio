@@ -148,7 +148,7 @@ function whileScroll(m) {
       // );
       web.setAttribute(
         "transform",
-        `scale(.4) translate(2594, 1453) rotate(${angle / 7} 1185 424.7)` // angel divide by a number so that the turning is not too much
+        `scale(.4) translate(2594, 1580) rotate(${angle / 7} 1185 424.7)` // angel divide by a number so that the turning is not too much
       );
     }
   }
