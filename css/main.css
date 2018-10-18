@@ -76,7 +76,7 @@ footer {
   padding: 1em;
   text-align: center;
   color: var(--dark-grey);
-  background: white;
+  border-top: 1px dotted var(--light-grey);
 }
 .bg-color {
   height: 100vh;
