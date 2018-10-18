@@ -166,7 +166,7 @@ foreignObject.other span.project {
 foreignObject nav {
   width: 119px; /* not dynamic here, need to change */
   text-align: right;
-  font-size: 10px;
+  font-size: 8px;
   height: 0;
   overflow: hidden;
 }
@@ -178,6 +178,12 @@ foreignObject p {
 }
 .side-tech {
   font-size: 12px;
+}
+.side-tech ul {
+  list-style: square;
+}
+.side-tech * {
+  font-weight: 300;
 }
 .chart {
   padding: 0 8vw 4vw;
@@ -348,6 +354,7 @@ h4 {
 }
 .opacity {
   opacity: 0.8;
+  font-size: 8px;
 }
 .contact {
   padding: 2vw;
