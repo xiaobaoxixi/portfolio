@@ -53,9 +53,12 @@ nav.main a {
   top: 7px;
 }
 nav.main a img {
-  height: 30px;
-  top: 9px;
+  height: 25px;
+  top: 5px;
   opacity: 0.8;
+}
+nav.main a.email {
+  font-size: 1em;
 }
 .burger {
   display: none;
