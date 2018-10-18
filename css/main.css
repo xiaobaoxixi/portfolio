@@ -92,14 +92,6 @@ svg {
   stroke: var(--dark-grey);
   fill: none;
 }
-svg#head {
-  stroke-width: 2;
-}
-svg#head {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
 svg#title {
   stroke-width: 4;
 }
@@ -184,17 +176,18 @@ foreignObject p {
 }
 .side-tech * {
   font-weight: 300;
+  opacity: 0.8;
 }
 .chart {
   padding: 0 8vw 4vw;
   display: grid;
-  grid-template-columns: 46vw 25vw;
+  grid-template-columns: 42vw 34vw;
   grid-gap: 4vw;
 }
 #about {
   padding: 4vw 8vw 8vw;
   display: grid;
-  grid-template-columns: 7vw 35vw 25vw;
+  grid-template-columns: 7vw 32vw 32vw;
   grid-gap: 4vw;
 }
 #about.hide {
