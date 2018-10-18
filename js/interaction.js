@@ -142,9 +142,13 @@ function whileScroll(m) {
     let previousPosition = scrollHistory[scrollHistory.length - 2];
     if (newPosition !== previousPosition) {
       angle += newPosition - previousPosition;
+      // web.setAttribute(
+      //   "transform",
+      //   `scale(2.2) translate(-488, -178) rotate(${angle / 8.8} 1185 424.7)` // angel divide by a number so that the turning is not too much
+      // );
       web.setAttribute(
         "transform",
-        `scale(2.2) translate(-488, -178) rotate(${angle / 8.8} 1185 424.7)` // angel divide by a number so that the turning is not too much
+        `scale(.4) translate(2594, 1453) rotate(${angle / 7} 1185 424.7)` // angel divide by a number so that the turning is not too much
       );
     }
   }
