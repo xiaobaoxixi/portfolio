@@ -77,7 +77,7 @@ function init() {
     )
     .call(showtriangleParts)
     //    .to(letterI, 0.7, { x: -235, y: -6, scaleY: 1.3 }, "-=.7")
-    .staggerTo(allLinesInWeb, 0.1, { opacity: 0.7 }, 0.01, "-=.3")
+    .staggerTo(allLinesInWeb, 0.1, { strokeWidth: "6" }, 0.01, "-=.3")
     .to(letterI, 0.01, { opacity: 0, scaleX: 0, scaleY: 0 }, "-=.3")
     //    .to(web, 0.3, { x: 200, y: -30, scale: 2.2 }, "-=.3")
     .to(web, 0.3, { x: 400, y: 450, scale: 0.4 }, "-=.3")
