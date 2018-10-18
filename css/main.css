@@ -120,6 +120,7 @@ svg#changingShape {
   width: 190vw;
   top: -16vw;
   left: -8vw;
+  z-index: 13;
 }
 text {
   stroke-width: 2;
@@ -227,7 +228,7 @@ footer,
   margin-right: 5px;
 }
 .status img.use-less {
-  filter: grayscale(90);
+  height: 20px;
 }
 .project-group ul {
   list-style: none;
@@ -248,6 +249,7 @@ span.project:not(.grey-out) {
   opacity: 0.3;
 }
 #single-project {
+  z-index: 17;
   position: fixed;
   width: 0;
   height: 0;
