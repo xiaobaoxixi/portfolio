@@ -182,7 +182,6 @@ foreignObject p {
   opacity: 0.8;
 }
 .chart {
-  margin-bottom: 70px;
   padding-left: 8vw;
   display: grid;
   grid-template-columns: 44vw 32vw;
@@ -200,6 +199,7 @@ foreignObject p {
 }
 img.portrait {
   width: 100%;
+  height: auto;
 }
 .status {
   padding: 50px 2vw 50px 4vw;
@@ -369,14 +369,20 @@ h4 {
   margin-top: 2em;
 }
 .mobile {
-  padding-top: 70px;
-  padding-left: 12vw;
+  padding: 70px 8vw 0 12vw;
+}
+.mobile p {
+  color: var(--fill);
+  font-weight: 300;
 }
 .self-others ul {
   list-style: square;
 }
 .bold {
   font-weight: bold;
+}
+.intro {
+  padding-right: 2vw;
 }
 @media screen and (max-width: 768px) {
   svg#changingShape {
@@ -409,10 +415,9 @@ h4 {
   }
   .chart,
   #about {
-    padding: 0 6vw;
+    padding: 50px 8vw;
     grid-template-columns: 80vw;
     grid-gap: 4vw;
-    margin: 50px 0;
   }
   #about > div:nth-of-type(1) {
     display: grid;
@@ -420,7 +425,7 @@ h4 {
     grid-template-rows: 100px;
     grid-gap: 4vw;
   }
-  .portrait {
+  img.portrait {
     height: 100%;
     width: auto;
   }
@@ -436,6 +441,6 @@ h4 {
   .status > img {
     width: 100%;
     position: inherit;
-    bottom: 0; /* temp solution, need to change */
+    top: 0;
   }
 }
