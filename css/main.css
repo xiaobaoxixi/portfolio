@@ -97,6 +97,12 @@ svg {
   stroke: var(--dark-grey);
   fill: none;
 }
+svg#dotted-lines {
+  width: 111vw;
+  position: absolute;
+  top: 7px;
+  left: -10.6vw;
+}
 svg#title {
   stroke-width: 4;
   z-index: 11;
@@ -454,7 +460,7 @@ span img.animate {
   width: 12px;
 }
 span img.random {
-  transition: all 0.3s ease-out;
+  transition: all 0.35s ease-out;
   width: 12px;
 }
 @media screen and (max-width: 768px) {

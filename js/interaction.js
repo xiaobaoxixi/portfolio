@@ -182,7 +182,7 @@ function animateDot(m) {
 }
 
 // random animation dots
-setInterval(generateRandomDot, 1000);
+setInterval(generateRandomDot, 1300);
 function generateRandomDot() {
   let randomNr = Math.floor(Math.random() * projects.length);
   let randomDot = projects[randomNr].querySelector("img");

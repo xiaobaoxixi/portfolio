@@ -1,6 +1,7 @@
 "use strict";
 const nav = document.querySelector("nav.main");
 const svgIntro = document.querySelector("svg#intro");
+const svgDottedLines = document.querySelector("svg#dotted-lines");
 const allLinesInWeb = document.querySelectorAll("#lines *");
 //const letterIParts = document.querySelectorAll("g#i *");
 const letterI = document.querySelector("#i line");
@@ -295,6 +296,7 @@ function hexagonTurn() {
       octagon.classList.remove("hide");
       otherProject.classList.remove("hide");
       sideTech.classList.remove("hide");
+      svgDottedLines.classList.remove("hide");
       octagon.setAttribute("fill", "var(--fill)");
       listProjectGroup(octagon);
     }
