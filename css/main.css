@@ -397,14 +397,16 @@ h4 {
     6vw - 7px
   ); /* minus the border, so that text here and text in the section below are aligned */
 }
-#current h1,
-#future h1 {
+h1 {
   grid-column: span 2;
   margin-bottom: 0.5em;
   font-family: "Montserrat Subrayada", sans-serif;
   color: white;
   font-size: 5vw;
-  text-shadow: 3px -2px rgba(233, 233, 233, 0.3);
+  /* text-shadow: 3px -2px rgba(233, 233, 233, 0.3); */
+}
+#about h1 {
+  color: var(--bg);
 }
 .mobile {
   padding: 70px 8vw 0 12vw;
@@ -481,6 +483,10 @@ blockquote p {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px;
     grid-gap: 4vw;
+  }
+  #about h1 {
+    color: var(--light-grey);
+    grid-column: span 2;
   }
   img.portrait {
     height: 100%;
