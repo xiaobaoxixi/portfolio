@@ -186,7 +186,7 @@ function animateDot(m) {
 }
 
 // random animation dots
-setInterval(generateRandomDot, 1300);
+setInterval(generateRandomDot, 700);
 function generateRandomDot() {
   let randomNr = Math.floor(Math.random() * projects.length);
   let randomDot = projects[randomNr].querySelector("img");
@@ -230,5 +230,13 @@ function detectSectionPosition() {
           .classList.remove("uncheck");
       }
     }
+  }
+}
+
+// clear anywhere outside to close modal
+window.addEventListener("click", checkClickPosition);
+function checkClickPosition(m) {
+  if (m.target !== modal) {
+    closeModal();
   }
 }
