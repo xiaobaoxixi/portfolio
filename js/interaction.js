@@ -5,13 +5,14 @@ const modal = document.querySelector("#single-project");
 const modalShadow = document.querySelector("#single-project-shadow");
 const closeX = document.querySelector("p.close");
 const burger = document.querySelector(".burger");
-let notClicked = true;
+let notClickedNav = true;
+let notClickedDot = 1;
 // navigation
 navSpans.forEach(listenNav);
 function listenNav(n) {
   n.addEventListener("click", navClicked);
   function navClicked(m) {
-    notClicked = false; // so that when click on nav, the automatic highlight nav function doesn't run. otherwise nav will flash, because of scrolling position
+    notClickedNav = false; // so that when click on nav, the automatic highlight nav function doesn't run. otherwise nav will flash, because of scrolling position
     navSpans.forEach(n => n.classList.add("uncheck"));
     m.target.classList.remove("uncheck");
     closeModal();
@@ -32,7 +33,7 @@ function listenNav(n) {
     }
     nav.style.height = "57px";
     setTimeout(function() {
-      notClicked = true;
+      notClickedNav = true;
     }, 1000); // temp solution
   }
 }
@@ -68,6 +69,8 @@ function listenProject(p) {
     // change dot image to 'seen'
     m.target.querySelector("img").classList.add("seen");
     m.target.querySelector("img.seen").setAttribute("src", "img/dot-seen.png");
+    // don't run random dot animation anymore
+    notClickedDot++;
     // reset
     closeModal();
     // update
@@ -188,21 +191,23 @@ function animateDot(m) {
 // random animation dots
 setInterval(generateRandomDot, 700);
 function generateRandomDot() {
-  let randomNr = Math.floor(Math.random() * projects.length);
-  let randomDot = projects[randomNr].querySelector("img");
-  randomDot.classList.add("random");
-  setTimeout(function() {
-    randomDot.classList.remove("random");
-  }, 600);
-  // chosen.addEventListener("animationend", function() {
-  //   chosen.classList.remove("random");
-  // });
+  if (notClickedDot <= 3) {
+    let randomNr = Math.floor(Math.random() * projects.length);
+    let randomDot = projects[randomNr].querySelector("img");
+    randomDot.classList.add("random");
+    setTimeout(function() {
+      randomDot.classList.remove("random");
+    }, 600);
+    // chosen.addEventListener("animationend", function() {
+    //   chosen.classList.remove("random");
+    // });
+  }
 }
 
 // scroll to section, nav highlight changes accordingly
 window.addEventListener("scroll", detectSectionPosition);
 function detectSectionPosition() {
-  if (notClicked) {
+  if (notClickedNav) {
     let sections = [];
     sections.push(document.querySelector("#current"));
     sections.push(document.querySelector("#future"));
