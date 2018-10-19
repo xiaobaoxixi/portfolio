@@ -5,12 +5,13 @@ const modal = document.querySelector("#single-project");
 const modalShadow = document.querySelector("#single-project-shadow");
 const closeX = document.querySelector("p.close");
 const burger = document.querySelector(".burger");
-
+let notClicked = true;
 // navigation
 navSpans.forEach(listenNav);
 function listenNav(n) {
   n.addEventListener("click", navClicked);
   function navClicked(m) {
+    notClicked = false; // so that when click on nav, the automatic highlight nav function doesn't run. otherwise nav will flash, because of scrolling position
     navSpans.forEach(n => n.classList.add("uncheck"));
     m.target.classList.remove("uncheck");
     closeModal();
@@ -30,6 +31,9 @@ function listenNav(n) {
       });
     }
     nav.style.height = "57px";
+    setTimeout(function() {
+      notClicked = true;
+    }, 1000); // temp solution
   }
 }
 // in mobile version, click burger show nav
@@ -198,31 +202,33 @@ function generateRandomDot() {
 // scroll to section, nav highlight changes accordingly
 window.addEventListener("scroll", detectSectionPosition);
 function detectSectionPosition() {
-  let sections = [];
-  sections.push(document.querySelector("#current"));
-  sections.push(document.querySelector("#future"));
-  sections.push(document.querySelector("#about"));
-  sections.push(svgMain);
-  sections.forEach(checkPosition);
-  function checkPosition(s) {
-    let sectionName = s.getAttribute("id");
-    if (
-      s.getBoundingClientRect().top < 70 &&
-      s.getBoundingClientRect().top > -70
-    ) {
-      navSpans.forEach(n => n.classList.add("uncheck"));
-      document
-        .querySelector(`nav.main span[data-section='${sectionName}']`)
-        .classList.remove("uncheck");
-    }
-    if (
-      sectionName === "changingShape" &&
-      s.getBoundingClientRect().top > -500
-    ) {
-      navSpans.forEach(n => n.classList.add("uncheck"));
-      document
-        .querySelector(`nav.main span[data-section='changingShape']`)
-        .classList.remove("uncheck");
+  if (notClicked) {
+    let sections = [];
+    sections.push(document.querySelector("#current"));
+    sections.push(document.querySelector("#future"));
+    sections.push(document.querySelector("#about"));
+    sections.push(svgMain);
+    sections.forEach(checkPosition);
+    function checkPosition(s) {
+      let sectionName = s.getAttribute("id");
+      if (
+        s.getBoundingClientRect().top < 70 &&
+        s.getBoundingClientRect().top > -70
+      ) {
+        navSpans.forEach(n => n.classList.add("uncheck"));
+        document
+          .querySelector(`nav.main span[data-section='${sectionName}']`)
+          .classList.remove("uncheck");
+      }
+      if (
+        sectionName === "changingShape" &&
+        s.getBoundingClientRect().top > -500
+      ) {
+        navSpans.forEach(n => n.classList.add("uncheck"));
+        document
+          .querySelector(`nav.main span[data-section='changingShape']`)
+          .classList.remove("uncheck");
+      }
     }
   }
 }
