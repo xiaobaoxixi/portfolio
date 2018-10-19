@@ -238,9 +238,7 @@ footer,
   list-style: none;
 }
 .project-group li {
-  font-size: 24px;
-  line-height: 24px;
-  top: -5px;
+  font-size: 17px;
 }
 span.project:not(.grey-out) {
   margin-right: 10px;
