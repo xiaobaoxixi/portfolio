@@ -188,26 +188,40 @@ foreignObject p {
 .chart {
   padding-left: 8vw;
   display: grid;
-  grid-template-columns: 44vw 32vw;
-  grid-gap: 4vw;
+  grid-template-columns: 80vw;
 }
 #about {
   background: white;
-  padding: 70px 8vw 70px 8vw;
+  padding: 6vw 8vw 7vw 14vw;
   display: grid;
-  grid-template-columns: 7vw 37vw 32vw;
-  grid-gap: 4vw;
+  grid-template-columns: 33vw 32vw;
+  grid-template-rows: auto auto;
+  grid-column-gap: 6vw;
+  grid-row-gap: 30px;
 }
 #about.hide {
   display: none;
+}
+#about > div:nth-of-type(1) {
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-column-gap: 50px;
+}
+#about .intro {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+#about .self-others {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row: span 2;
 }
 img.portrait {
   width: 100%;
   height: auto;
 }
 .status {
-  padding: 50px 2vw 50px 4vw;
-  border-left: 7px solid white;
+  padding: 6vw 0 6vw 6vw;
   width: 100%;
 }
 .status p,
@@ -215,30 +229,29 @@ img.portrait {
 footer,
 .self-others li {
   font-family: "Barlow", sans-serif;
-  line-height: 25px;
+  line-height: 26px;
 }
 .hide {
   display: none;
 }
-.status > img {
-  width: 80%;
-  left: 10%;
-  top: -30px;
-  transform: rotate(45deg);
+.status div > img {
+  width: 92%;
+  left: 0;
+  /* transform: rotate(45deg); */
 }
 .status p > img {
   display: inline-block;
   height: 35px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 .status img.use-less {
-  height: 20px;
+  height: 25px;
 }
 .project-group ul {
   list-style: none;
 }
 .project-group li {
-  font-size: 17px;
+  font-size: 16.5px;
 }
 span.project:not(.grey-out) {
   margin-right: 10px;
@@ -366,12 +379,32 @@ h4 {
 .bold {
   font-weight: 700;
 }
-.status h3,
-h5 {
-  margin-top: 1em;
+.status h4 {
+  margin-bottom: 1em;
 }
-h4 {
-  margin-top: 2em;
+#future,
+#current {
+  border-right: 7px solid white;
+  display: grid;
+  grid-template-columns: 33vw 30vw;
+  grid-column-gap: 6vw;
+}
+#current {
+  border-left: 7px solid white;
+  border-bottom: 7px solid white;
+  border-right: none;
+  padding-left: calc(
+    6vw - 7px
+  ); /* minus the border, so that text here and text in the section below are aligned */
+}
+#current h1,
+#future h1 {
+  grid-column: span 2;
+  margin-bottom: 0.5em;
+  font-family: "Montserrat Subrayada", sans-serif;
+  color: white;
+  font-size: 5vw;
+  text-shadow: 3px -2px rgba(233, 233, 233, 0.3);
 }
 .mobile {
   padding: 70px 8vw 0 12vw;
@@ -389,6 +422,25 @@ h4 {
 .intro {
   padding-right: 2vw;
 }
+blockquote {
+  padding-left: 5px;
+  background-color: var(--bg);
+  margin-top: 1em;
+  border-left: 5px solid var(--light-grey);
+  quotes: "\201c" "\201d" "\2018" "\2019";
+}
+blockquote::before {
+  color: var(--light-grey);
+  content: url(/img/quotes.png);
+  font-size: 4em;
+  line-height: 0.1em;
+  vertical-align: -0.5em;
+}
+blockquote p {
+  left: 60px;
+  top: -1em;
+}
+
 @media screen and (max-width: 768px) {
   svg#changingShape {
     display: none;
