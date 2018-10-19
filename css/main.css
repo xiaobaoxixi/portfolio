@@ -42,9 +42,13 @@ nav.main span {
   border-bottom: 7px solid var(--yellow);
   top: 5px;
 }
+
 nav.main span.uncheck {
   color: var(--light-grey);
   border-bottom: none;
+}
+nav.main span.uncheck:hover {
+  color: var(--dark-grey);
 }
 nav.main a.git {
   grid-column-start: 9;
