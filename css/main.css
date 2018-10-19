@@ -251,7 +251,7 @@ footer,
   list-style: none;
 }
 .project-group li {
-  font-size: 16.5px;
+  font-size: 16.63px;
 }
 span.project:not(.grey-out) {
   margin-right: 10px;
@@ -442,7 +442,21 @@ blockquote p {
   left: 60px;
   top: -1em;
 }
-
+span img {
+  opacity: 0.9; /* temp solution */
+  width: 7px;
+  transform-origin: center center;
+  pointer-events: none; /* only the parent span triggers modal, need to be sure for js event */
+  transition: all 0.2s ease-in;
+}
+span img.animate {
+  transition: all 0.15s ease-out;
+  width: 12px;
+}
+span img.random {
+  transition: all 0.3s ease-out;
+  width: 12px;
+}
 @media screen and (max-width: 768px) {
   svg#changingShape {
     display: none;

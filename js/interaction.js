@@ -45,6 +45,8 @@ function toggleNav() {
 // display single project
 projects.forEach(listenProject);
 function listenProject(p) {
+  p.addEventListener("mouseenter", animateDot);
+
   // a delay timer if decide to use mouseenter to to trigger mocal box
   //  p.addEventListener("mouseenter", timingCount);
   // function timingCount(m) {
@@ -59,6 +61,9 @@ function listenProject(p) {
   // }
   p.addEventListener("click", showSingleProject);
   function showSingleProject(m) {
+    // change dot image to 'seen'
+    m.target.querySelector("img").classList.add("seen");
+    m.target.querySelector("img.seen").setAttribute("src", "img/dot-seen.png");
     // reset
     closeModal();
     // update
@@ -161,4 +166,31 @@ function whileScroll(m) {
       );
     }
   }
+}
+function animateDot(m) {
+  let img = m.target.querySelector("img");
+  img.classList.add("animate");
+  if (img.className.indexOf("seen") < 0) {
+    img.setAttribute("src", "img/dot-hover.png");
+  }
+  img.parentElement.addEventListener("mouseleave", function() {
+    img.classList.remove("animate");
+    if (img.className.indexOf("seen") < 0) {
+      img.setAttribute("src", "img/dot.png");
+    }
+  });
+}
+
+// random animation dots
+setInterval(generateRandomDot, 1000);
+function generateRandomDot() {
+  let randomNr = Math.floor(Math.random() * projects.length);
+  let randomDot = projects[randomNr].querySelector("img");
+  randomDot.classList.add("random");
+  setTimeout(function() {
+    randomDot.classList.remove("random");
+  }, 600);
+  // chosen.addEventListener("animationend", function() {
+  //   chosen.classList.remove("random");
+  // });
 }

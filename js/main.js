@@ -53,7 +53,7 @@ function init() {
       {
         scaleX: 0.62,
         scaleY: 0.17,
-        y: 111
+        y: 109
       },
       "-=.3"
     )
