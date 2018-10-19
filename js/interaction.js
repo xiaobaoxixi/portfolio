@@ -194,3 +194,35 @@ function generateRandomDot() {
   //   chosen.classList.remove("random");
   // });
 }
+
+// scroll to section, nav highlight changes accordingly
+window.addEventListener("scroll", detectSectionPosition);
+function detectSectionPosition() {
+  let sections = [];
+  sections.push(document.querySelector("#current"));
+  sections.push(document.querySelector("#future"));
+  sections.push(document.querySelector("#about"));
+  sections.push(svgMain);
+  sections.forEach(checkPosition);
+  function checkPosition(s) {
+    let sectionName = s.getAttribute("id");
+    if (
+      s.getBoundingClientRect().top < 70 &&
+      s.getBoundingClientRect().top > -70
+    ) {
+      navSpans.forEach(n => n.classList.add("uncheck"));
+      document
+        .querySelector(`nav.main span[data-section='${sectionName}']`)
+        .classList.remove("uncheck");
+    }
+    if (
+      sectionName === "changingShape" &&
+      s.getBoundingClientRect().top > -500
+    ) {
+      navSpans.forEach(n => n.classList.add("uncheck"));
+      document
+        .querySelector(`nav.main span[data-section='changingShape']`)
+        .classList.remove("uncheck");
+    }
+  }
+}
