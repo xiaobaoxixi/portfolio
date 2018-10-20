@@ -4,6 +4,7 @@
   --yellow: hsl(59, 73%, 50%);
   --fill: rgb(11, 106, 90);
   --bg: rgb(247, 247, 247);
+  --vw: 1vw;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -25,8 +26,8 @@ nav.main {
   position: fixed;
   display: none;
   height: 56px;
-  width: 100vw;
-  padding: 0 6vw;
+  width: calc(100 * var(--vw));
+  padding: 0 calc(6 * var(--vw));
   background-color: white;
   z-index: 19;
   grid-template-columns: auto auto auto auto auto auto auto auto 50px 50px 50px 50px;
@@ -69,7 +70,7 @@ nav.main a.email {
   display: none;
   position: fixed;
   padding-top: 12px;
-  padding-left: 3vw;
+  padding-left: calc(3 * var(--vw));
   font-size: 25px;
   z-index: 110;
   cursor: pointer;
@@ -88,13 +89,14 @@ footer {
 }
 .bg-color {
   height: 100vh;
-  width: 100vw;
+  width: calc(100 * var(--vw));
   position: fixed;
   top: 0;
   left: 0;
   background-color: var(--bg);
 }
 svg {
+  width: calc(100 * var(--vw));
   position: relative;
   stroke-width: 2;
   stroke-linecap: round;
@@ -103,10 +105,10 @@ svg {
   fill: none;
 }
 svg#dotted-lines {
-  width: 111vw;
+  width: calc(110.3 * var(--vw));
   position: absolute;
-  top: -0.2vw;
-  left: -10vw;
+  top: calc(-0.2 * var(--vw));
+  left: calc(-10 * var(--vw));
 }
 svg#title {
   stroke-width: 4;
@@ -131,9 +133,9 @@ svg#title {
   stroke-width: 4;
 }
 svg#changingShape {
-  width: 190vw;
-  top: -16vw;
-  left: -8vw;
+  width: calc(190 * var(--vw));
+  top: calc(-16 * var(--vw));
+  left: calc(-8 * var(--vw));
   z-index: 13;
 }
 text {
@@ -197,17 +199,19 @@ foreignObject p {
   opacity: 0.8;
 }
 .chart {
-  padding-left: 8vw;
+  padding-left: calc(8 * var(--vw));
   display: grid;
-  grid-template-columns: 80vw;
+  grid-template-columns: calc(80 * var(--vw));
 }
 #about {
+  width: 100%;
   background: white;
-  padding: 6vw 8vw 7vw 14vw;
+  padding: calc(6 * var(--vw)) calc(8 * var(--vw)) calc(7 * var(--vw))
+    calc(14 * var(--vw));
   display: grid;
-  grid-template-columns: 33vw 32vw;
+  grid-template-columns: calc(33 * var(--vw)) calc(32 * var(--vw));
   grid-template-rows: auto auto;
-  grid-column-gap: 6vw;
+  grid-column-gap: calc(6 * var(--vw));
   grid-row-gap: 30px;
 }
 #about.hide {
@@ -232,7 +236,7 @@ img.portrait {
   height: auto;
 }
 .status {
-  padding: 6vw 0 6vw 6vw;
+  padding: calc(6 * var(--vw)) 0 calc(6 * var(--vw)) calc(6 * var(--vw));
   width: 100%;
 }
 .status p,
@@ -385,7 +389,7 @@ h4 {
   font-size: 8px;
 }
 .contact {
-  padding: 2vw;
+  padding: calc(2 * var(--vw));
 }
 .bold {
   font-weight: 700;
@@ -395,17 +399,17 @@ h4 {
 }
 #future,
 #current {
-  border-right: 0.64vw dotted white;
+  border-right: calc(0.64 * var(--vw)) dotted white;
   display: grid;
-  grid-template-columns: 33vw 30vw;
-  grid-column-gap: 6vw;
+  grid-template-columns: calc(33 * var(--vw)) calc(30 * var(--vw));
+  grid-column-gap: calc(6 * var(--vw));
 }
 #current {
-  border-left: 0.64vw dotted white;
-  border-bottom: 0.64vw dotted white;
+  border-left: calc(0.64 * var(--vw)) dotted white;
+  border-bottom: calc(0.64 * var(--vw)) dotted white;
   border-right: none;
   padding-left: calc(
-    6vw - 9px
+    calc(6 * var(--vw)) - 9px
   ); /* minus the border, so that text here and text in the section below are aligned */
 }
 h1 {
@@ -413,14 +417,14 @@ h1 {
   margin-bottom: 0.5em;
   font-family: "Montserrat Subrayada", sans-serif;
   color: white;
-  font-size: 5vw;
+  font-size: calc(5 * var(--vw));
   /* text-shadow: 3px -2px rgba(233, 233, 233, 0.3); */
 }
 #about h1 {
   color: var(--bg);
 }
 .mobile {
-  padding: 70px 8vw 0 12vw;
+  padding: 70px calc(8 * var(--vw)) 0 calc(12 * var(--vw));
 }
 .mobile p {
   color: var(--fill);
@@ -433,7 +437,7 @@ h1 {
   font-weight: bold;
 }
 .intro {
-  padding-right: 2vw;
+  padding-right: calc(2 * var(--vw));
 }
 blockquote {
   padding-left: 5px;
@@ -493,21 +497,21 @@ span img.random {
   }
   nav.main a.email {
     position: fixed;
-    right: 6vw;
+    right: calc(6 * var(--vw));
     top: 10px;
     font-size: 0.8em;
   }
   .chart,
   #about {
-    padding: 70px 8vw;
-    grid-template-columns: 80vw;
-    grid-gap: 4vw;
+    padding: 70px calc(8 * var(--vw));
+    grid-template-columns: calc(80 * var(--vw));
+    grid-gap: calc(4 * var(--vw));
   }
   #about > div:nth-of-type(1) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px;
-    grid-gap: 4vw;
+    grid-gap: calc(4 * var(--vw));
   }
   #about h1 {
     color: var(--light-grey);
@@ -531,5 +535,14 @@ span img.random {
     position: inherit;
     top: 0;
     left: 0;
+  }
+}
+@media screen and (min-width: 1900px) {
+  :root {
+    --vw: 19px;
+  }
+  body {
+    width: 1900px;
+    margin-left: calc(50vw - 950px);
   }
 }
