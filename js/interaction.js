@@ -151,8 +151,6 @@ function closeModal() {
   document.querySelector(".img img").setAttribute("src", "");
 }
 
-// hint scroll
-
 // scroll page and turn web symbol
 let scrollHistory = [];
 let angle = 0;
@@ -225,6 +223,14 @@ function detectSectionPosition() {
         document
           .querySelector(`nav.main span[data-section='${sectionName}']`)
           .classList.remove("uncheck");
+        if (window.innerWidth < 768) {
+          document.querySelector(
+            `nav.main span[stype*='grid-row-start']`
+          ).style.gridRowStart = "2";
+          document.querySelector(
+            `nav.main span[data-section='${sectionName}']`
+          ).style.gridRowStart = "1";
+        }
       }
       if (
         sectionName === "changingShape" &&
