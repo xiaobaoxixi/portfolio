@@ -30,7 +30,7 @@ nav.main {
   padding: 0 calc(6 * var(--vw));
   background-color: white;
   z-index: 19;
-  grid-template-columns: auto auto auto auto auto auto auto auto 50px 50px 50px 50px;
+  grid-template-columns: auto auto auto auto auto auto auto auto 40px 40px 40px 50px;
   justify-items: left;
   align-items: baseline;
 }
@@ -42,6 +42,7 @@ nav.main * {
 nav.main span {
   border-bottom: 7px solid var(--yellow);
   top: 5px;
+  margin-right: 7px;
 }
 
 nav.main span.uncheck {
