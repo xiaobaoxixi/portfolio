@@ -125,7 +125,7 @@ function listenProject(p) {
     enlargeModal();
     getData(m.target); // see data.js
     function enlargeModal() {
-      modal.style.padding = "4% 7%";
+      modal.style.padding = "6% 8%";
       let width = modal.getBoundingClientRect().width;
       if (viewportWidth >= 1900) {
         if (

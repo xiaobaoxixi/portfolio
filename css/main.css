@@ -296,20 +296,32 @@ span.project:not(.grey-out) {
     15% 15%
   );
   font-size: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px auto;
+  grid-row-gap: 30px;
+  grid-column-gap: 50px;
 }
-#single-project section,
+#single-project svg {
+  position: absolute;
+}
 #single-project h3 {
-  margin-bottom: 13px;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  margin-bottom: 10px;
 }
 p.close {
   text-align: center;
   cursor: pointer;
   font-size: 1.5em;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column: span 2;
 }
 .desc {
-  width: 43%;
-  top: 5%;
   text-align: right;
+  grid-column-start: 1;
+  grid-row-start: 2;
 }
 .desc h3 {
   width: 70%;
@@ -320,12 +332,11 @@ p.close {
 }
 .notes li,
 h4 {
-  margin-bottom: 0.5em;
-  margin-top: 1em;
+  margin-bottom: 5px;
 }
 #single-project .img {
   position: absolute;
-  top: 0;
+  top: calc(6% + 80px);
   right: 0;
   width: 50%;
   height: 100%;
@@ -333,20 +344,23 @@ h4 {
 .img img {
   height: 70%;
   width: auto;
-  top: 17%;
 }
 .cover {
   /* exported gif always have a colored border line, need to cover it up*/
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 15%;
+  height: 32.5%;
   background-color: white;
+}
+.notes {
+  margin-bottom: 1em;
 }
 .type p,
 .notes li {
   font-size: 0.9em;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+  font-family: "Barlow", sans-serif;
 }
 .tech ul {
   list-style: none;
@@ -355,10 +369,13 @@ h4 {
   display: inline;
 }
 .url {
-  margin: 2em 0;
+  margin-bottom: 1em;
 }
 .report {
-  line-height: 7px;
+  font-size: 13px;
+  line-height: 19px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
 }
 #single-project svg {
   position: absolute;

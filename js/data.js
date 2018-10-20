@@ -45,7 +45,7 @@ function getData(project) {
             url.appendChild(a);
           } else if (projectNr === "26") {
             // nr26 is "circle of mice", has more than one url
-            url.innerHTML = "local use only, concept ";
+            url.innerHTML = "local use only<br>concept ";
             projects[index].url.forEach(addAnchor);
             function addAnchor(u, i) {
               let a = document.createElement("a");
