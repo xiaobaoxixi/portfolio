@@ -136,7 +136,7 @@ function listenProject(p) {
           width <
           1900 / 1.9 // modal size based on window width
         ) {
-          expendToWidth(width, 2); // the second argument is for determin the position of the modal, when screen is narrow, can't expand from center, cus the left part might flow over the left edge and be hidden
+          expendToWidth(width, 2, 2); // the second and third arguments are for determin the position of the modal, when screen is narrow, can't expand from center, cus the modal might flow over the left edge and be hidden
         } else {
           syncPosition();
         }

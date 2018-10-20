@@ -35,7 +35,7 @@ nav.main {
   align-items: baseline;
 }
 nav.main * {
-  font-size: 17px;
+  font-size: 19px;
   line-height: 47px; /* 3px difference to the line height of grid row, so that the yellow underline cut through the border*/
   cursor: pointer;
 }
