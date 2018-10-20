@@ -18,20 +18,20 @@ function listenNav(n) {
     closeModal();
     let target = m.target.dataset.section;
     console.log(target);
-    if (window.innerWidth < 768 && target === "changingShape") {
+    /* if (window.innerWidth < 768 && target === "changingShape") {
       document.querySelector(`#projects-mobile`).scrollIntoView({
         block: "start",
         inline: "nearest",
         behavior: "smooth"
       });
-    } else {
-      document.querySelector(`#${target}`).scrollIntoView({
-        block: "start",
-        inline: "nearest",
-        behavior: "smooth"
-      });
-    }
-    nav.style.height = "57px";
+    } else { */
+    document.querySelector(`#${target}`).scrollIntoView({
+      block: "start",
+      inline: "nearest",
+      behavior: "smooth"
+    });
+    //}
+    nav.classList.remove("show");
     setTimeout(function() {
       notClickedNav = true;
     }, 1000); // temp solution
@@ -40,12 +40,13 @@ function listenNav(n) {
 // in mobile version, click burger show nav
 burger.addEventListener("click", toggleNav);
 function toggleNav() {
-  if (nav.className.indexOf("show") > -1) {
-    nav.style.height = "auto";
-  } else {
-    nav.classList.remove("show");
-    nav.style.height = "auto";
-  }
+  nav.classList.toggle("show");
+  // if (nav.className.indexOf("show") > -1) {
+  //   nav.style.height = "auto";
+  // } else {
+  //   nav.classList.remove("show");
+  //   nav.style.height = "auto";
+  // }
 }
 // display single project
 projects.forEach(listenProject);

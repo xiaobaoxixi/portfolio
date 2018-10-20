@@ -424,7 +424,9 @@ h1 {
   color: var(--bg);
 }
 .mobile {
-  padding-left: 50px;
+  padding-left: calc(
+    8.64 * var(--vw)
+  ); /* 8vw as sections below and .64 because of border */
   width: 80%;
 }
 .mobile p {
@@ -519,9 +521,10 @@ span img.random {
   }
   nav.main {
     grid-template-rows: repeat(7, 70px);
-    grid-template-columns: auto 50px;
+    grid-template-columns: 1fr;
     overflow: scroll;
     padding-left: 12vw;
+    padding-bottom: 70px;
   }
   nav.main.show {
     height: auto;
@@ -532,12 +535,6 @@ span img.random {
   nav.main a.git {
     grid-column-start: 1;
     grid-row-start: 5;
-  }
-  nav.main a.email {
-    position: fixed;
-    right: calc(6 * var(--vw));
-    top: 10px;
-    font-size: 0.8em;
   }
   .chart {
     padding-left: 0;
@@ -561,6 +558,9 @@ span img.random {
   }
   #about > * > * {
     width: 90%;
+  }
+  h1 {
+    font-size: calc(11 * var(--vw));
   }
   nav.main span.uncheck {
     color: var(--dark-grey);
