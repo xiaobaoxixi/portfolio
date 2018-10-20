@@ -296,7 +296,9 @@ function hexagonTurn() {
       octagon.classList.remove("hide");
       otherProject.classList.remove("hide");
       sideTech.classList.remove("hide");
-      svgDottedLines.classList.remove("hide");
+      // if (window.innerWidth > 768) {
+      //   svgDottedLines.classList.remove("hide");
+      // }
       octagon.setAttribute("fill", "var(--fill)");
       listProjectGroup(octagon);
     }

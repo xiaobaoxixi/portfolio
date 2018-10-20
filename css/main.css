@@ -199,9 +199,8 @@ foreignObject p {
   opacity: 0.8;
 }
 .chart {
-  padding-left: calc(8 * var(--vw));
-  display: grid;
-  grid-template-columns: calc(80 * var(--vw));
+  padding: 0 calc(8 * var(--vw));
+  width: 97.5%;
 }
 #about {
   width: 100%;
@@ -209,7 +208,7 @@ foreignObject p {
   padding: calc(6 * var(--vw)) calc(8 * var(--vw)) calc(7 * var(--vw))
     calc(14 * var(--vw));
   display: grid;
-  grid-template-columns: calc(33 * var(--vw)) calc(32 * var(--vw));
+  grid-template-columns: calc(33 * var(--vw)) calc(36 * var(--vw));
   grid-template-rows: auto auto;
   grid-column-gap: calc(6 * var(--vw));
   grid-row-gap: 30px;
@@ -322,6 +321,7 @@ p.close {
 .notes li,
 h4 {
   margin-bottom: 0.5em;
+  margin-top: 1em;
 }
 #single-project .img {
   position: absolute;
@@ -424,7 +424,8 @@ h1 {
   color: var(--bg);
 }
 .mobile {
-  padding: 70px calc(8 * var(--vw)) 0 calc(12 * var(--vw));
+  padding-left: 50px;
+  width: 80%;
 }
 .mobile p {
   color: var(--fill);
@@ -441,6 +442,7 @@ h1 {
 }
 blockquote {
   padding-left: 5px;
+  padding-bottom: 10px;
   background-color: var(--bg);
   margin-top: 1em;
   border-left: 5px solid var(--light-grey);
@@ -454,8 +456,11 @@ blockquote::before {
   vertical-align: -0.5em;
 }
 blockquote p {
-  left: 60px;
+  left: 50px;
   top: -1em;
+  width: 85%;
+  margin-bottom: 1em;
+  font-style: italic;
 }
 span img {
   opacity: 0.9; /* temp solution */
@@ -472,10 +477,43 @@ span img.random {
   transition: all 0.35s ease-out;
   width: 12px;
 }
-@media screen and (max-width: 768px) {
-  svg#changingShape {
-    display: none;
+
+@media screen and (max-width: 1024px) {
+  .status {
+    padding: calc(6 * var(--vw)) 0 calc(6 * var(--vw)) calc(5 * var(--vw));
   }
+  #future,
+  #current {
+    grid-template-columns: calc(37 * var(--vw)) calc(31 * var(--vw));
+  }
+  #about {
+    padding: calc(6 * var(--vw)) calc(8 * var(--vw)) calc(7 * var(--vw))
+      calc(13 * var(--vw));
+    grid-template-columns: calc(79 * var(--vw));
+  }
+  #about > * {
+    grid-column-start: 1;
+  }
+  #about > * > * {
+    width: 90%;
+  }
+  #about > div > div p {
+    width: 80%;
+  }
+  #about .self-others {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+  blockquote p {
+    left: 40px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* svg#changingShape {
+    display: none;
+  } */
   .burger {
     display: inherit;
   }
@@ -501,25 +539,28 @@ span img.random {
     top: 10px;
     font-size: 0.8em;
   }
-  .chart,
-  #about {
+  .chart {
+    padding-left: 0;
+  }
+  #future,
+  #current {
     padding: 70px calc(8 * var(--vw));
-    grid-template-columns: calc(80 * var(--vw));
-    grid-gap: calc(4 * var(--vw));
+    grid-template-columns: calc(78 * var(--vw));
   }
-  #about > div:nth-of-type(1) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px;
-    grid-gap: calc(4 * var(--vw));
+  #future > *,
+  #current > * {
+    grid-column-start: 1;
   }
-  #about h1 {
-    color: var(--light-grey);
-    grid-column: span 2;
+  #current h3 {
+    margin-top: 50px;
   }
-  img.portrait {
-    height: 100%;
-    width: auto;
+  #about {
+    padding: calc(6 * var(--vw)) calc(8 * var(--vw)) calc(7 * var(--vw))
+      calc(8 * var(--vw));
+    grid-template-columns: calc(84 * var(--vw));
+  }
+  #about > * > * {
+    width: 90%;
   }
   nav.main span.uncheck {
     color: var(--dark-grey);
