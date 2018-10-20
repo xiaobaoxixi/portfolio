@@ -234,6 +234,17 @@ function detectSectionPosition() {
           .querySelector(`nav.main span[data-section='changingShape']`)
           .classList.remove("uncheck");
       }
+      if (
+        sectionName === "about" &&
+        s.getBoundingClientRect().top <
+          window.innerHeight - s.getBoundingClientRect().height - 57
+      ) {
+        // for wide screen, the last section 'about' might not reach to the top of the screen
+        navSpans.forEach(n => n.classList.add("uncheck"));
+        document
+          .querySelector(`nav.main span[data-section='about']`)
+          .classList.remove("uncheck");
+      }
     }
   }
 }
