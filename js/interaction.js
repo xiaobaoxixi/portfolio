@@ -3,7 +3,9 @@ const navSpans = document.querySelectorAll("nav span");
 const projects = document.querySelectorAll("span.project:not(.grey-out)");
 const modal = document.querySelector("#single-project");
 const modalShadow = document.querySelector("#single-project-shadow");
-const closeX = document.querySelector("p.close");
+const modalSquare = document.querySelector("#single-project-square");
+const closeX = document.querySelector("#single-project p.close");
+const closeXSquare = document.querySelector("#single-project-square p.close");
 const burger = document.querySelector(".burger");
 let notClickedNav = true;
 let notClickedDot = 1;
@@ -69,10 +71,10 @@ function detectSectionPosition() {
         document
           .querySelector(`nav.main span[data-section='${sectionName}']`)
           .classList.remove("uncheck");
-        if (window.innerWidth < 768) {
+        if (window.innerWidth <= 768) {
           document.querySelector(
             `nav.main span[stype*='grid-row-start']`
-          ).style.gridRowStart = "2";
+          ).style.gridRowStart = "2"; // gives error now, functioning though
           document.querySelector(
             `nav.main span[data-section='${sectionName}']`
           ).style.gridRowStart = "1";
@@ -114,7 +116,9 @@ function listenProject(p) {
     // don't run random dot animation anymore
     notClickedDot++;
     // reset
-    closeModal();
+    if (window.innerWidth > 768) {
+      closeModal();
+    }
     // update
     let positionX = m.target.getBoundingClientRect().left;
     let positionY = m.target.getBoundingClientRect().top;
@@ -151,14 +155,14 @@ function listenProject(p) {
         } else {
           syncPosition();
         }
-      } else if (viewportWidth < 1024 && viewportWidth >= 768) {
+      } else if (viewportWidth < 1024 && viewportWidth > 768) {
         if (width < viewportWidth / 1.15) {
           expendToWidth(width, 4, 3);
         } else {
           syncPosition();
         }
       } else {
-        modal.className = "full-screen";
+        modalSquare.classList.remove("no-show");
       }
       function expendToWidth(width, num, num2) {
         width += (viewportWidth / 1500) * 60;
@@ -218,6 +222,10 @@ function closeModal() {
   modalShadow.style.left = "0";
   // clear image inside modal, otherwise the next time a modal is opened, the previous image will show for a sec
   document.querySelector(".img img").setAttribute("src", "");
+}
+closeXSquare.addEventListener("click", closeModalSquare);
+function closeModalSquare() {
+  modalSquare.classList.add("no-show");
 }
 
 // scroll page and turn web symbol

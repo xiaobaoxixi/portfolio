@@ -35,7 +35,7 @@ nav.main {
   align-items: baseline;
 }
 nav.main * {
-  font-size: 20px;
+  font-size: 17px;
   line-height: 47px; /* 3px difference to the line height of grid row, so that the yellow underline cut through the border*/
   cursor: pointer;
 }
@@ -278,13 +278,14 @@ span.project:not(.grey-out) {
 .grey-out {
   opacity: 0.3;
 }
-#single-project {
+#single-project,
+#single-project-square {
   z-index: 17;
   position: fixed;
   width: 0;
   height: 0;
   background-color: white;
-  opacity: 0.95;
+  opacity: 0.97;
   clip-path: polygon(
     50% 0%,
     85% 15%,
@@ -302,6 +303,25 @@ span.project:not(.grey-out) {
   grid-row-gap: 30px;
   grid-column-gap: 50px;
 }
+#single-project-square {
+  padding: 10vh 10vw;
+  height: 100vh;
+  overflow-y: scroll;
+  width: 100vw;
+  clip-path: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 111;
+  grid-template-columns: 80vw;
+  grid-template-rows: 50px auto 40vh;
+}
+#single-project-square.no-show {
+  height: 0;
+  width: 0;
+  padding: 0;
+  overflow: hidden;
+}
 #single-project svg {
   position: absolute;
 }
@@ -310,7 +330,7 @@ span.project:not(.grey-out) {
   grid-row-start: 1;
   margin-bottom: 10px;
 }
-p.close {
+#single-project p.close {
   text-align: center;
   cursor: pointer;
   font-size: 1.5em;
@@ -318,19 +338,27 @@ p.close {
   grid-row-start: 1;
   grid-column: span 2;
 }
-.desc {
+#single-project-square p.close {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#single-project .desc {
   text-align: right;
   grid-column-start: 1;
   grid-row-start: 2;
 }
-.desc h3 {
+#single-project-square .desc > * {
+  margin-bottom: 20px;
+}
+#single-project .desc h3 {
   width: 70%;
   left: 30%;
 }
-.notes ul {
+#single-project .notes ul {
   list-style: none;
 }
-.notes li,
+#single-project .notes li,
 h4 {
   margin-bottom: 5px;
 }
@@ -341,11 +369,17 @@ h4 {
   width: 50%;
   height: 100%;
 }
-.img img {
+#single-project-square .img {
+  width: 100%;
+}
+#single-project .img img {
   height: 70%;
   width: auto;
 }
-.cover {
+#single-project-square .img img {
+  width: 100%;
+}
+#single-project .cover {
   /* exported gif always have a colored border line, need to cover it up*/
   position: absolute;
   bottom: 0;
@@ -353,7 +387,7 @@ h4 {
   height: 32.5%;
   background-color: white;
 }
-.notes {
+#single-project .notes {
   margin-bottom: 1em;
 }
 .type p,

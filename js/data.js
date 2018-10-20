@@ -1,21 +1,28 @@
 "use strict";
 
-let projectName = document.querySelector(".desc h3");
-let projectType = document.querySelector(".type p:nth-of-type(1)");
-let myRoll = document.querySelector(".type p:nth-of-type(2)");
-let note1 = document.querySelector(".notes li:nth-of-type(1)");
-let note2 = document.querySelector(".notes li:nth-of-type(2)");
-let note3 = document.querySelector(".notes li:nth-of-type(3)");
-let icon1 = document.querySelector(".tech li:nth-of-type(1)");
-let icon2 = document.querySelector(".tech li:nth-of-type(2)");
-let icon3 = document.querySelector(".tech li:nth-of-type(3)");
-let url = document.querySelector(".url");
-let reportS = document.querySelectorAll(".report");
-let img = document.querySelector(".img img");
+let selector;
+if (window.innerWidth > 768) {
+  selector = "#single-project";
+} else if (window.innerWidth <= 768) {
+  selector = "#single-project-square";
+}
+
+let projectName = document.querySelector(`${selector} .desc h3`);
+let projectType = document.querySelector(`${selector} .type p:nth-of-type(1)`);
+let myRoll = document.querySelector(`${selector} .type p:nth-of-type(2)`);
+let note1 = document.querySelector(`${selector} .notes li:nth-of-type(1)`);
+let note2 = document.querySelector(`${selector} .notes li:nth-of-type(2)`);
+let note3 = document.querySelector(`${selector} .notes li:nth-of-type(3)`);
+let icon1 = document.querySelector(`${selector} .tech li:nth-of-type(1)`);
+let icon2 = document.querySelector(`${selector} .tech li:nth-of-type(2)`);
+let icon3 = document.querySelector(`${selector} .tech li:nth-of-type(3)`);
+let url = document.querySelector(`${selector} .url`);
+let reportS = document.querySelectorAll(`${selector} .report`);
+let img = document.querySelector(`${selector} .img img`);
 
 function getData(project) {
+  console.log(selector);
   let projectNr = project.dataset.projectnr; // return string
-  console.log(typeof projectNr);
   fetch("projects.json")
     .then(data => data.json())
     .then(projects => {
