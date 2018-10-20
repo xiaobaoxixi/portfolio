@@ -7,6 +7,7 @@ const closeX = document.querySelector("p.close");
 const burger = document.querySelector(".burger");
 let notClickedNav = true;
 let notClickedDot = 1;
+
 // navigation
 navSpans.forEach(listenNav);
 function listenNav(n) {
@@ -48,23 +49,63 @@ function toggleNav() {
   //   nav.style.height = "auto";
   // }
 }
+// when scroll to section, nav highlight changes accordingly
+window.addEventListener("scroll", detectSectionPosition);
+function detectSectionPosition() {
+  if (notClickedNav) {
+    let sections = [];
+    sections.push(document.querySelector("#current"));
+    sections.push(document.querySelector("#future"));
+    sections.push(document.querySelector("#about"));
+    sections.push(svgMain);
+    sections.forEach(checkPosition);
+    function checkPosition(s) {
+      let sectionName = s.getAttribute("id");
+      if (
+        s.getBoundingClientRect().top < 70 &&
+        s.getBoundingClientRect().top > -70
+      ) {
+        navSpans.forEach(n => n.classList.add("uncheck"));
+        document
+          .querySelector(`nav.main span[data-section='${sectionName}']`)
+          .classList.remove("uncheck");
+        if (window.innerWidth < 768) {
+          document.querySelector(
+            `nav.main span[stype*='grid-row-start']`
+          ).style.gridRowStart = "2";
+          document.querySelector(
+            `nav.main span[data-section='${sectionName}']`
+          ).style.gridRowStart = "1";
+        }
+      }
+      if (
+        sectionName === "changingShape" &&
+        s.getBoundingClientRect().top > -500
+      ) {
+        navSpans.forEach(n => n.classList.add("uncheck"));
+        document
+          .querySelector(`nav.main span[data-section='changingShape']`)
+          .classList.remove("uncheck");
+      }
+      if (
+        sectionName === "about" &&
+        s.getBoundingClientRect().top <
+          window.innerHeight - s.getBoundingClientRect().height - 57
+      ) {
+        // for wide screen, the last section 'about' might not reach to the top of the screen
+        navSpans.forEach(n => n.classList.add("uncheck"));
+        document
+          .querySelector(`nav.main span[data-section='about']`)
+          .classList.remove("uncheck");
+      }
+    }
+  }
+}
+
 // display single project
 projects.forEach(listenProject);
 function listenProject(p) {
   p.addEventListener("mouseenter", animateDot);
-
-  // a delay timer if decide to use mouseenter to to trigger mocal box
-  //  p.addEventListener("mouseenter", timingCount);
-  // function timingCount(m) {
-  //   let ms = 0;
-  //   let timerIntervel = setInterval(timer, 10);
-  //   function timer() {
-  //     ms++;
-  //     if (ms === 31) {
-  //       showSingleProject(m);
-  //     }
-  //   }
-  // }
   p.addEventListener("click", showSingleProject);
   function showSingleProject(m) {
     // change dot image to 'seen'
@@ -82,28 +123,56 @@ function listenProject(p) {
     modal.style.left = `${positionX}px`;
     modal.style.top = `${positionY}px`;
     enlargeModal();
-    getData(m.target);
+    getData(m.target); // see data.js
     function enlargeModal() {
       modal.style.padding = "4% 7%";
       let width = modal.getBoundingClientRect().width;
-      if (
-        width <
-        viewportWidth / 1.9 // better make different sizes, small/medium/big
-        // (positionX >= viewportWidth / 2 && width < positionX * 0.5) ||
-        // (positionX < viewportWidth / 2 &&
-        //   width < (viewportWidth - positionX) * 0.5)
-      ) {
+      if (viewportWidth >= 1900) {
+        if (
+          width <
+          1900 / 1.9 // modal size based on window width
+        ) {
+          expendToWidth(width, 2); // the second argument is for determin the position of the modal, when screen is narrow, can't expand from center, cus the left part might flow over the left edge and be hidden
+        } else {
+          syncPosition();
+        }
+      } else if (viewportWidth < 1900 && viewportWidth >= 1340) {
+        if (
+          width <
+          viewportWidth / 1.9 // modal size based on window width
+        ) {
+          expendToWidth(width, 2, 2); // the second argument is for determin the position of the modal, when screen is narrow, can't expand from center, cus the left part might flow over the left edge and be hidden
+        } else {
+          syncPosition();
+        }
+      } else if (viewportWidth < 1340 && viewportWidth >= 1024) {
+        if (width < viewportWidth / 1.5) {
+          expendToWidth(width, 3, 2);
+        } else {
+          syncPosition();
+        }
+      } else if (viewportWidth < 1024 && viewportWidth >= 768) {
+        if (width < viewportWidth / 1.15) {
+          expendToWidth(width, 4, 3);
+        } else {
+          syncPosition();
+        }
+      } else {
+        modal.className = "full-screen";
+      }
+      function expendToWidth(width, num, num2) {
         width += (viewportWidth / 1500) * 60;
         modal.style.width = `${width}px`;
         modal.style.height = `${width}px`; // for the modal div, height and width are the same
-        modal.style.left = `${positionX - width / 2}px`;
-        modal.style.top = `${positionY - width / 2}px`;
+        modal.style.left = `${positionX - width / num}px`;
+        modal.style.top = `${positionY - width / num2}px`;
         modalShadow.style.width = `${width}px`;
         modalShadow.style.height = `${width}px`; // for the modal div, height and width are the same
-        modalShadow.style.left = `${positionX - width / 2 + 23}px`;
-        modalShadow.style.top = `${positionY - width / 2 - 7}px`;
+        modalShadow.style.left = `${positionX - width / num + 23}px`;
+        modalShadow.style.top = `${positionY - width / num2 - 7}px`;
         setTimeout(enlargeModal, 1000 / 60);
-      } else {
+      }
+      function syncPosition() {
         let positionYInit = m.target.getBoundingClientRect().top;
         let scrollTopInit =
           window.pageYOffset ||
@@ -200,59 +269,6 @@ function generateRandomDot() {
     // chosen.addEventListener("animationend", function() {
     //   chosen.classList.remove("random");
     // });
-  }
-}
-
-// scroll to section, nav highlight changes accordingly
-window.addEventListener("scroll", detectSectionPosition);
-function detectSectionPosition() {
-  if (notClickedNav) {
-    let sections = [];
-    sections.push(document.querySelector("#current"));
-    sections.push(document.querySelector("#future"));
-    sections.push(document.querySelector("#about"));
-    sections.push(svgMain);
-    sections.forEach(checkPosition);
-    function checkPosition(s) {
-      let sectionName = s.getAttribute("id");
-      if (
-        s.getBoundingClientRect().top < 70 &&
-        s.getBoundingClientRect().top > -70
-      ) {
-        navSpans.forEach(n => n.classList.add("uncheck"));
-        document
-          .querySelector(`nav.main span[data-section='${sectionName}']`)
-          .classList.remove("uncheck");
-        if (window.innerWidth < 768) {
-          document.querySelector(
-            `nav.main span[stype*='grid-row-start']`
-          ).style.gridRowStart = "2";
-          document.querySelector(
-            `nav.main span[data-section='${sectionName}']`
-          ).style.gridRowStart = "1";
-        }
-      }
-      if (
-        sectionName === "changingShape" &&
-        s.getBoundingClientRect().top > -500
-      ) {
-        navSpans.forEach(n => n.classList.add("uncheck"));
-        document
-          .querySelector(`nav.main span[data-section='changingShape']`)
-          .classList.remove("uncheck");
-      }
-      if (
-        sectionName === "about" &&
-        s.getBoundingClientRect().top <
-          window.innerHeight - s.getBoundingClientRect().height - 57
-      ) {
-        // for wide screen, the last section 'about' might not reach to the top of the screen
-        navSpans.forEach(n => n.classList.add("uncheck"));
-        document
-          .querySelector(`nav.main span[data-section='about']`)
-          .classList.remove("uncheck");
-      }
-    }
   }
 }
 
