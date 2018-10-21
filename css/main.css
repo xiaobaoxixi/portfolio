@@ -396,6 +396,8 @@ h4 {
   font-size: 0.9em;
   margin-bottom: 0.5em;
   font-family: "Barlow", sans-serif;
+  width: 90%;
+  left: 10%;
 }
 .tech ul {
   list-style: none;
@@ -448,6 +450,9 @@ h4 {
 }
 .status h4 {
   margin-bottom: 1em;
+}
+.status h4 + p {
+  margin-bottom: 20px;
 }
 #future,
 #current {
