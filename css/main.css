@@ -30,7 +30,7 @@ nav.main {
   padding: 0 calc(6 * var(--vw));
   background-color: white;
   z-index: 19;
-  grid-template-columns: auto auto auto auto auto auto auto auto 40px 40px 40px 50px;
+  grid-template-columns: auto auto auto auto auto auto auto auto 40px 40px 50px;
   justify-items: left;
   align-items: baseline;
 }
@@ -52,8 +52,18 @@ nav.main span.uncheck {
 nav.main span.uncheck:hover {
   color: var(--dark-grey);
 }
-nav.main a.git {
+nav.main div.gits {
   grid-column-start: 9;
+  height: 50px;
+  overflow: hidden;
+  transition: height 0.2s ease-out;
+}
+nav.main div.gits:hover {
+  height: 130px;
+}
+nav.main div.gits p {
+  font-size: 9px;
+  line-height: 12px;
 }
 nav.main a {
   text-decoration: none;
@@ -473,7 +483,6 @@ h4 {
 #about.slide-in {
   opacity: 1;
 }
-
 #current-border {
   border-left: calc(0.64 * var(--vw)) dotted white;
   border-bottom: calc(0.64 * var(--vw)) dotted white;
@@ -592,7 +601,7 @@ footer a {
     display: inherit;
   }
   nav.main {
-    grid-template-rows: repeat(7, 60px);
+    grid-template-rows: 60px 60px 60px 60px 130px 60px 60px;
     grid-template-columns: 1fr;
     overflow: scroll;
     padding-left: 12vw;
@@ -604,9 +613,13 @@ footer a {
   nav.main > * {
     grid-column-start: 1;
   }
-  nav.main a.git {
+  nav.main div.gits {
     grid-column-start: 1;
     grid-row-start: 5;
+    height: 130px;
+  }
+  nav.main div.gits a {
+    display: inline;
   }
   .chart {
     padding-left: 0;
