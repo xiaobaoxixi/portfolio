@@ -28,6 +28,7 @@ function listenNav(n) {
         behavior: "smooth"
       });
     } else { */
+    document.querySelector(`#${target}`).classList.add("slide-in");
     document.querySelector(`#${target}`).scrollIntoView({
       block: "start",
       inline: "nearest",
@@ -63,6 +64,9 @@ function detectSectionPosition() {
     sections.forEach(checkPosition);
     function checkPosition(s) {
       let sectionName = s.getAttribute("id");
+      if (s.getBoundingClientRect().top < 350) {
+        s.classList.add("slide-in");
+      }
       if (
         s.getBoundingClientRect().top < 70 &&
         s.getBoundingClientRect().top > -70
@@ -73,8 +77,9 @@ function detectSectionPosition() {
           .classList.remove("uncheck");
         if (window.matchMedia("(max-width: 768px)").matches) {
           document.querySelector(
-            `nav.main span[stype*='grid-row-start']`
+            `nav.main span[style*='grid-row-start']`
           ).style.gridRowStart = "2"; // gives error now, functioning though
+          console.log("gives error, function is working though");
           document.querySelector(
             `nav.main span[data-section='${sectionName}']`
           ).style.gridRowStart = "1";
@@ -287,7 +292,7 @@ function generateRandomDot() {
   }
 }
 
-// clear anywhere outside to close modal
+// click anywhere outside to close modal
 window.addEventListener("click", checkClickPosition);
 function checkClickPosition(m) {
   if (m.target !== modal) {

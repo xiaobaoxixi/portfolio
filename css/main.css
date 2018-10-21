@@ -456,18 +456,30 @@ h4 {
 }
 #future,
 #current {
-  border-right: calc(0.64 * var(--vw)) dotted white;
   display: grid;
   grid-template-columns: calc(33 * var(--vw)) calc(30 * var(--vw));
   grid-column-gap: calc(6 * var(--vw));
+  opacity: 0;
+  transition: all 0.4s ease-out;
 }
 #current {
-  border-left: calc(0.64 * var(--vw)) dotted white;
-  border-bottom: calc(0.64 * var(--vw)) dotted white;
   border-right: none;
   padding-left: calc(
     calc(6 * var(--vw)) - 9px
   ); /* minus the border, so that text here and text in the section below are aligned */
+}
+#current.slide-in,
+#future.slide-in,
+#about.slide-in {
+  opacity: 1;
+}
+
+#current-border {
+  border-left: calc(0.64 * var(--vw)) dotted white;
+  border-bottom: calc(0.64 * var(--vw)) dotted white;
+}
+#future-border {
+  border-right: calc(0.64 * var(--vw)) dotted white;
 }
 h1 {
   grid-column: span 2;
