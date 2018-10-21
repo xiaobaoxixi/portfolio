@@ -109,7 +109,7 @@ function turnAndChange() {
   triangleStrokes.classList.add("hide");
   chart.classList.remove("hide");
   about.classList.remove("hide");
-  if (window.innerWidth < 768) {
+  if (window.matchMedia("(max-width: 768px)").matches) {
     mobile.classList.remove("hide");
   }
 
@@ -296,7 +296,7 @@ function hexagonTurn() {
       octagon.classList.remove("hide");
       otherProject.classList.remove("hide");
       sideTech.classList.remove("hide");
-      if (window.innerWidth >= 768) {
+      if (window.matchMedia("(min-width: 769px)").matches) {
         svgDottedLines.classList.remove("hide");
       }
       octagon.setAttribute("fill", "var(--fill)");

@@ -21,7 +21,7 @@ function listenNav(n) {
     closeModal();
     let target = m.target.dataset.section;
     console.log(target);
-    /* if (window.innerWidth < 768 && target === "changingShape") {
+    /* if (window.matchMedia('(max-width: 768px)').matches && target === "changingShape") {
       document.querySelector(`#projects-mobile`).scrollIntoView({
         block: "start",
         inline: "nearest",
@@ -71,7 +71,7 @@ function detectSectionPosition() {
         document
           .querySelector(`nav.main span[data-section='${sectionName}']`)
           .classList.remove("uncheck");
-        if (window.innerWidth <= 768) {
+        if (window.matchMedia("(max-width: 768px)").matches) {
           document.querySelector(
             `nav.main span[stype*='grid-row-start']`
           ).style.gridRowStart = "2"; // gives error now, functioning though
@@ -116,7 +116,7 @@ function listenProject(p) {
     // don't run random dot animation anymore
     notClickedDot++;
     // reset
-    if (window.innerWidth > 768) {
+    if (window.matchMedia("(min-width: 769px)").matches) {
       closeModal();
     }
     // update
@@ -131,7 +131,7 @@ function listenProject(p) {
     function enlargeModal() {
       modal.style.padding = "6% 8%";
       let width = modal.getBoundingClientRect().width;
-      if (viewportWidth >= 1900) {
+      if (window.matchMedia("(min-width: 1900px)").matches) {
         if (
           width <
           1900 / 1.9 // modal size based on window width
@@ -140,7 +140,8 @@ function listenProject(p) {
         } else {
           syncPosition();
         }
-      } else if (viewportWidth < 1900 && viewportWidth >= 1340) {
+      } else if (window.innerWidth > 1340) {
+        // 1340 is not a media query, and is not definite
         if (
           width <
           viewportWidth / 1.9 // modal size based on window width
@@ -149,19 +150,22 @@ function listenProject(p) {
         } else {
           syncPosition();
         }
-      } else if (viewportWidth < 1340 && viewportWidth >= 1024) {
+      } else if (window.innerWidth > 1024) {
         if (width < viewportWidth / 1.5) {
           expendToWidth(width, 3, 2);
         } else {
           syncPosition();
         }
-      } else if (viewportWidth < 1024 && viewportWidth > 768) {
-        if (width < viewportWidth / 1.15) {
+      } else if (
+        window.matchMedia("(max-width: 1024px)").matches &&
+        !window.matchMedia("(max-width: 768px)").matches
+      ) {
+        if (width < viewportWidth / 1.17) {
           expendToWidth(width, 4, 3);
         } else {
           syncPosition();
         }
-      } else {
+      } else if (window.matchMedia("(max-width: 768px)").matches) {
         modalSquare.classList.remove("no-show");
       }
       function expendToWidth(width, num, num2) {

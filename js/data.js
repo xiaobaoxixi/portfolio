@@ -1,10 +1,10 @@
 "use strict";
 
 let selector;
-if (window.innerWidth > 768) {
-  selector = "#single-project";
-} else if (window.innerWidth <= 768) {
+if (window.matchMedia("(max-width: 768px)").matches) {
   selector = "#single-project-square";
+} else {
+  selector = "#single-project";
 }
 
 let projectName = document.querySelector(`${selector} .desc h3`);
