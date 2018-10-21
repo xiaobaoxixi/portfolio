@@ -225,7 +225,10 @@ function closeModal() {
   modalShadow.style.left = "0";
   modalShadow.style.left = "0";
   // clear image inside modal, otherwise the next time a modal is opened, the previous image will show for a sec
-  document.querySelector(".img img").setAttribute("src", "");
+  document.querySelector("#single-project .img img").setAttribute("src", "");
+  document
+    .querySelector("#single-project-square .img img")
+    .setAttribute("src", "");
 }
 closeXSquare.addEventListener("click", closeModalSquare);
 function closeModalSquare() {
