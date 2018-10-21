@@ -536,7 +536,9 @@ span img.random {
   transition: all 0.35s ease-out;
   width: 12px;
 }
-
+#cv {
+  z-index: 200;
+}
 @media screen and (max-width: 1024px) {
   .status {
     padding: calc(6 * var(--vw)) 0 calc(6 * var(--vw)) calc(5 * var(--vw));

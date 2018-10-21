@@ -4,15 +4,29 @@
   box-sizing: border-box;
   position: relative;
 }
-svg#cv {
-  top: 5vh;
-  width: 150vw;
+body {
+  width: 100vw;
+  padding: 70px;
 }
-h1 {
+svg#cv {
+  top: 100px;
+  width: 100%;
+}
+a,
+p {
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 500;
-  font-size: 23px;
-  position: fixed;
-  right: 130px;
-  top: 7px;
+  font-size: 19px;
+  border-bottom: 1px solid #333333e6;
+  text-decoration: none;
+  color: #333333e6;
+}
+p {
+  border-bottom: none;
+  left: 1.3vw; /* so that this text is aligned with the main part of the svg, not including the .. on the left edge of svg */
+}
+img {
+  width: 20px;
+  top: 5px;
+  left: 5px;
 }
