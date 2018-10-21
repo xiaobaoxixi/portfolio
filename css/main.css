@@ -536,7 +536,8 @@ span img.random {
   transition: all 0.35s ease-out;
   width: 12px;
 }
-#cv {
+#cv,
+footer a {
   z-index: 200;
 }
 @media screen and (max-width: 1024px) {
