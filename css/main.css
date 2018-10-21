@@ -212,7 +212,7 @@ foreignObject p {
   grid-template-columns: calc(33 * var(--vw)) calc(36 * var(--vw));
   grid-template-rows: auto auto;
   grid-column-gap: calc(6 * var(--vw));
-  grid-row-gap: 30px;
+  grid-row-gap: 10px;
 }
 #about.hide {
   display: none;
