@@ -56,7 +56,7 @@
     ],
     "img": "img/plane.png",
     "notes": [
-      "part of a interactive movie trailor",
+      "part of an interactive movie trailor",
       "++ combine simple visual treatment to enhence realism ",
       "+ difficulty changes based on user's gaming ability, one of the most popular games among the gamers at NNY "
     ],
@@ -72,7 +72,7 @@
     ],
     "img": "img/rodeo.png",
     "notes": [
-      "part of a interactive movie trailor",
+      "part of an interactive movie trailor",
       "+ '3D' effect with CSS perspective ",
       "- visual and timing less polished"
     ],
@@ -88,9 +88,9 @@
     ],
     "img": "img/moving.png",
     "notes": [
-      "a simple one-day project with basic JS",
-      "prepare for 'all' posibilities",
-      "- not all finished"
+      "a one-day project with JS function flow",
+      "prepare for 'all' posibilities, since user can click any where",
+      ""
     ],
     "tools": ["img/js.png", "", ""]
   },
@@ -106,7 +106,7 @@
     "notes": [
       "a simple representation of mouse interaction based on movement direction and speed",
       "+ animation run with requestAnimationFrame()",
-      "- not finished"
+      ""
     ],
     "tools": ["img/js.png", "img/css.png", ""]
   },
@@ -224,7 +224,7 @@
     "img": "img/traverser.png",
     "notes": [
       "+ read HTML file and output element structure with indentation as in code editor",
-      "! open console to see output",
+      "* open console to see output",
       ""
     ],
     "tools": ["img/js.png", "", ""]
@@ -269,9 +269,9 @@
     "notes": [
       "learning SVG, add polyline point and calculate coordinates in JS",
       "projects data from JSON",
-      "- not all finished"
+      "- no mobile version yet"
     ],
-    "tools": ["img/svg.svg", "img/json.png", ""]
+    "tools": ["img/svg.svg", "img/json.png", "img/js.png", "Greensock"]
   },
   {
     "nr": "19",
@@ -281,7 +281,7 @@
     "url": ["https://onestepfurther.nu/semester3/greensock/wavy-circle.html"],
     "img": "img/wavy.gif",
     "notes": ["+ basic greensock practice", "- not finished yet", ""],
-    "tools": ["img/svg.svg", "Greensock", ""]
+    "tools": ["img/svg.svg", "img/js.png", "Greensock"]
   },
   {
     "nr": "20",
@@ -297,7 +297,7 @@
       "+ random starting position from all directions with 'same' probability",
       ""
     ],
-    "tools": ["img/svg.svg", "Greensock", ""]
+    "tools": ["img/svg.svg", "img/js.png", "Greensock"]
   },
   {
     "nr": "21",

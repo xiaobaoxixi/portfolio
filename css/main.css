@@ -524,7 +524,7 @@ h1 {
   font-weight: bold;
 }
 .intro {
-  padding-right: calc(2 * var(--vw));
+  padding-right: calc(1 * var(--vw));
 }
 blockquote {
   padding-left: 5px;
