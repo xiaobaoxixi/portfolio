@@ -269,7 +269,7 @@
     "notes": [
       "learning SVG, add polyline point and calculate coordinates in JS",
       "projects data from JSON",
-      "- no mobile version yet"
+      "- no mobile version of the animation yet"
     ],
     "tools": ["img/svg.svg", "img/json.png", "img/js.png", "Greensock"]
   },
