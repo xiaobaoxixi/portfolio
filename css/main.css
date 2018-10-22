@@ -229,7 +229,7 @@ foreignObject p {
 }
 #about > div:nth-of-type(1) {
   display: grid;
-  grid-template-columns: 100px auto;
+  grid-template-columns: 80px auto;
   grid-column-gap: 50px;
 }
 #about .intro {
