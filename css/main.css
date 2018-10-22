@@ -269,9 +269,6 @@ footer,
   height: 35px;
   margin-right: 10px;
 }
-.status img.use-less {
-  height: 25px;
-}
 .project-group ul {
   list-style: none;
 }
@@ -365,6 +362,15 @@ span.project:not(.grey-out) {
 #single-project .desc h3 {
   width: 70%;
   left: 30%;
+}
+.tech p img {
+  height: 30px;
+  margin-right: 5px;
+  filter: grayscale(1);
+}
+.tech p span {
+  font-weight: 500;
+  font-size: 15px;
 }
 #single-project .notes ul {
   list-style: none;
@@ -633,6 +639,9 @@ footer a {
   #future > *,
   #current > * {
     grid-column-start: 1;
+  }
+  h1 {
+    color: var(--light-grey);
   }
   #current h3 {
     margin-top: 50px;

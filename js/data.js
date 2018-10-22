@@ -13,12 +13,10 @@ let myRoll = document.querySelector(`${selector} .type p:nth-of-type(2)`);
 let note1 = document.querySelector(`${selector} .notes li:nth-of-type(1)`);
 let note2 = document.querySelector(`${selector} .notes li:nth-of-type(2)`);
 let note3 = document.querySelector(`${selector} .notes li:nth-of-type(3)`);
-let icon1 = document.querySelector(`${selector} .tech li:nth-of-type(1)`);
-let icon2 = document.querySelector(`${selector} .tech li:nth-of-type(2)`);
-let icon3 = document.querySelector(`${selector} .tech li:nth-of-type(3)`);
 let url = document.querySelector(`${selector} .url`);
 let reportS = document.querySelectorAll(`${selector} .report`);
 let img = document.querySelector(`${selector} .img img`);
+let tech = document.querySelector(`${selector} .tech p`);
 
 function getData(project) {
   console.log(selector);
@@ -78,6 +76,22 @@ function getData(project) {
             }
           } else {
             reportS.forEach(r => r.classList.add("hide"));
+          }
+          tech.innerHTML = "";
+
+          if (projects[index].tools.length > 0) {
+            projects[index].tools.forEach(showIcon);
+            function showIcon(t) {
+              if (t.indexOf("img/") > -1) {
+                let icon = document.createElement("img");
+                icon.setAttribute("src", t);
+                tech.appendChild(icon);
+              } else {
+                let text = document.createElement("span");
+                text.textContent = t;
+                tech.appendChild(text);
+              }
+            }
           }
         }
       }

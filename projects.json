@@ -1,7 +1,7 @@
 [
   {
     "nr": "1",
-    "name": "Optical Art",
+    "name": "Website about Op Art",
     "type": "single",
     "myRoll": "",
     "url": ["https://onestepfurther.nu/semester1/basic-web/op-art/responsive/"],
@@ -14,11 +14,11 @@
       "+ CSS Grid",
       "+ carousel without JS"
     ],
-    "tools": ["XD", "Ai", ""]
+    "tools": ["img/xd.svg", "img/ai.svg", "img/css.png"]
   },
   {
     "nr": "2",
-    "name": "Mr. Ball",
+    "name": "Animation: Mr. Ball",
     "type": "single",
     "myRoll": "",
     "url": [
@@ -30,21 +30,21 @@
       "+++ 12 realistic movements / stories",
       "+++ sound and background setup to enhance story telling"
     ],
-    "tools": ["", "", ""]
+    "tools": ["img/js.png", "img/css.png", "Keyframe Animation"]
   },
   {
     "nr": "3",
-    "name": "Conceptual artist portfolio site",
+    "name": "Artist portfolio site",
     "type": "team",
     "myRoll": "My contributions: design, coding, market research, user testing",
     "url": ["https://onestepfurther.nu/semester2/gn"],
     "img": "img/heart.gif",
     "notes": [
-      "presenting a conceptual sculpture with mechanical heart beating movement",
-      "+ animation using a static image",
+      "Animation presenting a conceptual sculpture with mechanical heart beating movement",
+      "Animation using a static image",
       ""
     ],
-    "tools": ["", "", ""]
+    "tools": ["img/css.png", "Keyframe Animation", ""]
   },
   {
     "nr": "4",
@@ -60,7 +60,7 @@
       "++ combine simple visual treatment to enhence realism ",
       "+ difficulty changes based on user's gaming ability, one of the most popular games among the gamers at NNY "
     ],
-    "tools": ["", "", ""]
+    "tools": ["img/js.png", "img/css.png", ""]
   },
   {
     "nr": "5",
@@ -76,7 +76,7 @@
       "+ '3D' effect with CSS perspective ",
       "- visual and timing less polished"
     ],
-    "tools": ["", "", ""]
+    "tools": ["img/js.png", "img/css.png", ""]
   },
   {
     "nr": "6",
@@ -88,11 +88,11 @@
     ],
     "img": "img/moving.png",
     "notes": [
-      "position detection",
-      "prepare all posibilities",
+      "a simple one-day project with basic JS",
+      "prepare for 'all' posibilities",
       "- not all finished"
     ],
-    "tools": ["", "", ""]
+    "tools": ["img/js.png", "", ""]
   },
   {
     "nr": "7",
@@ -104,11 +104,11 @@
     ],
     "img": "img/bully.gif",
     "notes": [
-      "+ detect mouse movement direction and speed",
-      "- not finished",
-      ""
+      "a simple representation of mouse interaction based on movement direction and speed",
+      "+ animation run with requestAnimationFrame()",
+      "- not finished"
     ],
-    "tools": ["", "", ""]
+    "tools": ["img/js.png", "img/css.png", ""]
   },
   {
     "nr": "8",
@@ -120,11 +120,11 @@
     ],
     "img": "img/pie.gif",
     "notes": [
+      "a simple pie menu run on JS",
       "+ no svg is used, only basic HTML elements",
-      "- not all functions are finished",
-      ""
+      "- not all functions are finished"
     ],
-    "tools": ["", "", ""]
+    "tools": ["img/js.png", "img/css.png", ""]
   },
   {
     "nr": "9",
@@ -134,11 +134,11 @@
     "url": ["https://onestepfurther.nu/semester2/huset-kbh/index.html"],
     "img": "img/calendar.png",
     "notes": [
-      "+ build calendar self without API",
-      "mark events on calendar",
+      "+ build a calendar with vanilla JS",
+      "+ mark events on calendar with backend data",
       "- only mobile version"
     ],
-    "tools": ["", "", ""]
+    "tools": ["img/js.png", "", ""]
   },
   {
     "nr": "10",
@@ -152,7 +152,7 @@
       "+ timing with requestAnimationFrame",
       "+ easing effect through vanilla JS, no CSS"
     ],
-    "tools": ["", "", ""]
+    "tools": ["img/js.png", "", ""]
   },
   {
     "nr": "11",
@@ -164,7 +164,7 @@
     ],
     "img": "img/touch.png",
     "notes": ["+ works on touch devices", "", ""],
-    "tools": ["", "", ""]
+    "tools": ["img/js.png", "", ""]
   },
   {
     "nr": "12",
@@ -175,16 +175,16 @@
     "img": "img/restaurant.png",
     "notes": [
       "+ dynamic content from JSON",
-      "+ dynamic section background based on related images",
-      "single level filter"
+      "+ dynamic background image based on related images",
+      "single level filter function"
     ],
-    "tools": ["", "", ""]
+    "tools": ["img/json.png", "img/js.png", ""]
   },
   {
     "nr": "13",
     "name": "Artist portfolio",
     "type": "team",
-    "myRoll": "My contributions: design, backend setup, front-end coding, report",
+    "myRoll": "My contributions: design, data structure setup, front-end coding, report",
     "url": ["https://onestepfurther.nu/semester2/gn/portfolio.html?lang=en"],
     "img": "img/art.png",
     "notes": [
@@ -192,7 +192,14 @@
       "+ design and apply different layout themes dynamicly based on image format, help user maintain the site",
       "+ switching between two languages without localStorage"
     ],
-    "tools": ["", "", ""]
+    "tools": [
+      "img/wp.png",
+      "img/js.png",
+      "img/css.png",
+      "img/ai.svg",
+      "img/xd.svg",
+      "img/ps.svg"
+    ]
   },
   {
     "nr": "14",
@@ -203,10 +210,10 @@
     "img": "img/shuffle.png",
     "notes": [
       "+ use JS Object to achieve DRY",
-      "+ shuffle & multi level sort",
+      "+ shuffle & multi level sort functions",
       "+ aim for efficiency"
     ],
-    "tools": ["", "", ""]
+    "tools": ["img/js.png", "", ""]
   },
   {
     "nr": "15",
@@ -220,7 +227,7 @@
       "! open console to see output",
       ""
     ],
-    "tools": ["", "", ""]
+    "tools": ["img/js.png", "", ""]
   },
   {
     "nr": "16",
@@ -231,14 +238,14 @@
     "url": [],
     "notes": [
       "part of the artist portpolio project",
-      "show page loader in case fetching data takes long time",
-      "use artist logo as loader"
+      "show page loader for better user experience in case fetching data takes a long time",
+      "design artist logo as loader"
     ],
-    "tools": ["", "", ""]
+    "tools": ["img/svg.svg", "img/js.png", ""]
   },
   {
     "nr": "17",
-    "name": "overlay effect",
+    "name": "Overlay effect",
     "type": "single",
     "myRoll": "",
     "url": [
@@ -250,11 +257,11 @@
       "better solution with CSS clip-path",
       "scroll up/down to compare 2 solutions"
     ],
-    "tools": ["", "", ""]
+    "tools": ["img/js.png", "img/css.png", ""]
   },
   {
     "nr": "18",
-    "name": "turning and changing shape",
+    "name": "Polyline turning and changing shape",
     "type": "single",
     "myRoll": "",
     "img": "img/this.gif",
@@ -264,21 +271,21 @@
       "projects data from JSON",
       "- not all finished"
     ],
-    "tools": ["", "", ""]
+    "tools": ["img/svg.svg", "img/json.png", ""]
   },
   {
     "nr": "19",
-    "name": "Wavy",
+    "name": "Wavy effect",
     "type": "single",
     "myRoll": "",
     "url": ["https://onestepfurther.nu/semester3/greensock/wavy-circle.html"],
     "img": "img/wavy.gif",
-    "notes": ["+ basic greensock practice", "- not finished", ""],
-    "tools": ["", "", ""]
+    "notes": ["+ basic greensock practice", "- not finished yet", ""],
+    "tools": ["img/svg.svg", "Greensock", ""]
   },
   {
     "nr": "20",
-    "name": "BusinessElem",
+    "name": "Gathering effect",
     "type": "single",
     "myRoll": "",
     "url": [
@@ -290,21 +297,21 @@
       "+ random starting position from all directions with 'same' probability",
       ""
     ],
-    "tools": ["", "", ""]
+    "tools": ["img/svg.svg", "Greensock", ""]
   },
   {
     "nr": "21",
-    "name": "Curriculum",
+    "name": "Digital Curriculum",
     "type": "team",
     "myRoll": "My contributions: setup JSON, coding relating to JSON, design & user testing",
     "url": ["https://onestepfurther.nu/semester2/curriculum/"],
     "img": "img/curriculum.png",
     "notes": [
-      "+ JSON structure suitable for non-coder to fill out",
       "+ dynamic Grid layout based on quantative data in JSON",
-      "Design process, incl. BERT test etc."
+      "Design process, incl. BERT test etc.",
+      ""
     ],
-    "tools": ["", "", ""]
+    "tools": ["img/json.png", "img/js.png", ""]
   },
   {
     "nr": "22",
@@ -314,11 +321,11 @@
     "url": ["https://onestepfurther.nu/semester3/dashboard/"],
     "img": "img/dashboard.png",
     "notes": [
-      "dashboard interface for a beer bar",
+      "dashboard with inforgraphic approach for a beer bar",
       "++ build dynamic Grid based on data from backend, no fixed layout",
-      "++ calculate statistic and build web element with live data "
+      "++ calculate statistic and build web element based on live data "
     ],
-    "tools": ["", "", ""]
+    "tools": ["img/json.png", "img/js.png", "img/ai.svg"]
   },
   {
     "nr": "23",
@@ -331,11 +338,11 @@
     ],
     "img": "img/yfu.png",
     "notes": [
-      "+ Social Media campaign and long term Strategy",
+      "+ Social Media campaign and long term marketing strategy for a Exchange program",
       "+ visual elements design",
       ""
     ],
-    "tools": ["", "", ""]
+    "tools": ["img/ai.svg", "SoMe", ""]
   },
   {
     "nr": "24",
@@ -349,7 +356,7 @@
       "+ present Conceptual art in a visual way",
       ""
     ],
-    "tools": ["", "", ""]
+    "tools": [".", ".", "."]
   },
   {
     "nr": "25",
@@ -358,8 +365,8 @@
     "myRoll": "My contributions: business concept, report, design",
     "url": ["https://onestepfurther.nu/semester1/portfolio/ux.html"],
     "img": "img/hub.gif",
-    "notes": ["group work", "", ""],
-    "tools": ["", "", ""]
+    "notes": ["a business concept for a student online platform", "", ""],
+    "tools": ["img/ai.svg", "", ""]
   },
   {
     "nr": "26",
@@ -376,7 +383,7 @@
       "+ Supporting sessions and user authorization. Perform both client- and server-side input validation. Built with jQuery, AJAX, MySQL and PHP.",
       "+ Focus on different users' need & permissions. Improve work efficiency and collaboration"
     ],
-    "tools": ["MySQL", "PHP", ""]
+    "tools": ["img/php.svg", "img/mysql.png", "img/jquery.png"]
   },
   {
     "nr": "27",
@@ -395,7 +402,7 @@
       "++ focus Information Architecture in relation to UX",
       "+ visual design practice"
     ],
-    "tools": ["", "", ""]
+    "tools": ["img/js.png", "img/css.png", "img/wp.png", "img/ai.svg"]
   },
   {
     "nr": "28",
@@ -411,6 +418,6 @@
       "+ with CSS gradient",
       ""
     ],
-    "tools": ["", "", ""]
+    "tools": ["img/js.png", "img/css.png", ""]
   }
 ]
