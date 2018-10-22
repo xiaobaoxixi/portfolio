@@ -628,6 +628,7 @@ footer a {
   #current {
     padding: 70px calc(8 * var(--vw));
     grid-template-columns: calc(78 * var(--vw));
+    opacity: 1;
   }
   #future > *,
   #current > * {

@@ -64,7 +64,10 @@ function detectSectionPosition() {
     sections.forEach(checkPosition);
     function checkPosition(s) {
       let sectionName = s.getAttribute("id");
-      if (s.getBoundingClientRect().top < 350) {
+      if (
+        !window.matchMedia("(max-width: 768px)").matches &&
+        s.getBoundingClientRect().top < 350
+      ) {
         s.classList.add("slide-in");
       }
       if (
@@ -79,10 +82,10 @@ function detectSectionPosition() {
           document.querySelector(
             `nav.main span[style*='grid-row-start']`
           ).style.gridRowStart = "2"; // gives error now, functioning though
-          console.log("gives error, function is working though");
           document.querySelector(
             `nav.main span[data-section='${sectionName}']`
           ).style.gridRowStart = "1";
+          console.log("gives error, function is working though");
         }
       }
       if (
