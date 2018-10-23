@@ -115,6 +115,7 @@ function turnAndChange() {
   triangleStrokes.classList.add("hide");
   chart.classList.remove("hide");
   about.classList.remove("hide");
+  document.querySelector("footer").style.backgroundColor = "white";
   if (window.matchMedia("(max-width: 768px)").matches) {
     mobile.classList.remove("hide");
   }
@@ -427,14 +428,4 @@ function shrinkSVG() {
     }
     svgShrunkState = true;
   }
-}
-
-// on mobile, put web symbol to the bottom right
-if (window.matchMedia("(max-width: 768px)".matches)) {
-  document
-    .querySelector("svg#title")
-    .setAttribute(
-      "viewBox",
-      `0 0 1600 ${(1600 / window.innerWidth) * window.innerHeight}`
-    );
 }

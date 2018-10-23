@@ -96,7 +96,7 @@ footer {
   padding: 1em;
   text-align: center;
   color: var(--dark-grey);
-  background: white;
+  background: var(--bg);
 }
 .bg-color {
   height: 100vh;
