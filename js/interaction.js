@@ -302,3 +302,8 @@ function checkClickPosition(m) {
     closeModal();
   }
 }
+
+// show only pdf cv on mobile
+if (window.matchMedia("(max-width: 768px)").matches) {
+  document.querySelector("#cv").setAttribute("href", "cv.pdf");
+}
