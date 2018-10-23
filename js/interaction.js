@@ -78,15 +78,15 @@ function detectSectionPosition() {
         document
           .querySelector(`nav.main span[data-section='${sectionName}']`)
           .classList.remove("uncheck");
-        if (window.matchMedia("(max-width: 768px)").matches) {
-          document.querySelector(
-            `nav.main span[style*='grid-row-start']`
-          ).style.gridRowStart = "2"; // gives error now, functioning though
-          document.querySelector(
-            `nav.main span[data-section='${sectionName}']`
-          ).style.gridRowStart = "1";
-          console.log("gives error, function is working though");
-        }
+        // if (window.matchMedia("(max-width: 768px)").matches) {
+        //   document.querySelector(
+        //     `nav.main span[style*='grid-row-start']`
+        //   ).style.gridRowStart = "2"; // gives error now, functioning though
+        //   document.querySelector(
+        //     `nav.main span[data-section='${sectionName}']`
+        //   ).style.gridRowStart = "1";
+        //   console.log("gives error, function is working though");
+        // }
       }
       if (
         sectionName === "changingShape" &&

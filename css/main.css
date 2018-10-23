@@ -616,8 +616,11 @@ footer a {
   nav.main.show {
     height: auto;
   }
-  nav.main > * {
+  nav.main > span {
     grid-column-start: 1;
+    font-size: 17px;
+    top: 15px;
+    line-height: 30px; /* 3px difference to the line height of grid row, so that the yellow underline cut through the border*/
   }
   nav.main div.gits {
     grid-column-start: 1;
