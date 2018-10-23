@@ -35,13 +35,13 @@ nav.main {
   align-items: baseline;
 }
 nav.main * {
-  font-size: 19px;
-  line-height: 47px; /* 3px difference to the line height of grid row, so that the yellow underline cut through the border*/
+  font-size: 17px;
+  line-height: 47px;
   cursor: pointer;
 }
 nav.main span {
-  border-bottom: 7px solid var(--yellow);
-  top: 5px;
+  border-bottom: 5px solid var(--yellow);
+  top: 6px;
   margin-right: 7px;
 }
 
@@ -600,18 +600,22 @@ footer a {
 }
 
 @media screen and (max-width: 768px) {
+  svg#title {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
   /* svg#changingShape {
     display: none;
-  } */
+  } 
   .burger {
     display: inherit;
-  }
+  }*/
   nav.main {
     grid-template-rows: 60px 60px 60px 60px 130px 60px 60px;
     grid-template-columns: 1fr;
     overflow: scroll;
     padding-left: 12vw;
-    padding-bottom: 70px;
   }
   nav.main.show {
     height: auto;
@@ -619,8 +623,9 @@ footer a {
   nav.main > span {
     grid-column-start: 1;
     font-size: 17px;
-    top: 15px;
-    line-height: 30px; /* 3px difference to the line height of grid row, so that the yellow underline cut through the border*/
+    top: 20px;
+    line-height: 18px;
+    border-bottom: 3px solid var(--yellow);
   }
   nav.main div.gits {
     grid-column-start: 1;
@@ -636,7 +641,7 @@ footer a {
   #future,
   #current {
     padding: 70px calc(8 * var(--vw));
-    grid-template-columns: calc(78 * var(--vw));
+    grid-template-columns: calc(85 * var(--vw));
     opacity: 1;
   }
   #future > *,
@@ -655,7 +660,7 @@ footer a {
     grid-template-columns: calc(84 * var(--vw));
   }
   #about > * > * {
-    width: 90%;
+    width: 100%;
   }
   h1 {
     font-size: calc(10 * var(--vw));
@@ -677,6 +682,9 @@ footer a {
   }
   .type p {
     left: 0;
+  }
+  #about > div > div p {
+    width: 100%;
   }
 }
 @media screen and (min-width: 1900px) {

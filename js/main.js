@@ -1,5 +1,6 @@
 "use strict";
 const nav = document.querySelector("nav.main");
+const burger = document.querySelector(".burger");
 const svgIntro = document.querySelector("svg#intro");
 const svgDottedLines = document.querySelector("svg#dotted-lines");
 const allLinesInWeb = document.querySelectorAll("#lines *");
@@ -83,6 +84,7 @@ function init() {
     //    .to(web, 0.3, { x: 200, y: -30, scale: 2.2 }, "-=.3")
     .to(web, 0.3, { x: 400, y: 450, scale: 0.4 }, "-=.3")
     .call(showNav)
+    .call(showBurger)
     .to(letterI, 0.1, { opacity: 0 }, "-=.1")
     .to(t1, 0.3, { rotation: -60 })
     .to(triangleStrokes, 0.3, { rotation: 30, transformOrigin: "left bottom" })
@@ -102,6 +104,10 @@ function init() {
   }
   function collapseSvgIntro() {
     svgIntro.style.height = "0";
+  }
+  function showBurger() {
+    if (window.matchMedia("(max-width: 768px)").matches)
+      burger.style.display = "inherit";
   }
 }
 function turnAndChange() {
@@ -422,11 +428,13 @@ function shrinkSVG() {
     svgShrunkState = true;
   }
 }
-//////////////////////////////////
-// leave 1 polygon with fill
-// temp h1 animation needs to be changed
-// when show line and scroll up, shouldn't trigger mouse leave
-// highlight group area
-// foreignObject mouseenter trigger not always working
-// give timeout individual name in order to control cancal
-// when show verticle line, check if already in view then no scroll down
+
+// on mobile, put web symbol to the bottom right
+if (window.matchMedia("(max-width: 768px)".matches)) {
+  document
+    .querySelector("svg#title")
+    .setAttribute(
+      "viewBox",
+      `0 0 1600 ${(1600 / window.innerWidth) * window.innerHeight}`
+    );
+}

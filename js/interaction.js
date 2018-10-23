@@ -6,7 +6,6 @@ const modalShadow = document.querySelector("#single-project-shadow");
 const modalSquare = document.querySelector("#single-project-square");
 const closeX = document.querySelector("#single-project p.close");
 const closeXSquare = document.querySelector("#single-project-square p.close");
-const burger = document.querySelector(".burger");
 let notClickedNav = true;
 let notClickedDot = 1;
 
@@ -301,9 +300,4 @@ function checkClickPosition(m) {
   if (m.target !== modal) {
     closeModal();
   }
-}
-
-// show only pdf cv on mobile
-if (window.matchMedia("(max-width: 768px)").matches) {
-  document.querySelector("#cv").setAttribute("href", "cv.pdf");
 }
