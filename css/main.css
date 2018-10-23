@@ -247,7 +247,7 @@ img.portrait {
 }
 .status {
   padding: calc(6 * var(--vw)) 0 calc(6 * var(--vw)) calc(6 * var(--vw));
-  width: 100%;
+  width: 90%;
 }
 .status p,
 #about p,
@@ -625,7 +625,7 @@ footer a {
     font-size: 17px;
     top: 20px;
     line-height: 18px;
-    border-bottom: 3px solid var(--yellow);
+    border-bottom: 2px solid var(--yellow);
   }
   nav.main div.gits {
     grid-column-start: 1;
@@ -641,7 +641,7 @@ footer a {
   #future,
   #current {
     padding: 70px calc(8 * var(--vw));
-    grid-template-columns: calc(85 * var(--vw));
+    grid-template-columns: calc(80 * var(--vw));
     opacity: 1;
   }
   #future > *,
@@ -660,7 +660,7 @@ footer a {
     grid-template-columns: calc(84 * var(--vw));
   }
   #about > * > * {
-    width: 100%;
+    width: 90%;
   }
   h1 {
     font-size: calc(10 * var(--vw));
@@ -684,7 +684,7 @@ footer a {
     left: 0;
   }
   #about > div > div p {
-    width: 100%;
+    width: 90%;
   }
 }
 @media screen and (min-width: 1900px) {
