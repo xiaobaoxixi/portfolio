@@ -30,7 +30,7 @@
       "+++ 12 realistic movements / stories",
       "+++ sound and background setup to enhance story telling"
     ],
-    "tools": ["img/js.png", "img/css.png", "Keyframe Animation"]
+    "tools": ["img/js.png", "img/css.png", ""]
   },
   {
     "nr": "3",
@@ -44,7 +44,7 @@
       "Animation using a static image",
       ""
     ],
-    "tools": ["img/css.png", "Keyframe Animation", ""]
+    "tools": ["img/css.png", "", ""]
   },
   {
     "nr": "4",
@@ -271,7 +271,7 @@
       "projects data from JSON",
       "- no mobile version of the animation yet"
     ],
-    "tools": ["img/svg.svg", "img/json.png", "img/js.png", "Greensock"]
+    "tools": ["img/svg.svg", "img/json.png", "img/js.png", "img/greensock.svg"]
   },
   {
     "nr": "19",
@@ -281,7 +281,7 @@
     "url": ["https://onestepfurther.nu/semester3/greensock/wavy-circle.html"],
     "img": "img/wavy.gif",
     "notes": ["+ basic greensock practice", "- not finished yet", ""],
-    "tools": ["img/svg.svg", "img/js.png", "Greensock"]
+    "tools": ["img/svg.svg", "img/js.png", "img/greensock.svg"]
   },
   {
     "nr": "20",
@@ -297,7 +297,7 @@
       "+ random starting position from all directions with 'same' probability",
       ""
     ],
-    "tools": ["img/svg.svg", "img/js.png", "Greensock"]
+    "tools": ["img/svg.svg", "img/js.png", "img/greensock.svg"]
   },
   {
     "nr": "21",
