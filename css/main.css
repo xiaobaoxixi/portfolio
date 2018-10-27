@@ -563,6 +563,11 @@ span img.random {
   transition: all 0.35s ease-out;
   width: 12px;
 }
+
+#hint {
+  position: fixed;
+  font-size: 0.8em;
+}
 #cv,
 footer a {
   z-index: 200;

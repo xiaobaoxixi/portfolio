@@ -308,6 +308,7 @@ function hexagonTurn() {
       }
       octagon.setAttribute("fill", "var(--fill)");
       listProjectGroup(octagon);
+      showHint();
     }
   }
 }

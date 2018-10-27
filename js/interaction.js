@@ -7,7 +7,7 @@ const modalSquare = document.querySelector("#single-project-square");
 const closeX = document.querySelector("#single-project p.close");
 const closeXSquare = document.querySelector("#single-project-square p.close");
 let notClickedNav = true;
-let notClickedDot = 1;
+let clickedDot = 0;
 
 // navigation
 navSpans.forEach(listenNav);
@@ -121,7 +121,7 @@ function listenProject(p) {
     m.target.querySelector("img").classList.add("seen");
     m.target.querySelector("img.seen").setAttribute("src", "img/dot-seen.png");
     // don't run random dot animation anymore
-    notClickedDot++;
+    clickedDot++;
     // reset
     if (window.matchMedia("(min-width: 769px)").matches) {
       closeModal();
@@ -281,7 +281,7 @@ function animateDot(m) {
 // random animation dots
 setInterval(generateRandomDot, 700);
 function generateRandomDot() {
-  if (notClickedDot <= 3) {
+  if (clickedDot <= 3) {
     let randomNr = Math.floor(Math.random() * projects.length);
     let randomDot = projects[randomNr].querySelector("img");
     randomDot.classList.add("random");
@@ -305,4 +305,20 @@ function checkClickPosition(m) {
 // show only pdf cv on mobile
 if (window.matchMedia("(max-width: 768px)").matches) {
   document.querySelector("#cv").setAttribute("href", "cv.pdf");
+}
+
+// show hint to click on polygon in order to see project
+function showHint() {
+  const hint = document.querySelector("#hint");
+  window.addEventListener("mousemove", getMousePosition);
+  function getMousePosition(m) {
+    if (clickedDot < 1) {
+      let mousePositionX = m.clientX;
+      let mousePositionY = m.clientY;
+      hint.style.top = `${mousePositionY + 10}px`; // leave room for the mouse arraw
+      hint.style.left = `${mousePositionX + 30}px`; // same as above
+    } else {
+      hint.classList.add("hide");
+    }
+  }
 }
