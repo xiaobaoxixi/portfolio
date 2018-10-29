@@ -312,7 +312,7 @@ function showHint() {
   const hint = document.querySelector("#hint");
   window.addEventListener("mousemove", getMousePosition);
   function getMousePosition(m) {
-    if (clickedDot < 1 && m.pageY <= 1050) {
+    if (clickedDot < 1 && m.pageY <= svgMain.getBoundingClientRect().height) {
       // only when mouse is inside project log section
       hint.classList.remove("hide");
       let mousePositionX = m.clientX;
