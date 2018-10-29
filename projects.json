@@ -419,5 +419,19 @@
       ""
     ],
     "tools": ["img/js.png", "img/css.png", ""]
+  },
+  {
+    "nr": "29",
+    "name": "Form on mobile, improved UX",
+    "type": "single",
+    "myRoll": "",
+    "url": ["https://onestepfurther.nu/semester3/iv/form-yan.html"],
+    "img": "img/form.gif",
+    "notes": [
+      "+ shrink label of active field to maintain clear indication without taking too much space",
+      "+ autocompelete as much as possible to improve UX, using both info saved by browser and post code data online. User can scan card using the phone camera",
+      "+ live validation and move on to the next step when requirements are met"
+    ],
+    "tools": ["img/js.png", "img/css.png", "img/json.png"]
   }
 ]
