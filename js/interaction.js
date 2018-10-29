@@ -312,7 +312,9 @@ function showHint() {
   const hint = document.querySelector("#hint");
   window.addEventListener("mousemove", getMousePosition);
   function getMousePosition(m) {
-    if (clickedDot < 1) {
+    if (clickedDot < 1 && m.pageY <= 1050) {
+      // only when mouse is inside project log section
+      hint.classList.remove("hide");
       let mousePositionX = m.clientX;
       let mousePositionY = m.clientY;
       hint.style.top = `${mousePositionY + 10}px`; // leave room for the mouse arraw
