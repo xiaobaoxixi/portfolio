@@ -433,5 +433,19 @@
       "+ live validation and move on to the next step when requirements are met"
     ],
     "tools": ["img/js.png", "img/css.png", "img/json.png"]
+  },
+  {
+    "nr": "30",
+    "name": "A to-do-list web app",
+    "type": "single",
+    "myRoll": "",
+    "url": ["https://onestepfurther.nu/semester3/simple-react"],
+    "img": "img/react-to-do.jpg",
+    "notes": [
+      "+ built with React",
+      "+ mockAPI as backend",
+      "+ support multiple users sign-up and log-in (check password but not secure yet)"
+    ],
+    "tools": ["img/react.svg"]
   }
 ]
