@@ -171,7 +171,7 @@
     "name": "Dynamic restaurant",
     "type": "single",
     "myRoll": "",
-    "url": ["https://onestepfurther.nu/semester2/restaurant/"],
+    "url": ["http://onestepfurther.nu/semester2/restaurant/"],
     "img": "img/restaurant.png",
     "notes": [
       "+ dynamic content from JSON",
